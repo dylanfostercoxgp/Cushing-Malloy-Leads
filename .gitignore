@@ -1,0 +1,17 @@
+# Environment & secrets
+.env
+*.token
+.github-token
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Temp files
+*.tmp
+*.bak
