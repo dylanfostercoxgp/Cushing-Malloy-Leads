@@ -1,1 +1,48 @@
-# Cushing-Malloy-Leads
+# Cushing-Malloy Lead Intelligence System
+
+AI-powered lead generation for **Cushing-Malloy Books** — Ann Arbor, MI (est. 1948).
+
+Managed by **ideaBoss** | Client contact: Connie Cushing | Report to: dylan@coxgp.com
+
+---
+
+## What This Is
+
+An automated weekly lead generation system that:
+- Researches 10–20 new leads per run across authors, content creators, and small publishers
+- Scores every lead 1–10 using a weighted formula
+- Creates personalized Gmail draft outreach for every verified email
+- Sends a weekly summary report to Dylan
+- Updates the interactive lead dashboard
+
+**Runs automatically every Monday at 3:00 AM.**
+
+---
+
+## Folder Structure
+
+```
+├── cushing-malloy-lead-dashboard.html   ← Interactive lead dashboard (main file)
+├── cushing-malloy-lead-gen-prompt.md    ← Full agent spec v2.0
+├── WEEKLY-PROCESS.md                    ← Step-by-step process for Claude Code
+├── build_agent_overview.py              ← ReportLab script to regenerate the PDF
+├── Cushing-Malloy-Agent-Overview.pdf    ← 1-page agent overview (v2.0)
+│
+├── 01_Dashboard/                        ← Dashboard backup copy
+├── 02_Lead_Data/archive/                ← Weekly lead JSON snapshots
+├── 03_Documentation/                    ← Spec, PDF, and process docs
+└── 04_Reports/                          ← Weekly report archives
+```
+
+---
+
+## Running the Weekly Process Manually
+
+Open Cowork or Claude Code and say:
+> "Run the Cushing-Malloy weekly lead generation process."
+
+Then point Claude to `WEEKLY-PROCESS.md` — it contains every step.
+
+---
+
+*Confidential — ideaBoss for Cushing-Malloy Books*
