@@ -1,0 +1,150 @@
+{
+  "run_date": "2026-03-27",
+  "lead_count": 13,
+  "channels_used": ["Substack Creator Network", "Goodreads Indie Author Discovery", "Amazon KDP Upgrade Candidates", "Kickstarter Publishing", "Poets & Writers Small Press Directory", "Bookshop.org Indie Storefront", "IBPA Member Directory", "LinkedIn Business Author Search"],
+  "leads": [
+    {
+      "source": "Substack Creator Network",
+      "name": "Ali Kriegsman",
+      "website": "https://www.alikriegsman.com",
+      "email": "ali@alikriegsman.com",
+      "phone": "Research Required",
+      "category": "cat-business",
+      "score": 7,
+      "priority": "medium",
+      "notes": "Exited founder and consultant building a branded business book project 'The Raise' with a sophisticated DTC launch strategy. Prime candidate for a 500–1,000 copy offset print run designed for speaking engagements and direct sales. Cushing-Malloy's single point of contact and 20-day turnaround aligns directly with her high-standard launch demands."
+    },
+    {
+      "source": "Goodreads Indie Author Discovery",
+      "name": "Allegra Hall",
+      "website": "https://allegrahall.carrd.co",
+      "email": "allegra.hall.books@gmail.com",
+      "phone": "Research Required",
+      "category": "cat-creator",
+      "score": 8,
+      "priority": "medium",
+      "notes": "Indie paranormal romance author with 3 published titles in her Lost Moon Universe, most recently 'Howl' (Nov 2024). Active on Threads and Instagram with engaged reader community. Currently printing via POD — a strong candidate to upgrade to a 500–1,500 copy offset run for better quality and margins. Direct email confirmed on her carrd site."
+    },
+    {
+      "source": "Indie Author / Amazon KDP Upgrade Candidate",
+      "name": "Rob Dircks",
+      "website": "https://www.robdircks.com",
+      "email": "contact@robdircks.com",
+      "phone": "Research Required",
+      "category": "cat-hybrid",
+      "score": 8,
+      "priority": "medium",
+      "notes": "Self-published over 10,000 copies of his 'Where the Hell is Tesla?' series and now runs Goldfinch Publishing helping other authors produce books. Dual opportunity: his own upcoming titles plus potential referrals from Goldfinch author clients. Cushing-Malloy's white-glove guidance and volume pricing education would resonate strongly with his author-centric approach."
+    },
+    {
+      "source": "Substack Bestseller / Lifestyle Creator",
+      "name": "Veronica Llorca-Smith",
+      "website": "https://www.veronicallorcasmith.com",
+      "email": "No Verified Email Found",
+      "phone": "Research Required",
+      "category": "cat-lifestyle",
+      "score": 7,
+      "priority": "medium",
+      "notes": "Substack Bestseller with 13K+ paid subscribers on 'The Lemon Tree Mindset.' Previously co-authored a collaborative book and is positioned for a solo self-published project. Cushing-Malloy's single point of contact and hand-holding for first-time independent projects would be a compelling differentiator."
+    },
+    {
+      "source": "Instagram / Social Media Creator",
+      "name": "Maren Moore",
+      "website": "https://www.marenmoore.com",
+      "email": "maren@marenmoore.com",
+      "phone": "Research Required",
+      "category": "cat-creator",
+      "score": 7,
+      "priority": "medium",
+      "notes": "USA Today bestselling indie romance author with multiple 2024 releases and a strong social following. Currently self-published on POD with an active direct-sales model. Cushing-Malloy's volume pricing education and cost-per-unit breakdown vs. POD would immediately demonstrate ROI."
+    },
+    {
+      "source": "Kickstarter Publishing / Creator Network",
+      "name": "Oriana Leckert",
+      "website": "https://www.oriana-leckert.com",
+      "email": "oriana.leckert@gmail.com",
+      "phone": "Research Required",
+      "category": "cat-business",
+      "score": 7,
+      "priority": "medium",
+      "notes": "Director of Publishing at Kickstarter with deep expertise in crowdfunded book economics. High-value connector who advises book creators on production decisions. Outreach framing Cushing-Malloy as the trusted offset printing partner for Kickstarter book campaigns could open significant referral flow."
+    },
+    {
+      "source": "Goodreads / Food Memoirist",
+      "name": "Crystal Wilkinson",
+      "website": "https://www.crystalewilkinson.net",
+      "email": "No Verified Email Found",
+      "phone": "Research Required",
+      "category": "cat-food",
+      "score": 6,
+      "priority": "low",
+      "notes": "Award-winning food memoirist and cookbook author of 'Praisesong for the Kitchen Ghosts' (2024). University of Kentucky professor exploring limited-edition or self-published follow-up print runs. Cushing-Malloy's premium offset quality and Ann Arbor heritage would resonate with her craft-focused audience."
+    },
+    {
+      "source": "Amazon KDP / Indie Romance Author",
+      "name": "Claire Kingsley",
+      "website": "https://www.clairekingsleybooks.com",
+      "email": "No Verified Email Found",
+      "phone": "Research Required",
+      "category": "cat-creator",
+      "score": 6,
+      "priority": "low",
+      "notes": "Amazon #1 bestselling indie romance author with 46+ published books and a large established reader base. At her volume, switching even a portion of her catalog to offset printing would meaningfully improve per-unit cost. Cushing-Malloy's volume pricing education session would be high value."
+    },
+    {
+      "source": "Goodreads / Indie Romance Author",
+      "name": "Cate C. Wells",
+      "website": "https://www.catecwells.com",
+      "email": "No Verified Email Found",
+      "phone": "Research Required",
+      "category": "cat-creator",
+      "score": 6,
+      "priority": "low",
+      "notes": "Indie paranormal romance author with 22K+ social media followers and multiple 2024 titles. Solid candidate for a 500–1,000 copy offset print run upgrade from POD. Cushing-Malloy's single point of contact and 20-day turnaround would reassure a creator managing production alongside content creation."
+    },
+    {
+      "source": "Poets & Writers Small Press Directory",
+      "name": "Cornerstone Press (UW-Stevens Point)",
+      "website": "https://www.uwsp.edu/cornerstone-press",
+      "email": "cornerstonepress@uwsp.edu",
+      "phone": "Research Required",
+      "category": "cat-small",
+      "score": 7,
+      "priority": "medium",
+      "notes": "University-affiliated literary small press at UW-Stevens Point, Wisconsin, publishing regional fiction, poetry, and nonfiction. Great Lakes geography and active acquisition pipeline makes this a natural Cushing-Malloy fit. Pitch the consistent 20-day production timeline and single manufacturing contact as ideal for their academic publishing calendar."
+    },
+    {
+      "source": "Bookshop.org Indie Storefront",
+      "name": "Restless Books",
+      "website": "https://www.restlessbooks.org",
+      "email": "info@restlessbooks.org",
+      "phone": "Research Required",
+      "category": "cat-small",
+      "score": 7,
+      "priority": "medium",
+      "notes": "Independent publisher specializing in international literature in translation with an active Bookshop.org storefront and 10–15 titles per year. Cushing-Malloy's reliability, single point of contact, and offset quality credentials are a strong fit for their literary list."
+    },
+    {
+      "source": "IBPA Member Directory",
+      "name": "Wandering in the Words Press",
+      "website": "https://www.wanderingwords.press",
+      "email": "submissions@wanderingwords.press",
+      "phone": "Research Required",
+      "category": "cat-micro",
+      "score": 6,
+      "priority": "low",
+      "notes": "IBPA member micro press specializing in speculative fiction with 3–5 titles per year and actively acquiring for 2026. Cushing-Malloy's competitive 250-copy starting point and print run economics education would speak directly to a micro press managing tight production budgets."
+    },
+    {
+      "source": "LinkedIn / Business Author Search",
+      "name": "Talia Fox",
+      "website": "https://www.taliafox.com",
+      "email": "No Verified Email Found",
+      "phone": "Research Required",
+      "category": "cat-business",
+      "score": 6,
+      "priority": "low",
+      "notes": "CEO and leadership strategist with a published business authority book 'The Power of Choice' and an active Fortune 500 speaking calendar. Books are a core business development tool — she gifts them at keynotes. Cushing-Malloy's 20-day turnaround and volume pricing breakdown for 500 vs. 1,000 copies would be highly persuasive."
+    }
+  ]
+}
