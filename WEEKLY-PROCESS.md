@@ -254,47 +254,90 @@ cushing-malloy.com
 
 ---
 
-## STEP 6 — SEND WEEKLY REPORT EMAIL TO DYLAN
+## STEP 6 — SEND WEEKLY REPORT EMAIL TO CONNIE
 
-Create a Gmail draft (or send directly) to **dylan@coxgp.com** with the weekly summary report.
+Create a Gmail draft to **[CONNIE_EMAIL]** (CC: dylan@coxgp.com) with the weekly Lead Intelligence Prospecting report.
 
-**Subject:** `Cushing-Malloy Lead Report — Week of [Monday Date]`
+**Subject:** `Cushing-Malloy Lead Intelligence Prospecting — Week of [Monday Date]`
 
-**Body (HTML formatted):**
+**Body (HTML — use exactly this structure, filling all brackets with real content):**
 
 ```html
-<p>Hi Dylan,</p>
+<!DOCTYPE html>
+<html>
+<body style="font-family: Arial, sans-serif; max-width: 620px; margin: 0 auto; color: #2a2a2a; font-size: 14px; line-height: 1.6;">
 
-<p>Here's your Cushing-Malloy lead generation report for the week of <strong>[DATE]</strong>.</p>
+  <!-- HEADER -->
+  <div style="background-color: #3787c4; padding: 22px 26px; border-radius: 5px 5px 0 0;">
+    <div style="color: rgba(255,255,255,0.75); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 4px;">Lead Intelligence Prospecting</div>
+    <div style="color: #ffffff; font-size: 24px; font-weight: bold; letter-spacing: -0.3px;">Cushing-Malloy</div>
+    <div style="color: rgba(255,255,255,0.7); font-size: 12px; margin-top: 7px;">
+      Week of [MONDAY DATE] &nbsp;&middot;&nbsp; Powered by <a href="https://ideaboss.io" style="color: rgba(255,255,255,0.85); text-decoration: none;">ideaboss.io</a>
+    </div>
+  </div>
 
-<h3>This Week's Summary</h3>
-<ul>
-  <li><strong>New leads researched:</strong> [X]</li>
-  <li><strong>High priority (9–10):</strong> [X leads] — [names]</li>
-  <li><strong>Medium priority (7–8):</strong> [X leads] — [names]</li>
-  <li><strong>Low priority (5–6):</strong> [X leads] — [names]</li>
-  <li><strong>Gmail outreach drafts created:</strong> [X] (ready to review and send)</li>
-</ul>
+  <!-- BODY -->
+  <div style="background: #ffffff; padding: 28px 26px; border: 1px solid #dde6f0; border-top: none;">
 
-<h3>Top 3 Leads This Week</h3>
-<ol>
-  <li><strong>[Name]</strong> — [Category] — Score [X]/10 — [1 sentence why]</li>
-  <li><strong>[Name]</strong> — [Category] — Score [X]/10 — [1 sentence why]</li>
-  <li><strong>[Name]</strong> — [Category] — Score [X]/10 — [1 sentence why]</li>
-</ol>
+    <p style="margin-top: 0;">Connie,</p>
 
-<h3>Discovery Sources Used This Week</h3>
-<p>[List the 4–5 channels used this run]</p>
+    <p>This week's prospecting run surfaced <strong>[X] qualified leads</strong> across [2–3 channels used — e.g., "Substack author communities, Kickstarter book campaigns, and health creator networks on Instagram"]. Every lead was verified for print relevance, active production signals, and reachable contact information before making the list — so what you're seeing represents genuine opportunities worth a conversation.</p>
 
-<h3>Next Steps</h3>
-<ul>
-  <li>Review and send Gmail drafts for high-priority leads first</li>
-  <li>Dashboard updated — view at [DASHBOARD URL when live]</li>
-  <li>Next auto-run: Next Monday at 3:00 AM</li>
-</ul>
+    <p>A couple worth a closer look: <strong>[Lead 1 Name]</strong> — [1 sentence on why, how found, e.g., "a food blogger with 38K Instagram followers who announced a cookbook project this month, discovered through her public content feed"]. And <strong>[Lead 2 Name]</strong> — [1 sentence, e.g., "a business coach on Substack with a paid subscriber base actively promoting an upcoming book launch, sourced from Substack's creator directory"]. Both have verified contact details and clear intent to go to print.</p>
 
-<p>—ideaBoss AI Agent</p>
+    <!-- LEAD HIGHLIGHTS TABLE -->
+    <table style="width: 100%; border-collapse: collapse; margin: 22px 0; font-size: 13px;">
+      <tr style="background-color: #3787c4; color: #ffffff;">
+        <th style="padding: 9px 12px; text-align: left; font-weight: 600; border-radius: 3px 0 0 0;">Name / Company</th>
+        <th style="padding: 9px 12px; text-align: left; font-weight: 600;">Category</th>
+        <th style="padding: 9px 12px; text-align: left; font-weight: 600; border-radius: 0 3px 0 0;">Why Qualified</th>
+      </tr>
+      <!-- Repeat this row for each lead — alternate row background #f4f8fc and #ffffff -->
+      <tr style="background-color: #f4f8fc;">
+        <td style="padding: 8px 12px; border-bottom: 1px solid #dde6f0;"><strong>[Lead Name]</strong></td>
+        <td style="padding: 8px 12px; border-bottom: 1px solid #dde6f0;">[Category]</td>
+        <td style="padding: 8px 12px; border-bottom: 1px solid #dde6f0;">[1 short qualifying sentence — why this lead matters, what signals indicated print intent]</td>
+      </tr>
+      <tr style="background-color: #ffffff;">
+        <td style="padding: 8px 12px; border-bottom: 1px solid #dde6f0;"><strong>[Lead Name]</strong></td>
+        <td style="padding: 8px 12px; border-bottom: 1px solid #dde6f0;">[Category]</td>
+        <td style="padding: 8px 12px; border-bottom: 1px solid #dde6f0;">[1 short qualifying sentence]</td>
+      </tr>
+      <!-- Add all leads from this run as rows -->
+    </table>
+
+    <!-- RESEARCH SOURCES -->
+    <p style="font-size: 12px; color: #777; border-top: 1px solid #e8eef4; padding-top: 14px; margin-bottom: 22px;">
+      <strong style="color: #555;">Research sources this run:</strong>&nbsp;
+      [Source 1 — e.g., Substack publishing community] &nbsp;&middot;&nbsp; [Source 2 — e.g., Kickstarter book campaigns]
+    </p>
+
+    <!-- CTA BUTTON -->
+    <div style="text-align: center; margin: 10px 0 6px;">
+      <a href="[DASHBOARD URL]" style="display: inline-block; background-color: #3787c4; color: #ffffff; padding: 13px 32px; border-radius: 4px; text-decoration: none; font-size: 14px; font-weight: bold; letter-spacing: 0.2px;">
+        View Full Dashboard &rarr;
+      </a>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div style="background-color: #f0f5fa; padding: 14px 26px; border: 1px solid #dde6f0; border-top: none; text-align: center; font-size: 11px; color: #999; border-radius: 0 0 5px 5px;">
+    Generated by <a href="https://ideaboss.io" style="color: #3787c4; text-decoration: none; font-weight: 600;">ideaboss.io</a>
+    &nbsp;&middot;&nbsp; Lead Intelligence Prospecting for Cushing-Malloy Books &nbsp;&middot;&nbsp; [DATE]
+  </div>
+
+</body>
+</html>
 ```
+
+**Instructions for filling the template:**
+- Replace `[X]` with actual lead count
+- Replace `[MONDAY DATE]` and `[DATE]` with the run date (e.g., "March 31, 2026")
+- In the two intro paragraphs, name 2 specific leads from this run with exactly how and where they were found
+- Add one row per lead to the table — every lead from this run, no scores, no priority labels
+- List exactly 2 research sources actually used in this run
+- Replace `[DASHBOARD URL]` with the live dashboard URL once available (placeholder: `https://cushing-malloy.com/leads`)
 
 ---
 
@@ -310,7 +353,7 @@ Run a final checklist before marking the process complete:
 - [ ] Dashboard HTML updated with new run date and leads
 - [ ] Lead archive JSON saved to `02_Lead_Data/archive/`
 - [ ] Gmail outreach drafts created for all leads with verified emails
-- [ ] Weekly report email drafted to dylan@coxgp.com
+- [ ] Weekly Lead Intelligence Prospecting report drafted to Connie (CC: dylan@coxgp.com)
 - [ ] Updated dashboard copied to `01_Dashboard/` folder
 
 ---
