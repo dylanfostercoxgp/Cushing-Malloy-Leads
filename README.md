@@ -22,16 +22,19 @@ An automated weekly lead generation system that:
 ## Folder Structure
 
 ```
-├── cushing-malloy-lead-dashboard.html   ← Interactive lead dashboard (main file)
-├── cushing-malloy-lead-gen-prompt.md    ← Full agent spec v2.0
-├── WEEKLY-PROCESS.md                    ← Step-by-step process for Claude Code
-├── build_agent_overview.py              ← ReportLab script to regenerate the PDF
-├── Cushing-Malloy-Agent-Overview.pdf    ← 1-page agent overview (v2.0)
-│
-├── 01_Dashboard/                        ← Dashboard backup copy
-├── 02_Lead_Data/archive/                ← Weekly lead JSON snapshots
-├── 03_Documentation/                    ← Spec, PDF, and process docs
-└── 04_Reports/                          ← Weekly report archives
+├── 01_Dashboard/
+│   └── cushing-malloy-lead-dashboard.html   ← Interactive lead dashboard
+├── 02_Lead_Data/
+│   └── archive/                             ← Weekly lead JSON snapshots
+├── 03_Documentation/
+│   ├── cushing-malloy-lead-gen-prompt.md    ← Full agent spec v2.0
+│   ├── Cushing-Malloy-Agent-Overview.pdf    ← 1-page agent overview
+│   ├── CushingMalloy_StyleGuide.docx        ← Brand style guide
+│   └── WEEKLY-PROCESS.md                   ← Step-by-step process doc
+├── 04_Reports/                              ← Weekly report archives
+├── build_agent_overview.py                  ← ReportLab PDF generator script
+├── Cushing-Malloy-Agent-Overview.pdf        ← 1-page agent overview (root copy)
+└── WEEKLY-PROCESS.md                        ← Process doc (root copy)
 ```
 
 ---
