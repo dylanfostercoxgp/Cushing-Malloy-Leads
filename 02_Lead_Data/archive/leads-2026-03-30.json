@@ -1,0 +1,146 @@
+{
+  "run_date": "2026-03-30",
+  "lead_count": 12,
+  "discovery_channels": [
+    "Poets & Writers Small Presses DB",
+    "Reedsy Indie Publisher Directory",
+    "Bookshop.org indie storefronts",
+    "Substack discovery",
+    "IBPA member signals",
+    "State arts council grant research"
+  ],
+  "leads": [
+    {
+      "source": "Poets & Writers Small Presses DB",
+      "name": "New Michigan Press",
+      "website": "https://thediagram.com/nmp/",
+      "email": "nmp@thediagram.com",
+      "phone": "Research Required",
+      "category": "cat-poetry",
+      "score": 9,
+      "priority": "high",
+      "notes": "Ann Arbor-based chapbook press — same city as Cushing-Malloy — publishing broadsides, anthologies, and chapbooks since 1999 in partnership with DIAGRAM magazine. The 2026 Chapbook Contest closes April 30, 2026, meaning a winner goes to print this summer. Outreach angle: local same-city turnaround, no shipping delays, one dedicated contact from proof to delivery."
+    },
+    {
+      "source": "Reedsy Indie Publisher Directory",
+      "name": "Orange Frazer Press",
+      "website": "https://www.orangefrazer.com",
+      "email": "No Verified Email Found",
+      "phone": "(937) 382-3196",
+      "category": "cat-small",
+      "score": 9,
+      "priority": "high",
+      "notes": "Ohio's leading independent book publisher for 30+ years, Wilmington, OH. Publishes anniversary books, children's books, coffee-table books, corporate histories, memoirs, cookbooks, and fine art books — a wide, multi-format catalog that generates consistent printing demand. Phone-verified. Outreach angle: full-service production with a single dedicated project manager covering quoting, proofing, and delivery."
+    },
+    {
+      "source": "Poets & Writers Small Presses DB",
+      "name": "Glass Poetry Press",
+      "website": "https://www.glass-poetry.com",
+      "email": "editor@glass-poetry.com",
+      "phone": "Research Required",
+      "category": "cat-poetry",
+      "score": 8,
+      "priority": "medium",
+      "notes": "Toledo, Ohio micro-press publishing 4–6 chapbooks per year in runs of ~100 copies each, hand-bound with full-color card stock covers and ISBN. Annual open reading period closes October 31 — winner notification and production follows shortly after. Outreach angle: quality short-run offset/digital for covers and text blocks, 20-day turnaround to meet post-contest production windows."
+    },
+    {
+      "source": "Reedsy Indie Publisher Directory",
+      "name": "Ice Cube Press",
+      "website": "https://icecubepress.com",
+      "email": "steve@icecubepress.com",
+      "phone": "Research Required",
+      "category": "cat-nonfiction",
+      "score": 8,
+      "priority": "medium",
+      "notes": "Iowa-based independent Midwest press founded 1991, publishing nonfiction, fiction, poetry, and graphic novels; 2023 Iowa Governor's Art Award and perennial 'Best Indie Press in Iowa.' Maintains two imprints and multiple annual releases. Verified direct contact (steve@icecubepress.com) makes outreach straightforward. Outreach angle: Midwest-made production, regional pride, and a single point of contact they'll actually reach."
+    },
+    {
+      "source": "Poets & Writers Small Presses DB",
+      "name": "42 Miles Press",
+      "website": "https://42milespress.com",
+      "email": "42milespress@gmail.com",
+      "phone": "Research Required",
+      "category": "cat-poetry",
+      "score": 8,
+      "priority": "medium",
+      "notes": "University press at Indiana University South Bend publishing poetry books and chapbooks; 2025 contest winner Steve Castro recently selected, meaning a new title enters production now. Just 2 hours from Ann Arbor — same-day proofing visits are feasible. Annual prize cycle creates predictable, repeatable printing demand. Outreach angle: fast-turn proofs and author-friendly communication."
+    },
+    {
+      "source": "Poets & Writers Small Presses DB",
+      "name": "Midwest Writing Center (MWC Press)",
+      "website": "https://www.mwcqc.org",
+      "email": "mwc@midwestwritingcenter.org",
+      "phone": "(309) 732-7330",
+      "category": "cat-poetry",
+      "score": 8,
+      "priority": "medium",
+      "notes": "Rock Island, IL nonprofit press publishing the Foster-Stahl Chapbook Series for upper Midwest writers (IL, IN, IA, MI, MN, OH, WI). Submissions open through March 2026 — a winner is being selected now for production. Phone and email both verified. Outreach angle: Cushing-Malloy's Midwest roots and 75+ years of book manufacturing make them the natural regional printing partner."
+    },
+    {
+      "source": "Poets & Writers Small Presses DB / IBPA Directory",
+      "name": "Yellow Arrow Publishing",
+      "website": "https://www.yellowarrowpublishing.com",
+      "email": "submissions@yellowarrowpublishing.com",
+      "phone": "Research Required",
+      "category": "cat-hybrid",
+      "score": 8,
+      "priority": "medium",
+      "notes": "Baltimore-based nonprofit hybrid publisher focused on women-identifying writers, releasing 3 chapbooks per year on a fixed schedule (April, July, October). 2025 authors already announced; 2026 selection cycle is underway. Known for quality design and professional presentation. Outreach angle: consistent repeat production relationship with a press that takes physical book quality seriously."
+    },
+    {
+      "source": "Bookshop.org indie storefronts",
+      "name": "Belt Publishing",
+      "website": "https://beltpublishing.com",
+      "email": "No Verified Email Found",
+      "phone": "Research Required",
+      "category": "cat-small",
+      "score": 8,
+      "priority": "medium",
+      "notes": "Rust Belt regional press with 4+ titles currently in pre-order and a growing catalog of Midwest memoirs, historical narratives, and literary fiction, distributed through Arcadia Publishing. Independent title-by-title production decisions create ongoing printer opportunities. Outreach angle: Cushing-Malloy's Midwest identity and specialty in regional books make them a natural production partner for Belt's catalog."
+    },
+    {
+      "source": "Bookshop.org indie storefronts",
+      "name": "Two Dollar Radio",
+      "website": "https://twodollarradio.com",
+      "email": "No Verified Email Found",
+      "phone": "Research Required",
+      "category": "cat-small",
+      "score": 8,
+      "priority": "medium",
+      "notes": "Columbus, Ohio literary fiction press celebrated for 'beautifully produced books' — limited edition hardcovers with gatefold covers, deckled edges, and special formats. Their emphasis on physical book quality matches Cushing-Malloy's specialty bindery capabilities. Active 2025 catalog and a brick-and-mortar storefront. Outreach angle: premium production quality for special editions and limited-run hardcovers."
+    },
+    {
+      "source": "Substack / IndieKidsBooks.com",
+      "name": "Darcy Pattison / Mims House",
+      "website": "https://www.indiekidsbooks.com",
+      "email": "No Verified Email Found",
+      "phone": "Research Required",
+      "category": "cat-childrens",
+      "score": 7,
+      "priority": "medium",
+      "notes": "Award-winning independent children's book author-publisher with 70+ titles under the Mims House imprint; books selected for Dolly Parton's Imagination Library. Active Q1 2026 publishing push with local-to-national marketing strategy. Outreach angle: vibrant full-color children's book printing with hardcover and softcover options, 20-day turnaround perfect for event and retail fulfillment."
+    },
+    {
+      "source": "Poets & Writers Small Presses DB",
+      "name": "Porkbelly Press",
+      "website": "https://porkbellypress.com",
+      "email": "No Verified Email Found",
+      "phone": "Research Required",
+      "category": "cat-poetry",
+      "score": 6,
+      "priority": "low",
+      "notes": "Cincinnati-based queer-feminist micro-press publishing handbound chapbooks, zines, and the journal Sugared Water. All production is currently in-house, but their growing catalog and collectible limited editions signal potential demand for professional short-run cover and text printing. Outreach angle: cover printing, specialty finishes, and offset journal production to scale up from handmade output."
+    },
+    {
+      "source": "Poets & Writers Small Presses DB",
+      "name": "Middle West Press",
+      "website": "http://www.middlewestpress.com",
+      "email": "No Verified Email Found",
+      "phone": "Research Required",
+      "category": "cat-micro",
+      "score": 6,
+      "priority": "low",
+      "notes": "Johnston, Iowa micro-press with an active Fall 2026 anthology (Cryptids, Kaiju & Corn Vol. 2) currently accepting submissions. Also publishes the War Poetry Postcard Project. No direct email; contact via Submittable form. Outreach angle: affordable short-run offset for anthology print runs with specialty options for anthology-format paperbacks."
+    }
+  ]
+}
