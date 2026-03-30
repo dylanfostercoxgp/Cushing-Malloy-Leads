@@ -372,7 +372,7 @@ Create a Gmail draft to **[CONNIE_EMAIL]** (CC: dylan@coxgp.com) with the weekly
 
     <!-- CTA BUTTON -->
     <div style="text-align: center; margin: 10px 0 6px;">
-      <a href="[DASHBOARD URL]" style="display: inline-block; background-color: #3787c4; color: #ffffff; padding: 13px 32px; border-radius: 4px; text-decoration: none; font-size: 14px; font-weight: bold; letter-spacing: 0.2px;">
+      <a href="https://ideaboss.cushing-malloy.com" style="display: inline-block; background-color: #3787c4; color: #ffffff; padding: 13px 32px; border-radius: 4px; text-decoration: none; font-size: 14px; font-weight: bold; letter-spacing: 0.2px;">
         View Full Dashboard &rarr;
       </a>
     </div>
@@ -395,7 +395,7 @@ Create a Gmail draft to **[CONNIE_EMAIL]** (CC: dylan@coxgp.com) with the weekly
 - In the two intro paragraphs, name 2 specific leads from this run with exactly how and where they were found
 - Add one row per lead to the table — every lead from this run, no scores, no priority labels
 - List exactly 2 research sources actually used in this run
-- Replace `[DASHBOARD URL]` with the live dashboard URL once available (placeholder: `https://cushing-malloy.com/leads`)
+- Replace `[DASHBOARD URL]` with `https://ideaboss.cushing-malloy.com` (live dashboard URL)
 
 ---
 
