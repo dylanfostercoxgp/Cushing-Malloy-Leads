@@ -116,7 +116,7 @@ Using the full spec in `cushing-malloy-lead-gen-prompt.md`, research and identif
 | **Name/Company** | Full name (author) or press name (publisher) |
 | **Website** | Primary URL — website, Substack, Amazon Author Page, social profile |
 | **Email** | Verified email; if not found after exhaustive search: "No Verified Email Found" |
-| **Phone** | If publicly listed; otherwise "Research Required" |
+| **Phone** | Include if found at 80%+ confidence; leave blank (not a placeholder) if not found |
 | **Category** | One category from the list above |
 | **Priority Score** | 1–10 using scoring formula below |
 | **Notes** | 2–3 sentences: WHY this lead is valuable + specific outreach angle |
@@ -254,7 +254,7 @@ git push origin main
 
 ## STEP 6 — CREATE GMAIL OUTREACH DRAFTS
 
-For every lead that has a **verified email address** (not "No Verified Email Found" or "Research Required"), create a personalized Gmail draft using the Gmail MCP tool.
+For every lead that has a **verified email address**, create a personalized Gmail draft using the Gmail MCP tool.
 
 **IMPORTANT: Save as DRAFT only. Do NOT send.**
 
@@ -500,4 +500,4 @@ Cushing-Malloy/
 ---
 
 *This document is confidential and proprietary to ideaBoss and Cushing-Malloy Books.*
-*Version 2.0 | March 2026*
+*Version 2.3 | March 2026*
