@@ -12,7 +12,7 @@
 This process runs every **Monday at 3:00 AM** (or on-demand). It performs three jobs:
 
 1. **Lead Discovery** — Research and score **20–25 new leads** across multiple channels
-2. **Outreach Drafts** — Create personalized Gmail draft emails to each verified lead (do NOT auto-send)
+2. **Outreach Drafts** — Save personalized draft emails to SmarterMail Drafts folder for each verified lead (do NOT auto-send)
 3. **Weekly Report** — Email a summary HTML report to dylan@coxgp.com
 
 **Total estimated runtime:** 15–25 minutes depending on lead count.
@@ -252,11 +252,39 @@ git push origin main
 
 ---
 
-## STEP 6 — CREATE GMAIL OUTREACH DRAFTS
+## STEP 6 — CREATE SMARTERMAIL OUTREACH DRAFTS
 
-For every lead that has a **verified email address**, create a personalized Gmail draft using the Gmail MCP tool.
+For every lead with a **verified email address**, save a personalized draft to the SmarterMail Drafts folder using Python via IMAP. **Save as DRAFT only. Do NOT send.**
 
-**IMPORTANT: Save as DRAFT only. Do NOT send.**
+**Email account:** `printyourbook@cushing-malloy.com` — drafts appear at `https://mail.cushing-malloy.com`
+
+### Python helper (run via Bash tool for each lead):
+
+```python
+import imaplib, email, time
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+
+IMAP_HOST = "mail.cushing-malloy.com"
+IMAP_PORT = 993
+EMAIL_USER = "printyourbook@cushing-malloy.com"
+EMAIL_PASS = "SNaFx$os5^Z4Rig"
+
+def save_draft(to_address, subject, html_body):
+    msg = MIMEMultipart("alternative")
+    msg["From"] = EMAIL_USER
+    msg["To"] = to_address
+    msg["Subject"] = subject
+    msg["Date"] = email.utils.formatdate()
+    msg.attach(MIMEText(html_body, "html"))
+    mail = imaplib.IMAP4_SSL(IMAP_HOST, IMAP_PORT)
+    mail.login(EMAIL_USER, EMAIL_PASS)
+    mail.append("Drafts", r"\\Draft", imaplib.Time2Internaldate(time.time()), msg.as_bytes())
+    mail.logout()
+
+# Call once per lead:
+# save_draft("lead@example.com", "Subject line", "<p>HTML body</p>")
+```
 
 ### Email template and personalization rules:
 
@@ -312,9 +340,12 @@ cushing-malloy.com
 
 ---
 
-## STEP 7 — SEND WEEKLY REPORT EMAIL TO CONNIE
+## STEP 7 — SEND WEEKLY REPORT EMAIL
 
-Create a Gmail draft to **[CONNIE_EMAIL]** (CC: dylan@coxgp.com) with the weekly Lead Intelligence Prospecting report.
+Save a weekly summary draft to SmarterMail Drafts using the same `save_draft()` Python function from Step 6.
+
+- **To:** dylan@coxgp.com
+- **CC:** [CONNIE_EMAIL]
 
 **Subject:** `Cushing-Malloy Lead Intelligence Prospecting — Week of [Monday Date]`
 
@@ -415,8 +446,8 @@ Run a final checklist before marking the process complete:
 - [ ] `01_Dashboard/cushing-malloy-lead-dashboard.html` updated
 - [ ] Root `index.html` updated (copied from `01_Dashboard/` — named `index.html`, not `cushing-malloy-lead-dashboard.html`)
 - [ ] All changes committed and pushed to GitHub (`01_Dashboard/` copy + `index.html` at root)
-- [ ] Gmail outreach drafts created for all leads with verified emails
-- [ ] Weekly Lead Intelligence Prospecting report drafted to Connie (CC: dylan@coxgp.com)
+- [ ] SmarterMail outreach drafts saved for all leads with verified emails
+- [ ] Weekly report draft saved to SmarterMail Drafts (To: dylan@coxgp.com)
 
 ---
 
@@ -488,10 +519,11 @@ Cushing-Malloy/
 
 ## TECHNICAL NOTES FOR CLAUDE CODE
 
-- **Gmail MCP tool ID:** `mcp__5a941daf-9cda-4281-9985-37dacb85b091`
-- **Gmail tool for creating drafts:** `gmail_create_draft`
+- **Email system:** SmarterMail via IMAP (Python `imaplib`)
+- **IMAP host:** `mail.cushing-malloy.com` port 993 (SSL)
+- **Outreach sender:** `printyourbook@cushing-malloy.com`
+- **Drafts saved to:** Drafts folder — view at `https://mail.cushing-malloy.com`
 - **Report recipient:** dylan@coxgp.com
-- **Outreach sender:** dylan@coxgp.com (sends from Dylan's connected Gmail)
 - **Dashboard file location:** `/mnt/Dashboard/cushing-malloy-lead-dashboard.html`
 - **Archive location:** `/mnt/Dashboard/02_Lead_Data/archive/`
 - **Scheduled task:** Monday, 3:00 AM (weekly)
