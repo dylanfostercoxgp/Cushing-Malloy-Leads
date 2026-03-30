@@ -5,6 +5,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cushing-Malloy Lead Intelligence Dashboard</title>
   <style>
+    /* ─── PASSWORD GATE ─── */
+    #pw-gate {
+      position: fixed; inset: 0; z-index: 9999;
+      background: #0b0f1a;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    }
+    #pw-gate.hidden { display: none; }
+    #pw-box {
+      display: flex; flex-direction: column; align-items: center;
+      gap: 0; width: 340px;
+    }
+    #pw-lock {
+      margin-bottom: 22px;
+    }
+    #pw-lock svg {
+      width: 64px; height: 64px;
+    }
+    #pw-title {
+      font-size: 1.55rem; font-weight: 700;
+      color: #c9a84c; letter-spacing: 0.3px;
+      margin-bottom: 7px;
+    }
+    #pw-subtitle {
+      font-size: 0.7rem; letter-spacing: 3px;
+      text-transform: uppercase; color: #6b7a99;
+      margin-bottom: 28px;
+    }
+    #pw-field-wrap {
+      width: 100%; position: relative; margin-bottom: 14px;
+    }
+    #pw-input {
+      width: 100%; padding: 14px 50px 14px 18px;
+      background: #141824; border: 1px solid #2a3150;
+      border-radius: 8px; color: #c9a84c;
+      font-size: 1rem; outline: none;
+      letter-spacing: 2px;
+      transition: border-color 0.2s;
+    }
+    #pw-input::placeholder { color: #4a5270; letter-spacing: 1px; }
+    #pw-input:focus { border-color: #c9a84c; }
+    #pw-input.shake {
+      animation: pwShake 0.35s ease;
+      border-color: #c0392b;
+    }
+    @keyframes pwShake {
+      0%,100% { transform: translateX(0); }
+      20%      { transform: translateX(-8px); }
+      40%      { transform: translateX(8px); }
+      60%      { transform: translateX(-5px); }
+      80%      { transform: translateX(5px); }
+    }
+    #pw-toggle {
+      position: absolute; right: 14px; top: 50%; transform: translateY(-50%);
+      background: #c0392b; border: none; border-radius: 5px;
+      padding: 4px 8px; cursor: pointer; color: #fff;
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 1px;
+    }
+    #pw-btn {
+      width: 100%; padding: 14px;
+      background: #c9a84c; border: none; border-radius: 8px;
+      color: #0b0f1a; font-size: 1rem; font-weight: 700;
+      cursor: pointer; letter-spacing: 0.5px;
+      transition: background 0.2s, transform 0.1s;
+    }
+    #pw-btn:hover { background: #dbb85c; }
+    #pw-btn:active { transform: scale(0.98); }
+    #pw-error {
+      margin-top: 12px; color: #c0392b;
+      font-size: 0.8rem; min-height: 18px; text-align: center;
+    }
+    #pw-footer {
+      position: absolute; bottom: 22px;
+      font-size: 0.72rem; color: #3a4460; text-align: center;
+    }
+    #pw-footer a {
+      color: #c9a84c; text-decoration: none; font-weight: 600;
+    }
+    #pw-footer a:hover { text-decoration: underline; }
+
     :root {
       --navy: #f0f3f7;
       --navy-light: #e4e9f0;
@@ -468,6 +549,76 @@
   </style>
 </head>
 <body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     PASSWORD GATE — shown until correct password is entered
+════════════════════════════════════════════════════════════════ -->
+<div id="pw-gate">
+  <div id="pw-box">
+    <div id="pw-lock">
+      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="12" y="30" width="40" height="28" rx="5" stroke="#c9a84c" stroke-width="3" fill="none"/>
+        <path d="M21 30V22a11 11 0 0 1 22 0v8" stroke="#c9a84c" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <circle cx="32" cy="44" r="4" fill="#c9a84c"/>
+        <line x1="32" y1="48" x2="32" y2="53" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div id="pw-title">Cushing Malloy</div>
+    <div id="pw-subtitle">Protected Dashboard</div>
+    <div id="pw-field-wrap">
+      <input id="pw-input" type="password" placeholder="Enter password" autocomplete="off" />
+      <button id="pw-toggle" type="button">SHOW</button>
+    </div>
+    <button id="pw-btn" type="button">Unlock Dashboard</button>
+    <div id="pw-error"></div>
+  </div>
+  <div id="pw-footer">
+    Powered by <a href="https://ideaboss.io" target="_blank">ideaBoss.io</a>
+  </div>
+</div>
+
+<script>
+(function() {
+  var PASS = "Cushingmalloyleads";
+  var gate = document.getElementById("pw-gate");
+  var input = document.getElementById("pw-input");
+  var btn = document.getElementById("pw-btn");
+  var err = document.getElementById("pw-error");
+  var toggle = document.getElementById("pw-toggle");
+
+  if (sessionStorage.getItem("cm_unlocked") === "1") {
+    gate.classList.add("hidden");
+    return;
+  }
+
+  function attempt() {
+    if (input.value === PASS) {
+      sessionStorage.setItem("cm_unlocked", "1");
+      gate.classList.add("hidden");
+    } else {
+      err.textContent = "Incorrect password. Please try again.";
+      input.classList.remove("shake");
+      void input.offsetWidth;
+      input.classList.add("shake");
+      input.value = "";
+      setTimeout(function() { input.classList.remove("shake"); }, 400);
+    }
+  }
+
+  btn.addEventListener("click", attempt);
+  input.addEventListener("keydown", function(e) { if (e.key === "Enter") attempt(); });
+
+  toggle.addEventListener("click", function() {
+    if (input.type === "password") {
+      input.type = "text";
+      toggle.textContent = "HIDE";
+    } else {
+      input.type = "password";
+      toggle.textContent = "SHOW";
+    }
+  });
+})();
+</script>
 
 <!-- HEADER -->
 <header class="header">
