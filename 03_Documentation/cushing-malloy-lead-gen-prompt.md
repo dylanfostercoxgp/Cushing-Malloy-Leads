@@ -146,7 +146,15 @@ Score each lead from 1–10 using the following weighted formula. **Do not surfa
 | **Growth Signal** | 5% | Declining or static | Stable | Growing (new book announced, Kickstarter funded, audience growing, new imprint) |
 | **Contact Quality** | 5% | Generic inbox only (info@, contact@) | Department email (editor@, submissions@) | Direct personal email to named individual |
 
-**Score Calculation:** Sum weighted scores → normalize to 1–10. Apply rounding. **Leads scoring 9–10 = High Priority. 7–8 = Medium Priority. 5–6 = Low Priority. Below 5 = Do Not Surface.**
+**Score Calculation:** Sum weighted scores → normalize to 1–10. Apply rounding.
+
+| Score | Priority | Treatment |
+|---|---|---|
+| **8–10** | **High** | Core batch — always include |
+| **5–7** | **Medium** | Core batch — always include |
+| **1–4** | **Low** | Supplemental only — up to 5 per run; include only if there is a genuine reason to believe the lead could convert with the right outreach. Add a justification sentence to Notes. |
+
+> Prior rule ("Below 5 = Do Not Surface") is superseded. Up to 5 sub-5 leads are now permitted per run as a supplemental tier.
 
 ---
 
@@ -154,16 +162,20 @@ Score each lead from 1–10 using the following weighted formula. **Do not surfa
 
 Each time this dashboard agent is triggered:
 
-1. **Generate between 10 and 20 leads** (vary naturally based on discovery — do NOT force a fixed count)
-2. **Email is mandatory** — every lead must have a verified, vetted email address; discard any lead where email cannot be confirmed
-3. **Vet every email** — cross-reference against the lead's live website, LinkedIn, or public profile before including; do not include stale or unverifiable addresses
-4. **Never produce duplicate leads** across any run — maintain deduplication against all previously generated leads across ALL run dates
-5. **Never overwrite prior run dates** — only append new dates to the dashboard; all prior runs must remain intact
-6. **Vary source diversity** — aim for at least 4–5 distinct discovery channels per run
-7. **Vary geography** — leads should span multiple US states and regions per run
-8. **Maintain the 70/30 balance** — approximately 70% individual authors and content creators, 30% small publishers per run
-9. **Vary niches** — do not pull all author leads from one category; spread across health/wellness, food, business, literary, lifestyle, and other creator types
-10. **Location over phone** — collect City, State abbreviation for each lead; do not collect phone numbers
+1. **Generate between 20 and 25 leads per run** — the count varies naturally week to week (some runs 20, some 22, some 24); do NOT force a fixed count but stay within the 20–25 range
+2. **Lead composition rule:**
+   - **At least 20 leads** must score **6 or above** (core batch — fully vetted, strong print signal)
+   - **Up to 5 leads** may score **below 5** (supplemental tier — lower confidence but potentially valuable; each must include a justification sentence in Notes explaining why it could still convert)
+   - Do not force supplemental leads if fewer than 5 strong low-score candidates exist — quality always beats quota
+3. **Email is mandatory for all leads** — every lead must have a verified, vetted email address; discard any lead where email cannot be confirmed
+4. **Vet every email** — cross-reference against the lead's live website, LinkedIn, or public profile before including; do not include stale or unverifiable addresses
+5. **Never produce duplicate leads** across any run — maintain deduplication against all previously generated leads across ALL run dates
+6. **Never overwrite prior run dates** — only append new dates to the dashboard; all prior runs must remain intact
+7. **Vary source diversity** — aim for at least 4–5 distinct discovery channels per run
+8. **Vary geography** — leads should span multiple US states and regions per run
+9. **Maintain the 70/30 balance** — approximately 70% individual authors and content creators, 30% small publishers per run
+10. **Vary niches** — do not pull all author leads from one category; spread across health/wellness, food, business, literary, lifestyle, and other creator types
+11. **Location over phone** — collect City, State abbreviation for each lead; do not collect phone numbers
 
 ---
 
@@ -199,7 +211,7 @@ Position as a reliable, long-standing manufacturing partner with the flexibility
 4. **No POD platforms as leads.** Amazon KDP, IngramSpark, Lulu, BookBaby, and Blurb are research tools, not targets.
 5. **No Big 5 or major publisher subsidiaries.** Exclude Penguin Random House, HarperCollins, Simon & Schuster, Hachette, Macmillan, and their named imprints.
 6. **No e-book-only or digital-only publishers** with no physical print program.
-7. **No leads scoring below 5.** Quality over quantity, always.
+7. **Core batch minimum score is 6.** Up to 5 supplemental leads scoring below 5 are permitted per run only when there is a genuine conversion rationale documented in the Notes field. Quality always beats quota — do not force supplemental leads.
 8. **Maintain deduplication across all run dates.** Never repeat a lead that appeared in any prior run.
 9. **Never overwrite or delete prior dashboard run dates.** Dashboard updates are append-only.
 10. **Use Location (City, ST), not phone numbers.** Phone is not collected.
@@ -208,7 +220,8 @@ Position as a reliable, long-standing manufacturing partner with the flexibility
 
 ---
 
-*Prompt Version 2.1 | Updated by ideaBoss for Cushing-Malloy Books | March 2026*
+*Prompt Version 2.2 | Updated by ideaBoss for Cushing-Malloy Books | March 2026*
 *v2.0: Connie's feedback — 70/30 author/publisher split, removed academic/faith primaries, added creator categories and differentiators.*
 *v2.1: Three hard rule additions — (1) Email required and vetted for every lead; leads without confirmed email are discarded. (2) Phone field replaced with Location (City, State abbreviation). (3) Dashboard runs are append-only; prior run dates are never overwritten or deleted.*
+*v2.2: Dylan's feedback — (1) Lead volume raised to 20–25 per run (from 10–20). (2) Core batch minimum score raised to 6+ (from 5+). (3) Supplemental tier added: up to 5 leads scoring below 5 per run, with required justification note, for potentially high-value prospects where contact confidence is lower. (4) Priority scale corrected: 8–10 = High, 5–7 = Medium, 1–4 = Low.*
 *This prompt is confidential and proprietary to ideaBoss and Cushing-Malloy Books.*

@@ -482,7 +482,7 @@
   </div>
   <div class="header-badge">
     <div class="run-label">Latest Run</div>
-    <div class="run-date" id="runDateBadge">March 26, 2026</div>
+    <div class="run-date" id="runDateBadge">March 30, 2026</div>
   </div>
 </header>
 
@@ -494,27 +494,27 @@
     <div class="stat-card total">
       <span class="stat-icon">📋</span>
       <span class="stat-label">New Leads Today</span>
-      <span class="stat-value" id="statToday">12</span>
+      <span class="stat-value" id="statToday">6</span>
     </div>
     <div class="stat-card high">
       <span class="stat-icon">🟢</span>
       <span class="stat-label">High Priority</span>
-      <span class="stat-value" id="statHigh">1</span>
+      <span class="stat-value" id="statHigh">6</span>
     </div>
     <div class="stat-card medium">
       <span class="stat-icon">🟡</span>
       <span class="stat-label">Medium Priority</span>
-      <span class="stat-value" id="statMed">7</span>
+      <span class="stat-value" id="statMed">0</span>
     </div>
     <div class="stat-card low">
       <span class="stat-icon">🔴</span>
       <span class="stat-label">Low Priority</span>
-      <span class="stat-value" id="statLow">4</span>
+      <span class="stat-value" id="statLow">0</span>
     </div>
     <div class="stat-card alltime">
       <span class="stat-icon">📊</span>
       <span class="stat-label">Total Leads (All Time)</span>
-      <span class="stat-value" id="statTotal">12</span>
+      <span class="stat-value" id="statTotal">13</span>
     </div>
   </div>
 
@@ -524,7 +524,7 @@
       <div class="filter-group">
         <span class="filter-label">Date</span>
         <select class="date-selector" id="dateSelect">
-          <option value="2026-03-27">March 27, 2026</option>
+          <option value="2026-03-30">March 30, 2026</option>
           <option value="2026-03-26">March 26, 2026</option>
         </select>
       </div>
@@ -532,9 +532,9 @@
         <span class="filter-label">Priority</span>
         <select class="filter-select" id="filterPriority">
           <option value="all">All</option>
-          <option value="high">High (9–10)</option>
-          <option value="medium">Medium (7–8)</option>
-          <option value="low">Low (5–6)</option>
+          <option value="high">High (8–10)</option>
+          <option value="medium">Medium (5–7)</option>
+          <option value="low">Low (1–4)</option>
         </select>
       </div>
       <div class="filter-group">
@@ -562,7 +562,7 @@
           <th onclick="sortTable('score')" class="sorted" data-col="score">Score <span class="sort-icon">↓</span></th>
           <th onclick="sortTable('source')" data-col="source">Source <span class="sort-icon">↕</span></th>
           <th onclick="sortTable('email')" data-col="email">Email(s) <span class="sort-icon">↕</span></th>
-          <th onclick="sortTable('phone')" data-col="phone">Phone <span class="sort-icon">↕</span></th>
+          <th onclick="sortTable('location')" data-col="location">Location <span class="sort-icon">↕</span></th>
           <th>Notes</th>
         </tr>
       </thead>
@@ -577,8 +577,8 @@
   <!-- FOOTER -->
   <div class="footer">
     <div class="footer-left">
-      Showing <strong id="showingCount">15</strong> of <strong>15</strong> leads &nbsp;·&nbsp;
-      Run: March 26, 2026 &nbsp;·&nbsp;
+      Showing <strong id="showingCount">6</strong> of <strong id="runCount">6</strong> leads &nbsp;·&nbsp;
+      Run: <span id="footerRunDate">March 30, 2026</span> &nbsp;·&nbsp;
       Confidential — ideaBoss for Cushing-Malloy Books
     </div>
     <div class="footer-right">
@@ -608,6 +608,71 @@
 <script>
 // ─── DATA ───────────────────────────────────────────────────────────────────
 const RUNS = {
+  "2026-03-30": {
+    label: "March 30, 2026",
+    leads: [
+      {
+        id: 1, score: 9, priorityClass: "high",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "New Michigan Press",
+        source: "Poets & Writers Small Presses DB",
+        email: "nmp@thediagram.com", location: "Ann Arbor, MI",
+        website: "https://thediagram.com/nmp/",
+        notes: "Ann Arbor chapbook press — same city as Cushing-Malloy — publishing broadsides, anthologies, and chapbooks since 1999 with DIAGRAM magazine. 2026 Chapbook Contest closes April 30, meaning a winner goes to print this summer. Verified email, same-city advantage.",
+        pitch: "You are literally neighbors — and that is the entire pitch. New Michigan Press selects a chapbook winner every spring, and that winner needs to go to print within weeks. Position Cushing-Malloy as the local partner: in-person proof reviews, no shipping delays, 20 working days from files to finished books. Email nmp@thediagram.com now to introduce Cushing-Malloy ahead of the April 30 contest close."
+      },
+      {
+        id: 2, score: 8, priorityClass: "high",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Glass Poetry Press",
+        source: "Poets & Writers Small Presses DB",
+        email: "editor@glass-poetry.com", location: "Toledo, OH",
+        website: "https://www.glass-poetry.com",
+        notes: "Toledo, Ohio micro-press publishing 4–6 chapbooks per year in runs of ~100 copies, hand-bound with full-color card stock covers and ISBN. Annual open reading period closes October 31. Verified editor email found.",
+        pitch: "Glass Poetry's production cycle is predictable: October submission close, winter selection, spring print run. Reach out to editor@glass-poetry.com and pitch Cushing-Malloy as the printer that handles the covers and text blocks professionally so the editor can focus on curation. Emphasize: digital short runs at 100 copies, full-color card stock covers, 20-day turnaround."
+      },
+      {
+        id: 3, score: 8, priorityClass: "high",
+        category: "Nonfiction Specialty Press", catClass: "cat-nonfiction",
+        name: "Ice Cube Press",
+        source: "Reedsy Indie Publisher Directory",
+        email: "steve@icecubepress.com", location: "North Liberty, IA",
+        website: "https://icecubepress.com",
+        notes: "Iowa-based independent Midwest press founded 1991; 2023 Iowa Governor's Art Award, 'Best Indie Press in Iowa.' Publishes nonfiction, fiction, poetry, and graphic novels across two imprints. Direct contact verified via steve@icecubepress.com.",
+        pitch: "Steve is a fellow Midwest independent who has been publishing since 1991 — he understands craft and regional identity. Email steve@icecubepress.com and lead with Midwest solidarity: family-owned, Ann Arbor, 75 years. Then get specific: what are his current print runs, who is his printer, and what would make him switch? Offer a comparison quote on his next title."
+      },
+      {
+        id: 4, score: 8, priorityClass: "high",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "42 Miles Press",
+        source: "Poets & Writers Small Presses DB",
+        email: "42milespress@gmail.com", location: "South Bend, IN",
+        website: "https://42milespress.com",
+        notes: "Indiana University South Bend press publishing poetry books and chapbooks; 2025 winner Steve Castro recently selected — a new title enters production now. Located 2 hours from Ann Arbor. Annual prize cycle creates predictable printing demand. Email verified.",
+        pitch: "A winner was just selected, which means production is imminent. Email 42milespress@gmail.com to introduce Cushing-Malloy before they lock in a printer. Lead with proximity — 2 hours means same-day proofing visits — and emphasize the predictable annual cycle Cushing-Malloy would love to anchor as their go-to partner for the prize print run each year."
+      },
+      {
+        id: 5, score: 8, priorityClass: "high",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Midwest Writing Center (MWC Press)",
+        source: "Poets & Writers Small Presses DB",
+        email: "mwc@midwestwritingcenter.org", location: "Rock Island, IL",
+        website: "https://www.mwcqc.org",
+        notes: "Rock Island, IL nonprofit press publishing the Foster-Stahl Chapbook Series for upper Midwest writers (IL, IN, IA, MI, MN, OH, WI). Submissions close March 2026 — a winner is being selected now. Email verified.",
+        pitch: "MWC Press is selecting their 2026 chapbook winner right now. Contact mwc@midwestwritingcenter.org to introduce Cushing-Malloy as the natural printing partner for a Midwest nonprofit chapbook series. Lean into the Midwest story: family-owned in Ann Arbor since 1948, serving the same community of writers that MWC champions."
+      },
+      {
+        id: 6, score: 8, priorityClass: "high",
+        category: "Hybrid Publisher / Author Services", catClass: "cat-hybrid",
+        name: "Yellow Arrow Publishing",
+        source: "IBPA Member Directory",
+        email: "submissions@yellowarrowpublishing.com", location: "Baltimore, MD",
+        website: "https://www.yellowarrowpublishing.com",
+        notes: "Baltimore-based nonprofit hybrid publisher focused on women-identifying writers; 3 chapbooks per year on a fixed schedule (April, July, October). 2025 authors already announced; 2026 selection underway. Verified email found.",
+        pitch: "Yellow Arrow has a predictable, repeat production cycle — three chapbooks per year, same schedule, every year. That is a dream account for a printer. Email submissions@yellowarrowpublishing.com to introduce Cushing-Malloy as their production partner of record: same quality, same specs, zero surprises. Pitch the repeat-account economics: we know your files, we know your format, we make production invisible so your editors focus on authors."
+      }
+    ]
+  },
   "2026-03-26": {
     label: "March 26, 2026",
     leads: [
@@ -616,292 +681,77 @@ const RUNS = {
         category: "Nonfiction Specialty Press", catClass: "cat-nonfiction",
         name: "Orange Frazer Press",
         source: "Ohio Publisher Directory / Reedsy",
-        email: "custom@orangefrazer.com", phone: "(937) 382-3196",
+        email: "custom@orangefrazer.com", location: "Wilmington, OH",
         website: "https://www.orangefrazer.com",
         notes: "Ohio's leading independent book publisher, family-owned, offering first printings from 250 to 30,000 copies. Specializes in regional nonfiction and custom publishing — a textbook match for Cushing-Malloy's short-to-medium run expertise. Pitch as a Midwest manufacturing partner for their custom division.",
         pitch: "Position Cushing-Malloy as a peer family-owned operation with heritage and reliability. Orange Frazer's custom division handles corporate history books, cookbooks, and regional nonfiction — all segments where Cushing-Malloy's short-run offset excellence and 1948 track record are compelling selling points. Ask about their Q2 print calendar and current printer relationships."
       },
       {
-        id: 2, score: 8, priorityClass: "medium",
+        id: 2, score: 8, priorityClass: "high",
         category: "Food & Recipe Creator", catClass: "cat-food",
         name: "Bex Kitchen (Rebecca)",
         source: "Kickstarter Publishing / Instagram @bex_nj",
-        email: "inquiries@bexkitchen.com", phone: "(908) 975-3334",
+        email: "inquiries@bexkitchen.com", location: "NJ",
         website: "https://bexkitchen.com",
         notes: "New Jersey-based recipe creator with an active Kickstarter campaign for 'Hearty: A Recipe Book' (298 backers, over $6K pledged). Clear, funded proof of customer demand for a printed cookbook. Cushing-Malloy is a natural fit for Kickstarter fulfillment printing and post-campaign retail stock.",
         pitch: "Bex's Kickstarter proved demand exists — 298 backers pledged real money for her cookbook. Now comes fulfillment: managing print production, quantities, and shipping. Cushing-Malloy specializes in exactly this scenario. Reach out via inquiries@bexkitchen.com to offer a fulfillment print quote and explain how we can handle the production run while she focuses on marketing and delivery. Position as the partner who makes her backers proud."
       },
       {
-        id: 3, score: 8, priorityClass: "medium",
+        id: 3, score: 8, priorityClass: "high",
         category: "Poetry & Literary Press", catClass: "cat-poetry",
         name: "Bottom Dog Press",
         source: "Poets & Writers Small Presses Database",
-        email: "lsmithdog@smithdocs.net", phone: "(419) 602-1556",
+        email: "lsmithdog@smithdocs.net", location: "Huron, OH",
         website: "https://smithdocs.net",
-        notes: "Nonprofit Ohio literary press operating five active series (Midwest, Working Lives, Harmony, Memoirs, Appalachian Writing). Confirmed phone and email. Ongoing short-run print needs across multiple annual titles make them a consistent manufacturing prospect.",
+        notes: "Nonprofit Ohio literary press operating five active series (Midwest, Working Lives, Harmony, Memoirs, Appalachian Writing). Confirmed email. Ongoing short-run print needs across multiple annual titles make them a consistent manufacturing prospect.",
         pitch: "Bottom Dog has consistent short-to-medium run needs across five publishing series. Email Larry Smith directly at lsmithdog@smithdocs.net to introduce Cushing-Malloy as a nonprofit-friendly printing partner with deep Midwest roots. Emphasize competitive per-unit pricing at 200–2,000 copy runs, and the e-book conversion upsell."
       },
       {
-        id: 4, score: 8, priorityClass: "medium",
+        id: 4, score: 8, priorityClass: "high",
         category: "Health & Wellness Creator", catClass: "cat-health",
         name: "Idris Doosi",
         source: "TikTok / Instagram @doosifit",
-        email: "idrisdoosi@gmail.com", phone: "Research Required",
+        email: "idrisdoosi@gmail.com", location: "—",
         website: "https://doosifit.com",
         notes: "Fitness and nutrition influencer with 1.6M TikTok followers who already has a weight loss book and an active recipe cookbook on his website. His engaged audience actively consumes his food and fitness content — a print cookbook expansion would be a direct revenue opportunity with a built-in buyer base.",
         pitch: "Idris has 1.6M TikTok followers who follow him for exactly the content that fills a cookbook — low-calorie, high-protein recipes. His digital audience has proven appetite for his work, and a professionally printed Doosifit cookbook would let him create a premium physical product to sell at events, through his site, and to his loyal community. Reach out via idrisdoosi@gmail.com and position Cushing-Malloy as the partner who handles production so he can focus on his brand. Start with a sample quote at 500 and 1,000 copies."
       },
       {
         id: 5, score: 7, priorityClass: "medium",
-        category: "Business & Authority Author", catClass: "cat-business",
-        name: "Paul Jarvis",
-        source: "Substack / pjrvs.com",
-        email: "No Verified Email Found", phone: "Research Required",
-        website: "https://pjrvs.com",
-        notes: "Author of 'Company of One' and several self-published books with a Sunday Dispatches newsletter reaching thousands weekly. Actively teaches others about independent publishing — a natural fit for Cushing-Malloy's guided, indie-friendly print model.",
-        pitch: "Paul's entire philosophy is about owning your work and keeping overhead low — which makes him a natural fit for Cushing-Malloy's indie-friendly printing model. Reach via his website contact. Pitch the per-unit economics at 500 vs. 1,000 copies, and position Cushing-Malloy as the manufacturing partner that lets indie creators keep full margins without the overhead of traditional publishing relationships."
-      },
-      {
-        id: 6, score: 7, priorityClass: "medium",
-        category: "Solo Author – Launch Mode", catClass: "cat-solo-launch",
-        name: "Nat Eliason",
-        source: "Substack Author Community / nateliason.com",
-        email: "No Verified Email Found", phone: "Research Required",
-        website: "https://www.nateliason.com",
-        notes: "Author with 48K+ Substack subscribers who has self-published multiple books including 'Husk' and 'Crypto Confidential.' Building an author-based direct-to-reader business — a strong candidate for offset print runs of 1,000–2,500 copies to sell directly to his audience at better margins than POD.",
-        pitch: "Nat has 48K engaged Substack subscribers and a proven track record of self-publishing. He is exactly the type of indie author who needs a quality offset printing partner to upgrade from POD and reduce per-unit costs at scale. Reach via his website contact. Lead with a comparison: what his current POD per-unit cost is vs. what Cushing-Malloy can offer at 1,000 copies."
-      },
-      {
-        id: 7, score: 7, priorityClass: "medium",
-        category: "Lifestyle Creator", catClass: "cat-lifestyle",
-        name: "Hill Schroder",
-        source: "Kickstarter / blueamindfulnesstale.com",
-        email: "No Verified Email Found", phone: "Research Required",
-        website: "https://blueamindfulnesstale.com",
-        notes: "Atlanta-based author with a successful Kickstarter for 'Blue ~ A Mindfulness Tale' — an illustrated wellness book for children and adults with strong cross-platform backing via BackerKit. Illustrated books demand high print quality; Cushing-Malloy's 4-color offset capabilities are a direct match.",
-        pitch: "Hill's Kickstarter and BackerKit pre-orders represent committed buyers expecting a beautifully printed book. Illustrated mindfulness content lives and dies on print quality — paper weight, color accuracy, and binding all matter. Reach out via the website contact form. Position Cushing-Malloy as the printer that will make her backers proud and offer a fulfillment-ready quote for the Kickstarter run plus post-campaign stock."
-      },
-      {
-        id: 8, score: 7, priorityClass: "medium",
-        category: "Business & Authority Author", catClass: "cat-business",
-        name: "Dickie Bush",
-        source: "Ship 30 for 30 / dickiebush.com",
-        email: "No Verified Email Found", phone: "Research Required",
-        website: "https://www.dickiebush.com",
-        notes: "Co-creator of Ship 30 for 30 and co-author of 'The 22 Laws of Digital Writing' (currently eBook only). With thousands of writing course alumni and a large following, a print edition would be a premium product for cohort graduates and speaking events — a clear path from digital-only to physical print.",
-        pitch: "Dickie's Ship 30 for 30 program produces thousands of writers every year — and 'The 22 Laws of Digital Writing' is the methodology behind it. A professionally printed edition becomes a premium graduation product, a speaking handout, and a tangible credential. Reach via his website. Pitch a short run of 500–1,000 copies as a test to gauge demand from his existing audience before scaling."
-      },
-      {
-        id: 9, score: 7, priorityClass: "medium",
         category: "Small Press / Hybrid Publisher", catClass: "cat-hybrid",
         name: "Fiddlehead Press",
         source: "Kickstarter Publishing Category",
-        email: "antheasharp@hotmail.com", phone: "Research Required",
+        email: "antheasharp@hotmail.com", location: "—",
         website: "https://fiddleheadpress.com",
         notes: "Founded by USA Today bestselling author Anthea Sharp with seven Kickstarter campaigns totaling nearly $70k — proven, scaled print activity. Active production of physical books for backers with a likely need for an offset upgrade from POD for hardcover special editions.",
         pitch: "Fiddlehead has funded $70k+ in print runs via Kickstarter — they are print-active at real scale. Pitch as a manufacturing upgrade: Cushing-Malloy can deliver hardcover special editions and offset runs of 500–2,500 copies that outperform POD quality at lower per-unit cost. Email antheasharp@hotmail.com and ask about their next Kickstarter campaign timeline."
       },
       {
-        id: 10, score: 6, priorityClass: "low",
-        category: "Health & Wellness Creator", catClass: "cat-health",
-        name: "Sohee Carpenter",
-        source: "Amazon Author / soheefit.com",
-        email: "No Verified Email Found", phone: "Research Required",
-        website: "https://soheefit.com",
-        notes: "PhD-credentialed fitness and nutrition coach with a published book ('Eat. Lift. Thrive.') and an established online coaching business. Strong authority credentials position her well for a new title Cushing-Malloy could manufacture at 500–2,000 copies with full margin control.",
-        pitch: "Sohee has already proven she can publish — and her coaching platform has an audience that trusts her expertise. Reach out via her website contact form. Position Cushing-Malloy as the partner that gives her full control, higher margins, and professional print quality with no agent cut, no publisher overhead, and a 20-working-day turnaround."
-      },
-      {
-        id: 11, score: 6, priorityClass: "low",
+        id: 6, score: 6, priorityClass: "medium",
         category: "Poetry & Literary Press", catClass: "cat-poetry",
         name: "Porkbelly Press",
         source: "Poets & Writers Small Presses Database",
-        email: "porkbellypress@gmail.com", phone: "Research Required",
+        email: "porkbellypress@gmail.com", location: "Cincinnati, OH",
         website: "https://porkbellypress.com",
         notes: "Cincinnati-based micro press specializing in handbound limited-edition chapbooks, zines, and anthologies with three open submission calls per year. As their volume grows, handbound production becomes a bottleneck — Cushing-Malloy's short-run digital printing is a natural supplement.",
         pitch: "As Porkbelly's anthology and themed collection volume grows, handbound production becomes a bottleneck. Introduce Cushing-Malloy's short-run digital printing for editions of 100–500 copies as a way to scale production without losing the indie feel — position as a supplement to, not replacement of, their handbound work."
       },
       {
-        id: 12, score: 6, priorityClass: "low",
+        id: 7, score: 6, priorityClass: "medium",
         category: "Solo Author – Launch Mode", catClass: "cat-solo-launch",
         name: "M.G. Hunt (Indie Author)",
         source: "Substack Author Community",
-        email: "mghunt.author@gmail.com", phone: "Research Required",
+        email: "mghunt.author@gmail.com", location: "—",
         website: "https://mghunt.substack.com",
         notes: "Self-published indie author publicly documenting their complete 2025 self-publishing journey on Substack. Hosted a 'Ready, Set, Book Launch' webinar for emerging authors — strong print-launch signals and a direct-to-reader sales mindset.",
         pitch: "Authors documenting their self-publishing journey publicly are often looking for solutions they can also recommend to their audience. Pitch Cushing-Malloy as the professional printing upgrade from POD — better quality for their own launch, and a recommendation they can share with their growing Substack readership. Reach via the Substack contact or bio link."
-      },
-      {
-        id: 13, score: 6, priorityClass: "low",
-        category: "Solo Author – Print-Ready", catClass: "cat-solo-ready",
-        name: "Sarah Styf (Indie Author)",
-        source: "Substack Author Community",
-        email: "No Verified Email Found", phone: "Research Required",
-        website: "https://sarahstyf.substack.com",
-        notes: "Author documenting 'Lessons in Self-Publishing 2025' on Substack — explicitly sharing the challenges of her print journey in real time. Active POD frustration signals pointing toward a professional printing upgrade.",
-        pitch: "Sarah is actively navigating POD limitations in 2025 — a warm lead for Cushing-Malloy's upgrade pitch. Reach via Substack. Frame the outreach as a resource, not a sales call: share Cushing-Malloy's short-run pricing sheet and invite her to compare per-unit costs at 200, 500, and 1,000 copies against her current POD setup."
-      },
-      {
-        id: 14, score: 6, priorityClass: "low",
-        category: "Lifestyle Creator", catClass: "cat-lifestyle",
-        name: "Rachel Moss",
-        source: "Substack / internetbedroom.substack.com",
-        email: "No Verified Email Found", phone: "Research Required",
-        website: "https://internetbedroom.substack.com",
-        notes: "Cultural writer with 3,300+ Substack subscribers actively working on 'The Girls' Room: Bedroom Culture from the 1990s to Y2K.' Building toward her first print book — a warm prospect for first-time author guidance from Cushing-Malloy.",
-        pitch: "Rachel is actively writing a book and has an audience that trusts her voice. As a first-time author she will have questions Cushing-Malloy is uniquely positioned to answer — paper choices, trim sizes, file preparation, ISBN registration. Reach via Substack. Position the outreach as a resource: 'Here is what first-time authors typically do not know they need to know about printing.'"
-      },
-      {
-        id: 15, score: 6, priorityClass: "low",
-        category: "Food & Recipe Creator", catClass: "cat-food",
-        name: "Erin Romeo – Food Prep Princess",
-        source: "Amazon Author / Instagram @foodprepprincess",
-        email: "No Verified Email Found", phone: "Research Required",
-        website: "https://foodprepprincess.com",
-        notes: "Nutrition coach and meal prep specialist with 45K Instagram followers and multiple self-published cookbooks including 'The Visual Guide to Easy Meal Prep.' Proven Amazon track record — a candidate for printing updated or new titles at higher quality than current digital self-publishing.",
-        pitch: "Erin has already built an audience of 45K and published cookbooks. Reach via her website contact form. Pitch Cushing-Malloy as the upgrade: full-color offset printing that makes her visual, photography-heavy cookbooks stand out on a kitchen shelf, at a per-unit cost that improves margins at 500+ copies versus current print-on-demand."
-      }
-    ]
-  },
-  "2026-03-27": {
-    label: "March 27, 2026",
-    leads: [
-      {
-        id: 1, score: 7, priorityClass: "medium",
-        category: "Business & Authority Author", catClass: "cat-business",
-        name: "Ali Kriegsman",
-        source: "Substack Creator Network",
-        email: "ali@alikriegsman.com", phone: "Research Required",
-        website: "https://www.alikriegsman.com",
-        notes: "Exited founder and consultant building a branded business book project 'The Raise' with a sophisticated DTC launch strategy. Prime candidate for a 500–1,000 copy offset print run designed for speaking engagements and direct sales. Cushing-Malloy's single point of contact and 20-day turnaround aligns directly with her high-standard launch demands.",
-        pitch: "Reach Ali at ali@alikriegsman.com. Position Cushing-Malloy as the premium manufacturing partner for a high-standards DTC book launch — emphasize the single point of contact and 20-day turnaround her launch calendar demands. Lead with a quote comparison at 500 vs. 1,000 copies to show margin improvement over POD."
-      },
-      {
-        id: 2, score: 8, priorityClass: "medium",
-        category: "Indie Author / Creator", catClass: "cat-creator",
-        name: "Allegra Hall",
-        source: "Goodreads Indie Author Discovery",
-        email: "allegra.hall.books@gmail.com", phone: "Research Required",
-        website: "https://allegrahall.carrd.co",
-        notes: "Indie paranormal romance author with 3 published titles in her Lost Moon Universe, most recently 'Howl' (Nov 2024). Active on Threads and Instagram with engaged reader community. Currently printing via POD — a strong candidate to upgrade to a 500–1,500 copy offset run for better quality and margins. Direct email confirmed on her carrd site.",
-        pitch: "Reach Allegra at allegra.hall.books@gmail.com. She has 3 published titles and an engaged reader community — she's already proven her audience. Pitch the offset upgrade: show her the per-unit cost difference between POD and a 500-copy Cushing-Malloy run, and offer a sample to demonstrate print quality."
-      },
-      {
-        id: 3, score: 8, priorityClass: "medium",
-        category: "Small Press / Hybrid Publisher", catClass: "cat-hybrid",
-        name: "Rob Dircks",
-        source: "Indie Author / Amazon KDP Upgrade Candidate",
-        email: "contact@robdircks.com", phone: "Research Required",
-        website: "https://www.robdircks.com",
-        notes: "Self-published over 10,000 copies of his 'Where the Hell is Tesla?' series and now runs Goldfinch Publishing helping other authors produce books. Dual opportunity: his own upcoming titles plus potential referrals from Goldfinch author clients. Cushing-Malloy's white-glove guidance and volume pricing education would resonate strongly with his author-centric approach.",
-        pitch: "Reach Rob at contact@robdircks.com. He has sold 10,000+ copies and now runs a small publishing operation — he understands print economics. Pitch Cushing-Malloy as a manufacturing upgrade partner for Goldfinch Publishing and his own titles: quality offset runs of 500–2,500 copies at better per-unit cost than KDP. A dual opportunity for his own books and potential referrals."
-      },
-      {
-        id: 4, score: 7, priorityClass: "medium",
-        category: "Lifestyle Creator", catClass: "cat-lifestyle",
-        name: "Veronica Llorca-Smith",
-        source: "Substack Bestseller / Lifestyle Creator",
-        email: "No Verified Email Found", phone: "Research Required",
-        website: "https://www.veronicallorcasmith.com",
-        notes: "Substack Bestseller with 13K+ paid subscribers on 'The Lemon Tree Mindset,' a growth mindset and leadership newsletter. Previously co-authored a collaborative book with 30 global contributors and is positioned for a solo self-published project. Cushing-Malloy's single point of contact and hand-holding for first-time independent projects would be a compelling differentiator.",
-        pitch: "Contact via website at veronicallorcasmith.com. With 13K+ paid Substack subscribers, her next solo book has a built-in audience. Position Cushing-Malloy as the trusted partner for a first independent print run — emphasize the guided process and single point of contact that makes self-publishing feel manageable."
-      },
-      {
-        id: 5, score: 7, priorityClass: "medium",
-        category: "Indie Author / Creator", catClass: "cat-creator",
-        name: "Maren Moore",
-        source: "Instagram / Social Media Creator",
-        email: "maren@marenmoore.com", phone: "Research Required",
-        website: "https://www.marenmoore.com",
-        notes: "USA Today bestselling indie romance author with multiple 2024 releases and a strong social following. Currently self-published on POD with an active direct-sales model — scaling trajectory makes her a prime candidate for 1,000–3,000 copy offset runs. Cushing-Malloy's volume pricing education and cost-per-unit breakdown vs. POD would immediately demonstrate ROI.",
-        pitch: "Reach Maren at maren@marenmoore.com. As a USA Today bestselling indie author with an active direct-sales model, she's already at the scale where offset printing pays off. Lead with a cost-per-unit breakdown: show what she saves at 1,000 and 3,000 copies vs. her current POD setup. Cushing-Malloy's 20-day turnaround means she can keep her release cadence."
-      },
-      {
-        id: 6, score: 7, priorityClass: "medium",
-        category: "Business & Authority Author", catClass: "cat-business",
-        name: "Oriana Leckert",
-        source: "Kickstarter Publishing / Creator Network",
-        email: "oriana.leckert@gmail.com", phone: "Research Required",
-        website: "https://www.oriana-leckert.com",
-        notes: "Director of Publishing at Kickstarter with deep expertise in crowdfunded book economics and a personal freelance writing practice. High-value connector who advises book creators on production decisions and is a candidate for her own print projects. Outreach framing Cushing-Malloy as the trusted offset printing partner for Kickstarter book campaigns could open significant referral flow.",
-        pitch: "Reach Oriana at oriana.leckert@gmail.com. As Director of Publishing at Kickstarter, she advises creators on print production every day — positioning Cushing-Malloy as the trusted offset partner for Kickstarter campaigns is the right angle. This is a connector relationship that could generate significant referral flow beyond just her own projects."
-      },
-      {
-        id: 7, score: 6, priorityClass: "low",
-        category: "Food & Recipe Creator", catClass: "cat-food",
-        name: "Crystal Wilkinson",
-        source: "Goodreads / Food Memoirist",
-        email: "No Verified Email Found", phone: "Research Required",
-        website: "https://www.crystalewilkinson.net",
-        notes: "Award-winning food memoirist and cookbook author of 'Praisesong for the Kitchen Ghosts' (2024). University of Kentucky professor with an established author platform and cultural culinary narrative. Likely exploring limited-edition or self-published follow-up print runs to accompany her academic and speaking calendar. Cushing-Malloy's premium offset quality and Ann Arbor heritage would resonate with her craft-focused audience.",
-        pitch: "Contact via website at crystalewilkinson.net. Her culinary narrative work demands high print quality — premium paper, rich color reproduction. Position Cushing-Malloy's heritage and craft-quality offset printing as a match for her literary brand. A limited-edition run of 250–500 copies for academic and speaking distribution would be a natural first project."
-      },
-      {
-        id: 8, score: 6, priorityClass: "low",
-        category: "Indie Author / Creator", catClass: "cat-creator",
-        name: "Claire Kingsley",
-        source: "Amazon KDP / Indie Romance Author",
-        email: "No Verified Email Found", phone: "Research Required",
-        website: "https://www.clairekingsleybooks.com",
-        notes: "Amazon #1 bestselling indie romance author with 46+ published books and a large established reader base. Currently printing via POD with active direct-to-reader sales. At her volume, switching even a portion of her catalog to offset printing would meaningfully improve per-unit cost. Cushing-Malloy's volume pricing education session would be high value for her.",
-        pitch: "Contact via website at clairekingsleybooks.com. With 46+ published books, even moving a portion of her catalog to offset would save meaningfully on per-unit cost. Offer a volume pricing education session — show what her top 3 titles would cost at 1,000 copies vs. current POD. She's already at the scale where offset pays off."
-      },
-      {
-        id: 9, score: 6, priorityClass: "low",
-        category: "Indie Author / Creator", catClass: "cat-creator",
-        name: "Cate C. Wells",
-        source: "Goodreads / Indie Fantasy Author",
-        email: "No Verified Email Found", phone: "Research Required",
-        website: "https://www.catecwells.com",
-        notes: "Indie paranormal romance author with 22K+ social media followers and an active newsletter. Published multiple titles in 2024 with print editions on Amazon. Solid candidate for a 500–1,000 copy offset print run upgrade from POD. Cushing-Malloy's single point of contact and 20-day turnaround would reassure a creator managing production alongside content creation.",
-        pitch: "Contact via website at catecwells.com. With 22K+ followers and an active newsletter, she has an engaged audience ready to buy physical books directly from her. Pitch Cushing-Malloy's single point of contact and 20-day turnaround as the stress-free production solution for a creator juggling writing and business operations."
-      },
-      {
-        id: 10, score: 7, priorityClass: "medium",
-        category: "Small Press", catClass: "cat-small-press",
-        name: "Cornerstone Press (UW-Stevens Point)",
-        source: "Poets & Writers Small Press Directory",
-        email: "cornerstonepress@uwsp.edu", phone: "Research Required",
-        website: "https://www.uwsp.edu/cornerstone-press",
-        notes: "University-affiliated literary small press at UW-Stevens Point, Wisconsin, publishing regional fiction, poetry, and nonfiction titles. Active acquisition pipeline and Great Lakes geography makes this a natural Cushing-Malloy fit. Verified institutional email found. Pitch the consistent 20-day production timeline and single manufacturing contact as ideal for their academic publishing calendar.",
-        pitch: "Reach Cornerstone Press at cornerstonepress@uwsp.edu. This is a natural Midwest fit — university press, regional subject matter, Great Lakes geography. Pitch Cushing-Malloy as the preferred manufacturing partner for their annual catalog: reliable 20-day production timeline, single contact, competitive pricing at 250–2,000 copies."
-      },
-      {
-        id: 11, score: 7, priorityClass: "medium",
-        category: "Small Press", catClass: "cat-small-press",
-        name: "Restless Books",
-        source: "Bookshop.org Indie Storefront",
-        email: "info@restlessbooks.org", phone: "Research Required",
-        website: "https://www.restlessbooks.org",
-        notes: "Independent publisher specializing in international literature in translation, based in Brooklyn with an active Bookshop.org storefront and 10–15 titles per year. Currently evaluating manufacturing partners for their 2025–2026 catalog. Cushing-Malloy's reliability, single point of contact, and offset quality credentials are a strong fit for their literary nonfiction and fiction list.",
-        pitch: "Reach Restless Books at info@restlessbooks.org. They publish 10–15 literary titles per year and are evaluating manufacturing partners for their 2026 catalog — this is a warm timing window. Position Cushing-Malloy as the quality offset partner that matches their literary standards, with the reliability and single point of contact a small press team needs."
-      },
-      {
-        id: 12, score: 6, priorityClass: "low",
-        category: "Micro Press", catClass: "cat-micro-press",
-        name: "Wandering in the Words Press",
-        source: "IBPA Member Directory",
-        email: "submissions@wanderingwords.press", phone: "Research Required",
-        website: "https://www.wanderingwords.press",
-        notes: "Micro press specializing in speculative fiction and diverse voices, IBPA member with 3–5 titles per year. Growing catalog and actively acquiring for 2026. Cushing-Malloy's competitive 250-copy starting point and education on print run economics would speak directly to a micro press managing tight production budgets while maintaining quality.",
-        pitch: "Reach via submissions@wanderingwords.press. As an IBPA member micro press actively acquiring for 2026, they're in planning mode for their next print runs. Lead with Cushing-Malloy's 250-copy starting point and a print run economics comparison — show how moving from POD to short-run offset impacts their per-unit cost at small volumes."
-      },
-      {
-        id: 13, score: 6, priorityClass: "low",
-        category: "Business & Authority Author", catClass: "cat-business",
-        name: "Talia Fox",
-        source: "LinkedIn / Business Author Search",
-        email: "No Verified Email Found", phone: "Research Required",
-        website: "https://www.taliafox.com",
-        notes: "CEO and leadership strategist with a recently published business authority book 'The Power of Choice' and an active speaking calendar with Fortune 500 clients. Physical books are a core part of her business development toolkit — she gifts them at keynotes and workshops. Cushing-Malloy's 20-day turnaround and volume pricing breakdown for 500 vs. 1,000 copies would be highly persuasive.",
-        pitch: "Contact via website at taliafox.com. For a keynote speaker, books are a business development tool — she needs reliable replenishment with fast turnaround. Position Cushing-Malloy's 20-day production window as the solution for staying stocked ahead of speaking engagements. Lead with volume pricing at 500 vs. 1,000 copies to show total cost of ownership vs. ordering in small batches."
       }
     ]
   }
 };
 
 // ─── STATE ───────────────────────────────────────────────────────────────────
-let currentRun = "2026-03-27";
+let currentRun = "2026-03-30";
 let sortCol = "score";
 let sortAsc = false;
 let filterPriority = "all";
@@ -977,9 +827,9 @@ function renderTable() {
     const emailCell = l.email === "No Verified Email Found"
       ? `<span class="research-tag" style="color:#b84040;border-color:#f0b0b0;background:#fff0f0;">No Verified Email Found</span>`
       : `<a href="mailto:${l.email}">${l.email}</a>`;
-    const phoneCell = l.phone === "Research Required"
+    const locationCell = (!l.location || l.location === "—")
       ? `<span class="research-tag">—</span>`
-      : l.phone;
+      : l.location;
     const websiteCell = `<a href="${l.website}" target="_blank" rel="noopener">${l.website.replace(/^https?:\/\//, '').replace(/\/$/, '')}</a>`;
     return `
       <tr>
@@ -989,7 +839,7 @@ function renderTable() {
         <td><span class="priority-badge priority-${l.priorityClass}">${l.score}</span></td>
         <td class="source-cell">${l.source}</td>
         <td class="email-cell">${emailCell}</td>
-        <td style="white-space:nowrap;color:var(--text-secondary);font-size:0.82rem;">${phoneCell}</td>
+        <td style="white-space:nowrap;color:var(--text-secondary);font-size:0.82rem;">${locationCell}</td>
         <td class="notes-cell">
           <span class="notes-truncated" onclick="openModal(${l.id})">${notesShort}</span>
           ${l.notes.length > 100 ? `<button class="expand-btn" onclick="openModal(${l.id})">more</button>` : ''}
@@ -1000,17 +850,20 @@ function renderTable() {
 
 function updateOverview() {
   const leads = getLeads();
+  const allTime = Object.values(RUNS).reduce((acc, run) => acc + run.leads.length, 0);
   document.getElementById("statToday").textContent = leads.length;
   document.getElementById("statHigh").textContent = leads.filter(l => l.priorityClass === "high").length;
   document.getElementById("statMed").textContent = leads.filter(l => l.priorityClass === "medium").length;
   document.getElementById("statLow").textContent = leads.filter(l => l.priorityClass === "low").length;
-  document.getElementById("statTotal").textContent = leads.length;
+  document.getElementById("statTotal").textContent = allTime;
   document.getElementById("runDateBadge").textContent = RUNS[currentRun].label;
+  document.getElementById("runCount").textContent = leads.length;
+  document.getElementById("footerRunDate").textContent = RUNS[currentRun].label;
 }
 
 // ─── SORT ────────────────────────────────────────────────────────────────────
-// Column order: name(0), website(1), category(2), score(3), source(4), email(5), phone(6)
-const COL_INDEX = { name:0, website:1, category:2, score:3, source:4, email:5, phone:6 };
+// Column order: name(0), website(1), category(2), score(3), source(4), email(5), location(6)
+const COL_INDEX = { name:0, website:1, category:2, score:3, source:4, email:5, location:6 };
 function sortTable(col) {
   if (sortCol === col) { sortAsc = !sortAsc; }
   else { sortCol = col; sortAsc = col !== "score"; }
@@ -1058,7 +911,7 @@ function openModal(id) {
   const emailHtml = l.email === "No Verified Email Found"
     ? `<span class="research-tag" style="color:#b84040;border-color:#f0b0b0;background:#fff0f0;">No Verified Email Found</span>`
     : `<a href="mailto:${l.email}">${l.email}</a>`;
-  const phoneHtml = l.phone === "Research Required" ? "—" : l.phone;
+  const locationHtml = l.location || "—";
 
   document.getElementById("modalMeta").innerHTML = `
     <div class="modal-meta-item"><div class="modal-meta-label">Priority Score</div>
@@ -1067,8 +920,8 @@ function openModal(id) {
       <div class="modal-meta-value">${l.source}</div></div>
     <div class="modal-meta-item"><div class="modal-meta-label">Email</div>
       <div class="modal-meta-value">${emailHtml}</div></div>
-    <div class="modal-meta-item"><div class="modal-meta-label">Phone</div>
-      <div class="modal-meta-value">${phoneHtml}</div></div>
+    <div class="modal-meta-item"><div class="modal-meta-label">Location</div>
+      <div class="modal-meta-value">${locationHtml}</div></div>
     <div class="modal-meta-item" style="grid-column:1/-1"><div class="modal-meta-label">Website</div>
       <div class="modal-meta-value"><a href="${l.website}" target="_blank">${l.website}</a></div></div>
     <div class="modal-meta-item" style="grid-column:1/-1"><div class="modal-meta-label">Full Notes</div>
@@ -1087,10 +940,10 @@ document.addEventListener("keydown", e => { if (e.key === "Escape") closeModalBt
 // ─── EXPORT CSV ──────────────────────────────────────────────────────────────
 function exportCSV() {
   const leads = getFilteredLeads();
-  const headers = ["Score","Priority","Category","Company/Name","Source","Email","Phone","Website","Notes"];
+  const headers = ["Score","Priority","Category","Company/Name","Source","Email","Location","Website","Notes"];
   const rows = leads.map(l => [
     l.score, l.priorityClass.toUpperCase(), `"${l.category}"`,
-    `"${l.name}"`, `"${l.source}"`, `"${l.email}"`, `"${l.phone}"`,
+    `"${l.name}"`, `"${l.source}"`, `"${l.email}"`, `"${l.location || '—'}"`,
     l.website, `"${l.notes.replace(/"/g,'""')}"`
   ].join(","));
   const csv = [headers.join(","), ...rows].join("\n");
@@ -1128,18 +981,18 @@ function exportPDF() {
   <div class="subtitle">Powered by IdeaBoss AI &nbsp;·&nbsp; Run Date: ${runLabel} &nbsp;·&nbsp; Confidential — ideaBoss for Cushing-Malloy Books</div>
   <div class="overview">
     <div class="stat-box"><div class="sv">${leads.length}</div><div class="sl">Leads Shown</div></div>
-    <div class="stat-box"><div class="sv" style="color:#1a7a48">${leads.filter(l=>l.priorityClass==='high').length}</div><div class="sl">High (9–10)</div></div>
-    <div class="stat-box"><div class="sv" style="color:#b06000">${leads.filter(l=>l.priorityClass==='medium').length}</div><div class="sl">Medium (7–8)</div></div>
-    <div class="stat-box"><div class="sv" style="color:#c00">${leads.filter(l=>l.priorityClass==='low').length}</div><div class="sl">Low (5–6)</div></div>
+    <div class="stat-box"><div class="sv" style="color:#1a7a48">${leads.filter(l=>l.priorityClass==='high').length}</div><div class="sl">High (8–10)</div></div>
+    <div class="stat-box"><div class="sv" style="color:#b06000">${leads.filter(l=>l.priorityClass==='medium').length}</div><div class="sl">Medium (5–7)</div></div>
+    <div class="stat-box"><div class="sv" style="color:#c00">${leads.filter(l=>l.priorityClass==='low').length}</div><div class="sl">Low (1–4)</div></div>
   </div>
   <table><thead><tr>
     <th>Score</th><th>Category</th><th>Company / Name</th><th>Source</th>
-    <th>Email</th><th>Phone</th><th>Website</th><th>Notes</th>
+    <th>Email</th><th>Location</th><th>Website</th><th>Notes</th>
   </tr></thead><tbody>
   ${leads.map(l=>`<tr>
     <td><span class="badge-${l.priorityClass}">${l.score}</span></td>
     <td>${l.category}</td><td><strong>${l.name}</strong></td><td>${l.source}</td>
-    <td>${l.email}</td><td>${l.phone}</td><td>${l.website}</td>
+    <td>${l.email}</td><td>${l.location || '—'}</td><td>${l.website}</td>
     <td>${l.notes}</td>
   </tr>`).join("")}
   </tbody></table>

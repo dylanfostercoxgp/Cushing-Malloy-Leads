@@ -11,11 +11,13 @@
 
 This process runs every **Monday at 3:00 AM** (or on-demand). It performs three jobs:
 
-1. **Lead Discovery** — Research and score 10–20 new leads across multiple channels
+1. **Lead Discovery** — Research and score **20–25 new leads** across multiple channels
 2. **Outreach Drafts** — Create personalized Gmail draft emails to each verified lead (do NOT auto-send)
 3. **Weekly Report** — Email a summary HTML report to dylan@coxgp.com
 
 **Total estimated runtime:** 15–25 minutes depending on lead count.
+
+> **Lead Volume Rule:** Each run produces between 20 and 25 leads total. The count varies naturally week to week (some runs will have 20, some 22, some 24). Do not force a fixed number — let discovery drive the count within the 20–25 range.
 
 ---
 
@@ -55,7 +57,21 @@ Orange Frazer Press, Bottom Dog Press, Fiddlehead Press, Porkbelly Press, Bex Ki
 
 ## STEP 2 — RESEARCH NEW LEADS
 
-Using the full spec in `cushing-malloy-lead-gen-prompt.md`, research and identify **10–20 new leads**. Prioritize quality over category quotas — surface the best leads found, whether they are individual authors, content creators, or small publishers.
+Using the full spec in `cushing-malloy-lead-gen-prompt.md`, research and identify **20–25 new leads**. Prioritize quality over category quotas — surface the best leads found, whether they are individual authors, content creators, or small publishers.
+
+### Lead Volume & Scoring Composition (per run):
+
+| Tier | Count | Score | Priority | Description |
+|---|---|---|---|---|
+| **Core batch** | ~20 minimum | 6–10 | High / Medium | Fully vetted, verified email, clear print signal |
+| **Supplemental** | up to 5 | 1–4 | Below threshold | Lower confidence, but potentially high-value if the right person is reached |
+| **Total per run** | **20–25** | — | — | Varies naturally; do not force a fixed count |
+
+**On supplemental (below-5) leads:**
+- These are NOT bad leads — they are lower-confidence leads where the print signal is indirect or the contact is harder to reach.
+- Only include if there is a genuine reason to believe the right person could convert (e.g., strong audience, clear book project, just missing a direct email signal).
+- Each supplemental lead must include a sentence in the Notes field explaining why it may still be valuable despite the lower score.
+- If fewer than 5 strong supplemental leads exist, do not force them — quality always beats quota.
 
 ### Lead Categories to source (vary across runs, no forced ratio):
 **Individual Authors & Content Creators:**
@@ -117,7 +133,9 @@ Using the full spec in `cushing-malloy-lead-gen-prompt.md`, research and identif
 | Growth Signal | 5% | Declining/static | Stable | Growing (new book, Kickstarter funded, new imprint) |
 | Contact Quality | 5% | No way to reach | Generic form only | Direct email or phone confirmed |
 
-**RULE: Only surface leads scoring 5 or above. Discard leads below 5.**
+**RULE: Core batch must score 6 or above. Up to 5 supplemental leads scoring below 5 are permitted per run if they represent genuinely promising prospects. Leads scoring below 5 must include a justification note.**
+
+**Priority tiers:** 8–10 = High | 5–7 = Medium | 1–4 = Low (supplemental only, max 5 per run)
 
 ---
 
@@ -138,7 +156,7 @@ Using the full spec in `cushing-malloy-lead-gen-prompt.md`, research and identif
     phone:    "(555) 555-5555",
     category: "cat-health",   // see category class list below
     score:    8,
-    priority: "medium",         // "high" (9-10), "medium" (7-8), "low" (5-6)
+    priority: "medium",         // "high" (8-10), "medium" (5-7), "low" (1-4)
     notes:    "2-3 sentence qualifier and outreach angle."
   },
   // ... more leads
@@ -160,9 +178,9 @@ Using the full spec in `cushing-malloy-lead-gen-prompt.md`, research and identif
 - Children's book publisher: `cat-childrens`
 - Hybrid publisher: `cat-hybrid`
 
-5. Update the date selector options in the HTML `<select id="runSelect">` element to include the new date
-6. Save the file to `Dashboard/cushing-malloy-lead-dashboard.html`
-7. Also copy updated file to `Dashboard/01_Dashboard/cushing-malloy-lead-dashboard.html`
+5. Update the date selector options in the HTML `<select id="dateSelect">` element to include the new date (newest first)
+6. Save the updated file to `01_Dashboard/cushing-malloy-lead-dashboard.html`
+7. Also copy the updated file to the root as **`index.html`** (NOT as `cushing-malloy-lead-dashboard.html`) — the root file in this folder and on GitHub is always named `index.html`
 
 ---
 
@@ -194,7 +212,47 @@ Save a JSON snapshot of this week's leads to the archive:
 
 ---
 
-## STEP 5 — CREATE GMAIL OUTREACH DRAFTS
+## STEP 5 — PUSH UPDATED FILES TO GITHUB
+
+Push all updated files to the GitHub repository so the live dashboard reflects the new run.
+
+```bash
+# Clone repo to temp directory
+git clone https://ghp_YOUR_GITHUB_TOKEN_HERE@github.com/dylanfostercoxgp/Cushing-Malloy-Leads.git /tmp/cm-push-tmp
+
+# Copy updated working dashboard into the repo's 01_Dashboard folder
+cp /mnt/Cushing-Malloy/01_Dashboard/cushing-malloy-lead-dashboard.html \
+   /tmp/cm-push-tmp/01_Dashboard/cushing-malloy-lead-dashboard.html
+
+# Copy same file to root as index.html (replaces whatever was there before)
+cp /mnt/Cushing-Malloy/01_Dashboard/cushing-malloy-lead-dashboard.html \
+   /tmp/cm-push-tmp/index.html
+
+# Copy the new archive JSON
+cp /mnt/Cushing-Malloy/02_Lead_Data/archive/leads-$(date +%Y-%m-%d).json \
+   /tmp/cm-push-tmp/02_Lead_Data/archive/
+
+# Remove any stale root file that used the old name (if present)
+rm -f /tmp/cm-push-tmp/cushing-malloy-lead-dashboard.html
+
+# Commit and push
+cd /tmp/cm-push-tmp
+git config user.email "dylan@coxgp.com"
+git config user.name "Dylan Cox"
+git remote set-url origin https://ghp_YOUR_GITHUB_TOKEN_HERE@github.com/dylanfostercoxgp/Cushing-Malloy-Leads.git
+git add -A
+git commit -m "Weekly lead run — $(date +%Y-%m-%d): new leads added"
+git push origin main
+```
+
+**File naming rule on GitHub:**
+- `01_Dashboard/cushing-malloy-lead-dashboard.html` → pushed as-is under `01_Dashboard/`
+- Root dashboard → always pushed as **`index.html`** (GitHub Pages serves this as the live URL)
+- The old root file `cushing-malloy-lead-dashboard.html` does NOT exist at the repo root — remove it if found
+
+---
+
+## STEP 6 — CREATE GMAIL OUTREACH DRAFTS
 
 For every lead that has a **verified email address** (not "No Verified Email Found" or "Research Required"), create a personalized Gmail draft using the Gmail MCP tool.
 
@@ -254,7 +312,7 @@ cushing-malloy.com
 
 ---
 
-## STEP 6 — SEND WEEKLY REPORT EMAIL TO CONNIE
+## STEP 7 — SEND WEEKLY REPORT EMAIL TO CONNIE
 
 Create a Gmail draft to **[CONNIE_EMAIL]** (CC: dylan@coxgp.com) with the weekly Lead Intelligence Prospecting report.
 
@@ -341,48 +399,59 @@ Create a Gmail draft to **[CONNIE_EMAIL]** (CC: dylan@coxgp.com) with the weekly
 
 ---
 
-## STEP 7 — VERIFY COMPLETION
+## STEP 8 — VERIFY COMPLETION
 
 Run a final checklist before marking the process complete:
 
-- [ ] 10–20 new leads researched and scored (all ≥ 5)
+- [ ] 20–25 new leads researched and scored
+- [ ] At least 20 leads score 6 or above (core batch)
+- [ ] No more than 5 supplemental leads score below 5 (each with justification note)
 - [ ] Best leads surfaced regardless of category type
 - [ ] At least 4–5 different discovery channels used
 - [ ] Leads span multiple US states/regions
 - [ ] No duplicates from previous runs
-- [ ] Dashboard HTML updated with new run date and leads
-- [ ] Lead archive JSON saved to `02_Lead_Data/archive/`
+- [ ] Dashboard HTML updated with new run date and leads (prepended, newest first)
+- [ ] Lead archive JSON saved to `02_Lead_Data/archive/leads-YYYY-MM-DD.json`
+- [ ] `01_Dashboard/cushing-malloy-lead-dashboard.html` updated
+- [ ] Root `index.html` updated (copied from `01_Dashboard/` — named `index.html`, not `cushing-malloy-lead-dashboard.html`)
+- [ ] All changes committed and pushed to GitHub (`01_Dashboard/` copy + `index.html` at root)
 - [ ] Gmail outreach drafts created for all leads with verified emails
 - [ ] Weekly Lead Intelligence Prospecting report drafted to Connie (CC: dylan@coxgp.com)
-- [ ] Updated dashboard copied to `01_Dashboard/` folder
 
 ---
 
 ## FOLDER STRUCTURE REFERENCE
 
 ```
-Dashboard/
-├── cushing-malloy-lead-dashboard.html   ← MAIN DASHBOARD (edit this)
-├── cushing-malloy-lead-gen-prompt.md    ← Full agent spec v2.0
+Cushing-Malloy/
+├── index.html                           ← ROOT DASHBOARD (GitHub serves this; always matches 01_Dashboard copy)
 ├── WEEKLY-PROCESS.md                    ← This file
-├── leads.json                           ← Reference/backup data
+├── README.md
 ├── Cushing-Malloy-Agent-Overview.pdf    ← 1-page overview PDF
+├── ideaBoss-Lead-Intelligence-Prospecting-Guide.pdf
+├── build_agent_overview.py
 │
 ├── 01_Dashboard/
-│   └── cushing-malloy-lead-dashboard.html   ← Copy of main dashboard
+│   └── cushing-malloy-lead-dashboard.html   ← PRIMARY WORKING COPY (edit this, then copy to root as index.html)
 │
 ├── 02_Lead_Data/
 │   └── archive/
 │       └── leads-YYYY-MM-DD.json            ← Weekly lead snapshots
 │
 ├── 03_Documentation/
-│   ├── cushing-malloy-lead-gen-prompt.md
+│   ├── cushing-malloy-lead-gen-prompt.md    ← Full agent spec
+│   ├── WEEKLY-PROCESS.md                    ← Copy of this file
 │   ├── Cushing-Malloy-Agent-Overview.pdf
-│   └── WEEKLY-PROCESS.md
+│   └── CushingMalloy_StyleGuide.docx
 │
 └── 04_Reports/
     └── (weekly HTML report archives, if saved)
 ```
+
+**File naming rule:**
+- `01_Dashboard/cushing-malloy-lead-dashboard.html` — the working copy, always edited first
+- `index.html` (root) — always a copy of the above; named `index.html` so GitHub Pages serves it correctly
+- Never create or maintain a root file named `cushing-malloy-lead-dashboard.html` — that name is only used inside `01_Dashboard/`
 
 ---
 
