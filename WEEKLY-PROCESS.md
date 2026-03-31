@@ -55,7 +55,7 @@ Before researching leads, read these files to understand the full brief:
    → Extract all names/companies already in the system. Do NOT regenerate any of them.
 
 **Previously generated leads (as of March 2026) — DO NOT DUPLICATE:**
-Orange Frazer Press, Bottom Dog Press, Fiddlehead Press, Porkbelly Press, Bex Kitchen, Idris Doosi, Paul Jarvis, Nat Eliason, Hill Schroder, Dickie Bush, Sohee Carpenter, M.G. Hunt, Sarah Styf, Rachel Moss, Erin Romeo
+Orange Frazer Press, Bottom Dog Press, Fiddlehead Press, Porkbelly Press, Bex Kitchen, Idris Doosi, Paul Jarvis, Nat Eliason, Hill Schroder, Dickie Bush, Sohee Carpenter, M.G. Hunt, Sarah Styf, Rachel Moss, Erin Romeo, New Michigan Press, Glass Poetry Press, Ice Cube Press, 42 Miles Press, Midwest Writing Center (MWC Press), Yellow Arrow Publishing, Ali Kriegsman, Allegra Hall, Rob Dircks, Maren Moore, Oriana Leckert, Cornerstone Press (UW-Stevens Point), Restless Books, Wandering in the Words Press
 
 ---
 
@@ -264,6 +264,8 @@ For every lead with a **verified email address**, save a personalized draft to t
 
 ### Python helper (run via Bash tool for each lead):
 
+> **Important:** All drafts are saved to SmarterMail (`printyourbook@cushing-malloy.com`) via IMAP. **Never use Gmail.** Drafts must be HTML format to support the Cushing-Malloy.com hyperlink in the closing. After drafting all leads, run Apollo enrichment for phone numbers and add a note "No phone number found via Apollo enrichment." to the Full Notes of any lead where Apollo returns no phone data.
+
 ```python
 import imaplib, email, time
 from email.mime.multipart import MIMEMultipart
@@ -276,21 +278,23 @@ EMAIL_PASS = "SNaFx$os5^Z4Rig"
 
 CC_EMAIL = "tlitty@cushing-malloy.com"
 
-def save_draft(to_address, subject, body):
+def save_draft(to_address, subject, plain_body, html_body=None):
     msg = MIMEMultipart("alternative")
     msg["From"]    = EMAIL_USER
     msg["To"]      = to_address
     msg["Cc"]      = CC_EMAIL
     msg["Subject"] = subject
     msg["Date"]    = email.utils.formatdate()
-    msg.attach(MIMEText(body, "plain", "utf-8"))
+    msg.attach(MIMEText(plain_body, "plain", "utf-8"))
+    if html_body:
+        msg.attach(MIMEText(html_body, "html", "utf-8"))
     mail = imaplib.IMAP4_SSL(IMAP_HOST, IMAP_PORT)
     mail.login(EMAIL_USER, EMAIL_PASS)
     mail.append("Drafts", r"\\Draft", imaplib.Time2Internaldate(time.time()), msg.as_bytes())
     mail.logout()
 
-# Call once per lead:
-# save_draft("lead@example.com", "Subject line", "Plain text body")
+# Call once per lead — provide both plain text and HTML versions:
+# save_draft("lead@example.com", "Subject line", plain_body, html_body)
 ```
 
 ### Email template and personalization rules:
@@ -329,7 +333,7 @@ Here's what makes us different for [authors like you / presses like yours]:
 If you're not sure where to start, that's exactly why we're here. We'd love to
 give you a no-pressure quote and talk through your options.
 
-Would a quick call this week work?
+Visit our website at Cushing-Malloy.com. We look forward to hearing from you soon.
 
 Warm Regards,
 
@@ -339,6 +343,8 @@ E: tlitty@cushing-malloy.com  |  www.cushing-malloy.com
 Cushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104
 Where Books Are Bound For Greatness®
 ```
+
+> **Closing rule:** The second-to-last paragraph always ends with "Visit our website at [Cushing-Malloy.com](https://cushing-malloy.com). We look forward to hearing from you soon." — hyperlinked in HTML drafts. Never use "Would a quick call this week work?" as a closing line.
 
 **Personalization checklist before creating each draft:**
 - [ ] Subject line references their specific project
