@@ -1,0 +1,128 @@
+{
+  "run_date": "2026-03-31",
+  "lead_count": 12,
+  "note": "One-time manual run — 12 leads (exception to standard 20-25 volume). All leads sourced from Midwest and regional publishers directories, Poets & Writers, and direct web verification.",
+  "channels_used": ["Poets & Writers Small Presses DB", "Michigan Literary Publishers Directory", "Michigan Publishers Directory", "Regional SF/Fantasy Publishers Directory", "Children's Publishers Directory", "Chicago Independent Publishers Directory", "Wisconsin Publishers Directory", "Minnesota Hybrid Publishers Directory", "Midwest Independent Publishers Association", "Michigan Book Production Services Directory"],
+  "leads": [
+    {
+      "id": 1, "score": 9, "priorityClass": "high",
+      "category": "Poetry & Literary Press",
+      "name": "Finishing Line Press",
+      "source": "Poets & Writers Small Presses DB",
+      "website": "https://www.finishinglinepress.com",
+      "email": "leah@finishinglinepress.com",
+      "phone": "(502) 603-0670",
+      "notes": "Award-winning Georgetown, KY poetry press publishing since 1998 — annual New Women's Voices and New Men's Voices series create a predictable, recurring print cycle. Leah Maines is the named contact and decision-maker. Consistent short-run chapbook and collection production makes this a natural Cushing-Malloy account."
+    },
+    {
+      "id": 2, "score": 9, "priorityClass": "high",
+      "category": "Poetry & Literary Press",
+      "name": "Sarabande Books",
+      "source": "Poets & Writers Small Presses DB",
+      "website": "https://www.sarabandebooks.org",
+      "email": "info@sarabandebooks.org",
+      "phone": "(502) 458-4028",
+      "notes": "Louisville, KY nonprofit literary press founded 1994 publishing poetry, short fiction, and essay — multiple award-winning titles annually with professional printing standards. Consistent catalog across 30+ years signals a stable, repeat-account printing opportunity. Verified contact via website."
+    },
+    {
+      "id": 3, "score": 8, "priorityClass": "high",
+      "category": "Small Press (6-20 titles/yr)",
+      "name": "Dzanc Books",
+      "source": "Michigan Literary Publishers Directory",
+      "website": "https://www.dzancbooks.org",
+      "email": "michelle@dzancbooks.org",
+      "phone": "(734) 756-5701",
+      "notes": "Ann Arbor-based nonprofit independent literary fiction publisher — literally Cushing-Malloy's neighbor. Active publishing schedule with professional production standards and a named contact (Michelle Dotter) who manages media and partnerships. Geographic alignment is the entire pitch."
+    },
+    {
+      "id": 4, "score": 8, "priorityClass": "high",
+      "category": "Nonfiction Specialty Press",
+      "name": "Mission Point Press",
+      "source": "Michigan Publishers Directory",
+      "website": "https://www.missionpointpress.com",
+      "email": "contact@missionpointpress.com",
+      "phone": "",
+      "notes": "Traverse City, MI hybrid publisher specializing in Michigan regional stories, memoirs, and nonfiction — active publishing program with multiple titles annually and a growing client author base. Michigan-to-Michigan manufacturing partnership is a natural story. No phone number found via Apollo enrichment."
+    },
+    {
+      "id": 5, "score": 8, "priorityClass": "high",
+      "category": "Micro Press (<=5 titles/yr)",
+      "name": "Apex Book Company",
+      "source": "Regional SF/Fantasy Publishers Directory",
+      "website": "https://www.apexbookcompany.com",
+      "email": "jason@apexbookcompany.com",
+      "phone": "(502) 257-6179",
+      "notes": "Lexington, KY micro press founded 1997 specializing in science fiction, fantasy, and horror — owner Jason Sizemore is the sole decision-maker, simplifying the sales process. Genre readers demand premium hardcover and special edition quality, creating a clear upsell opportunity from POD to offset."
+    },
+    {
+      "id": 6, "score": 8, "priorityClass": "high",
+      "category": "Children's Book Publisher",
+      "name": "Enchanted Lion Books",
+      "source": "Children's Publishers Directory",
+      "website": "https://enchantedlion.com",
+      "email": "enchantedlion.community@gmail.com",
+      "phone": "",
+      "notes": "Brooklyn-based independent children's publisher producing 20-24 illustrated titles annually — high print volume, full-color production requirements, and a design-forward catalog that demands offset quality. Active and growing since 2003 with international author roster. No phone number found via Apollo enrichment."
+    },
+    {
+      "id": 7, "score": 7, "priorityClass": "medium",
+      "category": "Small Press (6-20 titles/yr)",
+      "name": "Haymarket Books",
+      "source": "Chicago Independent Publishers Directory",
+      "website": "https://www.haymarketbooks.org",
+      "email": "info@haymarketbooks.org",
+      "phone": "",
+      "notes": "Chicago-based nonprofit publisher founded 2001, specializing in political and social justice nonfiction — growing catalog with consistent print demand and a loyal academic and activist readership. Regional proximity to Ann Arbor (3 hours) is a clear advantage. No phone number found via Apollo enrichment."
+    },
+    {
+      "id": 8, "score": 7, "priorityClass": "medium",
+      "category": "Micro Press (<=5 titles/yr)",
+      "name": "Little Creek Press",
+      "source": "Wisconsin Publishers Directory",
+      "website": "https://littlecreekpress.com",
+      "email": "info@littlecreekpress.com",
+      "phone": "",
+      "notes": "Mineral Point, WI award-winning independent publisher founded 2011 — Kristin Mitchell has brought 200+ titles to life across children's books, memoirs, cookbooks, and poetry, building a loyal regional author community. Wisconsin location is within Cushing-Malloy's Midwest reach. No phone number found via Apollo enrichment."
+    },
+    {
+      "id": 9, "score": 7, "priorityClass": "medium",
+      "category": "Hybrid Publisher / Author Services",
+      "name": "Beaver's Pond Press",
+      "source": "Minnesota Hybrid Publishers Directory",
+      "website": "https://www.beaverspondpress.com",
+      "email": "submissions@beaverspondpress.com",
+      "phone": "(952) 829-8818",
+      "notes": "Edina, MN hybrid publisher operating since 2000 — collaborative publishing model serves authors who want professional results without losing creative control. Multi-client model means consistent, recurring print orders across an active client base. Minnesota location is squarely in Cushing-Malloy's Midwest reach."
+    },
+    {
+      "id": 10, "score": 7, "priorityClass": "medium",
+      "category": "Small Press (6-20 titles/yr)",
+      "name": "Milkweed Editions",
+      "source": "Midwest Independent Publishers Association",
+      "website": "https://milkweed.org",
+      "email": "morgan_larocca@milkweed.org",
+      "phone": "(612) 332-3192",
+      "notes": "Minneapolis nonprofit literary publisher founded 1980 — 10-15 titles annually for adults and young adults, 40+ years of operations with national recognition. Morgan LaRocca (Publicity) is a verified direct contact. Midwest-to-Midwest manufacturing story is strong."
+    },
+    {
+      "id": 11, "score": 7, "priorityClass": "medium",
+      "category": "Small Press (6-20 titles/yr)",
+      "name": "Chicago Review Press",
+      "source": "Midwest Independent Publishers Association",
+      "website": "https://www.chicagoreviewpress.com",
+      "email": "frontdesk@chicagoreviewpress.com",
+      "phone": "(312) 337-0747",
+      "notes": "Founded 1973, Chicago-based independent publisher across 8 active imprints — consistently producing titles in nonfiction, history, and trade categories with a long-standing track record. Regional proximity (3 hours from Ann Arbor) and multi-imprint volume make them a compelling manufacturing conversation."
+    },
+    {
+      "id": 12, "score": 7, "priorityClass": "medium",
+      "category": "Hybrid Publisher / Author Services",
+      "name": "BookComp, Inc.",
+      "source": "Michigan Book Production Services Directory",
+      "website": "https://bookcomp.com",
+      "email": "jd@bookcomp.com",
+      "phone": "(616) 774-9700",
+      "notes": "Belmont, MI book composition and production services firm since 1989 — Jon Dertien (President) handles editorial, composition, and design for scholarly and trade titles. Natural referral partner: BookComp prepares the files, Cushing-Malloy manufactures the books. Direct Michigan-to-Michigan relationship."
+    }
+  ]
+}
