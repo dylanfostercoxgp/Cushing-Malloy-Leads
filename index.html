@@ -473,9 +473,11 @@
       box-shadow: 0 8px 32px rgba(0,0,0,0.18);
       border-radius: 14px;
       padding: 28px;
-      max-width: 560px;
-      width: 90%;
+      max-width: 680px;
+      width: 92%;
       position: relative;
+      max-height: 90vh;
+      overflow-y: auto;
     }
     .modal h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 6px; }
     .modal .modal-cat { margin-bottom: 16px; }
@@ -491,8 +493,16 @@
     .modal-meta {
       margin-top: 16px;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 12px;
+    }
+    .modal-col-left, .modal-col-right {
+      display: flex;
+      flex-direction: column;
       gap: 10px;
+    }
+    .modal-col-right .modal-meta-item:last-child {
+      flex: 1;
     }
     .modal-meta-item { background: #f5f7fa; border-radius: 8px; padding: 10px 12px; border: 1px solid var(--border); }
     .modal-meta-label { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.7px; color: var(--text-muted); margin-bottom: 4px; }
@@ -514,6 +524,32 @@
       margin-bottom: 6px;
     }
     .modal-pitch p { font-size: 0.855rem; color: var(--text-secondary); line-height: 1.6; }
+    .modal-drafted-email {
+      margin-top: 16px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .modal-drafted-email-label {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--text-muted);
+      font-weight: 700;
+      padding: 10px 14px 8px;
+      background: #f5f7fa;
+      border-bottom: 1px solid var(--border);
+    }
+    .modal-drafted-email-body {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      white-space: pre-wrap;
+      font-family: inherit;
+      margin: 0;
+      padding: 14px;
+      background: #ffffff;
+    }
 
     /* ─── TOAST ─── */
     .toast {
@@ -750,6 +786,10 @@
       <div class="modal-pitch-label">⚡ Pitch Angle</div>
       <p id="modalPitch"></p>
     </div>
+    <div class="modal-drafted-email" id="modalDraftedEmail" style="display:none;">
+      <div class="modal-drafted-email-label">✉ Drafted Email</div>
+      <pre class="modal-drafted-email-body" id="modalDraftedEmailBody"></pre>
+    </div>
   </div>
 </div>
 
@@ -770,7 +810,8 @@ const RUNS = {
         email: "nmp@thediagram.com", phone: "",
         website: "https://thediagram.com/nmp/",
         notes: "Ann Arbor chapbook press — same city as Cushing-Malloy — publishing broadsides, anthologies, and chapbooks since 1999 with DIAGRAM magazine. 2026 Chapbook Contest closes April 30, meaning a winner goes to print this summer. Verified email, same-city advantage.",
-        pitch: "You are literally neighbors — and that is the entire pitch. New Michigan Press selects a chapbook winner every spring, and that winner needs to go to print within weeks. Position Cushing-Malloy as the local partner: in-person proof reviews, no shipping delays, 20 working days from files to finished books. Email nmp@thediagram.com now to introduce Cushing-Malloy ahead of the April 30 contest close."
+        pitch: "You are literally neighbors — and that is the entire pitch. New Michigan Press selects a chapbook winner every spring, and that winner needs to go to print within weeks. Position Cushing-Malloy as the local partner: in-person proof reviews, no shipping delays, 20 working days from files to finished books. Email nmp@thediagram.com now to introduce Cushing-Malloy ahead of the April 30 contest close.",
+        drafted_email: `Hi,\n\nWe noticed that New Michigan Press's 2026 Chapbook Contest closes April 30 — meaning a winner goes to print this summer. As a fellow Ann Arbor company, we wanted to reach out before your production calendar fills up.\n\nI'm reaching out from Cushing-Malloy Books in Ann Arbor, Michigan — we've been manufacturing books since 1948, and we specialize in exactly the kind of run you're looking at: short-run chapbooks and broadsides for literary presses that take the physical object seriously.\n\nHere's what makes us different for presses like yours:\n\n- One person manages your project start to finish — same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.\n- 20 working days from approved files to finished books, delivered to your door.\n- We're literally your neighbors in Ann Arbor — in-person proof reviews, no shipping delays, and a partner who understands what a chapbook is supposed to look and feel like.\n\nWith your contest closing April 30, now is the perfect time to get a quote so we're ready to move the moment your winner is selected.\n\nWould a quick call this week work?\n\nWarm Regards,\n\nTedd Litty\nC: 616-843-3825  |  T: 734.663.8554 ×103  |  F: 734.663.5731\nE: tlitty@cushing-malloy.com  |  www.cushing-malloy.com\nCushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104\nWhere Books Are Bound For Greatness®`
       },
       {
         id: 2, score: 8, priorityClass: "high",
@@ -780,7 +821,8 @@ const RUNS = {
         email: "editor@glass-poetry.com", phone: "",
         website: "https://www.glass-poetry.com",
         notes: "Toledo, Ohio micro-press publishing 4–6 chapbooks per year in runs of ~100 copies, hand-bound with full-color card stock covers and ISBN. Annual open reading period closes October 31. Verified editor email found.",
-        pitch: "Glass Poetry's production cycle is predictable: October submission close, winter selection, spring print run. Reach out to editor@glass-poetry.com and pitch Cushing-Malloy as the printer that handles the covers and text blocks professionally so the editor can focus on curation. Emphasize: digital short runs at 100 copies, full-color card stock covers, 20-day turnaround."
+        pitch: "Glass Poetry's production cycle is predictable: October submission close, winter selection, spring print run. Reach out to editor@glass-poetry.com and pitch Cushing-Malloy as the printer that handles the covers and text blocks professionally so the editor can focus on curation. Emphasize: digital short runs at 100 copies, full-color card stock covers, 20-day turnaround.",
+        drafted_email: `Hi,\n\nI've been following Glass Poetry Press's annual chapbook releases — the consistent hand-bound production and full-color card stock covers show real care for the physical object. That kind of attention deserves a printing partner who matches it.\n\nI'm reaching out from Cushing-Malloy Books in Ann Arbor, Michigan — we've been manufacturing books since 1948, and we specialize in exactly the kind of run you're looking at: 100-copy runs with digital printing for poetry chapbooks with full-color covers.\n\nHere's what makes us different for presses like yours:\n\n- One person manages your project start to finish — same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.\n- 20 working days from approved files to finished books, delivered to your door.\n- We handle both the cover and text block professionally so your editor can focus entirely on the work — not the production details.\n\nWith your October reading period on the horizon, now is a great time to get a quote and lock in your production partner for this year's cycle.\n\nWould a quick call this week work?\n\nWarm Regards,\n\nTedd Litty\nC: 616-843-3825  |  T: 734.663.8554 ×103  |  F: 734.663.5731\nE: tlitty@cushing-malloy.com  |  www.cushing-malloy.com\nCushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104\nWhere Books Are Bound For Greatness®`
       },
       {
         id: 3, score: 8, priorityClass: "high",
@@ -790,7 +832,8 @@ const RUNS = {
         email: "steve@icecubepress.com", phone: "",
         website: "https://icecubepress.com",
         notes: "Iowa-based independent Midwest press founded 1991; 2023 Iowa Governor's Art Award, 'Best Indie Press in Iowa.' Publishes nonfiction, fiction, poetry, and graphic novels across two imprints. Direct contact verified via steve@icecubepress.com.",
-        pitch: "Steve is a fellow Midwest independent who has been publishing since 1991 — he understands craft and regional identity. Email steve@icecubepress.com and lead with Midwest solidarity: family-owned, Ann Arbor, 75 years. Then get specific: what are his current print runs, who is his printer, and what would make him switch? Offer a comparison quote on his next title."
+        pitch: "Steve is a fellow Midwest independent who has been publishing since 1991 — he understands craft and regional identity. Email steve@icecubepress.com and lead with Midwest solidarity: family-owned, Ann Arbor, 75 years. Then get specific: what are his current print runs, who is his printer, and what would make him switch? Offer a comparison quote on his next title.",
+        drafted_email: `Hi Steve,\n\nAs a fellow Midwest independent who has been publishing since 1991 — and an Iowa Governor's Art Award winner, no less — you know what it takes to run a real press. We thought you'd appreciate a conversation with a printer who shares that same philosophy.\n\nI'm reaching out from Cushing-Malloy Books in Ann Arbor, Michigan — we've been manufacturing books since 1948, and we specialize in exactly the kind of run you're looking at: short-to-medium runs for nonfiction, fiction, poetry, and graphic novels across multiple imprints.\n\nHere's what makes us different for presses like yours:\n\n- One person manages your project start to finish — same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.\n- 20 working days from approved files to finished books, delivered to your door.\n- Family-owned in Ann Arbor since 1948 — we'd love to offer a comparison quote on your next title and earn a spot in your production calendar.\n\nWould a quick call this week work?\n\nWarm Regards,\n\nTedd Litty\nC: 616-843-3825  |  T: 734.663.8554 ×103  |  F: 734.663.5731\nE: tlitty@cushing-malloy.com  |  www.cushing-malloy.com\nCushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104\nWhere Books Are Bound For Greatness®`
       },
       {
         id: 4, score: 8, priorityClass: "high",
@@ -800,7 +843,8 @@ const RUNS = {
         email: "42milespress@gmail.com", phone: "",
         website: "https://42milespress.com",
         notes: "Indiana University South Bend press publishing poetry books and chapbooks; 2025 winner Steve Castro recently selected — a new title enters production now. Located 2 hours from Ann Arbor. Annual prize cycle creates predictable printing demand. Email verified.",
-        pitch: "A winner was just selected, which means production is imminent. Email 42milespress@gmail.com to introduce Cushing-Malloy before they lock in a printer. Lead with proximity — 2 hours means same-day proofing visits — and emphasize the predictable annual cycle Cushing-Malloy would love to anchor as their go-to partner for the prize print run each year."
+        pitch: "A winner was just selected, which means production is imminent. Email 42milespress@gmail.com to introduce Cushing-Malloy before they lock in a printer. Lead with proximity — 2 hours means same-day proofing visits — and emphasize the predictable annual cycle Cushing-Malloy would love to anchor as their go-to partner for the prize print run each year.",
+        drafted_email: `Hi,\n\nWe saw that 42 Miles Press just selected the 2025 prize winner — Steve Castro — which means production is imminent. As a press just 2 hours from Ann Arbor, we wanted to introduce ourselves before you lock in a printer.\n\nI'm reaching out from Cushing-Malloy Books in Ann Arbor, Michigan — we've been manufacturing books since 1948, and we specialize in exactly the kind of run you're looking at: prize-winning poetry books and chapbooks for university presses with high production standards.\n\nHere's what makes us different for presses like yours:\n\n- One person manages your project start to finish — same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.\n- 20 working days from approved files to finished books, delivered to your door.\n- 2 hours away means same-day proofing visits are feasible — your author gets to hold the book before it goes to press.\n\nWe'd love to offer a quote for the current title and discuss becoming your annual prize-cycle printing partner.\n\nWould a quick call this week work?\n\nWarm Regards,\n\nTedd Litty\nC: 616-843-3825  |  T: 734.663.8554 ×103  |  F: 734.663.5731\nE: tlitty@cushing-malloy.com  |  www.cushing-malloy.com\nCushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104\nWhere Books Are Bound For Greatness®`
       },
       {
         id: 5, score: 8, priorityClass: "high",
@@ -810,7 +854,8 @@ const RUNS = {
         email: "mwc@midwestwritingcenter.org", phone: "(309) 732-7330",
         website: "https://www.mwcqc.org",
         notes: "Rock Island, IL nonprofit press publishing the Foster-Stahl Chapbook Series for upper Midwest writers (IL, IN, IA, MI, MN, OH, WI). Submissions close March 2026 — a winner is being selected now. Email verified.",
-        pitch: "MWC Press is selecting their 2026 chapbook winner right now. Contact mwc@midwestwritingcenter.org to introduce Cushing-Malloy as the natural printing partner for a Midwest nonprofit chapbook series. Lean into the Midwest story: family-owned in Ann Arbor since 1948, serving the same community of writers that MWC champions."
+        pitch: "MWC Press is selecting their 2026 chapbook winner right now. Contact mwc@midwestwritingcenter.org to introduce Cushing-Malloy as the natural printing partner for a Midwest nonprofit chapbook series. Lean into the Midwest story: family-owned in Ann Arbor since 1948, serving the same community of writers that MWC champions.",
+        drafted_email: `Hi,\n\nWe noticed that MWC Press is in the final stages of selecting the 2026 Foster-Stahl Chapbook Series winner — which means production is right around the corner. As a Midwest-rooted book manufacturer, we wanted to introduce Cushing-Malloy Books before your production calendar fills up.\n\nI'm reaching out from Cushing-Malloy Books in Ann Arbor, Michigan — we've been manufacturing books since 1948, and we specialize in exactly the kind of run you're looking at: short-run chapbooks for nonprofit literary presses serving Midwest writers.\n\nHere's what makes us different for presses like yours:\n\n- One person manages your project start to finish — same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.\n- 20 working days from approved files to finished books, delivered to your door.\n- Family-owned in Ann Arbor since 1948, serving the same community of Midwest writers that MWC champions — this is a natural fit.\n\nWe'd love to offer a quote and be ready to support this year's chapbook production the moment your winner is selected.\n\nWould a quick call this week work?\n\nWarm Regards,\n\nTedd Litty\nC: 616-843-3825  |  T: 734.663.8554 ×103  |  F: 734.663.5731\nE: tlitty@cushing-malloy.com  |  www.cushing-malloy.com\nCushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104\nWhere Books Are Bound For Greatness®`
       },
       {
         id: 6, score: 8, priorityClass: "high",
@@ -820,7 +865,8 @@ const RUNS = {
         email: "submissions@yellowarrowpublishing.com", phone: "",
         website: "https://www.yellowarrowpublishing.com",
         notes: "Baltimore-based nonprofit hybrid publisher focused on women-identifying writers; 3 chapbooks per year on a fixed schedule (April, July, October). 2025 authors already announced; 2026 selection underway. Verified email found.",
-        pitch: "Yellow Arrow has a predictable, repeat production cycle — three chapbooks per year, same schedule, every year. That is a dream account for a printer. Email submissions@yellowarrowpublishing.com to introduce Cushing-Malloy as their production partner of record: same quality, same specs, zero surprises. Pitch the repeat-account economics: we know your files, we know your format, we make production invisible so your editors focus on authors."
+        pitch: "Yellow Arrow has a predictable, repeat production cycle — three chapbooks per year, same schedule, every year. That is a dream account for a printer. Email submissions@yellowarrowpublishing.com to introduce Cushing-Malloy as their production partner of record: same quality, same specs, zero surprises. Pitch the repeat-account economics: we know your files, we know your format, we make production invisible so your editors focus on authors.",
+        drafted_email: `Hi,\n\nI've been following Yellow Arrow Publishing's chapbook releases — Little by Little, Homing, Naming a Dying Thing — and the consistent production quality and thoughtful design you bring to each title is evident. That kind of care deserves a printing partner who matches it.\n\nI'm reaching out from Cushing-Malloy Books in Ann Arbor, Michigan — we've been manufacturing books since 1948, and we specialize in exactly the kind of run you're looking at: 100–500 copies with digital or offset printing for poetry and creative nonfiction chapbooks, released on a seasonal schedule.\n\nHere's what makes us different for presses like yours:\n\n- One person manages your project start to finish — same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.\n- 20 working days from approved files to finished books, delivered to your door.\n- Your April/July/October release schedule is exactly the kind of predictable, repeat production cycle we're built to support — same specs, same quality, every time.\n\nWith your 2026 selection cycle underway, now is a great time to line up your production partner. We'd love to offer a quote and discuss how we can support your full-year program.\n\nWould a quick call this week work?\n\nWarm Regards,\n\nTedd Litty\nC: 616-843-3825  |  T: 734.663.8554 ×103  |  F: 734.663.5731\nE: tlitty@cushing-malloy.com  |  www.cushing-malloy.com\nCushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104\nWhere Books Are Bound For Greatness®`
       }
     ]
   },
@@ -1064,20 +1110,37 @@ function openModal(id) {
     : `<a href="mailto:${l.email}">${l.email}</a>`;
   const phoneHtml = l.phone || "—";
 
+  // Left column: Priority Score, Source, Phone, Website
+  // Right column: Email, Full Notes
   document.getElementById("modalMeta").innerHTML = `
-    <div class="modal-meta-item"><div class="modal-meta-label">Priority Score</div>
-      <div class="modal-meta-value"><span class="priority-badge priority-${l.priorityClass}">${l.score}</span></div></div>
-    <div class="modal-meta-item"><div class="modal-meta-label">Source</div>
-      <div class="modal-meta-value">${l.source}</div></div>
-    <div class="modal-meta-item"><div class="modal-meta-label">Email</div>
-      <div class="modal-meta-value">${emailHtml}</div></div>
-    <div class="modal-meta-item"><div class="modal-meta-label">Phone</div>
-      <div class="modal-meta-value">${phoneHtml}</div></div>
-    <div class="modal-meta-item" style="grid-column:1/-1"><div class="modal-meta-label">Website</div>
-      <div class="modal-meta-value"><a href="${l.website}" target="_blank">${l.website}</a></div></div>
-    <div class="modal-meta-item" style="grid-column:1/-1"><div class="modal-meta-label">Full Notes</div>
-      <div class="modal-meta-value" style="color:var(--text-secondary);font-size:0.83rem;line-height:1.55;">${l.notes}</div></div>
+    <div class="modal-col-left">
+      <div class="modal-meta-item"><div class="modal-meta-label">Priority Score</div>
+        <div class="modal-meta-value"><span class="priority-badge priority-${l.priorityClass}">${l.score}</span></div></div>
+      <div class="modal-meta-item"><div class="modal-meta-label">Source</div>
+        <div class="modal-meta-value">${l.source}</div></div>
+      <div class="modal-meta-item"><div class="modal-meta-label">Phone</div>
+        <div class="modal-meta-value">${phoneHtml}</div></div>
+      <div class="modal-meta-item"><div class="modal-meta-label">Website</div>
+        <div class="modal-meta-value"><a href="${l.website}" target="_blank">${l.website}</a></div></div>
+    </div>
+    <div class="modal-col-right">
+      <div class="modal-meta-item"><div class="modal-meta-label">Email</div>
+        <div class="modal-meta-value">${emailHtml}</div></div>
+      <div class="modal-meta-item"><div class="modal-meta-label">Full Notes</div>
+        <div class="modal-meta-value" style="color:var(--text-secondary);font-size:0.83rem;line-height:1.55;">${l.notes}</div></div>
+    </div>
   `;
+
+  // Drafted Email section
+  const draftEl = document.getElementById("modalDraftedEmail");
+  const draftBody = document.getElementById("modalDraftedEmailBody");
+  if (l.drafted_email) {
+    draftBody.textContent = l.drafted_email;
+    draftEl.style.display = "block";
+  } else {
+    draftEl.style.display = "none";
+  }
+
   document.getElementById("modalOverlay").classList.add("open");
 }
 function closeModal(e) {
