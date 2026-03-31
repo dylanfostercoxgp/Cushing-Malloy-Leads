@@ -359,8 +359,9 @@ Where Books Are Bound For Greatness®
 
 Save a weekly summary draft to SmarterMail Drafts using the same `save_draft()` Python function from Step 6.
 
-- **To:** dylan@coxgp.com
-- **CC:** [CONNIE_EMAIL]
+- **To:** ccushing@cushing-malloy.com
+- **CC:** tlitty@cushing-malloy.com
+- **BCC:** dylan@coxgp.com, rodrick@coxgp.com
 
 **Subject:** `Cushing-Malloy Lead Intelligence Prospecting — Week of [Monday Date]`
 
