@@ -29,12 +29,16 @@ You are finding people who need books **physically printed** — not book buyers
 
 **Outreach signature to use in all emails:**
 ```
-Warm regards,
-Connie Cushing
-Cushing-Malloy Books
-(734) 663-8554
-cushing-malloy.com
+Warm Regards,
+
+Tedd Litty
+C: 616-843-3825  |  T: 734.663.8554 ×103  |  F: 734.663.5731
+E: tlitty@cushing-malloy.com  |  www.cushing-malloy.com
+Cushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104
+Where Books Are Bound For Greatness®
 ```
+
+**CC on all outreach drafts:** `tlitty@cushing-malloy.com`
 
 ---
 
@@ -270,20 +274,23 @@ IMAP_PORT = 993
 EMAIL_USER = "printyourbook@cushing-malloy.com"
 EMAIL_PASS = "SNaFx$os5^Z4Rig"
 
-def save_draft(to_address, subject, html_body):
+CC_EMAIL = "tlitty@cushing-malloy.com"
+
+def save_draft(to_address, subject, body):
     msg = MIMEMultipart("alternative")
-    msg["From"] = EMAIL_USER
-    msg["To"] = to_address
+    msg["From"]    = EMAIL_USER
+    msg["To"]      = to_address
+    msg["Cc"]      = CC_EMAIL
     msg["Subject"] = subject
-    msg["Date"] = email.utils.formatdate()
-    msg.attach(MIMEText(html_body, "html"))
+    msg["Date"]    = email.utils.formatdate()
+    msg.attach(MIMEText(body, "plain", "utf-8"))
     mail = imaplib.IMAP4_SSL(IMAP_HOST, IMAP_PORT)
     mail.login(EMAIL_USER, EMAIL_PASS)
     mail.append("Drafts", r"\\Draft", imaplib.Time2Internaldate(time.time()), msg.as_bytes())
     mail.logout()
 
 # Call once per lead:
-# save_draft("lead@example.com", "Subject line", "<p>HTML body</p>")
+# save_draft("lead@example.com", "Subject line", "Plain text body")
 ```
 
 ### Email template and personalization rules:
@@ -324,11 +331,13 @@ give you a no-pressure quote and talk through your options.
 
 Would a quick call this week work?
 
-Warm regards,
-Connie Cushing
-Cushing-Malloy Books
-(734) 663-8554
-cushing-malloy.com
+Warm Regards,
+
+Tedd Litty
+C: 616-843-3825  |  T: 734.663.8554 ×103  |  F: 734.663.5731
+E: tlitty@cushing-malloy.com  |  www.cushing-malloy.com
+Cushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104
+Where Books Are Bound For Greatness®
 ```
 
 **Personalization checklist before creating each draft:**
