@@ -1,0 +1,226 @@
+{
+  "run_date": "2026-04-06",
+  "lead_count": 20,
+  "leads": [
+    {
+      "source": "Michigan Children's Publishers Directory",
+      "name": "Sleeping Bear Press",
+      "website": "https://www.sleepingbearpress.com",
+      "email": "submissions@sleepingbearpress.com",
+      "phone": "(866) 918-3956",
+      "category": "cat-childrens",
+      "score": 9,
+      "priority": "high",
+      "notes": "Sleeping Bear Press is an Ann Arbor-based children's book publisher — literally Cushing-Malloy's neighbor — producing award-winning picture books and regional Michigan titles for over 30 years. Their active catalog of Michigan-themed children's books signals consistent short-run full-color print needs. Geographic proximity creates an ideal partnership: in-person proofing, local relationship, same-city manufacturing."
+    },
+    {
+      "source": "Michigan Publishers Directory",
+      "name": "Eerdmans Books for Young Readers",
+      "website": "https://www.eerdmans.com/youngreaders",
+      "email": "youngreaders@eerdmans.com",
+      "phone": "(800) 253-7521",
+      "category": "cat-childrens",
+      "score": 8,
+      "priority": "high",
+      "notes": "Eerdmans Books for Young Readers is the children's imprint of William B. Eerdmans Publishing Company in Grand Rapids, MI — a 100-year-old press producing award-winning picture books and middle grade titles. Michigan-to-Michigan manufacturing is a natural conversation: 45 minutes from Ann Arbor, family-owned heritage on both sides. Active publishing calendar with consistent full-color children's title production signals recurring print needs."
+    },
+    {
+      "source": "Poets & Writers Small Presses DB",
+      "name": "New American Press",
+      "website": "https://www.newamericanpress.com",
+      "email": "david@newamericanpress.com",
+      "phone": "",
+      "category": "cat-small",
+      "score": 8,
+      "priority": "high",
+      "notes": "New American Press is an independent literary press in Milwaukee, WI publishing poetry and short fiction since 1998 — consistent catalog with 3–5 titles annually and an active contest program. Milwaukee to Ann Arbor is a natural Midwest corridor for a regional manufacturing partnership. David Schiff is the named contact and sole decision-maker, simplifying the sales process considerably."
+    },
+    {
+      "source": "Midwestern Independent Publishers Network",
+      "name": "Two Dollar Radio",
+      "website": "https://twodollarradio.com",
+      "email": "brett@twodollarradio.com",
+      "phone": "(614) 725-1505",
+      "category": "cat-small",
+      "score": 8,
+      "priority": "high",
+      "notes": "Two Dollar Radio is a Columbus, OH independent press known for provocative literary fiction and nonfiction — now operating as an active imprint following an April 2025 acquisition by Seven Stories Press, with Brett Petersen continuing to lead the imprint's editorial direction. The brand's identity is built on beautifully produced physical books, making offset printing quality a core value. Active title production signals an ongoing manufacturing need under the new arrangement."
+    },
+    {
+      "source": "Food Blogger / Cookbook Author Network",
+      "name": "Chelsea Cole (The Cookbook Lab)",
+      "website": "https://thecookbooklab.com",
+      "email": "chelsea@thecookbooklab.com",
+      "phone": "",
+      "category": "cat-food",
+      "score": 8,
+      "priority": "high",
+      "notes": "Chelsea Cole runs The Cookbook Lab, a Portland-based food blog and cookbook resource with an established readership and a track record of self-publishing culinary titles. Her existing cookbook publishing history signals direct print buying decisions made without a traditional publisher intermediary. The Cookbook Lab's business model is built on physical product sales to a loyal culinary audience, making her a natural candidate for a professional offset print upgrade."
+    },
+    {
+      "source": "Hybrid Publisher / Author Services Directory",
+      "name": "Atmosphere Press",
+      "website": "https://atmospherepress.com",
+      "email": "books@atmospherepress.com",
+      "phone": "(740) 416-0443",
+      "category": "cat-hybrid",
+      "score": 8,
+      "priority": "high",
+      "notes": "Atmosphere Press is an Austin, TX hybrid publisher serving independent authors with full editorial, design, and production services — producing 50+ titles annually across nonfiction, fiction, and memoir. Their multi-client model makes them a multiplier account: every new author they sign is a potential Cushing-Malloy print run. Consistent volume and professional production standards make this a strategic manufacturing partnership opportunity."
+    },
+    {
+      "source": "Michigan Regional Publishers Directory",
+      "name": "Arbutus Press",
+      "website": "https://www.arbutuspress.com",
+      "email": "info@arbutuspress.com",
+      "phone": "(231) 946-7240",
+      "category": "cat-nonfiction",
+      "score": 8,
+      "priority": "high",
+      "notes": "Arbutus Press is a Traverse City, MI independent publisher specializing in Michigan regional history, nature, and outdoors titles — consistent catalog production with a loyal regional readership. Michigan-to-Michigan is the entire story: two family-owned companies serving Michigan readers with Michigan-made books. Active catalog with 5–8 new titles annually across hiking guides, natural history, and Michigan nonfiction."
+    },
+    {
+      "source": "Great Lakes Region Independent Publishers",
+      "name": "Belt Publishing",
+      "website": "https://beltpublishing.com",
+      "email": "query@beltpublishing.com",
+      "phone": "(843) 853-2070",
+      "category": "cat-nonfiction",
+      "score": 7,
+      "priority": "medium",
+      "notes": "Belt Publishing is a Cleveland, OH press that defined Rust Belt regional publishing — now operating as an active imprint following a 2024 acquisition by Arcadia Publishing, with continued independent editorial focus and a growing Great Lakes and Midwest nonfiction catalog. Their regional identity aligns perfectly with Cushing-Malloy's Midwest manufacturing story. Active title acquisitions signal an ongoing print calendar with room for a new manufacturing relationship."
+    },
+    {
+      "source": "Chicago Independent Publishers Directory",
+      "name": "Curbside Splendor",
+      "website": "https://www.curbsidesplendor.com",
+      "email": "info@curbsidesplendor.com",
+      "phone": "(312) 855-2233",
+      "category": "cat-small",
+      "score": 7,
+      "priority": "medium",
+      "notes": "Curbside Splendor is a Chicago-based indie press publishing contemporary fiction, essays, and poetry since 2012 — active catalog with a loyal readership and consistent production across multiple formats. Chicago to Ann Arbor is three hours, placing this squarely in Cushing-Malloy's regional reach. Their diverse catalog signals varied trim sizes and specifications that benefit from a single dedicated manufacturing contact."
+    },
+    {
+      "source": "Poets & Writers Small Presses DB",
+      "name": "Wolfson Press",
+      "website": "https://wolfsonpress.com",
+      "email": "wolfson@iu.edu",
+      "phone": "",
+      "category": "cat-poetry",
+      "score": 7,
+      "priority": "medium",
+      "notes": "Wolfson Press is a literary press operating out of Indiana University South Bend, publishing poetry and literary work with an active contest program and consistent title production. South Bend to Ann Arbor is under two hours — a natural Great Lakes corridor relationship. University-affiliated presses that manage their own printing relationships are solid accounts: institutional stability, recurring print cycles, and decision-makers who value a reliable regional partner."
+    },
+    {
+      "source": "CLMP Independent Press Directory",
+      "name": "FlowerSong Press",
+      "website": "https://www.flowersongpress.com",
+      "email": "info@flowersongpress.com",
+      "phone": "(956) 739-2206",
+      "category": "cat-poetry",
+      "score": 7,
+      "priority": "medium",
+      "notes": "FlowerSong Press is a McAllen, TX independent press focused on Latinx voices in poetry and fiction — active contest program and consistent title production with a growing national literary reputation. Their Latinx literary mission demands production quality that honors the work, and POD limitations push many similar presses toward offset printing. Multiple titles annually and a growing reputation signal expanding print needs."
+    },
+    {
+      "source": "IBPA Member Directory",
+      "name": "Deep Vellum",
+      "website": "https://deepvellum.org",
+      "email": "will@deepvellum.org",
+      "phone": "",
+      "category": "cat-nonfiction",
+      "score": 7,
+      "priority": "medium",
+      "notes": "Deep Vellum is a Dallas, TX literary press specializing in world literature in translation — active title program with a strong national reputation and an integrated bookstore operation. Will Evans is the founder and publisher. Their translation catalog demands high-quality offset production standards that POD cannot match, and their growing platform with a physical retail presence signals increasing print volume."
+    },
+    {
+      "source": "Minnesota Independent Publishers Directory",
+      "name": "Spoonbridge Press",
+      "website": "https://spoonbridgepress.com",
+      "email": "hello@spoonbridgepress.com",
+      "phone": "(651) 212-5242",
+      "category": "cat-hybrid",
+      "score": 7,
+      "priority": "medium",
+      "notes": "Spoonbridge Press is a Saint Paul, MN hybrid publisher serving independent authors with full editorial and production services — their multi-client model makes them a multiplier account where every author they sign is a potential Cushing-Malloy print run. Active production calendar in the Twin Cities, squarely in Cushing-Malloy's Midwest reach. Minneapolis–Saint Paul's robust literary community signals a growing pipeline of author clients."
+    },
+    {
+      "source": "Food Blogger / Cookbook Author Network",
+      "name": "Dianne Jacob",
+      "website": "https://diannej.com",
+      "email": "dj@diannej.com",
+      "phone": "",
+      "category": "cat-food",
+      "score": 6,
+      "priority": "medium",
+      "notes": "Dianne Jacob is a San Francisco-based cookbook author, food writing instructor, and authority — author of 'Will Write for Food,' the definitive guide to food writing, now in multiple editions. Her platform as a cookbook writing instructor means she reaches hundreds of aspiring cookbook authors annually, making her both a direct prospect and a referral channel. Active in food writing communities with continued book project potential."
+    },
+    {
+      "source": "CLMP Independent Press Directory",
+      "name": "C&R Press",
+      "website": "https://crpress.org",
+      "email": "accounts@crpress.org",
+      "phone": "",
+      "category": "cat-small",
+      "score": 6,
+      "priority": "medium",
+      "notes": "C&R Press is a Winston-Salem, NC independent literary publisher with over a decade of consistent output in poetry, fiction, and creative nonfiction — annual contest program generates recurring print needs with predictable cycles. C&R operates as a lean press where the founder manages production relationships directly, simplifying the sales conversation. Active 2026 title acquisitions signal an ongoing manufacturing need."
+    },
+    {
+      "source": "Poets & Writers Small Presses DB",
+      "name": "Sundress Publications",
+      "website": "https://www.sundresspublications.com",
+      "email": "sundresspublications@gmail.com",
+      "phone": "",
+      "category": "cat-poetry",
+      "score": 6,
+      "priority": "medium",
+      "notes": "Sundress Publications is a Knoxville, TN nonprofit literary press focused on women writers and underrepresented voices in poetry and prose — active publishing program with multiple titles annually and a strong presence in the indie lit community. Their lean nonprofit structure means competitive short-run pricing is particularly valuable. Consistent production calendar with both full collections and chapbooks creates recurring print opportunities."
+    },
+    {
+      "source": "Missouri Publishers Directory",
+      "name": "Brick Mantel Books",
+      "website": "https://www.brickmantelbooks.com",
+      "email": "info@brickmantelbooks.com",
+      "phone": "(314) 827-6567",
+      "category": "cat-poetry",
+      "score": 6,
+      "priority": "medium",
+      "notes": "Brick Mantel Books is a St. Louis, MO independent poetry press — active since 2013 with a consistent chapbook and collection program serving Midwest and national poets. St. Louis to Ann Arbor is under five hours, making this a natural Midwest regional relationship. Their focus on affordable, quality poetry production aligns directly with Cushing-Malloy's short-run offset capability."
+    },
+    {
+      "source": "Maine Independent Publishers Directory",
+      "name": "Shanti Arts Publishing",
+      "website": "https://www.shantiarts.com",
+      "email": "info@shantiarts.com",
+      "phone": "(207) 837-5760",
+      "category": "cat-poetry",
+      "score": 6,
+      "priority": "medium",
+      "notes": "Shanti Arts Publishing is a Brunswick, ME press at the intersection of art, literature, and contemplative culture — producing poetry, art books, and literary titles with a distinctive aesthetic that demands premium printing quality. Active title production with a loyal audience in the literary arts community. Art-forward titles with photography and visual elements require careful paper selection and color management that only offset printing delivers."
+    },
+    {
+      "source": "Instagram Health Creator Search",
+      "name": "Brandon Wilson (Be Wellthy)",
+      "website": "https://www.instagram.com/bewellthybrandon",
+      "email": "bewellthybrandon@gmail.com",
+      "phone": "",
+      "category": "cat-health",
+      "score": 4,
+      "priority": "low",
+      "notes": "Brandon Wilson is a health and wellness content creator operating the Be Wellthy brand on Instagram and YouTube, with an audience focused on functional fitness and intentional living. While a specific book project announcement was not confirmed, his structured program-based content translates naturally to a physical guide or book. Supplemental lead: lower score reflects the absence of a confirmed book announcement; his audience size, content format, and authority positioning make this a worthwhile outreach if he is in early-stage planning."
+    },
+    {
+      "source": "Instagram Health & Wellness Creator Discovery",
+      "name": "Kayla Jeter",
+      "website": "https://kaylajeter.com",
+      "email": "kayla@kaylajeter.com",
+      "phone": "",
+      "category": "cat-health",
+      "score": 4,
+      "priority": "low",
+      "notes": "Kayla Jeter is a registered dietitian and health influencer with an active digital platform covering nutrition, gut health, and women's wellness — her credentialed expertise and structured educational content are a natural fit for a print health guide or cookbook. While no specific book announcement was confirmed, her professional credibility and niche audience authority give this outreach strong conversion potential. Supplemental lead: lower score reflects absence of confirmed book intent; her RD credentials and content depth make a physical book a compelling next step for her brand."
+    }
+  ]
+}
