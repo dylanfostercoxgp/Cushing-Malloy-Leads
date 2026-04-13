@@ -396,9 +396,12 @@ Save a weekly summary draft to SmarterMail Drafts using the same `save_draft()` 
     </table>
 
     <!-- RESEARCH SOURCES -->
-    <p style="font-size: 12px; color: #777; border-top: 1px solid #e8eef4; padding-top: 14px; margin-bottom: 22px;">
+    <p style="font-size: 12px; color: #777; border-top: 1px solid #e8eef4; padding-top: 14px; margin-bottom: 6px;">
       <strong style="color: #555;">Research sources this run:</strong>&nbsp;
       [Source 1 — e.g., Substack publishing community] &nbsp;&middot;&nbsp; [Source 2 — e.g., Kickstarter book campaigns]
+    </p>
+    <p style="font-size: 12px; color: #777; margin-top: 0; margin-bottom: 22px;">
+      Zero conflicts with [X] leads. Cross-checked programmatically against all 300+ existing Cushing-Malloy clients.
     </p>
 
     <!-- CTA BUTTON -->
