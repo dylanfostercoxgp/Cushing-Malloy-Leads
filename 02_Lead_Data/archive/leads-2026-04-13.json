@@ -1,0 +1,248 @@
+{
+  "run_date": "2026-04-13",
+  "lead_count": 21,
+  "note": "Weekly run — 20 core leads (score 6+) plus 1 supplemental lead (score 4). Sources span Poets & Writers Small Presses DB, CLMP Independent Press Directory, Reedsy Independent Publishers Directory, Electric Literature/CLMP Literary Press Discovery, Food & Cookbook Creator Network, LinkedIn Business Author Network, and IBPA Member Directory.",
+  "discovery_channels": [
+    "Poets & Writers Small Presses DB",
+    "CLMP Independent Press Directory",
+    "Reedsy Independent Publishers Directory",
+    "Electric Literature / CLMP Literary Press Discovery",
+    "Food & Cookbook Creator Network",
+    "LinkedIn Business Author Network",
+    "IBPA Member Directory"
+  ],
+  "deduplication_note": "All leads cross-checked against 2026-03-26, 2026-03-27, 2026-03-30, 2026-03-31, and 2026-04-06 runs. No duplicates. All leads cross-checked against 306-company existing client list. No conflicts.",
+  "leads": [
+    {
+      "source": "Poets & Writers Small Presses DB",
+      "name": "Graywolf Press",
+      "website": "https://www.graywolfpress.org",
+      "email": "wolves@graywolfpress.org",
+      "phone": "",
+      "category": "Small Press (6–20 titles/yr)",
+      "score": 9,
+      "priority": "high",
+      "notes": "Graywolf Press is one of America’s premier independent literary publishers — founded 1974 in Minneapolis with ~30 titles annually across poetry, fiction, nonfiction, and essays. Minneapolis sits squarely in Cushing-Malloy’s Midwest reach, and their consistent multi-title annual output signals recurring high-quality manufacturing needs. Outreach angle: the Midwest peer story and a single-contact manufacturing partner who can match the production standards their award-winning catalog demands."
+    },
+    {
+      "source": "Reedsy Independent Publishers Directory",
+      "name": "Biblioasis",
+      "website": "https://biblioasis.com",
+      "email": "dwells@biblioasis.com",
+      "phone": "",
+      "category": "Small Press (6–20 titles/yr)",
+      "score": 9,
+      "priority": "high",
+      "notes": "Biblioasis is Windsor, Ontario’s premier literary press — founded 2004 by publisher Dan Wells, producing 15–20 titles annually across literary fiction, poetry, and nonfiction with a strong international reputation. Windsor sits literally across the Detroit River from Michigan: 45 minutes from Ann Arbor, making Biblioasis the closest serious literary press to Cushing-Malloy geographically. Outreach angle: the cross-border proximity combined with direct access to the publisher makes this one of the highest-efficiency outreach opportunities in the pipeline."
+    },
+    {
+      "source": "Poets & Writers Small Presses DB",
+      "name": "Coffee House Press",
+      "website": "https://coffeehousepress.org",
+      "email": "info@coffeehousepress.org",
+      "phone": "",
+      "category": "Small Press (6–20 titles/yr)",
+      "score": 8,
+      "priority": "high",
+      "notes": "Coffee House Press is a Minneapolis nonprofit literary publisher founded 1984, producing ~16 titles annually across literary fiction, poetry, essays, and translations with professional offset production standards and a national reputation. Their nonprofit structure and lean team make a single-point-of-contact manufacturing relationship especially valuable — one dedicated Cushing-Malloy contact means no dropped details between quote, production, proofing, and delivery. Outreach angle: Midwest peer-to-peer story — two serious literary organizations committed to quality books operating in the Great Lakes corridor."
+    },
+    {
+      "source": "Poets & Writers Small Presses DB",
+      "name": "Agate Publishing",
+      "website": "https://agatepublishing.com",
+      "email": "submissions@agatepublishing.com",
+      "phone": "",
+      "category": "Small Press (6–20 titles/yr)",
+      "score": 8,
+      "priority": "high",
+      "notes": "Agate Publishing is an Evanston, IL independent press founded 2003 with multiple active imprints including Bolden (Black American voices) and Midway (regional nonfiction) — producing ~20 titles annually in a consistent, growing catalog. Their multi-imprint structure signals varied trim sizes and print specifications that benefit from a single dedicated manufacturing contact. Outreach angle: Midwest manufacturing partnership with multi-imprint volume pricing potential — Chicago metro to Ann Arbor is 3.5 hours."
+    },
+    {
+      "source": "Food & Cookbook Creator Network",
+      "name": "Jason Logsdon (Amazing Food Made Easy)",
+      "website": "https://www.amazingfoodmadeeasy.com",
+      "email": "jason@amazingfoodmadeeasy.com",
+      "phone": "",
+      "category": "Food & Recipe Creator",
+      "score": 8,
+      "priority": "high",
+      "notes": "Jason Logsdon is one of the leading self-published cookbook authors in the sous vide and modernist cooking space — author of 10+ books on home cooking technique, with hundreds of thousands of online readers and a direct-to-consumer sales model built on physical books. His entire business is built around self-published cookbook sales, making him a natural candidate for offset print runs that dramatically reduce per-unit cost at 500–2,000 copies. Outreach angle: walk him through the print run economics that a creator with his volume could unlock — 1,000 copies offset vs. POD is a conversation likely worth thousands of dollars."
+    },
+    {
+      "source": "CLMP Independent Press Directory",
+      "name": "Rescue Press",
+      "website": "https://rescuepress.co",
+      "email": "contact@rescuepress.co",
+      "phone": "",
+      "category": "Small Press (6–20 titles/yr)",
+      "score": 7,
+      "priority": "medium",
+      "notes": "Rescue Press is a Chicago-based independent literary publisher founded 2009, publishing innovative fiction and poetry with an experimental edge and a growing national reputation — their annual acquisitions program signals upcoming titles entering production on a consistent cycle. Chicago to Ann Arbor is under four hours, making this a natural regional manufacturing relationship. Outreach angle: Cushing-Malloy’s 20-day turnaround and single-contact model as ideal for a lean indie press managing tight publication windows."
+    },
+    {
+      "source": "Poets & Writers Small Presses DB",
+      "name": "Autumn House Press",
+      "website": "https://autumnhouse.org",
+      "email": "msimms@autumnhouse.org",
+      "phone": "",
+      "category": "Poetry & Literary Press",
+      "score": 7,
+      "priority": "medium",
+      "notes": "Autumn House Press is a Pittsburgh, PA nonprofit literary publisher founded 1998 — producing poetry, fiction, and nonfiction through an active annual contest program, with Michael Simms as the named founder and decision-maker. Their contest cycle creates predictable print production windows: winners selected in Q1 typically go to press in Q2–Q3. Outreach angle: position Cushing-Malloy’s 20-day turnaround and single contact as the ideal manufacturing relationship for a contest-driven press with predictable annual cycles."
+    },
+    {
+      "source": "IBPA Member Directory",
+      "name": "Ayin Press",
+      "website": "https://www.ayinpress.org",
+      "email": "info@ayinpress.org",
+      "phone": "",
+      "category": "Small Press (6–20 titles/yr)",
+      "score": 7,
+      "priority": "medium",
+      "notes": "Ayin Press is an independent publisher focused on Jewish culture, literature, and the intersection of art and Jewish experience — an active press with a growing catalog and a mission that demands careful, quality physical book production. Their dedicated readership values the physical book as more than a container, making offset quality a core expectation. Outreach angle: quality short-run offset and digital printing as a way to honor the intention and mission behind every title they publish."
+    },
+    {
+      "source": "CLMP Independent Press Directory",
+      "name": "Hub City Writers Project",
+      "website": "https://www.hubcity.org",
+      "email": "info@hubcity.org",
+      "phone": "",
+      "category": "Small Press (6–20 titles/yr)",
+      "score": 7,
+      "priority": "medium",
+      "notes": "Hub City Writers Project is a Spartanburg, SC nonprofit literary organization and press founded 1995, producing 6–8 titles annually across fiction, poetry, and nonfiction with a well-regarded independent operation and active acquisition program. Their community literary mission and consistent annual catalog make them a reliable repeat account for a manufacturing partner. Outreach angle: the Hub City story — serious regional literary publishing that deserves a serious manufacturing partner with consistent turnaround and white-glove guidance."
+    },
+    {
+      "source": "Poets & Writers Small Presses DB",
+      "name": "New Rivers Press",
+      "website": "https://newriverspress.com",
+      "email": "nrp@mnstate.edu",
+      "phone": "",
+      "category": "Small Press (6–20 titles/yr)",
+      "score": 7,
+      "priority": "medium",
+      "notes": "New Rivers Press is one of the oldest continuously operating independent literary presses in the US — founded 1968 at Minnesota State University Moorhead, publishing 5–8 titles annually in poetry, fiction, and nonfiction with an active contest program (Many Voices Project). Their Midwest university affiliation signals institutional stability and predictable annual production cycles. Outreach angle: Midwest literary manufacturing partnership — two institutions committed to American literary voices, with the reliability and consistency a university-affiliated press depends on."
+    },
+    {
+      "source": "LinkedIn Business Author Network",
+      "name": "Josh Steimle (Published Author)",
+      "website": "https://joshsteimle.com",
+      "email": "josh@mwi.com",
+      "phone": "",
+      "category": "Business & Authority Author",
+      "score": 7,
+      "priority": "medium",
+      "notes": "Josh Steimle is a business author, entrepreneur, and founder of the Published Author program — he has published multiple business books and runs a coaching operation that helps CEOs and executives become published authors, positioning books as business development tools. His Published Author program is a multiplier account: every executive he coaches through publishing is a potential Cushing-Malloy print run. Outreach angle: present Cushing-Malloy as the white-glove manufacturing partner for his author clients — the printer who walks first-time business book authors through the production process with the guidance his program promises."
+    },
+    {
+      "source": "Poets & Writers Small Presses DB",
+      "name": "Airlie Press",
+      "website": "https://www.airliepress.org",
+      "email": "airliepress@gmail.com",
+      "phone": "",
+      "category": "Poetry & Literary Press",
+      "score": 7,
+      "priority": "medium",
+      "notes": "Airlie Press is a Portland, OR member-run literary press publishing poetry collections — an annual publication cycle with collective editorial decisions that makes print production windows predictable and recurring. Member-run presses operate on tight budgets where per-unit cost matters enormously, making Cushing-Malloy’s 250-copy minimum and volume pricing education especially valuable. Outreach angle: competitive short-run poetry pricing and a single manufacturing contact who understands the economics of independent poetry publishing."
+    },
+    {
+      "source": "CLMP Independent Press Directory",
+      "name": "11:11 Press",
+      "website": "https://1111press.com",
+      "email": "1111@1111press.com",
+      "phone": "",
+      "category": "Small Press (6–20 titles/yr)",
+      "score": 7,
+      "priority": "medium",
+      "notes": "11:11 Press is a Minneapolis-based independent literary publisher founded 2016, focused on innovative and experimental fiction and poetry with a distinctive aesthetic and a growing annual catalog. Minneapolis to Ann Arbor places them squarely in Cushing-Malloy’s Midwest corridor, and their design-forward approach to literary production signals an audience who notices the physical book. Outreach angle: Midwest peer relationship with a manufacturer who can match the physical production quality their experimental literary titles demand."
+    },
+    {
+      "source": "Reedsy Independent Publishers Directory",
+      "name": "Ooligan Press",
+      "website": "https://ooligan.pdx.edu",
+      "email": "ooligan@ooliganpress.pdx.edu",
+      "phone": "",
+      "category": "Small Press (6–20 titles/yr)",
+      "score": 7,
+      "priority": "medium",
+      "notes": "Ooligan Press is the student-run publishing house at Portland State University, producing Pacific Northwest and literary titles annually with a professional editorial and production process. University-affiliated presses with professional production programs are dependable accounts: institutional continuity, annual budgets, and predictable title cycles. Their professional student operation signals a press that takes quality seriously. Outreach angle: Cushing-Malloy’s 20-day turnaround and volume pricing education as ideal for a press managing academic-year production timelines."
+    },
+    {
+      "source": "IBPA Member Directory",
+      "name": "Akashic Books",
+      "website": "https://www.akashicbooks.com",
+      "email": "info@akashicbooks.com",
+      "phone": "(718) 643-9193",
+      "category": "Small Press (6–20 titles/yr)",
+      "score": 7,
+      "priority": "medium",
+      "notes": "Akashic Books is a Brooklyn-based independent literary press founded 1997 — producing 30+ titles annually in literary fiction, crime fiction, and political nonfiction with a nationally recognized catalog and an integrated bookstore. Publisher Johnny Temple has built Akashic into one of the most important independent literary brands in the US, and their consistent high-volume catalog signals meaningful annual print needs. Outreach angle: reliable Midwest manufacturing at scale for a press whose physical book identity is core to their brand — one contact, consistent turnaround, no dropped details across 30+ annual titles."
+    },
+    {
+      "source": "CLMP Independent Press Directory",
+      "name": "Forest Avenue Press",
+      "website": "https://forestavenuepress.com",
+      "email": "forestavenuepress@gmail.com",
+      "phone": "",
+      "category": "Small Press (6–20 titles/yr)",
+      "score": 6,
+      "priority": "medium",
+      "notes": "Forest Avenue Press is a Portland, OR independent literary publisher founded 2012, focusing on innovative fiction and nonfiction — an active catalog with a regional reputation and growing national audience. Their lean team structure means every vendor relationship matters: a single-contact manufacturing partner eliminates the friction that drops details in handoffs. Outreach angle: reliable, straightforward manufacturing with a dedicated contact who stays with them from quote to delivery."
+    },
+    {
+      "source": "Poets & Writers Small Presses DB",
+      "name": "Tupelo Press",
+      "website": "https://www.tupelopress.org",
+      "email": "contact@tupelopress.org",
+      "phone": "",
+      "category": "Poetry & Literary Press",
+      "score": 6,
+      "priority": "medium",
+      "notes": "Tupelo Press is a North Adams, MA nonprofit literary publisher founded 2001, producing poetry, fiction, and nonfiction through multiple active annual contest programs (Dorset Prize, Berkshire Prize, and more). Their multi-prize annual calendar creates recurring, predictable print production windows — contest winners go to press in sequential cycles throughout the year. Outreach angle: contest-calendar manufacturing partnership with 20-day turnaround timed to their prize production windows."
+    },
+    {
+      "source": "Reedsy Independent Publishers Directory",
+      "name": "Persea Books",
+      "website": "https://www.perseabooks.com",
+      "email": "info@perseabooks.com",
+      "phone": "",
+      "category": "Small Press (6–20 titles/yr)",
+      "score": 6,
+      "priority": "medium",
+      "notes": "Persea Books is a New York literary publisher founded 1975, producing 8–10 titles annually in literary fiction, poetry, nonfiction, and children’s books — a nearly 50-year catalog built on careful editorial and production standards. Their small, consistent annual list and longtime New York presence signal a press that values reliable manufacturing relationships. Outreach angle: position Cushing-Malloy as the alternative to New York-area printers — Midwest manufacturing, faster turnaround, one dedicated contact, and a family-owned approach that matches their editorial care."
+    },
+    {
+      "source": "Electric Literature / CLMP Literary Press Discovery",
+      "name": "Gaudy Boy (Singapore Unbound)",
+      "website": "https://www.singaporeunbound.org/gaudyboy",
+      "email": "jkoh@singaporeunbound.org",
+      "phone": "",
+      "category": "Poetry & Literary Press",
+      "score": 6,
+      "priority": "medium",
+      "notes": "Gaudy Boy is the book imprint of Singapore Unbound, a New York-based literary nonprofit founded 2011 — Jee Leong Koh edits and publishes an active poetry list focused on Asian diaspora voices, including the annual Gaudy Boy Poetry Book Prize. Their annual prize cycle produces poetry titles with an audience that cares deeply about physical book quality. Outreach angle: quality short-run poetry production for a prize-driven press whose readers hold the physical book in high regard."
+    },
+    {
+      "source": "Food & Cookbook Creator Network",
+      "name": "Priscilla Martel",
+      "website": "https://www.priscillamartel.com",
+      "email": "pm@priscillamartel.com",
+      "phone": "(860) 227-0175",
+      "category": "Food & Recipe Creator",
+      "score": 6,
+      "priority": "medium",
+      "notes": "Priscilla Martel is a Connecticut-based cookbook author, recipe developer, and food consultant — a credentialed culinary professional with national media exposure (Martha Stewart’s PBS show) and a track record of cookbook development for both individual and brand clients. Her website features an educational guide to “Publishing Your Own Cookbook,” indicating direct familiarity with the production landscape and a likely pipeline of cookbook projects through her consulting work. Outreach angle: position Cushing-Malloy as the professional offset printing partner for her next self-published cookbook and as a resource she can refer to aspiring cookbook authors in her consulting practice."
+    },
+    {
+      "source": "Instagram Health & Wellness Creator Discovery",
+      "name": "Kate Eskuri (The Foundation Blog)",
+      "website": "https://thefoundationblog.com",
+      "email": "hello@thefoundationblog.com",
+      "phone": "",
+      "category": "Health & Wellness Creator",
+      "score": 4,
+      "priority": "low",
+      "notes": "Kate Eskuri is a Minnesota-based holistic wellness coach and blogger running The Foundation Blog, with a growing audience around daily habits, intuitive wellness, and holistic health — she has published at least one book and maintains an engaged email community. Supplemental lead: lower score reflects modest audience signal and uncertainty around current print volume; her structured habit-based content translates naturally to a physical wellness guide or workbook, her Minnesota geography puts her in Cushing-Malloy’s Midwest reach, and a well-timed outreach could catch her planning her next book project."
+    }
+  ]
+}
