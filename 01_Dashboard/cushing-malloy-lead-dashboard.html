@@ -711,6 +711,7 @@
       <div class="filter-group">
         <span class="filter-label">Date</span>
         <select class="date-selector" id="dateSelect">
+          <option value="2026-04-13">April 13, 2026</option>
           <option value="2026-04-06">April 6, 2026</option>
           <option value="2026-03-31">March 31, 2026</option>
           <option value="2026-03-30">March 30, 2026</option>
@@ -801,6 +802,641 @@
 <script>
 // ─── DATA ───────────────────────────────────────────────────────────────────
 const RUNS = {
+  "2026-04-13": {
+    label: "April 13, 2026",
+    leads: [
+      {
+        id: 1, score: 9, priorityClass: "high",
+        category: "Small Press (6–20 titles/yr)", catClass: "cat-small",
+        name: "Graywolf Press",
+        source: "Poets & Writers Small Presses DB",
+        email: "wolves@graywolfpress.org", phone: "",
+        website: "https://www.graywolfpress.org",
+        notes: `Graywolf Press is one of America’s premier independent literary publishers — founded 1974 in Minneapolis with ~30 titles annually across poetry, fiction, nonfiction, and essays. Minneapolis sits squarely in Cushing-Malloy’s Midwest reach, and their consistent multi-title annual output signals recurring high-quality manufacturing needs. Outreach angle: the Midwest peer story and a single-contact manufacturing partner who can match the production standards their award-winning catalog demands.`,
+        pitch: `Email wolves@graywolfpress.org. Address to their managing editor or production manager. Lead with Graywolf’s commitment to the physical book as an object of literary value — Cushing-Malloy has manufactured that kind of book since 1948. Ask about their 2026 production calendar and invite a comparison quote on an upcoming title.`,
+        drafted_email: `Hi,
+
+Graywolf Press has built one of the most respected literary catalogs in American independent publishing — the care you bring to every title, from editorial vision through the physical book itself, is exactly what Cushing-Malloy Books was built to support.
+
+I’m reaching out from Cushing-Malloy Books in Ann Arbor, Michigan — we’ve been manufacturing books since 1948, specializing in literary poetry, fiction, and nonfiction at 500–5,000 copies with the offset quality your award-winning titles deserve.
+
+- One person manages your project from start to finish — same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.
+- 20 working days from approved files to finished books, delivered to your door.
+- Minneapolis to Ann Arbor puts Graywolf squarely in our Midwest manufacturing corridor — a regional partner who understands the literary press ecosystem you operate in.
+
+Visit our website at Cushing-Malloy.com. We look forward to hearing from you soon.
+
+Warm regards,
+
+Joe DiMauro
+Customer Service Representative
+P: (734) 663-8554 x110  |  F: (734) 663-5731
+E: jdimauro@cushing-malloy.com  |  www.cushing-malloy.com
+Cushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104
+Where Books Are Bound For Greatness®`
+      },
+      {
+        id: 2, score: 9, priorityClass: "high",
+        category: "Small Press (6–20 titles/yr)", catClass: "cat-small",
+        name: "Biblioasis",
+        source: "Reedsy Independent Publishers Directory",
+        email: "dwells@biblioasis.com", phone: "",
+        website: "https://biblioasis.com",
+        notes: `Biblioasis is Windsor, Ontario’s premier literary press — founded 2004 by publisher Dan Wells, producing 15–20 titles annually across literary fiction, poetry, and nonfiction with a strong international reputation. Windsor sits literally across the Detroit River from Michigan: 45 minutes from Ann Arbor, making Biblioasis the closest serious literary press to Cushing-Malloy geographically. Outreach angle: cross-border proximity combined with direct access to the publisher makes this one of the highest-efficiency outreach opportunities in the pipeline.`,
+        pitch: `Email dwells@biblioasis.com directly to Dan Wells. Lead with the geography — Windsor to Ann Arbor is 45 minutes. Position Cushing-Malloy as the obvious cross-border manufacturing partner: no shipping complications, regional relationship, same-day proof visits possible. Ask about his 2026 title schedule.`,
+        drafted_email: `Hi Dan,
+
+Biblioasis has become one of North America’s most important independent literary publishers — the consistency and quality of your catalog over the past two decades is a genuine achievement, and the physical book is clearly as important to you as it is to us.
+
+I’m reaching out from Cushing-Malloy Books in Ann Arbor, Michigan — we’ve been manufacturing books since 1948. Windsor to Ann Arbor is 45 minutes, which makes us almost certainly the closest professional book manufacturer to your operation.
+
+- One person manages your project from start to finish — same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.
+- 20 working days from approved files to finished books — or a quick drive across the border for in-person proof review.
+- Cross-border simplicity: we handle manufacturing for Canadian presses regularly and understand the logistics that complicate international printing relationships.
+
+Visit our website at Cushing-Malloy.com. We look forward to hearing from you soon.
+
+Warm regards,
+
+Joe DiMauro
+Customer Service Representative
+P: (734) 663-8554 x110  |  F: (734) 663-5731
+E: jdimauro@cushing-malloy.com  |  www.cushing-malloy.com
+Cushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104
+Where Books Are Bound For Greatness®`
+      },
+      {
+        id: 3, score: 8, priorityClass: "high",
+        category: "Small Press (6–20 titles/yr)", catClass: "cat-small",
+        name: "Coffee House Press",
+        source: "Poets & Writers Small Presses DB",
+        email: "info@coffeehousepress.org", phone: "",
+        website: "https://coffeehousepress.org",
+        notes: `Coffee House Press is a Minneapolis nonprofit literary publisher founded 1984, producing ~16 titles annually across literary fiction, poetry, essays, and translations with professional offset production standards and a national reputation. Their nonprofit structure and lean team make a single-point-of-contact manufacturing relationship especially valuable — one dedicated Cushing-Malloy contact means no dropped details between quote, production, proofing, and delivery. Outreach angle: Midwest peer-to-peer story — two serious literary organizations committed to quality books in the Great Lakes corridor.`,
+        pitch: `Email info@coffeehousepress.org. Lead with the Minneapolis-to-Ann Arbor Midwest peer story — Coffee House’s commitment to literary fiction and poetry deserves a manufacturing partner who takes the physical book as seriously as they do. Ask about their 2026 production calendar.`,
+        drafted_email: `Hi,
+
+Coffee House Press has been one of the defining voices in American independent literary publishing for four decades — the depth and ambition of your catalog, from fiction to poetry to translation, is exactly what drives the kind of book manufacturing we’ve specialized in since 1948.
+
+I’m reaching out from Cushing-Malloy Books in Ann Arbor, Michigan. Minneapolis to Ann Arbor is a natural Midwest corridor, and we believe there’s a genuine manufacturing partnership to explore: 16 titles a year at the quality standards your readers expect.
+
+- One person manages your project from start to finish — same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.
+- 20 working days from approved files to finished books, delivered to your door.
+- Offset AND digital printing under one roof — flexibility for your full print run range without switching vendors.
+
+Visit our website at Cushing-Malloy.com. We look forward to hearing from you soon.
+
+Warm regards,
+
+Joe DiMauro
+Customer Service Representative
+P: (734) 663-8554 x110  |  F: (734) 663-5731
+E: jdimauro@cushing-malloy.com  |  www.cushing-malloy.com
+Cushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104
+Where Books Are Bound For Greatness®`
+      },
+      {
+        id: 4, score: 8, priorityClass: "high",
+        category: "Small Press (6–20 titles/yr)", catClass: "cat-small",
+        name: "Agate Publishing",
+        source: "Poets & Writers Small Presses DB",
+        email: "submissions@agatepublishing.com", phone: "",
+        website: "https://agatepublishing.com",
+        notes: `Agate Publishing is an Evanston, IL independent press founded 2003 with multiple active imprints including Bolden (Black American voices) and Midway (regional nonfiction) — producing ~20 titles annually in a consistent, growing catalog. Their multi-imprint structure signals varied trim sizes and print specifications that benefit from a single dedicated manufacturing contact. Outreach angle: Midwest manufacturing partnership with multi-imprint volume pricing potential — Chicago metro to Ann Arbor is 3.5 hours.`,
+        pitch: `Email submissions@agatepublishing.com. Lead with the Midwest neighbor angle — two independent Midwest publishing operations growing serious catalogs. Pitch Cushing-Malloy’s single-contact model as ideal for managing multiple imprints through one manufacturing relationship.`,
+        drafted_email: `Hi,
+
+Agate Publishing has built something rare in independent publishing — a multi-imprint operation with a growing catalog and genuine editorial mission across Bolden, Midway, and your core list. Managing consistent production quality across multiple imprints is exactly where a strong manufacturing relationship pays off.
+
+I’m reaching out from Cushing-Malloy Books in Ann Arbor, Michigan — we’ve been manufacturing books since 1948. Evanston to Ann Arbor is 3.5 hours — we’re your Midwest manufacturing neighbor.
+
+- One person manages your project from start to finish — same contact across all your imprints, for every title, every year. Nothing falls through the cracks.
+- 20 working days from approved files to finished books, delivered to your door.
+- Multi-title volume pricing — the more titles you route through Cushing-Malloy annually across your imprints, the better the per-unit economics for your catalog.
+
+Visit our website at Cushing-Malloy.com. We look forward to hearing from you soon.
+
+Warm regards,
+
+Joe DiMauro
+Customer Service Representative
+P: (734) 663-8554 x110  |  F: (734) 663-5731
+E: jdimauro@cushing-malloy.com  |  www.cushing-malloy.com
+Cushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104
+Where Books Are Bound For Greatness®`
+      },
+      {
+        id: 5, score: 8, priorityClass: "high",
+        category: "Food & Recipe Creator", catClass: "cat-food",
+        name: "Jason Logsdon (Amazing Food Made Easy)",
+        source: "Food & Cookbook Creator Network",
+        email: "jason@amazingfoodmadeeasy.com", phone: "",
+        website: "https://www.amazingfoodmadeeasy.com",
+        notes: `Jason Logsdon is one of the leading self-published cookbook authors in the sous vide and modernist cooking space — author of 10+ books on home cooking technique, with hundreds of thousands of online readers and a direct-to-consumer sales model built on physical books. His entire business is built around self-published cookbook sales, making him a natural candidate for offset print runs that dramatically reduce per-unit cost at 500–2,000 copies. Outreach angle: walk him through the print run economics that a creator with his volume could unlock — 1,000 copies offset vs. POD is likely worth thousands of dollars.`,
+        pitch: `Email jason@amazingfoodmadeeasy.com. Lead with his cookbook volume — 10+ books, direct-to-consumer model. Show the per-unit economics at 500 vs. 1,000 copies offset vs. POD. Cushing-Malloy’s 20-day turnaround and single contact is exactly what a high-volume self-publisher needs.`,
+        drafted_email: `Hi Jason,
+
+Amazing Food Made Easy has built one of the most successful self-publishing operations in the culinary space — 10+ cookbooks, a massive online audience, and a direct-to-consumer model that most publishers would envy. When you’re moving that kind of volume, the difference between print-on-demand and offset printing isn’t just quality — it’s significant money per copy.
+
+I’m reaching out from Cushing-Malloy Books in Ann Arbor, Michigan — we’ve been manufacturing cookbooks since 1948, and we’d love to show you what 500 or 1,000 offset copies looks like on a per-unit basis compared to what you’re paying now.
+
+- One person manages your project from start to finish — same contact for quoting, production, proofing, and delivery. No handoffs, no dropped details.
+- 20 working days from approved files to finished books, delivered to your door.
+- We teach the print run math — how increasing from 500 to 1,000 copies changes your per-unit cost in ways that can transform your book’s profitability at your sales volume.
+
+Visit our website at Cushing-Malloy.com. We look forward to hearing from you soon.
+
+Warm regards,
+
+Joe DiMauro
+Customer Service Representative
+P: (734) 663-8554 x110  |  F: (734) 663-5731
+E: jdimauro@cushing-malloy.com  |  www.cushing-malloy.com
+Cushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104
+Where Books Are Bound For Greatness®`
+      },
+      {
+        id: 6, score: 7, priorityClass: "medium",
+        category: "Small Press (6–20 titles/yr)", catClass: "cat-small",
+        name: "Rescue Press",
+        source: "CLMP Independent Press Directory",
+        email: "contact@rescuepress.co", phone: "",
+        website: "https://rescuepress.co",
+        notes: `Rescue Press is a Chicago-based independent literary publisher founded 2009, publishing innovative fiction and poetry with an experimental edge and a growing national reputation — their annual acquisitions program signals upcoming titles entering production on a consistent cycle. Chicago to Ann Arbor is under four hours, making this a natural regional manufacturing relationship. Outreach angle: Cushing-Malloy’s 20-day turnaround and single-contact model as ideal for a lean indie press managing tight publication windows.`,
+        pitch: `Email contact@rescuepress.co. Lead with the Chicago-to-Ann Arbor Midwest corridor. Position Cushing-Malloy as the regional manufacturing partner a lean indie press can depend on — consistent 20-day turnaround, single contact, no dropped details.`,
+        drafted_email: `Hi,
+
+Rescue Press has been one of Chicago’s most interesting literary publishing operations since 2009 — the experimental fiction and poetry catalog you’ve built demands a manufacturing partner who takes the physical book as seriously as you do.
+
+I’m reaching out from Cushing-Malloy Books in Ann Arbor, Michigan — we’ve been manufacturing books since 1948. Chicago to Ann Arbor is a natural Midwest corridor, and we specialize in exactly the kind of short-run literary production your press needs.
+
+- One person manages your project from start to finish — same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.
+- 20 working days from approved files to finished books, delivered to your door.
+- Competitive starting at 250 copies — we’ll walk you through where the print run economics shift so you make the right decision on quantity for each title.
+
+Visit our website at Cushing-Malloy.com. We look forward to hearing from you soon.
+
+Warm regards,
+
+Joe DiMauro
+Customer Service Representative
+P: (734) 663-8554 x110  |  F: (734) 663-5731
+E: jdimauro@cushing-malloy.com  |  www.cushing-malloy.com
+Cushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104
+Where Books Are Bound For Greatness®`
+      },
+      {
+        id: 7, score: 7, priorityClass: "medium",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Autumn House Press",
+        source: "Poets & Writers Small Presses DB",
+        email: "msimms@autumnhouse.org", phone: "",
+        website: "https://autumnhouse.org",
+        notes: `Autumn House Press is a Pittsburgh, PA nonprofit literary publisher founded 1998 — producing poetry, fiction, and nonfiction through an active annual contest program, with Michael Simms as the named founder and decision-maker. Their contest cycle creates predictable print production windows: winners selected in Q1 typically go to press in Q2–Q3. Outreach angle: Cushing-Malloy’s 20-day turnaround and single contact as the ideal manufacturing relationship for a contest-driven press with predictable annual cycles.`,
+        pitch: `Email msimms@autumnhouse.org directly to Michael Simms. Lead with the contest calendar — Autumn House’s predictable annual cycle maps perfectly to Cushing-Malloy’s 20-day turnaround. One contact, consistent production, no dropped details between prize announcements and press dates.`,
+        drafted_email: `Hi Michael,
+
+Autumn House Press has been one of the most consistent and respected voices in American independent literary publishing for nearly 30 years — the quality of your contest program and the care in your physical books are evident in everything you produce.
+
+I’m reaching out from Cushing-Malloy Books in Ann Arbor, Michigan — we’ve been manufacturing books since 1948. Your annual contest calendar creates a predictable production rhythm that maps perfectly to our 20-day turnaround — winner announced, files approved, books delivered in three weeks.
+
+- One person manages your project from start to finish — same contact for every contest winner, every year. Michael, you’ll always know who to call.
+- 20 working days from approved files to finished books, delivered to your door.
+- Pittsburgh to Ann Arbor is five hours — we’re within easy reach for proof reviews and a natural East-to-Midwest manufacturing partner.
+
+Visit our website at Cushing-Malloy.com. We look forward to hearing from you soon.
+
+Warm regards,
+
+Joe DiMauro
+Customer Service Representative
+P: (734) 663-8554 x110  |  F: (734) 663-5731
+E: jdimauro@cushing-malloy.com  |  www.cushing-malloy.com
+Cushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104
+Where Books Are Bound For Greatness®`
+      },
+      {
+        id: 8, score: 7, priorityClass: "medium",
+        category: "Small Press (6–20 titles/yr)", catClass: "cat-small",
+        name: "Ayin Press",
+        source: "IBPA Member Directory",
+        email: "info@ayinpress.org", phone: "",
+        website: "https://www.ayinpress.org",
+        notes: `Ayin Press is an independent publisher focused on Jewish culture, literature, and the intersection of art and Jewish experience — an active press with a growing catalog and a mission that demands careful, quality physical book production. Their dedicated readership values the physical book as more than a container, making offset quality a core expectation. Outreach angle: quality short-run offset and digital printing as a way to honor the intention and mission behind every title they publish.`,
+        pitch: `Email info@ayinpress.org. Lead with the quality story — their readers notice the physical book and Cushing-Malloy’s offset production honors the care behind each title. Position as the manufacturing partner who will give every Ayin Press title the attention it deserves.`,
+        drafted_email: `Hi,
+
+Ayin Press has built a catalog that matters — the intersection of Jewish culture, literature, and artistic expression demands a physical book that honors that mission. Production quality is not incidental; it is part of the statement.
+
+I’m reaching out from Cushing-Malloy Books in Ann Arbor, Michigan — we’ve been manufacturing books since 1948 and we work with independent presses whose readers care as much about the physical book as the words inside it.
+
+- One person manages your project from start to finish — same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.
+- 20 working days from approved files to finished books, delivered to your door.
+- Offset AND digital printing under one roof — we match the right process to each title’s run size and budget without sending you to a different vendor.
+
+Visit our website at Cushing-Malloy.com. We look forward to hearing from you soon.
+
+Warm regards,
+
+Joe DiMauro
+Customer Service Representative
+P: (734) 663-8554 x110  |  F: (734) 663-5731
+E: jdimauro@cushing-malloy.com  |  www.cushing-malloy.com
+Cushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104
+Where Books Are Bound For Greatness®`
+      },
+      {
+        id: 9, score: 7, priorityClass: "medium",
+        category: "Small Press (6–20 titles/yr)", catClass: "cat-small",
+        name: "Hub City Writers Project",
+        source: "CLMP Independent Press Directory",
+        email: "info@hubcity.org", phone: "",
+        website: "https://www.hubcity.org",
+        notes: `Hub City Writers Project is a Spartanburg, SC nonprofit literary organization and press founded 1995, producing 6–8 titles annually across fiction, poetry, and nonfiction with a well-regarded independent operation and active acquisition program. Their community literary mission and consistent annual catalog make them a reliable repeat account for a manufacturing partner. Outreach angle: serious regional literary publishing that deserves a serious manufacturing partner with consistent turnaround and white-glove guidance.`,
+        pitch: `Email info@hubcity.org. Lead with the nonprofit literary mission alignment — Cushing-Malloy has been supporting independent literary publishing since 1948. Ask about their 2026 title schedule and position as the manufacturing partner who will walk them through every production decision.`,
+        drafted_email: `Hi,
+
+Hub City Writers Project has built something remarkable in Spartanburg — a genuine community literary organization that publishes serious, award-winning books. The combination of your local literary mission and national publishing reputation is exactly the kind of independent press Cushing-Malloy was built to support.
+
+I’m reaching out from Cushing-Malloy Books in Ann Arbor, Michigan — we’ve been manufacturing books since 1948. We’d love to discuss your 2026 title schedule and how we can serve as your manufacturing partner.
+
+- One person manages your project from start to finish — same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.
+- 20 working days from approved files to finished books, delivered to your door.
+- We walk your team through paper selection, file prep, and trim size decisions — everything you need to get the book you’re imagining at the price that works for your nonprofit budget.
+
+Visit our website at Cushing-Malloy.com. We look forward to hearing from you soon.
+
+Warm regards,
+
+Joe DiMauro
+Customer Service Representative
+P: (734) 663-8554 x110  |  F: (734) 663-5731
+E: jdimauro@cushing-malloy.com  |  www.cushing-malloy.com
+Cushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104
+Where Books Are Bound For Greatness®`
+      },
+      {
+        id: 10, score: 7, priorityClass: "medium",
+        category: "Small Press (6–20 titles/yr)", catClass: "cat-small",
+        name: "New Rivers Press",
+        source: "Poets & Writers Small Presses DB",
+        email: "nrp@mnstate.edu", phone: "",
+        website: "https://newriverspress.com",
+        notes: `New Rivers Press is one of the oldest continuously operating independent literary presses in the US — founded 1968 at Minnesota State University Moorhead, publishing 5–8 titles annually in poetry, fiction, and nonfiction with an active contest program (Many Voices Project). Their Midwest university affiliation signals institutional stability and predictable annual production cycles. Outreach angle: Midwest literary manufacturing partnership — two institutions committed to American literary voices, with the reliability a university-affiliated press depends on.`,
+        pitch: `Email nrp@mnstate.edu. Lead with the Midwest literary heritage story — New Rivers Press has been publishing American voices since 1968 and Cushing-Malloy has been manufacturing since 1948. Ask about their Many Voices Project contest cycle and 2026 production calendar.`,
+        drafted_email: `Hi,
+
+New Rivers Press has been one of the most enduring independent literary publishers in America since 1968 — the Many Voices Project and your consistent annual catalog have introduced generations of readers to new literary voices. That kind of institutional commitment deserves an equally committed manufacturing partner.
+
+I’m reaching out from Cushing-Malloy Books in Ann Arbor, Michigan — we’ve been manufacturing books since 1948. Moorhead to Ann Arbor puts New Rivers Press squarely in our Midwest manufacturing corridor.
+
+- One person manages your project from start to finish — same contact for every contest winner and annual title, year after year. Institutional consistency on the manufacturing side.
+- 20 working days from approved files to finished books, delivered to your door.
+- Competitive pricing starting at 250 copies — we understand the economics of a university-affiliated literary press and will help you make the right production decisions for each title.
+
+Visit our website at Cushing-Malloy.com. We look forward to hearing from you soon.
+
+Warm regards,
+
+Joe DiMauro
+Customer Service Representative
+P: (734) 663-8554 x110  |  F: (734) 663-5731
+E: jdimauro@cushing-malloy.com  |  www.cushing-malloy.com
+Cushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104
+Where Books Are Bound For Greatness®`
+      },
+      {
+        id: 11, score: 7, priorityClass: "medium",
+        category: "Business & Authority Author", catClass: "cat-business",
+        name: "Josh Steimle (Published Author)",
+        source: "LinkedIn Business Author Network",
+        email: "josh@mwi.com", phone: "",
+        website: "https://joshsteimle.com",
+        notes: `Josh Steimle is a business author, entrepreneur, and founder of the Published Author program — he has published multiple business books and runs a coaching operation that helps CEOs and executives become published authors. His Published Author program is a multiplier account: every executive he coaches is a potential Cushing-Malloy print run. Outreach angle: present Cushing-Malloy as the white-glove manufacturing partner for his author clients — the printer who walks first-time business book authors through the production process with the guidance his program promises.`,
+        pitch: `Email josh@mwi.com. Lead with the multiplier angle — every CEO author Josh coaches is a potential print run. Position Cushing-Malloy as his manufacturing referral partner: he handles author coaching, Cushing-Malloy handles book production with the same white-glove approach his program promises.`,
+        drafted_email: `Hi Josh,
+
+The Published Author program is one of the more interesting operations in the business book space — helping executives move from idea to published book is exactly the kind of work that needs a manufacturing partner who can handle the production side with the same professionalism you bring to the coaching side.
+
+I’m reaching out from Cushing-Malloy Books in Ann Arbor, Michigan — we’ve been manufacturing books since 1948, and we specialize in exactly the kind of first-time author production your clients need: business books at 500–2,000 copies for speaking engagements, direct sales, and gifting.
+
+- One person manages each author’s project from start to finish — same contact for quoting, production, proofing, and delivery. Your clients get the same white-glove experience you’ve built your program around.
+- 20 working days from approved files to finished books, delivered to your door.
+- We walk first-time authors through everything they don’t know they don’t know — paper selection, file prep, trim sizes, print run economics. The guidance your clients need is built into how we work.
+
+Visit our website at Cushing-Malloy.com. We look forward to hearing from you soon.
+
+Warm regards,
+
+Joe DiMauro
+Customer Service Representative
+P: (734) 663-8554 x110  |  F: (734) 663-5731
+E: jdimauro@cushing-malloy.com  |  www.cushing-malloy.com
+Cushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104
+Where Books Are Bound For Greatness®`
+      },
+      {
+        id: 12, score: 7, priorityClass: "medium",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Airlie Press",
+        source: "Poets & Writers Small Presses DB",
+        email: "airliepress@gmail.com", phone: "",
+        website: "https://www.airliepress.org",
+        notes: `Airlie Press is a Portland, OR member-run literary press publishing poetry collections — an annual publication cycle with collective editorial decisions that makes print production windows predictable and recurring. Member-run presses operate on tight budgets where per-unit cost matters enormously, making Cushing-Malloy’s 250-copy minimum and volume pricing education especially valuable. Outreach angle: competitive short-run poetry pricing and a single manufacturing contact who understands the economics of independent poetry publishing.`,
+        pitch: `Email airliepress@gmail.com. Lead with the short-run poetry economics — Airlie Press’s member-run model operates on tight budgets and Cushing-Malloy’s 250-copy minimum and per-unit pricing education can genuinely help. Position as the manufacturing partner who understands what a poetry press needs to produce.`,
+        drafted_email: `Hi,
+
+Airlie Press’s member-run model is one of the most genuinely collaborative approaches to poetry publishing we’ve encountered — a collective editorial process and annual publication cycle that produces real books for real readers, year after year.
+
+I’m reaching out from Cushing-Malloy Books in Ann Arbor, Michigan — we’ve been manufacturing poetry collections since 1948, and we specialize in short-run offset for exactly the kind of annual print cycle your press operates on.
+
+- One person manages your project from start to finish — same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.
+- Competitive starting at 250 copies — and we’ll walk you through where the price break points are so you make the right quantity decision for your budget.
+- 20 working days from approved files to finished books, delivered to your door — consistent timing you can plan your annual publication calendar around.
+
+Visit our website at Cushing-Malloy.com. We look forward to hearing from you soon.
+
+Warm regards,
+
+Joe DiMauro
+Customer Service Representative
+P: (734) 663-8554 x110  |  F: (734) 663-5731
+E: jdimauro@cushing-malloy.com  |  www.cushing-malloy.com
+Cushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104
+Where Books Are Bound For Greatness®`
+      },
+      {
+        id: 13, score: 7, priorityClass: "medium",
+        category: "Small Press (6–20 titles/yr)", catClass: "cat-small",
+        name: "11:11 Press",
+        source: "CLMP Independent Press Directory",
+        email: "1111@1111press.com", phone: "",
+        website: "https://1111press.com",
+        notes: `11:11 Press is a Minneapolis-based independent literary publisher founded 2016, focused on innovative and experimental fiction and poetry with a distinctive aesthetic and a growing annual catalog. Minneapolis to Ann Arbor places them squarely in Cushing-Malloy’s Midwest corridor, and their design-forward approach to literary production signals an audience who notices the physical book. Outreach angle: Midwest peer relationship with a manufacturer who can match the physical production quality their experimental literary titles demand.`,
+        pitch: `Email 1111@1111press.com. Lead with the Minneapolis-to-Ann Arbor Midwest story and 11:11’s reputation for design-forward literary production. Their experimental titles demand physical quality — Cushing-Malloy’s single contact and 20-day turnaround is built for presses who care about every production detail.`,
+        drafted_email: `Hi,
+
+11:11 Press has built one of the most visually and literarily ambitious catalogs in contemporary independent publishing — the production quality of your experimental titles is as much a part of the statement as the words themselves.
+
+I’m reaching out from Cushing-Malloy Books in Ann Arbor, Michigan — we’ve been manufacturing books since 1948. Minneapolis to Ann Arbor puts us squarely in your Midwest corridor, and we specialize in exactly the kind of quality short-run literary production your press demands.
+
+- One person manages your project from start to finish — same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.
+- 20 working days from approved files to finished books, delivered to your door.
+- Offset AND digital printing under one roof — we match the process to the run size and specifications each title requires, without sending you to a different vendor.
+
+Visit our website at Cushing-Malloy.com. We look forward to hearing from you soon.
+
+Warm regards,
+
+Joe DiMauro
+Customer Service Representative
+P: (734) 663-8554 x110  |  F: (734) 663-5731
+E: jdimauro@cushing-malloy.com  |  www.cushing-malloy.com
+Cushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104
+Where Books Are Bound For Greatness®`
+      },
+      {
+        id: 14, score: 7, priorityClass: "medium",
+        category: "Small Press (6–20 titles/yr)", catClass: "cat-small",
+        name: "Ooligan Press",
+        source: "Reedsy Independent Publishers Directory",
+        email: "ooligan@ooliganpress.pdx.edu", phone: "",
+        website: "https://ooligan.pdx.edu",
+        notes: `Ooligan Press is the student-run publishing house at Portland State University, producing Pacific Northwest and literary titles annually with a professional editorial and production process. University-affiliated presses with professional programs are dependable accounts: institutional continuity, annual budgets, and predictable title cycles. Outreach angle: Cushing-Malloy’s 20-day turnaround and production guidance as ideal for a press managing academic-year timelines with changing student cohorts.`,
+        pitch: `Email ooligan@ooliganpress.pdx.edu. Lead with Ooligan’s professional program and institutional calendar — a university press with predictable annual production cycles. Position as the manufacturing partner who stays consistent year after year alongside their student cohorts.`,
+        drafted_email: `Hi,
+
+Ooligan Press has built one of the most genuinely professional student-run publishing programs in the country — the quality and consistency of your annual catalog is a real achievement, and the production standards you maintain reflect the seriousness of your publishing mission.
+
+I’m reaching out from Cushing-Malloy Books in Ann Arbor, Michigan — we’ve been manufacturing books since 1948, and we specialize in working with presses that need a manufacturing partner they can rely on year after year, cohort after cohort.
+
+- One person manages your project from start to finish — same contact even as your student cohort changes each year. Consistency on the manufacturing side regardless of turnover on yours.
+- 20 working days from approved files to finished books, delivered to your door — predictable timing you can build your academic-year calendar around.
+- We walk your team through every production decision — paper, trim, binding, file prep — so each new cohort gets the guidance they need without starting from zero.
+
+Visit our website at Cushing-Malloy.com. We look forward to hearing from you soon.
+
+Warm regards,
+
+Joe DiMauro
+Customer Service Representative
+P: (734) 663-8554 x110  |  F: (734) 663-5731
+E: jdimauro@cushing-malloy.com  |  www.cushing-malloy.com
+Cushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104
+Where Books Are Bound For Greatness®`
+      },
+      {
+        id: 15, score: 7, priorityClass: "medium",
+        category: "Small Press (6–20 titles/yr)", catClass: "cat-small",
+        name: "Akashic Books",
+        source: "IBPA Member Directory",
+        email: "info@akashicbooks.com", phone: "(718) 643-9193",
+        website: "https://www.akashicbooks.com",
+        notes: `Akashic Books is a Brooklyn-based independent literary press founded 1997 — producing 30+ titles annually in literary fiction, crime fiction, and political nonfiction with a nationally recognized catalog and an integrated bookstore. Publisher Johnny Temple has built Akashic into one of the most important independent literary brands in the US, and their consistent high-volume catalog signals meaningful annual print needs. Outreach angle: reliable Midwest manufacturing at scale for a press whose physical book identity is core to their brand — one contact, consistent turnaround, no dropped details across 30+ annual titles.`,
+        pitch: `Call (718) 643-9193 or email info@akashicbooks.com. Lead with Akashic’s physical book identity and 30+ title annual volume. Position Cushing-Malloy’s single-contact model and 20-day turnaround as the reliable manufacturing infrastructure their catalog demands.`,
+        drafted_email: `Hi,
+
+Akashic Books has built one of the most distinctive catalogs in American independent publishing — literary fiction, crime, political nonfiction, and the Noir series together create a press with genuine brand identity and real physical book standards. At 30+ titles a year, a reliable manufacturing partner is not optional.
+
+I’m reaching out from Cushing-Malloy Books in Ann Arbor, Michigan — we’ve been manufacturing books since 1948, and we specialize in exactly the kind of consistent multi-title annual production your catalog demands.
+
+- One person manages your projects from start to finish — same contact across all your titles, every year. No handoffs, no dropped details across a 30+ title catalog.
+- 20 working days from approved files to finished books, delivered to your door.
+- Offset AND digital printing under one roof — we match the right process to each title’s run size without sending you to a different vendor for different specifications.
+
+Visit our website at Cushing-Malloy.com. We look forward to hearing from you soon.
+
+Warm regards,
+
+Joe DiMauro
+Customer Service Representative
+P: (734) 663-8554 x110  |  F: (734) 663-5731
+E: jdimauro@cushing-malloy.com  |  www.cushing-malloy.com
+Cushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104
+Where Books Are Bound For Greatness®`
+      },
+      {
+        id: 16, score: 6, priorityClass: "medium",
+        category: "Small Press (6–20 titles/yr)", catClass: "cat-small",
+        name: "Forest Avenue Press",
+        source: "CLMP Independent Press Directory",
+        email: "forestavenuepress@gmail.com", phone: "",
+        website: "https://forestavenuepress.com",
+        notes: `Forest Avenue Press is a Portland, OR independent literary publisher founded 2012, focusing on innovative fiction and nonfiction — an active catalog with a regional reputation and growing national audience. Their lean team structure means every vendor relationship matters: a single-contact manufacturing partner eliminates the friction that drops details in handoffs. Outreach angle: reliable, straightforward manufacturing with a dedicated contact who stays with them from quote to delivery.`,
+        pitch: `Email forestavenuepress@gmail.com. Lead with the lean team story — Forest Avenue operates with a small team and every vendor relationship matters. Cushing-Malloy’s single-contact model eliminates the dropped details that happen when estimating, production, and customer service are three different people.`,
+        drafted_email: `Hi,
+
+Forest Avenue Press has been doing serious work in Portland literary fiction since 2012 — the quality of your catalog and your commitment to innovative fiction deserve a manufacturing partner who brings that same level of care to the production side.
+
+I’m reaching out from Cushing-Malloy Books in Ann Arbor, Michigan — we’ve been manufacturing books since 1948, and we’ve spent 75+ years perfecting the manufacturing relationship that small, serious presses like yours actually need.
+
+- One person manages your project from start to finish — same contact for quoting, production, proofing, and delivery. No handoffs. Nothing falls through the cracks.
+- 20 working days from approved files to finished books, delivered to your door.
+- We walk you through every production decision — paper, trim, binding, file prep — so you get the book you’re imagining without a production learning curve.
+
+Visit our website at Cushing-Malloy.com. We look forward to hearing from you soon.
+
+Warm regards,
+
+Joe DiMauro
+Customer Service Representative
+P: (734) 663-8554 x110  |  F: (734) 663-5731
+E: jdimauro@cushing-malloy.com  |  www.cushing-malloy.com
+Cushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104
+Where Books Are Bound For Greatness®`
+      },
+      {
+        id: 17, score: 6, priorityClass: "medium",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Tupelo Press",
+        source: "Poets & Writers Small Presses DB",
+        email: "contact@tupelopress.org", phone: "",
+        website: "https://www.tupelopress.org",
+        notes: `Tupelo Press is a North Adams, MA nonprofit literary publisher founded 2001, producing poetry, fiction, and nonfiction through multiple active annual contest programs (Dorset Prize, Berkshire Prize, and more). Their multi-prize annual calendar creates recurring, predictable print production windows — contest winners go to press in sequential cycles throughout the year. Outreach angle: contest-calendar manufacturing partnership with 20-day turnaround timed to their prize production windows.`,
+        pitch: `Email contact@tupelopress.org. Lead with the multi-prize calendar — Tupelo runs several annual prizes which means sequential, predictable production windows throughout the year. Cushing-Malloy’s 20-day turnaround maps directly to the timing requirements of a contest-driven press.`,
+        drafted_email: `Hi,
+
+Tupelo Press runs one of the most active contest programs in American literary publishing — the Dorset Prize, the Berkshire Prize, and your other annual competitions create a sequential production calendar that demands a manufacturing partner with consistent, reliable turnaround.
+
+I’m reaching out from Cushing-Malloy Books in Ann Arbor, Michigan — we’ve been manufacturing books since 1948, and we specialize in exactly the kind of recurring, contest-driven production cycles your press manages.
+
+- One person manages your project from start to finish — same contact for every contest winner, every prize cycle, every year. You always know who to call.
+- 20 working days from approved files to finished books — a consistent production timeline you can build your contest calendar around.
+- Competitive short-run pricing starting at 250 copies — we’ll help you find the right quantity for each title’s audience and budget.
+
+Visit our website at Cushing-Malloy.com. We look forward to hearing from you soon.
+
+Warm regards,
+
+Joe DiMauro
+Customer Service Representative
+P: (734) 663-8554 x110  |  F: (734) 663-5731
+E: jdimauro@cushing-malloy.com  |  www.cushing-malloy.com
+Cushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104
+Where Books Are Bound For Greatness®`
+      },
+      {
+        id: 18, score: 6, priorityClass: "medium",
+        category: "Small Press (6–20 titles/yr)", catClass: "cat-small",
+        name: "Persea Books",
+        source: "Reedsy Independent Publishers Directory",
+        email: "info@perseabooks.com", phone: "",
+        website: "https://www.perseabooks.com",
+        notes: `Persea Books is a New York literary publisher founded 1975, producing 8–10 titles annually in literary fiction, poetry, nonfiction, and children’s books — a nearly 50-year catalog built on careful editorial and production standards. Their small, consistent annual list and longtime New York presence signal a press that values reliable manufacturing relationships. Outreach angle: position Cushing-Malloy as the alternative to New York-area printers — Midwest manufacturing, faster turnaround, one dedicated contact, and a family-owned approach that matches their editorial care.`,
+        pitch: `Email info@perseabooks.com. Lead with the 50-year story on both sides — Persea founded 1975, Cushing-Malloy founded 1948. Two serious literary operations with deep institutional commitments to the book. Ask about their current manufacturing relationship and offer a comparison quote.`,
+        drafted_email: `Hi,
+
+Persea Books has been one of American independent publishing’s steadiest voices since 1975 — 50 years of careful editorial work and consistent production quality across literary fiction, poetry, and nonfiction. That kind of institutional commitment to the physical book deserves a manufacturing partner with equally deep roots.
+
+I’m reaching out from Cushing-Malloy Books in Ann Arbor, Michigan — we’ve been manufacturing books since 1948. Two institutions, both serious about the book, both built to last.
+
+- One person manages your project from start to finish — same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.
+- 20 working days from approved files to finished books, delivered to your door.
+- Midwest manufacturing with a family-owned culture that matches the editorial care you bring to every Persea title.
+
+Visit our website at Cushing-Malloy.com. We look forward to hearing from you soon.
+
+Warm regards,
+
+Joe DiMauro
+Customer Service Representative
+P: (734) 663-8554 x110  |  F: (734) 663-5731
+E: jdimauro@cushing-malloy.com  |  www.cushing-malloy.com
+Cushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104
+Where Books Are Bound For Greatness®`
+      },
+      {
+        id: 19, score: 6, priorityClass: "medium",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Gaudy Boy (Singapore Unbound)",
+        source: "Electric Literature / CLMP Literary Press Discovery",
+        email: "jkoh@singaporeunbound.org", phone: "",
+        website: "https://www.singaporeunbound.org/gaudyboy",
+        notes: `Gaudy Boy is the book imprint of Singapore Unbound, a New York-based literary nonprofit founded 2011 — Jee Leong Koh edits and publishes an active poetry list focused on Asian diaspora voices, including the annual Gaudy Boy Poetry Book Prize. Their annual prize cycle produces poetry titles with an audience that cares deeply about physical book quality. Outreach angle: quality short-run poetry production for a prize-driven press whose readers hold the physical book in high regard.`,
+        pitch: `Email jkoh@singaporeunbound.org directly to Jee Leong Koh. Lead with the Gaudy Boy Poetry Prize cycle — a predictable annual print production window and an audience who notices physical book quality. Position Cushing-Malloy as the manufacturing partner who will honor the care behind each title.`,
+        drafted_email: `Hi Jee Leong,
+
+Gaudy Boy has been doing something genuinely important in American poetry publishing — the Asian diaspora voices you champion and the Gaudy Boy Poetry Book Prize have built a catalog that matters. The readers who follow this work notice the physical book, and production quality is part of the statement.
+
+I’m reaching out from Cushing-Malloy Books in Ann Arbor, Michigan — we’ve been manufacturing poetry collections since 1948, and we specialize in short-run offset production for exactly the kind of prize-driven annual cycle your imprint runs.
+
+- One person manages your project from start to finish — same contact for quoting, production, proofing, and delivery. You always know who to call.
+- 20 working days from approved files to finished books — consistent timing you can build your prize announcement and publication calendar around.
+- Competitive short-run pricing starting at 250 copies — we’ll walk you through the quantity options so you make the right financial decision for each title.
+
+Visit our website at Cushing-Malloy.com. We look forward to hearing from you soon.
+
+Warm regards,
+
+Joe DiMauro
+Customer Service Representative
+P: (734) 663-8554 x110  |  F: (734) 663-5731
+E: jdimauro@cushing-malloy.com  |  www.cushing-malloy.com
+Cushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104
+Where Books Are Bound For Greatness®`
+      },
+      {
+        id: 20, score: 6, priorityClass: "medium",
+        category: "Food & Recipe Creator", catClass: "cat-food",
+        name: "Priscilla Martel",
+        source: "Food & Cookbook Creator Network",
+        email: "pm@priscillamartel.com", phone: "(860) 227-0175",
+        website: "https://www.priscillamartel.com",
+        notes: `Priscilla Martel is a Connecticut-based cookbook author, recipe developer, and food consultant — a credentialed culinary professional with national media exposure (Martha Stewart’s PBS show) and a track record of cookbook development for individual and brand clients. Her website features an educational guide to “Publishing Your Own Cookbook,” indicating direct familiarity with the production landscape and a likely pipeline of cookbook projects through her consulting work. Outreach angle: position Cushing-Malloy as the professional offset printing partner for her next self-published cookbook and as a resource she can refer to aspiring cookbook authors in her consulting practice.`,
+        pitch: `Call (860) 227-0175 or email pm@priscillamartel.com. Lead with her PBS exposure and cookbook consulting work — she advises aspiring cookbook authors on publishing options and Cushing-Malloy can be the printer she confidently recommends. Also pitch for her own next cookbook project.`,
+        drafted_email: `Hi Priscilla,
+
+Your work as a cookbook author, recipe developer, and consultant — including your appearances on Martha Stewart’s PBS show — represents exactly the kind of culinary credibility that translates beautifully to a professionally printed cookbook. When you advise aspiring cookbook authors on their publishing options, Cushing-Malloy Books is the printer worth recommending.
+
+I’m reaching out from Cushing-Malloy Books in Ann Arbor, Michigan — we’ve been manufacturing cookbooks since 1948, and we specialize in professional offset production that goes well beyond what print-on-demand platforms can deliver.
+
+- One person manages your project from start to finish — same contact for quoting, production, proofing, and delivery. No handoffs. Nothing falls through the cracks.
+- We walk first-time cookbook authors through every production decision — paper weight, binding, color reproduction, trim size — so they get the book they’re imagining.
+- Competitive starting at 250 copies, with clear price break education at 500 and 1,000 — we help your clients make the right financial decision on print run quantity.
+
+Visit our website at Cushing-Malloy.com. We look forward to hearing from you soon.
+
+Warm regards,
+
+Joe DiMauro
+Customer Service Representative
+P: (734) 663-8554 x110  |  F: (734) 663-5731
+E: jdimauro@cushing-malloy.com  |  www.cushing-malloy.com
+Cushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104
+Where Books Are Bound For Greatness®`
+      },
+      {
+        id: 21, score: 4, priorityClass: "low",
+        category: "Health & Wellness Creator", catClass: "cat-health",
+        name: "Kate Eskuri (The Foundation Blog)",
+        source: "Instagram Health & Wellness Creator Discovery",
+        email: "hello@thefoundationblog.com", phone: "",
+        website: "https://thefoundationblog.com",
+        notes: `Kate Eskuri is a Minnesota-based holistic wellness coach and blogger running The Foundation Blog, with a growing audience around daily habits, intuitive wellness, and holistic health — she has published at least one book and maintains an engaged wellness community. Supplemental lead: lower score reflects modest audience signal and uncertainty around current print volume; her structured habit-based content translates naturally to a physical wellness guide or workbook, her Minnesota geography places her in Cushing-Malloy’s Midwest reach, and a well-timed outreach could catch her planning her next book project.`,
+        pitch: `Email hello@thefoundationblog.com. Keep the tone warm and peer-level. Reference her existing book and audience. Position Cushing-Malloy as the Midwest manufacturing partner who can help her scale to offset quality and volume for her next wellness book project.`,
+        drafted_email: `Hi Kate,
+
+The Foundation Blog has built something genuinely valuable — a community around daily wellness habits and holistic health that trusts your voice. That kind of engaged audience is exactly the foundation for a physical book that really resonates.
+
+I’m reaching out from Cushing-Malloy Books in Ann Arbor, Michigan — we’ve been manufacturing books since 1948, and we work with wellness creators and coaches who are ready to put a beautifully printed book in their readers’ hands.
+
+- One person manages your project from start to finish — same contact for quoting, production, proofing, and delivery. We hold your hand through the whole process.
+- We walk first-time authors through everything they don’t know they don’t know — paper selection, file prep, trim size, print run economics. You focus on the content; we handle the production.
+- Competitive starting at 250 copies, with pricing that makes sense for a creator launching a wellness book to a loyal community.
+
+Visit our website at Cushing-Malloy.com. We look forward to hearing from you soon.
+
+Warm regards,
+
+Joe DiMauro
+Customer Service Representative
+P: (734) 663-8554 x110  |  F: (734) 663-5731
+E: jdimauro@cushing-malloy.com  |  www.cushing-malloy.com
+Cushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104
+Where Books Are Bound For Greatness®`
+      }
+    ]
+  },
   "2026-04-06": {
     label: "April 6, 2026",
     leads: [
@@ -1320,7 +1956,7 @@ const RUNS = {
 };
 
 // ─── STATE ───────────────────────────────────────────────────────────────────
-let currentRun = "2026-04-06";
+let currentRun = "2026-04-13";
 let sortCol = "score";
 let sortAsc = false;
 let filterPriority = "all";
