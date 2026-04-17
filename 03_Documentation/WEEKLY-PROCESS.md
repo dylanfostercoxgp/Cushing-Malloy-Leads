@@ -17,7 +17,7 @@ This process runs every **Monday at 3:00 AM** (or on-demand). It performs three 
 
 1. **Lead Discovery** — Research and score **20–25 new leads** across multiple channels
 2. **Outreach Drafts** — Save personalized draft emails to SmarterMail Drafts folder for each verified lead (do NOT auto-send)
-3. **Weekly Report** — Email a summary HTML report to dylan@coxgp.com
+3. **Weekly Report** — Save a summary HTML report as a SmarterMail draft (To: ccushing, BCC: dylan + rodrick) — do NOT send, draft only
 
 **Total estimated runtime:** 15–25 minutes depending on lead count.
 
@@ -411,7 +411,7 @@ Warm regards,
 
 ---
 
-## STEP 7 — SEND WEEKLY REPORT EMAIL
+## STEP 7 — DRAFT WEEKLY REPORT EMAIL
 
 Save a weekly summary draft to SmarterMail Drafts using the same `save_draft()` Python function from Step 6.
 
