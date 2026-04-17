@@ -1886,6 +1886,18 @@ const RUNS = {
   }
 };
 
+// ─── VISIBLE RUNS ────────────────────────────────────────────────────────────
+// Runs with a future date are pre-loaded but hidden until their date arrives.
+// This lets you run the weekly process ahead of time: the data sits in the
+// codebase and appears automatically on the scheduled run date.
+function getVisibleRuns() {
+  const today = new Date();
+  today.setHours(23, 59, 59, 999); // include all of today
+  return Object.keys(RUNS)
+    .filter(d => new Date(d) <= today)
+    .sort((a, b) => b.localeCompare(a)); // newest first
+}
+
 // ─── STATE ───────────────────────────────────────────────────────────────────
 let currentRun = "2026-04-13";
 let sortCol = "score";
@@ -1896,6 +1908,16 @@ let searchQuery = "";
 
 // ─── INIT ────────────────────────────────────────────────────────────────────
 function init() {
+  // Rebuild date dropdown using only runs whose date has arrived
+  const visible = getVisibleRuns();
+  const sel = document.getElementById("dateSelect");
+  sel.innerHTML = visible.map(d =>
+    `<option value="${d}">${RUNS[d].label}</option>`
+  ).join("");
+  // Default to the most recent visible run
+  currentRun = visible[0] || Object.keys(RUNS).sort().reverse()[0];
+  sel.value = currentRun;
+
   populateCategoryFilter();
   renderTable();
   updateOverview();
@@ -1996,7 +2018,7 @@ function renderTable() {
 
 function updateOverview() {
   const leads = getLeads();
-  const allTime = Object.values(RUNS).reduce((acc, run) => acc + run.leads.length, 0);
+  const allTime = getVisibleRuns().reduce((acc, d) => acc + RUNS[d].leads.length, 0);
   document.getElementById("statToday").textContent = leads.length;
   document.getElementById("statHigh").textContent = leads.filter(l => l.priorityClass === "high").length;
   document.getElementById("statMed").textContent = leads.filter(l => l.priorityClass === "medium").length;
