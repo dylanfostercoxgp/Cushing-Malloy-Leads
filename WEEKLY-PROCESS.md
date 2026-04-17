@@ -29,16 +29,23 @@ You are finding people who need books **physically printed** — not book buyers
 
 **Outreach signature to use in all emails:**
 ```
-Warm Regards,
-
-Tedd Litty
-C: 616-843-3825  |  T: 734.663.8554 ×103  |  F: 734.663.5731
-E: tlitty@cushing-malloy.com  |  www.cushing-malloy.com
-Cushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104
-Where Books Are Bound For Greatness®
+Warm regards,
+Connie Cushing
+Cushing-Malloy Books
+(734) 663-8554
+cushing-malloy.com
 ```
 
-**CC on all outreach drafts:** `tlitty@cushing-malloy.com`
+---
+
+## ⚠️ EXISTING CLIENTS — NEVER CONTACT AS LEADS
+
+**These 306 companies are active Cushing-Malloy customers (2022–Present). Do NOT include any of them as leads, draft outreach to them, or list them in the weekly report. Cross-check every lead's company name against this list before saving a draft. Matching should be case-insensitive and partial-match aware (e.g., "Copper Canyon" matches "COPPER CANYON PRESS").**
+
+25 & Y, 826 Michigan, A.A. World Services, AB Publishing, Acclaim Press Inc., Action Print, Action Printech Inc., AF Munro II Publishing, Agape Force LLC, Alan Squire Publishing, Allegra Alpena, American Buddhist Study Ctr, American Institute for Conservation, American Oriental Society, American Print & Bindery, Amish Book Committee, Anonymous Press, Arte Publico Press, Audiocraft Publishing Inc., Ausubo Press, Authors Place LLC, Baker Book House, Barbour Publishing, BBS / Servant Heart, BDA Publishing, Beach Glass Books, Belladonna Series, Big White Star, Black From the Brink, BMG Books, BOA Editions Ltd, Boettcher Bottom Dollar Publishing, Book Depot, Borntrager Rebecca, Bosch Girasoles LLC, Brand Leader, Buddhist Education Center, Burton Gwenn, Cadabra Records, Canopy Books LLC, Cardinal Publishers Group, Carlisle Press, Carratt Ardith, Castle Printing & Binding, Cervantes Society of America, Chalcedon / Ross House Books, Chaosium, Chaplain Clyde, Christian Fellowship Publishers, Christian Resources Intl - Mission Cry, Cincinnati Review, CJH Publishing Inc, Clarence Anderson, Clark Jeff, CLC Ministries Intl, Clemons Keith, CME4Life, Coach22 Bookstore, College of Thelema, Columbia Sec School of Math Sci & Eng, Columbia Univ School of the Arts, Comparative Drama - WMU, Confluencia, Congregation of the Passion, Copper Canyon Press, Corriher Durward B., Countryside School, Covenant Love Church, Cox Michael, Cozy Nook, Crossroads Bookstore, Crown & Covenant Publications, Crystal Clarity Publishers, Cultural Society The, Data Reproductions Corp, David L. Head Foundation, Davis III Charles H. F., Dawn Star Press, Dekker Bookbinding, Dewey Hill Entertainment & Publishing, DH Ministries, Die Cutting Services, Doorposts Publishing, Double Eagle Industries, Dufresne Ministries, Duley Press Inc., Eastland Press, Elathia Press, Elidio La Torre Lagares, Emerald Career Publishing, ENO Publishers, Ensan Publishers LLC, Entangled Publishing LLC, Every Word Press LLC, Evolution Counseling & Consulting, Exaculty, Faith International Christian Center Inc, Featherproof, Flood Editions, Flyblister Press, Fordham Univ - Neitzsche Society, Foresight Group LLC, FOSC Publishing, Friends of High Bridge State Park, Gatekeeper Press, Genesis Publishing Group, German-Acadian Coast Hist & Gene Society, Get Printing, GIA Publications Inc., Givington's LLC, Glick Books & Supplies, Goodknight Books, Gossamer Press LLC, Grace Episcopal Church, Grandview Publishing, Granted Ministries, Gray & Company Publishers, Green Pastures Press, Grid Books, Haffner Press, Hardee Laurie, Harvest House Publishers, Helander Joel, High Performance Resources, High Plains Bible Mission, HigherLife Development Svcs Inc, Hillsdale College, Hines Sam, HolyTheQuest.com, Horse & Buggy Press, Houston Jrnl of Mathematics, Huizache Magazine, Human Kinetics, Hume Society, Hurst Publishers, Impossible Dream, Incredible Years, Inspyre Health Publishing, Institute of Reading Development, Institute of East Asian Studies, InterVarsity Press, Intl Assoc for Near Death Studies, Intl Prison Ministries, Introspect Press LLC, Iron Oak Editions, Isaiah 41-10 Foundation Inc., Janssen Sports Leadership Ctr, Jekyll Island Lions Club, JH Dekker & Sons, JNM Media CDM LLC, John Baines Institute Inc., Jorge Valdes Ministries, Jrnl of Sociology & Social Welfare, Kairos Printing & Production, Kaufman Printing Services, Kelly Jerry, Kelsey Street Press, Kenneth Copeland Ministries, Kinner-Poore Sally, KOGGC, Kregel Publications, Kurath Edward, L & L Pardey Publications, Lakelight Institute, Larousse Lorraine, Leonard Dennis, LERU Publishers, Ligier Arnaud, Ligonier Ministries, Litmus Press, Living Legacy Press LLC, Lotus Press, M.E.I. Publishing, Machine Tool Publications, Mackinaw Area Public Library, Madden Taylor Amy, Mainsail Books, Manke Karl, MAS Publishing, MC Publishing, Meadowlark Publishing, Mercurial Design LLC, Merriman Market Analyst, Meyer & Meyer Fachverlag GmbH, Miami Univ Press, Michael Bruce Associates, Miller School Books, MSC Medical, Mudpuppy Games, Murphy Auto Group, Muskegon Community College, My Lyfe Matters Publishing LLC, Narthex Press, National Poetry Foundation, National Print & Mail, Nehora Press, New School for Social Research, New School Univ, Noble Book Press Corp, Northbooks, NTI Upstream, Oakland University, Ohio Amish Library, Old Colony Mennonite Support, Omni Christian Books, Orthodox Calendar Company, Our Daily Bread, Our Sunday Visitor, Paddle4Ever, Parfell Monteuse, Pathway Publishers, Penin Inc Publishing LLC, Philosophy Documentation Center, Pinata Publishing, Posterity Press, Powerful You! Publishing, Prairie Schooner, Prairie View Press, PrayerShop Publishing, Principia Media LLC, Printing You Can Trust, Prisco - Equity Strategies Group, Professional Book Compositors, Publitho, Pushpin Press, Raber's Bookstore, Raja Books, Reading Group Choices, Reality Zone, Red Hen Press, Remodeler's Advantage, Research Laboratory of Electronics at MIT, Revista Decritica Literaria Latinoamerica, Revista Iberoamericana, RFP Sport & Performance Consulting, Rock House Publishing, Rotman Isabella, Rowfant Club The, Sans Serif, Sapphire Publications, Sara Hunter Productions, Sarashina Books, Schopke Angela, Schul Haus, Scribbnotes, Seattle Buddhist Church, Sefer Press, Select Books Inc, Sentient Publications, Sermon on the Mount Publishing, Shared Hope International, Sheridan Books Inc., Shibad Publishing, Shinshu Ctr of America, Sinister Wisdom, Society of Les Voyageurs, Solstice 13 Publishing, Spadaro Patricia, Sport Planner The, Spry Publishing, Statsig.com Inc, Steelcutter Publishing, Stephon P. Publishing, Still Joyfull Press, Stoll Sharon, Straight Katie Walsh, Sword & Rose Press, Sword & Shield Publishing, SYS Marketing, Teach Services, Telos Press, TGS International, Thomson Richard, Thursby George, Thy Word Creations, Tickle Kitty Press, Tierra Enterprises, Top Shelf Publishing, Truckers Friends Network Inc., Turtle Point Press, Twenty-Third Publications, Two Coffee Cups LLC, Two Lines Press, Univ of Alabama Press, Univ of Maine Press, Univ of Nebraska Press, Univ Oklahoma Press, Variaciones Borges, Verge Books, Vital Health Publishing, Walters Dennis, Washington State Univ, Watershed Wellness Ctr, Wattles Publishing, Wave 3 Learning Inc., Wave Books, Wesleyan Publishing House, Wild Ones, Wiley John, Wind Music Inc., Word & Spirit Publishing, World Poetry Books, WorshipNow Publishing, Writing Is Hard LLC, Yoder Joas, Zephyr Press
+
+> **Source:** Cushing-Malloy customer list, 2022–Present (306 companies). Updated April 2026.
+> **Rule:** If a lead's company name matches any entry above (even partially or case-insensitively), skip them entirely — they are already a customer.
 
 ---
 
@@ -55,7 +62,7 @@ Before researching leads, read these files to understand the full brief:
    → Extract all names/companies already in the system. Do NOT regenerate any of them.
 
 **Previously generated leads (as of March 2026) — DO NOT DUPLICATE:**
-Orange Frazer Press, Bottom Dog Press, Fiddlehead Press, Porkbelly Press, Bex Kitchen, Idris Doosi, Paul Jarvis, Nat Eliason, Hill Schroder, Dickie Bush, Sohee Carpenter, M.G. Hunt, Sarah Styf, Rachel Moss, Erin Romeo, New Michigan Press, Glass Poetry Press, Ice Cube Press, 42 Miles Press, Midwest Writing Center (MWC Press), Yellow Arrow Publishing, Ali Kriegsman, Allegra Hall, Rob Dircks, Maren Moore, Oriana Leckert, Cornerstone Press (UW-Stevens Point), Restless Books, Wandering in the Words Press
+Orange Frazer Press, Bottom Dog Press, Fiddlehead Press, Porkbelly Press, Bex Kitchen, Idris Doosi, Paul Jarvis, Nat Eliason, Hill Schroder, Dickie Bush, Sohee Carpenter, M.G. Hunt, Sarah Styf, Rachel Moss, Erin Romeo
 
 ---
 
@@ -138,6 +145,8 @@ Using the full spec in `cushing-malloy-lead-gen-prompt.md`, research and identif
 | Contact Quality | 5% | No way to reach | Generic form only | Direct email or phone confirmed |
 
 **RULE: Core batch must score 6 or above. Up to 5 supplemental leads scoring below 5 are permitted per run if they represent genuinely promising prospects. Leads scoring below 5 must include a justification note.**
+
+**EXISTING CLIENT CHECK (mandatory before finalizing any lead):** Cross-reference every lead against the "EXISTING CLIENTS" list above. If the company name matches — even partially — remove that lead from the run. Do not draft, do not score, do not include in the report.
 
 **Priority tiers:** 8–10 = High | 5–7 = Medium | 1–4 = Low (supplemental only, max 5 per run)
 
@@ -258,43 +267,64 @@ git push origin main
 
 ## STEP 6 — CREATE SMARTERMAIL OUTREACH DRAFTS
 
-For every lead with a **verified email address**, save a personalized draft to the SmarterMail Drafts folder using Python via IMAP. **Save as DRAFT only. Do NOT send.**
+For every lead with a **verified email address**, save a personalized draft to the SmarterMail Drafts folder using the **SmarterMail native REST API**. **Save as DRAFT only. Do NOT send.**
 
 **Email account:** `printyourbook@cushing-malloy.com` — drafts appear at `https://mail.cushing-malloy.com`
 
+> **IMPORTANT:** Use the native REST API below — NOT Python IMAP. Drafts created via IMAP APPEND cannot be edited or sent through SmarterMail's web composer (known SmarterMail limitation). The `draft-put` endpoint produces fully editable, sendable drafts identical to those created natively in the SmarterMail UI.
+
 ### Python helper (run via Bash tool for each lead):
 
-> **Important:** All drafts are saved to SmarterMail (`printyourbook@cushing-malloy.com`) via IMAP. **Never use Gmail.** Drafts must be HTML format to support the Cushing-Malloy.com hyperlink in the closing. After drafting all leads, run Apollo enrichment for phone numbers and add a note "No phone number found via Apollo enrichment." to the Full Notes of any lead where Apollo returns no phone data.
-
 ```python
-import imaplib, email, time
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
+import requests, uuid, urllib3
+from datetime import datetime, timezone
+urllib3.disable_warnings()
 
-IMAP_HOST = "mail.cushing-malloy.com"
-IMAP_PORT = 993
-EMAIL_USER = "printyourbook@cushing-malloy.com"
-EMAIL_PASS = "SNaFx$os5^Z4Rig"
+BASE = "https://mail.cushing-malloy.com"
+USER = "printyourbook@cushing-malloy.com"
+PASS = "SNaFx$os5^Z4Rig"
 
-CC_EMAIL = "tlitty@cushing-malloy.com"
+def get_token():
+    r = requests.post(f"{BASE}/api/v1/auth/authenticate-user",
+        json={"username": USER, "password": PASS, "rememberMe": False},
+        verify=False, timeout=15)
+    return r.json()["accessToken"]
 
-def save_draft(to_address, subject, plain_body, html_body=None):
-    msg = MIMEMultipart("alternative")
-    msg["From"]    = EMAIL_USER
-    msg["To"]      = to_address
-    msg["Cc"]      = CC_EMAIL
-    msg["Subject"] = subject
-    msg["Date"]    = email.utils.formatdate()
-    msg.attach(MIMEText(plain_body, "plain", "utf-8"))
-    if html_body:
-        msg.attach(MIMEText(html_body, "html", "utf-8"))
-    mail = imaplib.IMAP4_SSL(IMAP_HOST, IMAP_PORT)
-    mail.login(EMAIL_USER, EMAIL_PASS)
-    mail.append("Drafts", r"\\Draft", imaplib.Time2Internaldate(time.time()), msg.as_bytes())
-    mail.logout()
+def save_draft(to_address, subject, html_body, cc="", bcc="", token=None):
+    if token is None:
+        token = get_token()
+    headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
+    guid = str(uuid.uuid4())
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.0Z")
+    payload = {
+        "to": to_address, "cc": cc, "bcc": bcc,
+        "date": now, "from": USER, "replyTo": USER,
+        "subject": subject,
+        "messageHTML": html_body,       # NOTE: field is messageHTML, not htmlBody
+        "attachmentGuid": guid,
+        "actions": {},
+        "readReceiptRequested": False,
+        "deliveryReceiptRequested": False,
+        "priority": 0,
+        "excludeFiles": [],
+        "inlineToRemove": [],
+        "draftExcludeFiles": "[]",
+        "draftInlineToRemove": "[]",
+        "isForward": False, "isReply": False,
+        "selectedFrom": f"local:{USER}",
+        "markForFollowup": False
+    }
+    r = requests.post(f"{BASE}/api/v1/mail/draft-put/{guid}",
+        headers=headers, json=payload, verify=False, timeout=15)
+    return r.json().get("uid"), r.json().get("success", False)
 
-# Call once per lead — provide both plain text and HTML versions:
-# save_draft("lead@example.com", "Subject line", plain_body, html_body)
+# Usage — authenticate once, then create all drafts:
+# token = get_token()
+# save_draft("lead@example.com", "Subject line", "<p>HTML body</p>", token=token)
+# save_draft("lead2@example.com", "Subject 2", "<p>Body 2</p>", token=token)
+#
+# NOTE: Outreach drafts do NOT CC anyone — To: lead only
+# NOTE: Hyperlink Cushing-Malloy.com in closing: <a href="https://cushing-malloy.com">Cushing-Malloy.com</a>
 ```
 
 ### Email template and personalization rules:
@@ -333,18 +363,36 @@ Here's what makes us different for [authors like you / presses like yours]:
 If you're not sure where to start, that's exactly why we're here. We'd love to
 give you a no-pressure quote and talk through your options.
 
-Visit our website at Cushing-Malloy.com. We look forward to hearing from you soon.
+Visit our website at <a href="https://cushing-malloy.com">Cushing-Malloy.com</a>. We look forward to hearing from you soon.
 
-Warm Regards,
+Warm regards,
 
-Tedd Litty
-C: 616-843-3825  |  T: 734.663.8554 ×103  |  F: 734.663.5731
-E: tlitty@cushing-malloy.com  |  www.cushing-malloy.com
-Cushing-Malloy, Inc.  |  1350 N. Main, Ann Arbor, MI 48104
-Where Books Are Bound For Greatness®
+<div style="margin-top:24px;padding-top:16px;border-top:3px solid #3787c4;max-width:480px;font-family:Arial,sans-serif;">
+  <table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,sans-serif;">
+    <tr>
+      <td style="vertical-align:top;border-right:3px solid #3787c4;padding-right:14px;">
+        <div style="font-size:15px;font-weight:700;color:#1a1a1a;letter-spacing:-0.2px;white-space:nowrap;">Joe DiMauro</div>
+        <div style="font-size:11px;font-weight:600;color:#3787c4;text-transform:uppercase;letter-spacing:0.8px;margin-top:2px;white-space:nowrap;">Customer Service Representative</div>
+      </td>
+      <td style="padding-left:14px;vertical-align:top;">
+        <table cellpadding="0" cellspacing="0" border="0" style="font-size:12px;color:#555;line-height:1.7;">
+          <tr><td><a href="mailto:jdimauro@cushing-malloy.com" style="color:#3787c4;text-decoration:none;font-weight:600;">jdimauro@cushing-malloy.com</a></td></tr>
+          <tr><td style="white-space:nowrap;">P: (734) 663-8554 x110&nbsp;&nbsp;|&nbsp;&nbsp;F: (734) 663-5731</td></tr>
+          <tr><td style="color:#888;font-size:11px;">Cushing-Malloy, Inc.&nbsp;&nbsp;|&nbsp;&nbsp;1350 N. Main, Ann Arbor, MI 48104</td></tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:8px;">
+        <div style="font-size:10px;color:#aaa;font-style:italic;letter-spacing:0.3px;">
+          <a href="https://cushing-malloy.com" style="color:#3787c4;text-decoration:none;font-weight:700;">cushing-malloy.com</a>
+          &nbsp;&nbsp;&middot;&nbsp;&nbsp;Where Books Are Bound For Greatness&reg;
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
 ```
-
-> **Closing rule:** The second-to-last paragraph always ends with "Visit our website at [Cushing-Malloy.com](https://cushing-malloy.com). We look forward to hearing from you soon." — hyperlinked in HTML drafts. Never use "Would a quick call this week work?" as a closing line.
 
 **Personalization checklist before creating each draft:**
 - [ ] Subject line references their specific project
@@ -352,6 +400,10 @@ Where Books Are Bound For Greatness®
 - [ ] Print run size estimate is realistic for their situation
 - [ ] At least one differentiator is tailored to their specific need
 - [ ] Tone matches their vibe (casual for creators, professional for publishers)
+- [ ] Closing hyperlinks Cushing-Malloy.com: `<a href="https://cushing-malloy.com">Cushing-Malloy.com</a>`
+- [ ] Closing does NOT say "Would a quick call this week work?" — that phrase is permanently banned
+- [ ] No em dashes (—) used anywhere in the email body — use commas, colons, or rewrite the sentence instead
+- [ ] CC field is empty on outreach drafts (no CC — To: lead only)
 
 ---
 
@@ -360,7 +412,7 @@ Where Books Are Bound For Greatness®
 Save a weekly summary draft to SmarterMail Drafts using the same `save_draft()` Python function from Step 6.
 
 - **To:** ccushing@cushing-malloy.com
-- **CC:** tlitty@cushing-malloy.com
+- **CC:** (none)
 - **BCC:** dylan@coxgp.com, rodrick@coxgp.com
 
 **Subject:** `Cushing-Malloy Lead Intelligence Prospecting — Week of [Monday Date]`
@@ -457,13 +509,14 @@ Run a final checklist before marking the process complete:
 - [ ] At least 4–5 different discovery channels used
 - [ ] Leads span multiple US states/regions
 - [ ] No duplicates from previous runs
+- [ ] No existing clients included (cross-checked against the 306-company client list in the "EXISTING CLIENTS" section)
 - [ ] Dashboard HTML updated with new run date and leads (prepended, newest first)
 - [ ] Lead archive JSON saved to `02_Lead_Data/archive/leads-YYYY-MM-DD.json`
 - [ ] `01_Dashboard/cushing-malloy-lead-dashboard.html` updated
 - [ ] Root `index.html` updated (copied from `01_Dashboard/` — named `index.html`, not `cushing-malloy-lead-dashboard.html`)
 - [ ] All changes committed and pushed to GitHub (`01_Dashboard/` copy + `index.html` at root)
-- [ ] SmarterMail outreach drafts saved for all leads with verified emails
-- [ ] Weekly report draft saved to SmarterMail Drafts (To: dylan@coxgp.com)
+- [ ] SmarterMail outreach drafts saved for all leads with verified emails (use REST API draft-put, NOT IMAP)
+- [ ] Weekly report draft saved to SmarterMail Drafts (To: ccushing@cushing-malloy.com / BCC: dylan@coxgp.com, rodrick@coxgp.com)
 
 ---
 
@@ -535,11 +588,18 @@ Cushing-Malloy/
 
 ## TECHNICAL NOTES FOR CLAUDE CODE
 
-- **Email system:** SmarterMail via IMAP (Python `imaplib`)
-- **IMAP host:** `mail.cushing-malloy.com` port 993 (SSL)
+- **Email system:** SmarterMail native REST API (`draft-put` endpoint) — NOT IMAP
+- **API base:** `https://mail.cushing-malloy.com/api/v1/`
+- **Auth endpoint:** `POST /api/v1/auth/authenticate-user` → returns `accessToken` JWT
+- **Draft endpoint:** `POST /api/v1/mail/draft-put/{uuid}` — use fresh `uuid.uuid4()` as path segment
+- **HTML body field:** `messageHTML` (not `htmlBody` — this is the critical field name)
+- **Do NOT use IMAP:** Python `imaplib.append()` creates non-editable drafts in SmarterMail
 - **Outreach sender:** `printyourbook@cushing-malloy.com`
 - **Drafts saved to:** Drafts folder — view at `https://mail.cushing-malloy.com`
-- **Report recipient:** dylan@coxgp.com
+- **Outreach draft routing:** To: lead's email | CC: (none) | BCC: (none)
+- **Report routing:** To: ccushing@cushing-malloy.com | CC: (none) | BCC: dylan@coxgp.com, rodrick@coxgp.com
+- **Closing hyperlink rule:** Cushing-Malloy.com in the closing sentence must be an HTML hyperlink to https://cushing-malloy.com
+- **Em dash ban:** Do not use em dashes (—) anywhere in outreach email copy. Use commas, colons, or rewrite the sentence instead.
 - **Dashboard file location:** `/mnt/Dashboard/cushing-malloy-lead-dashboard.html`
 - **Archive location:** `/mnt/Dashboard/02_Lead_Data/archive/`
 - **Scheduled task:** Monday, 3:00 AM (weekly)
