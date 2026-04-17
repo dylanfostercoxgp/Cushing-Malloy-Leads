@@ -175,21 +175,21 @@
     }
 
     /* ─── MAIN LAYOUT ─── */
-    .main { padding: 28px 32px; max-width: 1600px; margin: 0 auto; }
+    .main { padding: 18px 20px; max-width: 1600px; margin: 0 auto; }
 
     /* ─── OVERVIEW PANEL ─── */
     .overview-grid {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      gap: 16px;
-      margin-bottom: 28px;
+      gap: 12px;
+      margin-bottom: 22px;
     }
     .stat-card {
       background: #ffffff;
       border: 1px solid var(--border);
       box-shadow: 0 1px 4px rgba(0,0,0,0.06);
       border-radius: 12px;
-      padding: 18px 20px;
+      padding: 14px 16px;
       display: flex;
       flex-direction: column;
       gap: 6px;
@@ -274,7 +274,7 @@
       border-radius: 8px;
       font-size: 0.875rem;
       outline: none;
-      width: 220px;
+      width: 190px;
       transition: border-color 0.2s;
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%235c7a9a' stroke-width='2'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cpath d='m21 21-4.35-4.35'/%3E%3C/svg%3E");
       background-repeat: no-repeat;
@@ -319,10 +319,20 @@
     table {
       width: 100%;
       border-collapse: collapse;
+      table-layout: fixed;
     }
+    /* Fixed column widths — keeps layout stable at 100% zoom */
+    thead th:nth-child(1) { width: 15%; }   /* Company / Name */
+    thead th:nth-child(2) { width:  8%; }   /* Website */
+    thead th:nth-child(3) { width: 17%; }   /* Category */
+    thead th:nth-child(4) { width:  5%; }   /* Score */
+    thead th:nth-child(5) { width:  9%; }   /* Source */
+    thead th:nth-child(6) { width: 11%; }   /* Email */
+    thead th:nth-child(7) { width:  6%; }   /* Phone */
+    thead th:nth-child(8) { width: 29%; }   /* Notes */
     thead th {
       background: #f5f7fa;
-      padding: 12px 14px;
+      padding: 10px 11px;
       text-align: left;
       font-size: 0.72rem;
       font-weight: 700;
@@ -346,8 +356,8 @@
     tbody tr:hover { background: #eef5fc; }
     tbody tr:last-child { border-bottom: none; }
     td {
-      padding: 13px 14px;
-      font-size: 0.855rem;
+      padding: 10px 11px;
+      font-size: 0.84rem;
       vertical-align: top;
     }
 
@@ -376,6 +386,7 @@
       letter-spacing: 0.3px;
       white-space: nowrap;
     }
+    td .category-pill { white-space: normal; line-height: 1.35; }
     /* Publisher categories */
     .cat-small-press  { background: rgba(107,159,219,0.15); color: #6b9fdb; border: 1px solid rgba(107,159,219,0.3); }
     .cat-micro-press  { background: rgba(138,107,219,0.15); color: #a87fdb; border: 1px solid rgba(138,107,219,0.3); }
@@ -395,9 +406,10 @@
 
     /* Name Cell */
     .name-cell { font-weight: 600; color: var(--text-primary); }
-    .source-cell { color: var(--text-muted); font-size: 0.78rem; }
+    .source-cell { color: var(--text-muted); font-size: 0.75rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 0; }
 
     /* Email */
+    .website-cell, .email-cell { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 0; }
     .email-cell a, .website-cell a {
       color: var(--gold);
       text-decoration: none;
@@ -784,7 +796,8 @@
     }
 
     @media (max-width: 480px) {
-      .header-logos { display: none; }
+      .header-logos img { height: 28px; }
+      .logo-divider { height: 28px; }
       .overview-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
       .toolbar-left { grid-template-columns: 1fr; }
     }
@@ -797,7 +810,7 @@
     .qr-link {
       font-size: 0.7rem; font-weight: 600;
       color: var(--gold); text-decoration: underline;
-      text-decoration-style: dotted; white-space: nowrap;
+      text-decoration-style: dotted; white-space: normal;
     }
     .qr-trigger:hover .qr-link { color: var(--gold-light); }
     .qr-dot {
