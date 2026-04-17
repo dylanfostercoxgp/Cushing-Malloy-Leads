@@ -573,13 +573,220 @@
     @media (max-width: 1100px) {
       .overview-grid { grid-template-columns: repeat(3, 1fr); }
     }
+
+    /* ─── MOBILE ────────────────────────────────────────────────────────────── */
     @media (max-width: 768px) {
-      .header { flex-wrap: wrap; }
-      .header-title h1 { font-size: 1.1rem; }
-      .main { padding: 16px; }
-      .overview-grid { grid-template-columns: repeat(2, 1fr); }
-      .toolbar { flex-direction: column; align-items: flex-start; }
-      .search-input { width: 100%; }
+
+      /* Header */
+      .header {
+        flex-wrap: wrap;
+        padding: 12px 16px;
+        gap: 8px;
+        justify-content: center;
+      }
+      .header-logos { gap: 10px; }
+      .header-logos img { height: 34px; }
+      .header-title { width: 100%; text-align: center; order: 2; }
+      .header-title h1 { font-size: 1.05rem; }
+      .header-title p { font-size: 0.66rem; }
+      .header-logos { order: 1; }
+      .header-badge {
+        order: 3;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        padding: 6px 14px;
+      }
+      .header-badge .run-label { display: inline; font-size: 0.68rem; }
+      .header-badge .run-date { font-size: 0.82rem; }
+
+      /* Main */
+      .main { padding: 12px; }
+
+      /* Overview stats */
+      .overview-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-bottom: 18px;
+      }
+      .stat-card { padding: 12px 14px; }
+      .stat-value { font-size: 1.65rem; }
+      .stat-icon { font-size: 1.1rem; }
+      .stat-label { font-size: 0.68rem; }
+
+      /* Toolbar */
+      .toolbar {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 16px;
+      }
+      .toolbar-left {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        align-items: start;
+      }
+      .toolbar-right {
+        width: 100%;
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      .toolbar-right .btn {
+        flex: 1;
+        min-width: 0;
+        text-align: center;
+        font-size: 0.75rem;
+        padding: 8px 6px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .filter-group {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+      }
+      .filter-group select,
+      .search-input {
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .search-input { grid-column: 1 / -1; }
+
+      /* Table → Cards */
+      .table-wrapper {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        overflow: visible;
+        border-radius: 0;
+      }
+      table { display: block; width: 100%; }
+      thead { display: none; }
+      tbody { display: flex; flex-direction: column; gap: 12px; }
+      tbody tr {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        background: #ffffff;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 14px 16px;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+        transition: background 0.15s;
+        border-bottom: 1px solid var(--border) !important;
+      }
+      tbody tr:hover { background: #f5f8fc; }
+      td { display: block; padding: 0; border: none; }
+
+      /* Score badge — sits top-left, name wraps beside it */
+      td:nth-child(4) {
+        order: 1;
+        flex: 0 0 auto;
+        margin-right: 12px;
+        align-self: flex-start;
+      }
+      /* Company name + QR link — fills first row beside score */
+      td.name-cell {
+        order: 2;
+        flex: 1 1 160px;
+        min-width: 0;
+        margin-bottom: 6px;
+        font-size: 0.92rem;
+      }
+      /* Category pill — own row */
+      td:nth-child(3) {
+        order: 3;
+        flex: 0 0 100%;
+        margin-bottom: 10px;
+      }
+      /* Divider + website */
+      td.website-cell {
+        order: 4;
+        flex: 0 0 100%;
+        padding-top: 10px;
+        margin-bottom: 5px;
+        border-top: 1px solid #eef1f6;
+        font-size: 0.82rem;
+      }
+      /* Email */
+      td.email-cell {
+        order: 5;
+        flex: 0 0 100%;
+        margin-bottom: 4px;
+        font-size: 0.82rem;
+      }
+      /* Phone */
+      td:nth-child(7) {
+        order: 6;
+        flex: 0 0 100%;
+        margin-bottom: 4px;
+        font-size: 0.8rem !important;
+        color: var(--text-secondary);
+      }
+      /* Source — de-emphasized */
+      td.source-cell {
+        order: 7;
+        flex: 0 0 100%;
+        font-size: 0.7rem !important;
+        color: var(--text-muted) !important;
+        margin-bottom: 8px;
+      }
+      /* Notes — separated at bottom */
+      td.notes-cell {
+        order: 8;
+        flex: 0 0 100%;
+        max-width: none;
+        padding-top: 10px;
+        border-top: 1px solid #eef1f6;
+        font-size: 0.8rem;
+        color: var(--text-secondary);
+        line-height: 1.5;
+      }
+
+      /* Footer */
+      .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+      .footer-right {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .footer-right .btn {
+        flex: 1;
+        text-align: center;
+        font-size: 0.75rem;
+        padding: 8px 6px;
+        min-width: 0;
+      }
+
+      /* Modals — slide up from bottom */
+      .modal-overlay { align-items: flex-end; }
+      .modal {
+        width: 100%;
+        max-width: 100%;
+        max-height: 90vh;
+        border-radius: 18px 18px 0 0;
+        border: none;
+        padding: 20px 16px 28px;
+        margin: 0;
+        align-self: flex-end;
+      }
+      .modal-meta { grid-template-columns: 1fr; }
+      .qr-modal { border-radius: 18px 18px 0 0; max-width: 100%; }
+    }
+
+    @media (max-width: 480px) {
+      .header-logos { display: none; }
+      .overview-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+      .toolbar-left { grid-template-columns: 1fr; }
     }
 
     /* ─── QUALITY REPORT ─── */
@@ -928,6 +1135,9 @@
 
 <script>
 // ─── DATA ───────────────────────────────────────────────────────────────────
+// ⚠️  IMPORTANT: NEVER delete or modify existing run data. Only ADD new runs.
+//     Each run date key must be preserved permanently for historical reference
+//     and Quality Report continuity. New runs go at the top of this object.
 const RUNS = {
   "2026-04-13": {
     label: "April 13, 2026",
