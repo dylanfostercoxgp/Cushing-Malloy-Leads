@@ -867,7 +867,7 @@
     </div>
     <div class="qr-form">
       <div class="qr-field">
-        <label>Overall Lead Quality</label>
+        <label>Overall Lead Quality <span style="color:#c0392b;">&#42;</span> <span style="font-size:0.65rem;font-weight:400;color:#c0392b;">required</span></label>
         <select id="qrQuality">
           <option value="">Select...</option>
           <option value="Hot">🔥 Hot</option>
@@ -1300,7 +1300,7 @@ function renderTable() {
     const websiteCell = `<a href="${l.website}" target="_blank" rel="noopener">${l.website.replace(/^https?:\/\//, '').replace(/\/$/, '')}</a>`;
     const qr = (qualityReports[currentRun] || {})[l.name];
     const dotClass = qr ? `qr-dot-${qr.quality.toLowerCase().replace(/\s+/g,'-')}` : 'qr-dot-empty';
-    const qrLabel = qr ? qr.quality : 'Lead Quality Report';
+    const qrLabel = qr ? `Lead Quality Report (${qr.quality})` : 'Lead Quality Report';
     return `
       <tr>
         <td class="name-cell">
