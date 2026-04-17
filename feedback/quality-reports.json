@@ -15,6 +15,14 @@
       "contactQuality": "General Inbox",
       "comments": "Test",
       "updatedAt": "2026-04-17T14:58:19.348Z"
+    },
+    "Mission Point Press": {
+      "quality": "Cold",
+      "genreMatch": "",
+      "volumeFit": "Too Large",
+      "contactQuality": "",
+      "comments": "",
+      "updatedAt": "2026-04-17T14:59:37.767Z"
     }
   }
 }
