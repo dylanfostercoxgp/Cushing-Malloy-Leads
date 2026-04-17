@@ -5,6 +5,10 @@
 > *"Run the Cushing-Malloy weekly lead generation process."*
 > Claude will follow every step in order, automatically.
 
+> **Pre-running ahead of schedule:** You can run this process before the intended publish date. Tell Claude:
+> *"Run the weekly process with a run date of [future date, e.g. April 20, 2026]."*
+> Claude will generate all leads, draft emails, and add the data to the dashboard — but the run will not appear in the dashboard until that date arrives. No extra steps needed on publish day; it unlocks automatically.
+
 ---
 
 ## OVERVIEW
