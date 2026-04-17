@@ -989,6 +989,7 @@
       <div class="filter-group">
         <span class="filter-label">Date</span>
         <select class="date-selector" id="dateSelect">
+          <option value="2026-04-20">April 20, 2026</option>
           <option value="2026-04-13" selected>April 13, 2026</option>
           <option value="2026-04-06">April 6, 2026</option>
           <option value="2026-03-31">March 31, 2026</option>
@@ -1152,6 +1153,222 @@
 //     Each run date key must be preserved permanently for historical reference
 //     and Quality Report continuity. New runs go at the top of this object.
 const RUNS = {
+  "2026-04-20": {
+    label: "April 20, 2026",
+    leads: [
+      {
+        id: 1, score: 9, priorityClass: "high",
+        category: "Hybrid Publisher / Author Services", catClass: "cat-hybrid",
+        name: "Rootstock Publishing",
+        source: "IBPA Member Directory",
+        email: "samantha@rootstockpublishing.com", phone: "(802) 477-3131",
+        website: "https://rootstockpublishing.com",
+        notes: "Rootstock Publishing is a Vermont-based hybrid press founded 2014 that partners with authors to produce 10\u201315 high-quality print titles annually, primarily regional nonfiction, memoir, and Vermont-focused books distributed through Ingram. As a hybrid publisher, they actively manage the manufacturing relationship for each title, making them a recurring multi-title print opportunity rather than a one-time project. Outreach angle: Cushing-Malloy\u2019s single-contact model is exactly what hybrid publishers need to deliver consistently to their authors -- no handoffs between estimating, production, and proofing means the quality their authors are promised is the quality they receive.",
+        pitch: "", drafted_email: ""
+      },
+      {
+        id: 2, score: 8, priorityClass: "high",
+        category: "Business & Authority Author", catClass: "cat-business",
+        name: "Paul Millerd",
+        source: "LinkedIn Business Author Network",
+        email: "paul@pathlesspath.com", phone: "",
+        website: "https://pathlesspath.com",
+        notes: "Paul Millerd is a self-published author and writer whose book 'The Pathless Path' has sold 30,000+ copies independently, supported by a 30,000+ subscriber Substack and a second book actively in development for 2026. He has publicly discussed upgrading his print quality beyond POD and views physical books as a core revenue and credibility driver for his consulting and speaking work. Outreach angle: at his volume and visibility, Cushing-Malloy\u2019s offset pricing at 500+ copies meaningfully lowers his per-unit cost versus KDP -- the 20-day production timeline keeps him responsive to demand spikes from his newsletter audience.",
+        pitch: "", drafted_email: ""
+      },
+      {
+        id: 3, score: 8, priorityClass: "high",
+        category: "Small Press (6\u201320 titles/yr)", catClass: "cat-small",
+        name: "Tortoise Books",
+        source: "CLMP Independent Press Directory",
+        email: "editors@tortoisebooks.com", phone: "",
+        website: "https://tortoisebooks.com",
+        notes: "Tortoise Books is a Chicago-based independent press founded by Gerald Brennan, publishing 6\u201310 literary fiction and narrative nonfiction titles annually with national distribution and a growing critical reputation. Chicago is 3.5 hours from Ann Arbor, putting Tortoise squarely in Cushing-Malloy\u2019s Midwest manufacturing corridor with same-region advantages of lower freight and faster turnaround. Outreach angle: a peer Midwest story from a 75-year Ann Arbor institution -- one dedicated contact from quote to delivery for a press that competes on literary quality.",
+        pitch: "", drafted_email: ""
+      },
+      {
+        id: 4, score: 8, priorityClass: "high",
+        category: "Solo Author \u2013 Print-Ready", catClass: "cat-solo-ready",
+        name: "Joanna Penn (The Creative Penn)",
+        source: "Substack / Creator Economy Discovery",
+        email: "joanna@thecreativepenn.com", phone: "",
+        website: "https://thecreativepenn.com",
+        notes: "Joanna Penn is a prolific independent author with 40+ published titles and 100,000+ followers across podcast, newsletter, and social media who has publicly announced a 2026 shift toward premium US-printed physical editions after dissatisfaction with POD quality for her nonfiction books. Her audience is 61% US-based and she has existing wholesale distribution relationships sized for offset print runs of 1,000+ copies per title. Outreach angle: Cushing-Malloy\u2019s offset quality with 20-day production and volume pricing education for a multi-title annual print schedule -- one trusted US manufacturing partner from quote through delivery for all her physical editions.",
+        pitch: "", drafted_email: ""
+      },
+      {
+        id: 5, score: 7, priorityClass: "medium",
+        category: "Hybrid Publisher / Author Services", catClass: "cat-hybrid",
+        name: "She Writes Press",
+        source: "Reedsy Independent Publishers Directory",
+        email: "swp@stablebookgroup.com", phone: "",
+        website: "https://shewritespress.com",
+        notes: "She Writes Press is a top-tier women\u2019s hybrid publisher founded 2012 in Oakland, California with 35+ titles annually across women\u2019s fiction, memoir, and nonfiction -- consistently ranked among the most successful hybrid publishers in North America. Their volume and author-service model requires a manufacturing partner who can handle multiple simultaneous titles with consistent quality and reliable production communication. Outreach angle: Cushing-Malloy\u2019s single point of contact is a direct competitive advantage for She Writes\u2019 authors -- one person knows every specification from initial quote through press check, the exact experience She Writes builds its author-service reputation on.",
+        pitch: "", drafted_email: ""
+      },
+      {
+        id: 6, score: 7, priorityClass: "medium",
+        category: "Small Press (6\u201320 titles/yr)", catClass: "cat-small",
+        name: "Restless Books",
+        source: "Poets & Writers Small Presses DB",
+        email: "publisher@restlessbooks.org", phone: "",
+        website: "https://restlessbooks.org",
+        notes: "Restless Books is an independent press founded 2013 in Amherst, Massachusetts focused on international and translated literature with 10\u201315 titles annually and strong national bookstore and library presence. Their focus on literary translated fiction -- which requires precise production specifications -- benefits directly from a single knowledgeable manufacturing contact who stays with each title from estimate through delivery. Outreach angle: Cushing-Malloy\u2019s 20-day standard production timeline and offset quality -- no handoffs between estimating, production, and proofing means the care they take with translated manuscripts extends through to the physical book.",
+        pitch: "", drafted_email: ""
+      },
+      {
+        id: 7, score: 7, priorityClass: "medium",
+        category: "Small Press (6\u201320 titles/yr)", catClass: "cat-small",
+        name: "Latah Books",
+        source: "CLMP Independent Press Directory",
+        email: "editor@latahbooks.com", phone: "(509) 394-4740",
+        website: "https://latahbooks.com",
+        notes: "Latah Books is a Spokane, Washington independent press founded 2017 focused on Pacific Northwest voices in fiction, poetry, and memoir with 6\u201310 titles annually and a growing national presence through Ingram distribution. A West Coast press actively growing into national markets is a natural candidate for a Midwest manufacturing partner, and Cushing-Malloy\u2019s offset pricing at short-to-medium runs outperforms their current POD costs on both quality and margins. Outreach angle: the volume pricing education story -- at 500 to 1,000 copies per title the per-unit economics change dramatically, and Cushing-Malloy\u2019s 20-day production delivers finished books faster than their current production pipeline.",
+        pitch: "", drafted_email: ""
+      },
+      {
+        id: 8, score: 7, priorityClass: "medium",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "CavanKerry Press",
+        source: "Poets & Writers Small Presses DB",
+        email: "dimitri@cavankerrypress.org", phone: "",
+        website: "https://cavankerrypress.org",
+        notes: "CavanKerry Press is a Fort Lee, New Jersey poetry-focused nonprofit press founded 2000, publishing 4\u20136 literary collections annually with a focus on social justice and underrepresented voices and a strong reputation in the independent poetry world. Poetry presses are a prime target for Cushing-Malloy because short offset poetry runs (300\u2013750 copies) deliver meaningfully better quality and per-unit economics than POD alternatives. Outreach angle: the single-contact production model is especially valuable for small nonprofit presses with lean staff -- one person handles every detail from paper selection to press check, saving Dimitri and the CavanKerry team significant production management time per title.",
+        pitch: "", drafted_email: ""
+      },
+      {
+        id: 9, score: 7, priorityClass: "medium",
+        category: "Small Press (6\u201320 titles/yr)", catClass: "cat-small",
+        name: "Green Writers Press",
+        source: "IBPA Member Directory",
+        email: "info@greenwriterspress.com", phone: "(802) 380-1121",
+        website: "https://greenwriterspress.com",
+        notes: "Green Writers Press is a Brattleboro, Vermont independent press founded 2014 focused on environmental and sustainability titles, publishing 8\u201312 titles annually in literary fiction, nature writing, and activist nonfiction with strong regional bookstore distribution across New England. Their mission-driven focus on quality physical books -- where production choices signal the press\u2019s editorial values -- aligns directly with Cushing-Malloy\u2019s offset manufacturing strengths. Outreach angle: a trusted 75-year manufacturing partner who can guide their authors on paper and production decisions consistent with Green Writers\u2019 environmental identity, with one contact who stays through delivery and ensures nothing is lost between quote and finished books.",
+        pitch: "", drafted_email: ""
+      },
+      {
+        id: 10, score: 7, priorityClass: "medium",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Nightboat Books",
+        source: "CLMP Independent Press Directory",
+        email: "info@nightboat.org", phone: "",
+        website: "https://nightboat.org",
+        notes: "Nightboat Books is a Brooklyn-based nonprofit poetry and literary press founded 2007, publishing 8\u201312 titles annually with a national reputation in experimental poetry, prose, and innovative literary forms distributed through Consortium. A press of Nightboat\u2019s standing requires production consistency and the ability to execute complex typographic specifications -- exactly what Cushing-Malloy\u2019s experienced production team delivers at short-run offset volumes. Outreach angle: 75 years of short-to-medium run manufacturing expertise for a press whose books appear in the most respected literary journals -- one dedicated contact from estimate through press check means production specifications are never garbled through vendor handoffs.",
+        pitch: "", drafted_email: ""
+      },
+      {
+        id: 11, score: 7, priorityClass: "medium",
+        category: "Nonfiction Specialty Press", catClass: "cat-nonfiction",
+        name: "DoppelHouse Press",
+        source: "Reedsy Independent Publishers Directory",
+        email: "Publisher@DoppelHousePress.com", phone: "(424) 258-4423",
+        website: "https://doppelhousepress.com",
+        notes: "DoppelHouse Press is a Los Angeles independent publisher founded 2014 focused on art, design, cultural history, and illustrated nonfiction, producing 6\u20138 visually rich titles annually where high-quality offset printing is essential for accurate color reproduction and image fidelity. Illustrated and art-focused titles are exactly the production work where Cushing-Malloy\u2019s offset capabilities outperform digital printing alternatives on both quality and cost at their volume. Outreach angle: one dedicated contact who walks through every specification including paper weight, coating, and color accuracy -- for a press where the physical production is inseparable from the editorial vision, the single-contact manufacturing model means Publisher@DoppelHousePress.com gets the same informed conversation from quote to press check.",
+        pitch: "", drafted_email: ""
+      },
+      {
+        id: 12, score: 7, priorityClass: "medium",
+        category: "Small Press (6\u201320 titles/yr)", catClass: "cat-small",
+        name: "Unsolicited Press",
+        source: "CLMP Independent Press Directory",
+        email: "info@unsolicitedpress.com", phone: "",
+        website: "https://unsolicitedpress.com",
+        notes: "Unsolicited Press is a Portland, Oregon independent press founded 2012 committed to unconventional voices in fiction, nonfiction, and poetry with 10\u201315 titles annually and national presence through independent bookstore distribution. As a press that competes on editorial courage rather than marketing budget, they benefit from a manufacturing partner who understands the economics of short-to-medium run independent publishing. Outreach angle: Cushing-Malloy\u2019s volume pricing education -- specifically the dramatic per-unit cost improvement from 500 to 1,000 copies -- helps a lean press like Unsolicited make financially sound print run decisions without needing a production expert on staff.",
+        pitch: "", drafted_email: ""
+      },
+      {
+        id: 13, score: 7, priorityClass: "medium",
+        category: "Small Press (6\u201320 titles/yr)", catClass: "cat-small",
+        name: "Outpost19",
+        source: "Reedsy Independent Publishers Directory",
+        email: "books@outpost19.com", phone: "",
+        website: "https://outpost19.com",
+        notes: "Outpost19 is a San Francisco independent press founded 2011 focused on literary fiction and personal narratives with 8\u201312 titles annually and a dedicated editorial reputation for surprising, character-driven stories -- one of the most consistently active serious literary presses on the West Coast. West Coast presses with active annual catalogs are strong candidates for Cushing-Malloy\u2019s quality offset manufacturing, and the freight story from Ann Arbor to San Francisco remains competitive for press runs of 500+ copies. Outreach angle: the per-unit economics of offset at 500+ copies, combined with Cushing-Malloy\u2019s 20-day standard turnaround and single dedicated contact from estimate through delivery.",
+        pitch: "", drafted_email: ""
+      },
+      {
+        id: 14, score: 7, priorityClass: "medium",
+        category: "Small Press (6\u201320 titles/yr)", catClass: "cat-small",
+        name: "Cornerstone Press",
+        source: "Poets & Writers Small Presses DB",
+        email: "cornerstone.press@uwsp.edu", phone: "(715) 346-4532",
+        website: "https://cornerstonepress.uwsp.edu",
+        notes: "Cornerstone Press is a student-run literary press at the University of Wisconsin-Stevens Point, publishing 30+ titles annually in a teaching-press model focused on regional Wisconsin and Midwest voices -- one of the most active small press operations in the Great Lakes corridor. Stevens Point to Ann Arbor is a 6-hour drive through the Midwest heartland, making this a natural geographic fit with shared regional identity and values. Outreach angle: as a teaching press developing the next generation of publishing professionals, Cornerstone\u2019s students benefit directly from Cushing-Malloy\u2019s educational production model -- white-glove guidance on offset specifications naturally extends to first-time publishers learning the manufacturing process.",
+        pitch: "", drafted_email: ""
+      },
+      {
+        id: 15, score: 7, priorityClass: "medium",
+        category: "Business & Authority Author", catClass: "cat-business",
+        name: "Nick Gray",
+        source: "LinkedIn Business Author Network",
+        email: "hello@nickgray.net", phone: "",
+        website: "https://nickgray.net",
+        notes: "Nick Gray is the self-published author of 'The 2-Hour Cocktail Party,' a bestselling business book he independently printed and sold 10,000+ copies through his website, events, and bulk corporate sales -- he has publicly discussed the economics of self-publishing and actively manages recurring print runs as inventory depletes. His book is a core revenue driver and calling card for his speaking and consulting business, which means regular print replenishment orders and strong motivation to optimize per-unit cost at volume. Outreach angle: Cushing-Malloy\u2019s volume pricing education -- how a run of 1,000 to 2,500 copies changes per-unit cost and margins on bulk corporate sales -- positions perfectly for a business author who thinks in unit economics.",
+        pitch: "", drafted_email: ""
+      },
+      {
+        id: 16, score: 6, priorityClass: "medium",
+        category: "Food & Recipe Creator", catClass: "cat-food",
+        name: "Kylie Lato (Midwest Foodie)",
+        source: "Instagram / Food Creator Discovery",
+        email: "kylie@midwestfoodieblog.com", phone: "",
+        website: "https://midwestfoodieblog.com",
+        notes: "Kylie Lato is the creator behind Midwest Foodie, a food blog and Instagram account with 100,000+ followers focused on approachable Midwest comfort food who has published a cookbook and indicated interest in a second print run to address ongoing reader demand through her website and local Midwest events. A Minnesota-based creator selling cookbooks regionally is exactly Cushing-Malloy\u2019s core individual author market, and the shared Midwest identity is a natural outreach hook. Outreach angle: a fellow Midwest institution -- Cushing-Malloy can walk her through paper selection, cover finish options, and print quantities so her second print run looks and feels better than her first, with one contact from quote to delivery.",
+        pitch: "", drafted_email: ""
+      },
+      {
+        id: 17, score: 6, priorityClass: "medium",
+        category: "Small Press (6\u201320 titles/yr)", catClass: "cat-small",
+        name: "Split/Lip Press",
+        source: "CLMP Independent Press Directory",
+        email: "splitlipthepress@gmail.com", phone: "",
+        website: "https://splitlippress.com",
+        notes: "Split/Lip Press is a Chicago-area independent press focused on flash fiction, short prose, and poetry with 8\u201312 titles annually and a strong following among experimental literary readers and short-form fiction fans nationwide. Their Chicago proximity (3.5 hours from Ann Arbor) and active annual production schedule make them a realistic short-run offset candidate well within Cushing-Malloy\u2019s Midwest reach. Outreach angle: a fellow Midwest literary institution -- Cushing-Malloy\u2019s 20-day production timeline and single-contact manufacturing model gives a lean press reliable turnaround without managing multiple vendors across estimating, production, and proofing.",
+        pitch: "", drafted_email: ""
+      },
+      {
+        id: 18, score: 6, priorityClass: "medium",
+        category: "Small Press (6\u201320 titles/yr)", catClass: "cat-small",
+        name: "Santa Fe Writers Project",
+        source: "Poets & Writers Small Presses DB",
+        email: "sfwritersproject@gmail.com", phone: "",
+        website: "https://sfwp.com",
+        notes: "Santa Fe Writers Project is a New Mexico-based independent press founded 2001 publishing literary fiction, nonfiction, and experimental work across 8\u201312 titles annually with a national literary reputation built through award-winning titles and strong bookstore placement. Their steady publication schedule and commitment to quality literary production make them a candidate for a reliable offset manufacturing partner who maintains consistent standards title to title. Outreach angle: Cushing-Malloy\u2019s track record with literary titles and single-contact production model -- for a press that competes on editorial quality, manufacturing consistency matters more than vendor price shopping, and one dedicated contact means specifications are never lost between production stages.",
+        pitch: "", drafted_email: ""
+      },
+      {
+        id: 19, score: 6, priorityClass: "medium",
+        category: "Micro Press (\u22645 titles/yr)", catClass: "cat-micro",
+        name: "Stillhouse Press",
+        source: "CLMP Independent Press Directory",
+        email: "editor@stillhousepress.org", phone: "",
+        website: "https://stillhousepress.org",
+        notes: "Stillhouse Press is a George Mason University literary press founded 2014, producing 3\u20135 carefully selected titles annually in literary fiction, nonfiction, and poetry with a strong academic pedigree and national bookstore distribution through Ingram. University-affiliated literary micro presses are a consistent target for Cushing-Malloy because they produce at short-run offset volumes (300\u2013750 copies) where quality and cost-efficiency align and the manufacturing relationship adds real educational value. Outreach angle: Cushing-Malloy\u2019s white-glove single-contact model gives Stillhouse\u2019s editorial team a genuine manufacturing partnership -- volume pricing education and one contact from quote to delivery for a press where each title is a considered literary investment.",
+        pitch: "", drafted_email: ""
+      },
+      {
+        id: 20, score: 6, priorityClass: "medium",
+        category: "Micro Press (\u22645 titles/yr)", catClass: "cat-micro",
+        name: "Wandering Aengus Press",
+        source: "IBPA Member Directory",
+        email: "info@trailtotable.net", phone: "",
+        website: "https://wanderingaenguspress.com",
+        notes: "Wandering Aengus Press is an Oregon-based micro press publishing 2\u20134 titles annually focused on Pacific Northwest nature writing, trail culture, and outdoor life -- a specialized but consistent publishing operation with a loyal regional readership and Ingram distribution. Their niche focus on illustrated outdoor books means paper selection, binding, and production specifications require manufacturing guidance specific to their genre\u2019s physical requirements. Outreach angle: Cushing-Malloy\u2019s offset capabilities starting at 250 copies with single-contact guidance on stock, trim, and binding choices -- for a micro press where each title is a significant editorial investment, the white-glove production relationship adds value at every step.",
+        pitch: "", drafted_email: ""
+      },
+      {
+        id: 21, score: 4, priorityClass: "low",
+        category: "Food & Recipe Creator", catClass: "cat-food",
+        name: "Catie Gett (The Staple Store Cookbook)",
+        source: "Kickstarter Publishing Discovery",
+        email: "catie@staplestore.com.au", phone: "",
+        website: "https://staplestore.com.au",
+        notes: "Catie Gett is the Melbourne-based creator of The Staple Store Cookbook who ran a successful Kickstarter campaign with 500+ copies funded and has expressed explicit interest in US distribution and a larger second print run to reach her North American audience. Geographic penalty applies (Australia-based), but her Kickstarter success, clear US distribution intent, and verified direct personal email make her a legitimate conversion candidate worth a targeted outreach. SUPPLEMENTAL JUSTIFICATION: her second print run for US distribution is a concrete near-term opportunity -- Cushing-Malloy printing 500\u20131,000 copies for direct US wholesale fulfillment eliminates cross-Pacific freight for her North American market, and the volume pricing story is directly applicable to her stated goals.",
+        pitch: "", drafted_email: ""
+      }
+    ]
+  },
+
   "2026-04-13": {
     label: "April 13, 2026",
     leads: [
