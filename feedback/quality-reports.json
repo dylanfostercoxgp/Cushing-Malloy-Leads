@@ -2,11 +2,11 @@
   "2026-03-31": {
     "Finishing Line Press": {
       "quality": "Hot",
-      "genreMatch": "Partial Match",
-      "volumeFit": "Right Size",
-      "contactQuality": "Direct Contact",
+      "genreMatch": "",
+      "volumeFit": "",
+      "contactQuality": "",
       "comments": "Testing lead quality repot",
-      "updatedAt": "2026-04-17T14:57:24.589Z"
+      "updatedAt": "2026-04-17T15:07:47.741Z"
     },
     "Sarabande Books": {
       "quality": "Warm",
