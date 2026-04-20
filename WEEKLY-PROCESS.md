@@ -107,6 +107,9 @@ Using the full spec in `cushing-malloy-lead-gen-prompt.md`, research and identif
 - Hybrid Publisher / Author Services
 
 ### Discovery Channels (use at least 4–5 per run, vary each week):
+
+> **PERMANENT RULE:** Education and university sources (channel 16 below) must be included in EVERY run without exception. Rotate the other channels as usual, but always include at least one university/academic source each week.
+
 1. Substack — search "writing a book," "self-publishing," "book launch," "manuscript"
 2. Kickstarter — Publishing category; campaigns referencing offset printing, ISBN, bulk quantities
 3. Instagram/TikTok — "book coming soon," health/food/lifestyle creators with book announcements
@@ -122,6 +125,7 @@ Using the full spec in `cushing-malloy-lead-gen-prompt.md`, research and identif
 13. Bookshop.org — Indie publisher storefronts
 14. State arts councils — Grant recipients in MI, OH, IL, WI, IN
 15. Eventbrite / local bookstore events — Author readings and signings
+16. **[ALWAYS REQUIRED] Education / University Sources** — University press directories (AAUP member list), academic publishing programs, faculty with forthcoming books, university writing program graduates, campus literary journals and their editors, teaching press networks (e.g., writing programs at Big Ten or Midwest universities that produce small-run titles)
 
 ### Data to collect for EVERY lead:
 
@@ -269,66 +273,62 @@ git push origin main
 
 ---
 
-## STEP 6 — CREATE SMARTERMAIL OUTREACH DRAFTS
+## STEP 6 — CREATE OUTREACH DRAFTS (Open-Xchange Webmail)
 
-For every lead with a **verified email address**, save a personalized draft to the SmarterMail Drafts folder using the **SmarterMail native REST API**. **Save as DRAFT only. Do NOT send.**
+For every lead with a **verified email address**, save a personalized draft to the Open-Xchange (Network Solutions) Drafts folder using the **OX App Suite HTTP API**. **Save as DRAFT only. Do NOT send.**
 
-**Email account:** `printyourbook@cushing-malloy.com` — drafts appear at `https://mail.cushing-malloy.com`
+**Email account:** `printyourbook@cushing-malloy.com` — drafts appear at `https://webmail-oxcs.networksolutionsemail.com`
 
-> **IMPORTANT:** Use the native REST API below — NOT Python IMAP. Drafts created via IMAP APPEND cannot be edited or sent through SmarterMail's web composer (known SmarterMail limitation). The `draft-put` endpoint produces fully editable, sendable drafts identical to those created natively in the SmarterMail UI.
+> **IMPORTANT:** Use the OX HTTP API below — NOT Python IMAP or the old SmarterMail API. The OX `mail?action=new` endpoint with `folder=default0/Drafts` produces fully editable, sendable drafts. Authentication requires a persistent `requests.Session()` to maintain cookies across calls — do NOT use stateless requests.
 
 ### Python helper (run via Bash tool for each lead):
 
 ```python
-import requests, uuid, urllib3
-from datetime import datetime, timezone
+import requests, urllib3
 urllib3.disable_warnings()
 
-BASE = "https://mail.cushing-malloy.com"
-USER = "printyourbook@cushing-malloy.com"
-PASS = "SNaFx$os5^Z4Rig"
+BASE   = "https://webmail-oxcs.networksolutionsemail.com"
+USER   = "printyourbook@cushing-malloy.com"
+PASS   = "PYBCMbooks$1948"
+FOLDER = "default0/Drafts"
 
-def get_token():
-    r = requests.post(f"{BASE}/api/v1/auth/authenticate-user",
-        json={"username": USER, "password": PASS, "rememberMe": False},
-        verify=False, timeout=15)
-    return r.json()["accessToken"]
+# Must use a persistent session to keep auth cookies alive
+ox = requests.Session()
 
-def save_draft(to_address, subject, html_body, cc="", bcc="", token=None):
-    if token is None:
-        token = get_token()
-    headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
-    guid = str(uuid.uuid4())
-    now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.0Z")
-    payload = {
-        "to": to_address, "cc": cc, "bcc": bcc,
-        "date": now, "from": USER, "replyTo": USER,
+def ox_login():
+    r = ox.post(
+        f"{BASE}/appsuite/api/login?action=login",
+        data={"login": USER, "password": PASS, "name": USER, "client": "open-xchange-appsuite"},
+        timeout=15
+    )
+    return r.json()["session"]
+
+def save_draft(to_address, subject, html_body, session_id):
+    mail_json = {
+        "from": [["Cushing-Malloy Books", USER]],
+        "to": [[to_address, to_address]],
         "subject": subject,
-        "messageHTML": html_body,       # NOTE: field is messageHTML, not htmlBody
-        "attachmentGuid": guid,
-        "actions": {},
-        "readReceiptRequested": False,
-        "deliveryReceiptRequested": False,
-        "priority": 0,
-        "excludeFiles": [],
-        "inlineToRemove": [],
-        "draftExcludeFiles": "[]",
-        "draftInlineToRemove": "[]",
-        "isForward": False, "isReply": False,
-        "selectedFrom": f"local:{USER}",
-        "markForFollowup": False
+        "body": html_body,
+        "content_type": "text/html"
     }
-    r = requests.post(f"{BASE}/api/v1/mail/draft-put/{guid}",
-        headers=headers, json=payload, verify=False, timeout=15)
-    return r.json().get("uid"), r.json().get("success", False)
+    r = ox.post(
+        f"{BASE}/appsuite/api/mail?action=new&session={session_id}&folder={FOLDER}&flags=32",
+        json=mail_json,
+        timeout=15
+    )
+    data = r.json()
+    if "data" in data and "id" in data["data"]:
+        return data["data"]["id"], True
+    return None, data
 
 # Usage — authenticate once, then create all drafts:
-# token = get_token()
-# save_draft("lead@example.com", "Subject line", "<p>HTML body</p>", token=token)
-# save_draft("lead2@example.com", "Subject 2", "<p>Body 2</p>", token=token)
+# session_id = ox_login()
+# save_draft("lead@example.com", "Subject line", "<p>HTML body</p>", session_id)
+# save_draft("lead2@example.com", "Subject 2", "<p>Body 2</p>", session_id)
 #
 # NOTE: Outreach drafts do NOT CC anyone — To: lead only
 # NOTE: Hyperlink Cushing-Malloy.com in closing: <a href="https://cushing-malloy.com">Cushing-Malloy.com</a>
+# NOTE: Weekly report draft uses same function with bcc="dylan@coxgp.com,rodrick@coxgp.com"
 ```
 
 ### Email template and personalization rules:
@@ -416,10 +416,10 @@ Warm regards,
 Save a weekly summary draft to SmarterMail Drafts using the same `save_draft()` Python function from Step 6.
 
 - **To:** ccushing@cushing-malloy.com
-- **CC:** (none)
+- **CC:** tlitty@cushing-malloy.com, jdimauro@cushing-malloy.com
 - **BCC:** dylan@coxgp.com, rodrick@coxgp.com
 
-**Subject:** `Cushing-Malloy Lead Intelligence Prospecting — Week of [Monday Date]`
+**Subject:** `Cushing-Malloy Lead Intelligence Prospecting -- Week of [Monday Date]`
 
 **Body (HTML — use exactly this structure, filling all brackets with real content):**
 
@@ -464,7 +464,7 @@ Save a weekly summary draft to SmarterMail Drafts using the same `save_draft()` 
         <td style="padding: 8px 12px; border-bottom: 1px solid #dde6f0;">[Category]</td>
         <td style="padding: 8px 12px; border-bottom: 1px solid #dde6f0;">[1 short qualifying sentence]</td>
       </tr>
-      <!-- Add all leads from this run as rows -->
+      <!-- Add 4-5 TOP leads only (highest priority scores) — NOT all leads -->
     </table>
 
     <!-- RESEARCH SOURCES -->
@@ -479,6 +479,10 @@ Save a weekly summary draft to SmarterMail Drafts using the same `save_draft()` 
         View Full Dashboard &rarr;
       </a>
     </div>
+    <!-- DASHBOARD PASSWORD — always include this line immediately below the button -->
+    <p style="text-align:center;font-size:12px;color:#777;margin:6px 0 0 0;">
+      Password: <strong>Cushingmalloyleads</strong>
+    </p>
 
   </div>
 
@@ -496,9 +500,11 @@ Save a weekly summary draft to SmarterMail Drafts using the same `save_draft()` 
 - Replace `[X]` with actual lead count
 - Replace `[MONDAY DATE]` and `[DATE]` with the run date (e.g., "March 31, 2026")
 - In the two intro paragraphs, name 2 specific leads from this run with exactly how and where they were found
-- Add one row per lead to the table — every lead from this run, no scores, no priority labels
-- List exactly 2 research sources actually used in this run
+- Add only the **top 4-5 leads** to the table (highest priority scores) -- do NOT list all leads. Add a short line below the table directing Connie to the dashboard for the full list.
+- No scores or priority labels in the table rows
+- List exactly 2 research sources actually used in this run (education/university must always appear here since it is always used)
 - Replace `[DASHBOARD URL]` with `https://ideaboss.cushing-malloy.com` (live dashboard URL)
+- **PERMANENT RULE:** Always include the dashboard password line immediately below the View Full Dashboard button: `Password: Cushingmalloyleads` -- this is required in every report, no exceptions
 
 ---
 
@@ -510,7 +516,7 @@ Run a final checklist before marking the process complete:
 - [ ] At least 20 leads score 6 or above (core batch)
 - [ ] No more than 5 supplemental leads score below 5 (each with justification note)
 - [ ] Best leads surfaced regardless of category type
-- [ ] At least 4–5 different discovery channels used
+- [ ] At least 4–5 different discovery channels used (education/university channel always included)
 - [ ] Leads span multiple US states/regions
 - [ ] No duplicates from previous runs
 - [ ] No existing clients included (cross-checked against the 306-company client list in the "EXISTING CLIENTS" section)
@@ -519,8 +525,10 @@ Run a final checklist before marking the process complete:
 - [ ] `01_Dashboard/cushing-malloy-lead-dashboard.html` updated
 - [ ] Root `index.html` updated (copied from `01_Dashboard/` — named `index.html`, not `cushing-malloy-lead-dashboard.html`)
 - [ ] All changes committed and pushed to GitHub (`01_Dashboard/` copy + `index.html` at root)
-- [ ] SmarterMail outreach drafts saved for all leads with verified emails (use REST API draft-put, NOT IMAP)
-- [ ] Weekly report draft saved to SmarterMail Drafts (To: ccushing@cushing-malloy.com / BCC: dylan@coxgp.com, rodrick@coxgp.com)
+- [ ] OX outreach drafts saved for all leads with verified emails (action=import MIME method, NOT action=new)
+- [ ] Weekly report draft saved to OX Drafts (To: ccushing@cushing-malloy.com | CC: tlitty, jdimauro | BCC: dylan@coxgp.com, rodrick@coxgp.com)
+- [ ] Report email includes dashboard password "Cushingmalloyleads" below the View Full Dashboard button
+- [ ] Education/university sources used and listed in report's Research Sources line
 
 ---
 
@@ -592,18 +600,20 @@ Cushing-Malloy/
 
 ## TECHNICAL NOTES FOR CLAUDE CODE
 
-- **Email system:** SmarterMail native REST API (`draft-put` endpoint) — NOT IMAP
-- **API base:** `https://mail.cushing-malloy.com/api/v1/`
-- **Auth endpoint:** `POST /api/v1/auth/authenticate-user` → returns `accessToken` JWT
-- **Draft endpoint:** `POST /api/v1/mail/draft-put/{uuid}` — use fresh `uuid.uuid4()` as path segment
-- **HTML body field:** `messageHTML` (not `htmlBody` — this is the critical field name)
-- **Do NOT use IMAP:** Python `imaplib.append()` creates non-editable drafts in SmarterMail
-- **Outreach sender:** `printyourbook@cushing-malloy.com`
-- **Drafts saved to:** Drafts folder — view at `https://mail.cushing-malloy.com`
+- **Email system:** Open-Xchange (OX) App Suite HTTP API — NOT SmarterMail, NOT IMAP
+- **Webmail URL:** `https://webmail-oxcs.networksolutionsemail.com`
+- **Auth endpoint:** `POST /appsuite/api/login?action=login` with form fields `login`, `password`, `name`, `client` → returns `session` ID
+- **Draft endpoint:** `POST /appsuite/api/mail?action=import&session={session_id}&folder=default0/Drafts&flags=32` -- send as `files={"file": ("draft.eml", msg.as_string(), "message/rfc822")}` using Python `email.mime` to build a proper MIME/RFC-822 message
+- **CRITICAL:** Use `action=import` with a real MIME message, NOT `action=new` -- the `new` action does not parse JSON envelope fields in this OX version and produces empty drafts with no subject, recipient, or body
+- **CRITICAL:** Must use `requests.Session()` (persistent session with cookies) — stateless requests will get "session expired" errors immediately
+- **Outreach sender:** `printyourbook@cushing-malloy.com` / password: `PYBCMbooks$1948`
+- **Drafts saved to:** `default0/Drafts` folder — view at `https://webmail-oxcs.networksolutionsemail.com`
 - **Outreach draft routing:** To: lead's email | CC: (none) | BCC: (none)
-- **Report routing:** To: ccushing@cushing-malloy.com | CC: (none) | BCC: dylan@coxgp.com, rodrick@coxgp.com
+- **Report routing:** To: ccushing@cushing-malloy.com | CC: tlitty@cushing-malloy.com, jdimauro@cushing-malloy.com | BCC: dylan@coxgp.com, rodrick@coxgp.com
 - **Closing hyperlink rule:** Cushing-Malloy.com in the closing sentence must be an HTML hyperlink to https://cushing-malloy.com
 - **Em dash ban:** Do not use em dashes (—) anywhere in outreach email copy. Use commas, colons, or rewrite the sentence instead.
+- **Education sources rule (PERMANENT):** Education/university discovery channel must be included in every weekly run. Sources include: AAUP university press directories, academic publishing programs, faculty with forthcoming books, university writing program graduates, campus literary journals, teaching press networks. Always list at least one education source in the report's Research Sources line.
+- **Dashboard password rule (PERMANENT):** Every report email must include the dashboard password immediately below the View Full Dashboard button. Password is: `Cushingmalloyleads`. HTML: `<p style="text-align:center;font-size:12px;color:#777;margin:6px 0 0 0;">Password: <strong>Cushingmalloyleads</strong></p>`
 - **Dashboard file location:** `/mnt/Dashboard/cushing-malloy-lead-dashboard.html`
 - **Archive location:** `/mnt/Dashboard/02_Lead_Data/archive/`
 - **Scheduled task:** Monday, 3:00 AM (weekly)
