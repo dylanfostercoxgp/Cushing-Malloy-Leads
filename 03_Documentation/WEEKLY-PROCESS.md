@@ -591,8 +591,8 @@ Cushing-Malloy/
 - **Email system:** Open-Xchange (OX) App Suite HTTP API — NOT SmarterMail, NOT IMAP
 - **Webmail URL:** `https://webmail-oxcs.networksolutionsemail.com`
 - **Auth endpoint:** `POST /appsuite/api/login?action=login` with form fields `login`, `password`, `name`, `client` → returns `session` ID
-- **Draft endpoint:** `POST /appsuite/api/mail?action=new&session={session_id}&folder=default0/Drafts&flags=32`
-- **HTML body field:** `body` with `content_type: "text/html"` in the JSON payload
+- **Draft endpoint:** `POST /appsuite/api/mail?action=import&session={session_id}&folder=default0/Drafts&flags=32` -- send as `files={"file": ("draft.eml", msg.as_string(), "message/rfc822")}` using Python `email.mime` to build a proper MIME/RFC-822 message
+- **CRITICAL:** Use `action=import` with a real MIME message, NOT `action=new` -- the `new` action does not parse JSON envelope fields in this OX version and produces empty drafts with no subject, recipient, or body
 - **CRITICAL:** Must use `requests.Session()` (persistent session with cookies) — stateless requests will get "session expired" errors immediately
 - **Outreach sender:** `printyourbook@cushing-malloy.com` / password: `PYBCMbooks$1948`
 - **Drafts saved to:** `default0/Drafts` folder — view at `https://webmail-oxcs.networksolutionsemail.com`
