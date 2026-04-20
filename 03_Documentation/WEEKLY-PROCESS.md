@@ -412,10 +412,10 @@ Warm regards,
 Save a weekly summary draft to SmarterMail Drafts using the same `save_draft()` Python function from Step 6.
 
 - **To:** ccushing@cushing-malloy.com
-- **CC:** (none)
+- **CC:** tlitty@cushing-malloy.com, jdimauro@cushing-malloy.com
 - **BCC:** dylan@coxgp.com, rodrick@coxgp.com
 
-**Subject:** `Cushing-Malloy Lead Intelligence Prospecting — Week of [Monday Date]`
+**Subject:** `Cushing-Malloy Lead Intelligence Prospecting -- Week of [Monday Date]`
 
 **Body (HTML — use exactly this structure, filling all brackets with real content):**
 
@@ -460,7 +460,7 @@ Save a weekly summary draft to SmarterMail Drafts using the same `save_draft()` 
         <td style="padding: 8px 12px; border-bottom: 1px solid #dde6f0;">[Category]</td>
         <td style="padding: 8px 12px; border-bottom: 1px solid #dde6f0;">[1 short qualifying sentence]</td>
       </tr>
-      <!-- Add all leads from this run as rows -->
+      <!-- Add 4-5 TOP leads only (highest priority scores) — NOT all leads -->
     </table>
 
     <!-- RESEARCH SOURCES -->
@@ -492,7 +492,8 @@ Save a weekly summary draft to SmarterMail Drafts using the same `save_draft()` 
 - Replace `[X]` with actual lead count
 - Replace `[MONDAY DATE]` and `[DATE]` with the run date (e.g., "March 31, 2026")
 - In the two intro paragraphs, name 2 specific leads from this run with exactly how and where they were found
-- Add one row per lead to the table — every lead from this run, no scores, no priority labels
+- Add only the **top 4-5 leads** to the table (highest priority scores) -- do NOT list all leads. Add a short line below the table directing Connie to the dashboard for the full list.
+- No scores or priority labels in the table rows
 - List exactly 2 research sources actually used in this run
 - Replace `[DASHBOARD URL]` with `https://ideaboss.cushing-malloy.com` (live dashboard URL)
 
@@ -597,7 +598,7 @@ Cushing-Malloy/
 - **Outreach sender:** `printyourbook@cushing-malloy.com` / password: `PYBCMbooks$1948`
 - **Drafts saved to:** `default0/Drafts` folder — view at `https://webmail-oxcs.networksolutionsemail.com`
 - **Outreach draft routing:** To: lead's email | CC: (none) | BCC: (none)
-- **Report routing:** To: ccushing@cushing-malloy.com | CC: (none) | BCC: dylan@coxgp.com, rodrick@coxgp.com
+- **Report routing:** To: ccushing@cushing-malloy.com | CC: tlitty@cushing-malloy.com, jdimauro@cushing-malloy.com | BCC: dylan@coxgp.com, rodrick@coxgp.com
 - **Closing hyperlink rule:** Cushing-Malloy.com in the closing sentence must be an HTML hyperlink to https://cushing-malloy.com
 - **Em dash ban:** Do not use em dashes (—) anywhere in outreach email copy. Use commas, colons, or rewrite the sentence instead.
 - **Dashboard file location:** `/mnt/Dashboard/cushing-malloy-lead-dashboard.html`
