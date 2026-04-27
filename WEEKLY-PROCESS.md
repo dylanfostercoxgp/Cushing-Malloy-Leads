@@ -407,6 +407,7 @@ Warm regards,
 - [ ] Closing hyperlinks Cushing-Malloy.com: `<a href="https://cushing-malloy.com">Cushing-Malloy.com</a>`
 - [ ] Closing does NOT say "Would a quick call this week work?" — that phrase is permanently banned
 - [ ] No em dashes (—) used anywhere in the email body — use commas, colons, or rewrite the sentence instead
+- [ ] Opening does NOT claim to have been "following" the lead or their company — phrases like "I've been following you for a while" or "I've been a fan of your work" imply false familiarity and are permanently banned. Instead, say specifically how you discovered them (e.g., "I came across [Name] while researching [channel/source]...") or reference a concrete, publicly discoverable fact about their work.
 - [ ] CC field is empty on outreach drafts (no CC — To: lead only)
 
 ---
@@ -612,6 +613,7 @@ Cushing-Malloy/
 - **Report routing:** To: ccushing@cushing-malloy.com | CC: tlitty@cushing-malloy.com, jdimauro@cushing-malloy.com | BCC: dylan@coxgp.com, rodrick@coxgp.com
 - **Closing hyperlink rule:** Cushing-Malloy.com in the closing sentence must be an HTML hyperlink to https://cushing-malloy.com
 - **Em dash ban:** Do not use em dashes (—) anywhere in outreach email copy. Use commas, colons, or rewrite the sentence instead.
+- **False familiarity ban (PERMANENT):** Never write "I've been following you/your company for a while," "I've been a fan of your work," or any variation implying pre-existing familiarity in outreach emails. This creates a false impression. Acceptable alternatives: "I came across [Name] while researching [channel/source]..." or reference a specific, publicly discoverable fact about their work, recent announcement, or publication.
 - **Education sources rule (PERMANENT):** Education/university discovery channel must be included in every weekly run. Sources include: AAUP university press directories, academic publishing programs, faculty with forthcoming books, university writing program graduates, campus literary journals, teaching press networks. Always list at least one education source in the report's Research Sources line.
 - **Dashboard password rule (PERMANENT):** Every report email must include the dashboard password immediately below the View Full Dashboard button. Password is: `Cushingmalloyleads`. HTML: `<p style="text-align:center;font-size:12px;color:#777;margin:6px 0 0 0;">Password: <strong>Cushingmalloyleads</strong></p>`
 - **Dashboard file location:** `/mnt/Dashboard/cushing-malloy-lead-dashboard.html`
