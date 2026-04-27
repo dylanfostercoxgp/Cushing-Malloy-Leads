@@ -371,26 +371,26 @@ Visit our website at <a href="https://cushing-malloy.com">Cushing-Malloy.com</a>
 
 Warm regards,
 
-<div style="margin-top:24px;padding-top:16px;border-top:3px solid #3787c4;max-width:480px;font-family:Arial,sans-serif;">
+<div style="margin-top:24px;padding-top:14px;border-top:1px solid #cccccc;max-width:500px;font-family:Arial,sans-serif;">
   <table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,sans-serif;">
     <tr>
-      <td style="vertical-align:top;border-right:3px solid #3787c4;padding-right:14px;">
-        <div style="font-size:15px;font-weight:700;color:#1a1a1a;letter-spacing:-0.2px;white-space:nowrap;">Joe DiMauro</div>
-        <div style="font-size:11px;font-weight:600;color:#3787c4;text-transform:uppercase;letter-spacing:0.8px;margin-top:2px;white-space:nowrap;">Customer Service Representative</div>
+      <td style="vertical-align:top;border-right:1px solid #cccccc;padding-right:16px;">
+        <div style="font-size:15px;font-weight:700;color:#1a1a1a;white-space:nowrap;">Joe DiMauro</div>
+        <div style="font-size:10.5px;font-weight:700;color:#3787c4;text-transform:uppercase;letter-spacing:1px;margin-top:3px;white-space:nowrap;">Customer Service Representative</div>
       </td>
-      <td style="padding-left:14px;vertical-align:top;">
-        <table cellpadding="0" cellspacing="0" border="0" style="font-size:12px;color:#555;line-height:1.7;">
-          <tr><td><a href="mailto:jdimauro@cushing-malloy.com" style="color:#3787c4;text-decoration:none;font-weight:600;">jdimauro@cushing-malloy.com</a></td></tr>
+      <td style="padding-left:16px;vertical-align:top;">
+        <table cellpadding="0" cellspacing="0" border="0" style="font-size:12px;color:#444;line-height:1.8;">
+          <tr><td><a href="mailto:jdimauro@cushing-malloy.com" style="color:#444;text-decoration:none;">jdimauro@cushing-malloy.com</a></td></tr>
           <tr><td style="white-space:nowrap;">P: (734) 663-8554 x110&nbsp;&nbsp;|&nbsp;&nbsp;F: (734) 663-5731</td></tr>
-          <tr><td style="color:#888;font-size:11px;">Cushing-Malloy, Inc.&nbsp;&nbsp;|&nbsp;&nbsp;1350 N. Main, Ann Arbor, MI 48104</td></tr>
+          <tr><td>Cushing-Malloy, Inc.&nbsp;&nbsp;|&nbsp;&nbsp;1350 N. Main, Ann Arbor, MI 48104</td></tr>
         </table>
       </td>
     </tr>
     <tr>
-      <td colspan="2" style="padding-top:8px;">
-        <div style="font-size:10px;color:#aaa;font-style:italic;letter-spacing:0.3px;">
-          <a href="https://cushing-malloy.com" style="color:#3787c4;text-decoration:none;font-weight:700;">cushing-malloy.com</a>
-          &nbsp;&nbsp;&middot;&nbsp;&nbsp;Where Books Are Bound For Greatness&reg;
+      <td colspan="2" style="padding-top:10px;">
+        <div style="font-size:11px;color:#888;">
+          <a href="https://cushing-malloy.com" style="color:#3787c4;text-decoration:none;font-weight:600;">cushing-malloy.com</a>
+          &nbsp;&nbsp;&#8211;&nbsp;&nbsp;Where Books Are Bound For Greatness&reg;
         </div>
       </td>
     </tr>
