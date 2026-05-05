@@ -99,14 +99,14 @@ Using the full spec in `cushing-malloy-lead-gen-prompt.md`, research and identif
 - Social Media Creator / Book Author
 
 **Small Publishers:**
-- Micro Press (≤5 titles/yr) — **DISQUALIFIED** (below 25-title minimum)
-- Small Press (6–20 titles/yr) — **DISQUALIFIED** (below 25-title minimum)
-- Nonfiction Specialty Press — eligible only if 25+ titles/yr confirmed
-- Poetry & Literary Press — eligible only if 25+ titles/yr confirmed
-- Children's Book Publisher — eligible only if 25+ titles/yr confirmed
-- Hybrid Publisher / Author Services — eligible only if 25+ titles/yr confirmed
+- Micro Press (≤5 titles/yr)
+- Small Press (6–20 titles/yr)
+- Nonfiction Specialty Press — eligible only if 25 or fewer titles/yr confirmed
+- Poetry & Literary Press — eligible only if 25 or fewer titles/yr confirmed
+- Children's Book Publisher — eligible only if 25 or fewer titles/yr confirmed
+- Hybrid Publisher / Author Services — eligible only if 25 or fewer titles/yr confirmed
 
-> **Publisher minimum:** Do not target any publisher producing fewer than 25 titles per year. Verify annual output before including any publisher lead.
+> **Publisher maximum:** Do not target any publisher producing more than 25 titles per year. Verify annual output before including any publisher lead.
 
 ### Discovery Channels (use at least 4–5 per run, vary each week):
 1. Substack — search "writing a book," "self-publishing," "book launch," "manuscript"
@@ -154,7 +154,7 @@ Using the full spec in `cushing-malloy-lead-gen-prompt.md`, research and identif
 
 **EXISTING CLIENT CHECK (mandatory before finalizing any lead):** Cross-reference every lead against the "EXISTING CLIENTS" list above. If the company name matches — even partially — remove that lead from the run. Do not draft, do not score, do not include in the report.
 
-**MINIMUM TITLE VOLUME (hard disqualifier):** Any publisher producing fewer than 25 titles per year is automatically disqualified and must not be included as a lead, regardless of score, contact quality, or any other factor. Do not include them, do not draft outreach, do not score them. This applies to all publisher categories (Micro Press, Small Press, Poetry & Literary Press, Children's Book Publisher, etc.). Individual authors and content creators are exempt from this rule.
+**MAXIMUM TITLE VOLUME (hard disqualifier):** Any publisher producing more than 25 titles per year is automatically disqualified and must not be included as a lead, regardless of score, contact quality, or any other factor. Do not include them, do not draft outreach, do not score them. Target publishers producing 25 or fewer titles per year only. Individual authors and content creators are exempt from this rule.
 
 **Priority tiers:** 8–10 = High | 5–7 = Medium | 1–4 = Low (supplemental only, max 5 per run)
 
