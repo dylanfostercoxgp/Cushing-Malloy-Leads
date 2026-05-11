@@ -989,7 +989,8 @@
       <div class="filter-group">
         <span class="filter-label">Date</span>
         <select class="date-selector" id="dateSelect">
-          <option value="2026-04-27">April 27, 2026</option>
+                    <option value="2026-05-11">May 11, 2026</option>
+<option value="2026-04-27">April 27, 2026</option>
           <option value="2026-04-20">April 20, 2026</option>
           <option value="2026-04-13" selected>April 13, 2026</option>
           <option value="2026-04-06">April 6, 2026</option>
@@ -1154,6 +1155,691 @@
 //     Each run date key must be preserved permanently for historical reference
 //     and Quality Report continuity. New runs go at the top of this object.
 const RUNS = {
+  "2026-05-11": {
+    label: "May 11, 2026",
+    leads: [
+      {
+        id: 1, score: 8, priorityClass: "high",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Feminist Press at CUNY",
+        source: "CLMP Independent Publisher Directory",
+        email: "info@feministpress.org",
+        phone: "(212) 817-7916",
+        website: "https://feministpress.org",
+        notes: "The Feminist Press at CUNY publishes 12-15 titles per year across feminist fiction, poetry, creative nonfiction, memoir, and literature in translation -- a 55-year-old nonprofit with institutional backing from the City University of New York and national distribution. Annual output is consistent and titles are widely reviewed. Outreach angle: their curated annual list of 12-15 titles benefits from a reliable short-run book manufacturer with tight production turnarounds; Cushing-Malloy's Ann Arbor operation has served publishers of this exact profile for generations.",
+        pitch: "Feminist Press at CUNY publishes 12-15 titles per year in feminist fiction, poetry, creative nonfiction, and literature in translation -- 55-year-old nonprofit, CUNY-backed, national distribution. High-value annual manufacturing account with consistent multi-title volume.",
+        drafted_email: `<p>Dear Feminist Press Team,</p>
+<p>Cushing-Malloy is a family-owned book manufacturing company based in Ann Arbor, Michigan -- we have been producing quality short-run books for independent and nonprofit literary publishers since 1948.</p>
+<p>With your consistent annual list of 12-15 titles in poetry, fiction, creative nonfiction, and literature in translation, you are exactly the kind of press our short-run manufacturing capabilities are built for. We specialize in runs from 200 to 5,000 copies with the quality and turnaround that literary publishers need.</p>
+<p>I would welcome the chance to learn more about your production needs and show you what Cushing-Malloy can offer. You can see our full capabilities at <a href="https://www.cushing-malloy.com">Cushing-Malloy.com</a>.</p><div style="font-family:Arial,sans-serif;margin-top:20px;padding-top:16px;border-top:2px solid #e5e5e5;">
+  <table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td style="padding-right:20px;vertical-align:top;">
+        <strong style="font-size:14px;color:#1a1a1a;">Joe DiMauro</strong><br>
+        <span style="font-size:12px;color:#008080;font-weight:bold;">CUSTOMER SERVICE REPRESENTATIVE</span><br>
+        <span style="font-size:12px;color:#555;">Cushing-Malloy, Inc.</span>
+      </td>
+      <td style="border-left:2px solid #ccc;padding-left:20px;vertical-align:top;font-size:12px;color:#555;">
+        <span>734-663-8554</span><br>
+        <span>jdimauro@cushing-malloy.com</span><br>
+        <a href="https://www.cushing-malloy.com" style="color:#008080;">www.cushing-malloy.com</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:8px;font-size:11px;color:#888;">Ann Arbor's Short Run Book Capital of America</td>
+    </tr>
+  </table>
+</div>`
+      },
+
+      {
+        id: 2, score: 8, priorityClass: "high",
+        category: "Small Press (6-20 titles/yr)", catClass: "cat-small",
+        name: "Madville Publishing",
+        source: "Poets & Writers Small Presses Database",
+        email: "info@madvillepublishing.com",
+        phone: "(940) 243-0904",
+        website: "https://madvillepublishing.com",
+        notes: "Madville Publishing is a Texas-based 501(c)(3) nonprofit independent press producing approximately 24 titles per year in poetry, literary essays, memoir, and literary fiction -- one of the highest annual output volumes among small nonprofit literary presses. Their press runs books through Ingram distribution and holds active open submission periods. Outreach angle: at 24 titles per year, Madville needs a short-run book manufacturer that delivers quality at speed; Cushing-Malloy's decades of experience with nonprofit literary press schedules makes this a natural fit.",
+        pitch: "Madville Publishing (Lake Dallas, TX) is a 501(c)(3) independent press producing approximately 24 titles per year in poetry, literary fiction, and memoir -- one of the highest output volumes among nonprofit literary presses. Consistent annual manufacturing volume with verified direct contact.",
+        drafted_email: `<p>Dear Madville Publishing Team,</p>
+<p>Cushing-Malloy is a family-owned book manufacturing company in Ann Arbor, Michigan with over 75 years of experience producing quality short-run books for independent literary presses.</p>
+<p>With your output of approximately 24 titles per year across poetry, literary fiction, memoir, and essays, your press represents exactly the annual manufacturing volume our operation is designed to serve. We handle print runs from 200 to 5,000 copies with the care and turnaround that a nonprofit literary press depends on.</p>
+<p>I would love to discuss your production needs and what a manufacturing relationship with Cushing-Malloy could look like. Our full capabilities are at <a href="https://www.cushing-malloy.com">Cushing-Malloy.com</a>.</p><div style="font-family:Arial,sans-serif;margin-top:20px;padding-top:16px;border-top:2px solid #e5e5e5;">
+  <table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td style="padding-right:20px;vertical-align:top;">
+        <strong style="font-size:14px;color:#1a1a1a;">Joe DiMauro</strong><br>
+        <span style="font-size:12px;color:#008080;font-weight:bold;">CUSTOMER SERVICE REPRESENTATIVE</span><br>
+        <span style="font-size:12px;color:#555;">Cushing-Malloy, Inc.</span>
+      </td>
+      <td style="border-left:2px solid #ccc;padding-left:20px;vertical-align:top;font-size:12px;color:#555;">
+        <span>734-663-8554</span><br>
+        <span>jdimauro@cushing-malloy.com</span><br>
+        <a href="https://www.cushing-malloy.com" style="color:#008080;">www.cushing-malloy.com</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:8px;font-size:11px;color:#888;">Ann Arbor's Short Run Book Capital of America</td>
+    </tr>
+  </table>
+</div>`
+      },
+
+      {
+        id: 3, score: 8, priorityClass: "high",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Persea Books",
+        source: "Poets & Writers Small Presses Database",
+        email: "info@perseabooks.com",
+        phone: "(212) 260-9256",
+        website: "https://perseabooks.com",
+        notes: "Persea Books is an independent literary press founded in 1975 and still owned and directed by its founding family -- publishing approximately 10 titles annually in poetry, fiction, essays, memoir, biography, and YA. One of the longest-running fully independent literary publishers in the United States with a backlist of hundreds of titles and national distribution. Outreach angle: a family-owned press with 50 years of independence and a commitment to handcrafted editorial work will appreciate a manufacturing partner with the same values -- quality, personal service, and a long track record.",
+        pitch: "Persea Books is a 50-year family-owned independent literary press in New York publishing approximately 10 titles per year in poetry, fiction, essays, memoir, and YA. One of the longest-running fully independent US literary publishers -- a natural fit for Cushing-Malloy's relationship-driven manufacturing services.",
+        drafted_email: `<p>Dear Persea Books Team,</p>
+<p>Cushing-Malloy is a family-owned book manufacturing company in Ann Arbor, Michigan -- founded in 1948, the same era that independent literary publishing was being built book by book.</p>
+<p>As a press that has remained fully independent for 50 years, Persea Books represents exactly the kind of publisher we most want to serve. Your annual list of approximately 10 titles in poetry, fiction, essays, memoir, and YA is precisely the short-run work our operation specializes in -- runs from 200 to 5,000 copies, delivered with the quality and personal attention that a press like yours expects.</p>
+<p>I would love to speak with your team about your current manufacturing needs. You can review our capabilities at <a href="https://www.cushing-malloy.com">Cushing-Malloy.com</a>.</p><div style="font-family:Arial,sans-serif;margin-top:20px;padding-top:16px;border-top:2px solid #e5e5e5;">
+  <table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td style="padding-right:20px;vertical-align:top;">
+        <strong style="font-size:14px;color:#1a1a1a;">Joe DiMauro</strong><br>
+        <span style="font-size:12px;color:#008080;font-weight:bold;">CUSTOMER SERVICE REPRESENTATIVE</span><br>
+        <span style="font-size:12px;color:#555;">Cushing-Malloy, Inc.</span>
+      </td>
+      <td style="border-left:2px solid #ccc;padding-left:20px;vertical-align:top;font-size:12px;color:#555;">
+        <span>734-663-8554</span><br>
+        <span>jdimauro@cushing-malloy.com</span><br>
+        <a href="https://www.cushing-malloy.com" style="color:#008080;">www.cushing-malloy.com</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:8px;font-size:11px;color:#888;">Ann Arbor's Short Run Book Capital of America</td>
+    </tr>
+  </table>
+</div>`
+      },
+
+      {
+        id: 4, score: 8, priorityClass: "high",
+        category: "Nonfiction Specialty Press", catClass: "cat-nonfiction",
+        name: "Kent State University Press",
+        source: "Association of University Presses / CLMP",
+        email: "ksupress@kent.edu",
+        phone: "(330) 672-7913",
+        website: "https://kentstateuniversitypress.com",
+        notes: "Kent State University Press publishes 18-20 books per year in Civil War history, American studies, Ohio and Rust Belt regional interest, and literary studies -- with institutional budget stability and distribution through the Big Ten Academic Alliance network. Located in Kent, Ohio, approximately 90 miles from Cushing-Malloy in Ann Arbor. Outreach angle: a fellow Midwest institution with consistent 18-20 title annual output is exactly the kind of manufacturing account that benefits from proximity, shared regional identity, and a printer who understands academic press production timelines.",
+        pitch: "Kent State University Press (Kent, OH) publishes 18-20 books per year in history, American studies, and Ohio/Rust Belt regional interest -- 90 miles from Ann Arbor. Institutional budget stability, Big Ten Academic Alliance distribution, and strong annual volume make this a flagship Midwest manufacturing target.",
+        drafted_email: `<p>Dear Kent State University Press Team,</p>
+<p>Cushing-Malloy is a family-owned book manufacturing company based in Ann Arbor, Michigan -- approximately 90 miles from your press in Kent, Ohio. We have been producing quality short-run academic and literary books for university presses and independent publishers since 1948.</p>
+<p>With your annual output of 18-20 titles in Civil War history, American studies, Ohio and Rust Belt regional interest, and literary studies, your press represents exactly the kind of consistent, multi-title academic manufacturing account our operation is built for. Midwest proximity means faster turnaround and easier communication on every production question.</p>
+<p>I would welcome a conversation about your manufacturing needs. Our full capabilities are at <a href="https://www.cushing-malloy.com">Cushing-Malloy.com</a>.</p><div style="font-family:Arial,sans-serif;margin-top:20px;padding-top:16px;border-top:2px solid #e5e5e5;">
+  <table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td style="padding-right:20px;vertical-align:top;">
+        <strong style="font-size:14px;color:#1a1a1a;">Joe DiMauro</strong><br>
+        <span style="font-size:12px;color:#008080;font-weight:bold;">CUSTOMER SERVICE REPRESENTATIVE</span><br>
+        <span style="font-size:12px;color:#555;">Cushing-Malloy, Inc.</span>
+      </td>
+      <td style="border-left:2px solid #ccc;padding-left:20px;vertical-align:top;font-size:12px;color:#555;">
+        <span>734-663-8554</span><br>
+        <span>jdimauro@cushing-malloy.com</span><br>
+        <a href="https://www.cushing-malloy.com" style="color:#008080;">www.cushing-malloy.com</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:8px;font-size:11px;color:#888;">Ann Arbor's Short Run Book Capital of America</td>
+    </tr>
+  </table>
+</div>`
+      },
+
+      {
+        id: 5, score: 7, priorityClass: "medium",
+        category: "Small Press (6-20 titles/yr)", catClass: "cat-small",
+        name: "Three Rooms Press",
+        source: "CLMP Independent Publisher Directory",
+        email: "info@threeroomspress.com",
+        phone: "(212) 731-0574",
+        website: "https://threeroomspress.com",
+        notes: "Three Rooms Press is a fiercely independent New York City press founded in 1993 publishing 6-10 titles per year in fiction, memoir, poetry, and punk/dada-influenced literary work -- with 100+ critically acclaimed titles in their catalog and 30+ years of continuous operation. Outreach angle: a 30-year-old independent press with a consistent backlist and annual new releases needs a manufacturing partner who matches their standards for quality and can turn around short runs without large minimum quantities.",
+        pitch: "Three Rooms Press (New York, NY) is a 30-year-old independent publisher producing 6-10 titles per year in literary fiction, memoir, and poetry -- 100+ acclaimed titles in catalog. Direct phone and email confirmed. Strong print signal from consistent multi-title annual releases.",
+        drafted_email: `<p>Dear Three Rooms Press Team,</p>
+<p>Cushing-Malloy is a family-owned book manufacturing company in Ann Arbor, Michigan, producing quality short-run books for independent literary publishers since 1948.</p>
+<p>Three Rooms Press has built an impressive 30-year catalog of fiercely independent fiction, memoir, and poetry. Your consistent output of 6-10 new titles per year is the kind of ongoing manufacturing relationship our operation is designed for -- short runs delivered with quality and care, on the schedule a working literary press needs.</p>
+<p>I would love to learn more about your current production workflow and what Cushing-Malloy could offer. See our full capabilities at <a href="https://www.cushing-malloy.com">Cushing-Malloy.com</a>.</p><div style="font-family:Arial,sans-serif;margin-top:20px;padding-top:16px;border-top:2px solid #e5e5e5;">
+  <table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td style="padding-right:20px;vertical-align:top;">
+        <strong style="font-size:14px;color:#1a1a1a;">Joe DiMauro</strong><br>
+        <span style="font-size:12px;color:#008080;font-weight:bold;">CUSTOMER SERVICE REPRESENTATIVE</span><br>
+        <span style="font-size:12px;color:#555;">Cushing-Malloy, Inc.</span>
+      </td>
+      <td style="border-left:2px solid #ccc;padding-left:20px;vertical-align:top;font-size:12px;color:#555;">
+        <span>734-663-8554</span><br>
+        <span>jdimauro@cushing-malloy.com</span><br>
+        <a href="https://www.cushing-malloy.com" style="color:#008080;">www.cushing-malloy.com</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:8px;font-size:11px;color:#888;">Ann Arbor's Short Run Book Capital of America</td>
+    </tr>
+  </table>
+</div>`
+      },
+
+      {
+        id: 6, score: 7, priorityClass: "medium",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Tupelo Press",
+        source: "Poets & Writers Small Presses Database",
+        email: "admin@tupelopress.org",
+        phone: "(413) 664-9611",
+        website: "https://tupelopress.org",
+        notes: "Tupelo Press is a nationally recognized nonprofit poetry press based in North Adams, Massachusetts, publishing approximately 12 titles per year in poetry, fiction, and literary nonfiction -- with 300+ titles in print and a reputation for distinctive design and quality production. Outreach angle: a nonprofit poetry press producing 12 titles annually with 300+ titles in backlist has significant and recurring manufacturing volume; Cushing-Malloy's short-run quality is ideal for the kind of beautifully produced literary books Tupelo is known for.",
+        pitch: "Tupelo Press (North Adams, MA) is a nationally recognized nonprofit literary press publishing approximately 12 titles per year with 300+ titles in backlist. Known for high production quality -- a natural match for Cushing-Malloy's short-run book manufacturing capabilities.",
+        drafted_email: `<p>Dear Tupelo Press Team,</p>
+<p>Cushing-Malloy is a family-owned book manufacturing company in Ann Arbor, Michigan with over 75 years of experience producing short-run books for nonprofit literary publishers.</p>
+<p>Tupelo Press has established itself as one of the country's leading independent poetry presses, with 300+ titles in print and a reputation for beautifully produced books. Your annual output of approximately 12 titles is the kind of consistent, quality-focused manufacturing relationship we specialize in.</p>
+<p>I would welcome the chance to discuss your production needs and show you what Cushing-Malloy delivers. Our full capabilities are at <a href="https://www.cushing-malloy.com">Cushing-Malloy.com</a>.</p><div style="font-family:Arial,sans-serif;margin-top:20px;padding-top:16px;border-top:2px solid #e5e5e5;">
+  <table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td style="padding-right:20px;vertical-align:top;">
+        <strong style="font-size:14px;color:#1a1a1a;">Joe DiMauro</strong><br>
+        <span style="font-size:12px;color:#008080;font-weight:bold;">CUSTOMER SERVICE REPRESENTATIVE</span><br>
+        <span style="font-size:12px;color:#555;">Cushing-Malloy, Inc.</span>
+      </td>
+      <td style="border-left:2px solid #ccc;padding-left:20px;vertical-align:top;font-size:12px;color:#555;">
+        <span>734-663-8554</span><br>
+        <span>jdimauro@cushing-malloy.com</span><br>
+        <a href="https://www.cushing-malloy.com" style="color:#008080;">www.cushing-malloy.com</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:8px;font-size:11px;color:#888;">Ann Arbor's Short Run Book Capital of America</td>
+    </tr>
+  </table>
+</div>`
+      },
+
+      {
+        id: 7, score: 7, priorityClass: "medium",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Autumn House Press",
+        source: "CLMP Independent Publisher Directory",
+        email: "info@autumnhouse.org",
+        phone: "(412) 362-2665",
+        website: "https://autumnhouse.org",
+        notes: "Autumn House Press is a Pittsburgh-based nonprofit independent publisher producing 6-8 books per year in poetry, fiction, and nonfiction -- founded in 1998 to champion contemporary literary voices and now one of the leading nonprofit literary publishers in the Mid-Atlantic region. Outreach angle: Pittsburgh is a 3.5-hour drive from Ann Arbor, placing Autumn House squarely within Cushing-Malloy's regional relationship territory; their annual production of 6-8 carefully designed literary titles is exactly the short-run work Cushing-Malloy specializes in.",
+        pitch: "Autumn House Press (Pittsburgh, PA) is a nonprofit independent literary publisher producing 6-8 titles per year in poetry, fiction, and nonfiction -- 3.5 hours from Ann Arbor and within Cushing-Malloy's regional relationship zone. Direct contact confirmed with phone and email.",
+        drafted_email: `<p>Dear Autumn House Press Team,</p>
+<p>Cushing-Malloy is a family-owned book manufacturing company in Ann Arbor, Michigan, specializing in short-run literary book production for independent and nonprofit presses since 1948.</p>
+<p>Autumn House Press has been a vital part of Pittsburgh's literary community for over 25 years, publishing 6-8 beautifully produced books of poetry, fiction, and nonfiction annually. Pittsburgh sits just 3.5 hours from our Ann Arbor operation, making Cushing-Malloy a natural regional manufacturing partner for a press that cares as deeply about production quality as you do.</p>
+<p>I would love to talk about your current manufacturing setup and what we could offer. See our capabilities at <a href="https://www.cushing-malloy.com">Cushing-Malloy.com</a>.</p><div style="font-family:Arial,sans-serif;margin-top:20px;padding-top:16px;border-top:2px solid #e5e5e5;">
+  <table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td style="padding-right:20px;vertical-align:top;">
+        <strong style="font-size:14px;color:#1a1a1a;">Joe DiMauro</strong><br>
+        <span style="font-size:12px;color:#008080;font-weight:bold;">CUSTOMER SERVICE REPRESENTATIVE</span><br>
+        <span style="font-size:12px;color:#555;">Cushing-Malloy, Inc.</span>
+      </td>
+      <td style="border-left:2px solid #ccc;padding-left:20px;vertical-align:top;font-size:12px;color:#555;">
+        <span>734-663-8554</span><br>
+        <span>jdimauro@cushing-malloy.com</span><br>
+        <a href="https://www.cushing-malloy.com" style="color:#008080;">www.cushing-malloy.com</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:8px;font-size:11px;color:#888;">Ann Arbor's Short Run Book Capital of America</td>
+    </tr>
+  </table>
+</div>`
+      },
+
+      {
+        id: 8, score: 7, priorityClass: "medium",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Alice James Books",
+        source: "Poets & Writers Small Presses Database",
+        email: "PA@alicejamesbooks.org",
+        phone: "(207) 926-8283",
+        website: "https://alicejamesbooks.org",
+        notes: "Alice James Books is a 50-year-old cooperative poetry press now based in New Gloucester, Maine, publishing 6-10 titles per year by established and emerging poets -- with a backlist of 250+ titles and recent NEA grant support. The press recently relocated to Pineland Farms and has an active 2026-2027 publishing calendar. Outreach angle: a cooperative press with 50 years of history and a growing backlist needs a manufacturing partner who can deliver both quality and flexibility on short-run print orders at every stage of their catalog.",
+        pitch: "Alice James Books (New Gloucester, ME) is a 50-year-old cooperative poetry press publishing 6-10 titles per year with 250+ titles in backlist and recent NEA grant support. Active 2026-2027 calendar confirmed. Direct phone and email verified.",
+        drafted_email: `<p>Dear Alice James Books Team,</p>
+<p>Cushing-Malloy is a family-owned book manufacturing company in Ann Arbor, Michigan with over 75 years of experience producing quality short-run books for nonprofit and cooperative literary publishers.</p>
+<p>Alice James Books has a remarkable 50-year history as one of America's premier cooperative poetry presses -- 250+ titles in print, NEA grant support, and an active 2026-2027 publishing calendar. Your annual production of 6-10 carefully curated poetry collections is exactly the scale and quality focus our short-run manufacturing operation is built for.</p>
+<p>I would welcome a conversation about your current production needs. Our full capabilities are at <a href="https://www.cushing-malloy.com">Cushing-Malloy.com</a>.</p><div style="font-family:Arial,sans-serif;margin-top:20px;padding-top:16px;border-top:2px solid #e5e5e5;">
+  <table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td style="padding-right:20px;vertical-align:top;">
+        <strong style="font-size:14px;color:#1a1a1a;">Joe DiMauro</strong><br>
+        <span style="font-size:12px;color:#008080;font-weight:bold;">CUSTOMER SERVICE REPRESENTATIVE</span><br>
+        <span style="font-size:12px;color:#555;">Cushing-Malloy, Inc.</span>
+      </td>
+      <td style="border-left:2px solid #ccc;padding-left:20px;vertical-align:top;font-size:12px;color:#555;">
+        <span>734-663-8554</span><br>
+        <span>jdimauro@cushing-malloy.com</span><br>
+        <a href="https://www.cushing-malloy.com" style="color:#008080;">www.cushing-malloy.com</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:8px;font-size:11px;color:#888;">Ann Arbor's Short Run Book Capital of America</td>
+    </tr>
+  </table>
+</div>`
+      },
+
+      {
+        id: 9, score: 7, priorityClass: "medium",
+        category: "Small Press (6-20 titles/yr)", catClass: "cat-small",
+        name: "Engine Books",
+        source: "IBPA Member Signals / Literary Indiana",
+        email: "victoria@enginebooks.org",
+        phone: "",
+        website: "https://enginebooks.org",
+        notes: "Engine Books is an Indianapolis, Indiana-based boutique literary fiction press founded in 2011 producing approximately 4 titles per year of experimental and literary fiction -- highly selective, with each title receiving full production attention. Located in Indianapolis, approximately 4 hours from Cushing-Malloy in Ann Arbor. Outreach angle: a Midwest literary press that is selective and production-focused will value a regional manufacturing partner; Cushing-Malloy's short-run capabilities and proximity make this a natural relationship to build.",
+        pitch: "Engine Books (Indianapolis, IN) is a boutique literary fiction press publishing approximately 4 highly curated titles per year -- Midwest location, 4 hours from Ann Arbor. Each title receives full production attention, making manufacturing quality a priority. Direct email confirmed with press director.",
+        drafted_email: `<p>Dear Engine Books Team,</p>
+<p>Cushing-Malloy is a family-owned book manufacturing company based in Ann Arbor, Michigan -- about four hours from Indianapolis. We have been producing quality short-run books for independent literary publishers across the Midwest since 1948.</p>
+<p>Engine Books has built a reputation for publishing highly curated literary fiction that challenges the commercial mainstream. Your selective annual list means each title gets the production attention it deserves -- and that kind of careful, quality-driven work is exactly what Cushing-Malloy's short-run manufacturing is built to support.</p>
+<p>I would love to connect about your current production setup and what we could offer as a regional partner. Our capabilities are at <a href="https://www.cushing-malloy.com">Cushing-Malloy.com</a>.</p><div style="font-family:Arial,sans-serif;margin-top:20px;padding-top:16px;border-top:2px solid #e5e5e5;">
+  <table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td style="padding-right:20px;vertical-align:top;">
+        <strong style="font-size:14px;color:#1a1a1a;">Joe DiMauro</strong><br>
+        <span style="font-size:12px;color:#008080;font-weight:bold;">CUSTOMER SERVICE REPRESENTATIVE</span><br>
+        <span style="font-size:12px;color:#555;">Cushing-Malloy, Inc.</span>
+      </td>
+      <td style="border-left:2px solid #ccc;padding-left:20px;vertical-align:top;font-size:12px;color:#555;">
+        <span>734-663-8554</span><br>
+        <span>jdimauro@cushing-malloy.com</span><br>
+        <a href="https://www.cushing-malloy.com" style="color:#008080;">www.cushing-malloy.com</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:8px;font-size:11px;color:#888;">Ann Arbor's Short Run Book Capital of America</td>
+    </tr>
+  </table>
+</div>`
+      },
+
+      {
+        id: 10, score: 7, priorityClass: "medium",
+        category: "Nonfiction Specialty Press", catClass: "cat-nonfiction",
+        name: "West Virginia University Press",
+        source: "Association of University Presses",
+        email: "WVUPress@mail.wvu.edu",
+        phone: "(304) 293-8400",
+        website: "https://wvupressonline.com",
+        notes: "West Virginia University Press publishes 12-16 books per year in Appalachian studies, history, higher education, social sciences, and interdisciplinary titles on energy, environment, and resources -- with institutional budget support and national distribution through Longleaf Services. The press is affiliated with WVU Libraries and has a clear academic publishing calendar. Outreach angle: university presses with 12-16 annual titles need manufacturing partners who understand academic production schedules and can deliver quality short-run work on time, every semester.",
+        pitch: "West Virginia University Press (Morgantown, WV) publishes 12-16 books per year in Appalachian studies, history, and social sciences -- institutional budget stability, national distribution, consistent annual volume. Direct general inbox and main phone confirmed.",
+        drafted_email: `<p>Dear West Virginia University Press Team,</p>
+<p>Cushing-Malloy is a family-owned book manufacturing company in Ann Arbor, Michigan with over 75 years of experience producing quality short-run books for university presses and independent academic publishers.</p>
+<p>With your annual output of 12-16 books per year in Appalachian studies, history, social sciences, and energy and environment research, your press represents the kind of consistent, multi-title academic manufacturing account our operation is built for. Institutional timelines and production quality both matter to a university press -- and they matter to us too.</p>
+<p>I would welcome a conversation about your current manufacturing needs. Our full capabilities are at <a href="https://www.cushing-malloy.com">Cushing-Malloy.com</a>.</p><div style="font-family:Arial,sans-serif;margin-top:20px;padding-top:16px;border-top:2px solid #e5e5e5;">
+  <table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td style="padding-right:20px;vertical-align:top;">
+        <strong style="font-size:14px;color:#1a1a1a;">Joe DiMauro</strong><br>
+        <span style="font-size:12px;color:#008080;font-weight:bold;">CUSTOMER SERVICE REPRESENTATIVE</span><br>
+        <span style="font-size:12px;color:#555;">Cushing-Malloy, Inc.</span>
+      </td>
+      <td style="border-left:2px solid #ccc;padding-left:20px;vertical-align:top;font-size:12px;color:#555;">
+        <span>734-663-8554</span><br>
+        <span>jdimauro@cushing-malloy.com</span><br>
+        <a href="https://www.cushing-malloy.com" style="color:#008080;">www.cushing-malloy.com</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:8px;font-size:11px;color:#888;">Ann Arbor's Short Run Book Capital of America</td>
+    </tr>
+  </table>
+</div>`
+      },
+
+      {
+        id: 11, score: 7, priorityClass: "medium",
+        category: "Small Press (6-20 titles/yr)", catClass: "cat-small",
+        name: "Ig Publishing",
+        source: "CLMP Independent Publisher Directory",
+        email: "submissions@igpub.com",
+        phone: "",
+        website: "https://igpub.com",
+        notes: "Ig Publishing is a New York-based award-winning independent literary press founded in 2002 publishing approximately 12 titles per year in original literary fiction, political and cultural nonfiction, the IgKids middle grade/YA imprint, and the Bookmarked series (memoirs about formative books). Their consistent multi-imprint output and 20+ years of independence make this a reliable manufacturing account target. Outreach angle: a multi-imprint independent press with four active lines and 20 years of consistent output needs a manufacturing partner who can handle varied trim sizes and formats across a diverse annual list.",
+        pitch: "Ig Publishing (New York, NY) is a 20-year-old independent press publishing approximately 12 titles per year across literary fiction, nonfiction, IgKids, and the Bookmarked series -- four active imprints, consistent multi-title annual volume. Direct submissions email confirmed.",
+        drafted_email: `<p>Dear Ig Publishing Team,</p>
+<p>Cushing-Malloy is a family-owned book manufacturing company in Ann Arbor, Michigan -- over 75 years producing quality short-run books for independent literary publishers.</p>
+<p>Ig Publishing has operated for over 20 years across four active imprints -- literary fiction, political nonfiction, IgKids, and the Bookmarked series. Running approximately 12 titles per year across such varied formats is exactly the kind of multi-imprint manufacturing challenge Cushing-Malloy is equipped to handle, with short-run capabilities across a range of trim sizes and binding styles.</p>
+<p>I would love to learn more about your current production needs. Our full capabilities are at <a href="https://www.cushing-malloy.com">Cushing-Malloy.com</a>.</p><div style="font-family:Arial,sans-serif;margin-top:20px;padding-top:16px;border-top:2px solid #e5e5e5;">
+  <table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td style="padding-right:20px;vertical-align:top;">
+        <strong style="font-size:14px;color:#1a1a1a;">Joe DiMauro</strong><br>
+        <span style="font-size:12px;color:#008080;font-weight:bold;">CUSTOMER SERVICE REPRESENTATIVE</span><br>
+        <span style="font-size:12px;color:#555;">Cushing-Malloy, Inc.</span>
+      </td>
+      <td style="border-left:2px solid #ccc;padding-left:20px;vertical-align:top;font-size:12px;color:#555;">
+        <span>734-663-8554</span><br>
+        <span>jdimauro@cushing-malloy.com</span><br>
+        <a href="https://www.cushing-malloy.com" style="color:#008080;">www.cushing-malloy.com</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:8px;font-size:11px;color:#888;">Ann Arbor's Short Run Book Capital of America</td>
+    </tr>
+  </table>
+</div>`
+      },
+
+      {
+        id: 12, score: 7, priorityClass: "medium",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Hub City Press",
+        source: "Poets & Writers Small Presses Database",
+        email: "kate@hubcity.org",
+        phone: "(864) 577-9349",
+        website: "https://hubcity.org",
+        notes: "Hub City Press is the premier independent literary press of the American South, based in Spartanburg, South Carolina, publishing 5-8 books per year in literary fiction, poetry, and nonfiction -- founded in 1995 and consistently recognized among the country's finest regional independent publishers. Outreach angle: a regionally-rooted literary press with 30 years of history and carefully produced annual titles needs a manufacturing partner who delivers the same level of craft they bring to their editorial work; Cushing-Malloy's reputation for quality short-run printing aligns with Hub City's standards.",
+        pitch: "Hub City Press (Spartanburg, SC) is the premier independent literary press of the American South, publishing 5-8 titles per year since 1995. Thirty years of operation and consistently recognized for editorial and production quality. Direct editor email and main phone confirmed.",
+        drafted_email: `<p>Dear Hub City Press Team,</p>
+<p>Cushing-Malloy is a family-owned book manufacturing company in Ann Arbor, Michigan with over 75 years of experience producing quality short-run books for independent literary presses.</p>
+<p>Hub City Press has built an extraordinary 30-year record as the premier independent literary press of the American South -- publishing 5-8 carefully produced books of fiction, poetry, and nonfiction each year. That combination of editorial standards and production care is something Cushing-Malloy's short-run manufacturing operation is specifically built to support.</p>
+<p>I would welcome the chance to discuss your current production needs and what a manufacturing relationship with Cushing-Malloy could look like. See our full capabilities at <a href="https://www.cushing-malloy.com">Cushing-Malloy.com</a>.</p><div style="font-family:Arial,sans-serif;margin-top:20px;padding-top:16px;border-top:2px solid #e5e5e5;">
+  <table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td style="padding-right:20px;vertical-align:top;">
+        <strong style="font-size:14px;color:#1a1a1a;">Joe DiMauro</strong><br>
+        <span style="font-size:12px;color:#008080;font-weight:bold;">CUSTOMER SERVICE REPRESENTATIVE</span><br>
+        <span style="font-size:12px;color:#555;">Cushing-Malloy, Inc.</span>
+      </td>
+      <td style="border-left:2px solid #ccc;padding-left:20px;vertical-align:top;font-size:12px;color:#555;">
+        <span>734-663-8554</span><br>
+        <span>jdimauro@cushing-malloy.com</span><br>
+        <a href="https://www.cushing-malloy.com" style="color:#008080;">www.cushing-malloy.com</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:8px;font-size:11px;color:#888;">Ann Arbor's Short Run Book Capital of America</td>
+    </tr>
+  </table>
+</div>`
+      },
+
+      {
+        id: 13, score: 7, priorityClass: "medium",
+        category: "Children's Book Publisher", catClass: "cat-childrens",
+        name: "Arbordale Publishing",
+        source: "Reedsy Independent Publisher Directory",
+        email: "customercare@arbordalepublishing.com",
+        phone: "(843) 971-6722",
+        website: "https://arbordalepublishing.com",
+        notes: "Arbordale Publishing is a Mount Pleasant, South Carolina-based independent children's book publisher producing approximately 10 picture books per year in science and math -- mission-driven to get young children excited about STEM through quality illustrated books. Their titles are widely used in schools and libraries with national distribution. Outreach angle: a children's picture book publisher producing 10 titles per year with school and library sales needs a manufacturer who can deliver consistent quality across illustrated short-run print jobs; Cushing-Malloy's offset capabilities handle full-color picture book formats at the scale Arbordale needs.",
+        pitch: "Arbordale Publishing (Mount Pleasant, SC) is an independent children's STEM picture book publisher producing approximately 10 titles per year -- widely used in schools and libraries with national distribution. Direct customer service email and main phone confirmed.",
+        drafted_email: `<p>Dear Arbordale Publishing Team,</p>
+<p>Cushing-Malloy is a family-owned book manufacturing company in Ann Arbor, Michigan with over 75 years of experience in quality book manufacturing, including full-color illustrated children's titles.</p>
+<p>Arbordale's mission to make math and science exciting through quality picture books results in consistently high production standards -- exactly the kind of work our offset printing capabilities are built to handle. With approximately 10 titles per year reaching schools and libraries nationally, your press has the annual volume and quality standards that make a dedicated manufacturing relationship worthwhile.</p>
+<p>I would love to discuss your current production setup and what Cushing-Malloy can offer. Our full capabilities are at <a href="https://www.cushing-malloy.com">Cushing-Malloy.com</a>.</p><div style="font-family:Arial,sans-serif;margin-top:20px;padding-top:16px;border-top:2px solid #e5e5e5;">
+  <table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td style="padding-right:20px;vertical-align:top;">
+        <strong style="font-size:14px;color:#1a1a1a;">Joe DiMauro</strong><br>
+        <span style="font-size:12px;color:#008080;font-weight:bold;">CUSTOMER SERVICE REPRESENTATIVE</span><br>
+        <span style="font-size:12px;color:#555;">Cushing-Malloy, Inc.</span>
+      </td>
+      <td style="border-left:2px solid #ccc;padding-left:20px;vertical-align:top;font-size:12px;color:#555;">
+        <span>734-663-8554</span><br>
+        <span>jdimauro@cushing-malloy.com</span><br>
+        <a href="https://www.cushing-malloy.com" style="color:#008080;">www.cushing-malloy.com</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:8px;font-size:11px;color:#888;">Ann Arbor's Short Run Book Capital of America</td>
+    </tr>
+  </table>
+</div>`
+      },
+
+      {
+        id: 14, score: 7, priorityClass: "medium",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Loblolly Press",
+        source: "Poets & Writers Small Presses Database",
+        email: "loblolly.publishing@gmail.com",
+        phone: "",
+        website: "https://loblollypress.com",
+        notes: "Loblolly Press is a growing Asheville, North Carolina-based independent press founded to publish queer, BIPOC, rural, elder, and neurodivergent writers -- releasing 7 titles in 2025 including 6 books and one anthology, with more than 1,000 books reaching readers in 38 states. Their active Substack newsletter and expanding 2025-2026 catalog signal strong growth. Outreach angle: a growing independent press just hitting meaningful distribution scale needs a manufacturing partner who can scale print runs with them; Cushing-Malloy's short-run capabilities are designed for exactly this stage of publisher growth.",
+        pitch: "Loblolly Press (Asheville, NC) is a growing independent press publishing 7 titles per year, reaching readers in 38 states with 1,000+ books distributed in 2025 alone. Active Substack, expanding catalog, growing brand. Direct general email confirmed.",
+        drafted_email: `<p>Dear Loblolly Press Team,</p>
+<p>Cushing-Malloy is a family-owned book manufacturing company in Ann Arbor, Michigan with over 75 years of experience producing quality short-run books for independent literary publishers.</p>
+<p>Loblolly Press has had an impressive 2025 -- 7 titles reaching readers in 38 states and growing a community of writers and readers across the American South. As your press scales its annual output and distribution, having a reliable short-run manufacturing partner becomes increasingly important to keeping your publishing calendar on track.</p>
+<p>I would love to connect about your production needs as you continue to grow. Our full capabilities are at <a href="https://www.cushing-malloy.com">Cushing-Malloy.com</a>.</p><div style="font-family:Arial,sans-serif;margin-top:20px;padding-top:16px;border-top:2px solid #e5e5e5;">
+  <table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td style="padding-right:20px;vertical-align:top;">
+        <strong style="font-size:14px;color:#1a1a1a;">Joe DiMauro</strong><br>
+        <span style="font-size:12px;color:#008080;font-weight:bold;">CUSTOMER SERVICE REPRESENTATIVE</span><br>
+        <span style="font-size:12px;color:#555;">Cushing-Malloy, Inc.</span>
+      </td>
+      <td style="border-left:2px solid #ccc;padding-left:20px;vertical-align:top;font-size:12px;color:#555;">
+        <span>734-663-8554</span><br>
+        <span>jdimauro@cushing-malloy.com</span><br>
+        <a href="https://www.cushing-malloy.com" style="color:#008080;">www.cushing-malloy.com</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:8px;font-size:11px;color:#888;">Ann Arbor's Short Run Book Capital of America</td>
+    </tr>
+  </table>
+</div>`
+      },
+
+      {
+        id: 15, score: 6, priorityClass: "medium",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Kaya Press",
+        source: "CLMP Independent Publisher Directory",
+        email: "neela@kaya.com",
+        phone: "",
+        website: "https://kaya.com",
+        notes: "Kaya Press is a Los Angeles-based nonprofit literary publisher housed at the USC Department of American Studies and Ethnicity, publishing approximately 10 titles per year of cutting-edge Asian and Pacific Islander diasporic literature -- experimental poetry, noir fiction, film memoir, and avant-garde work. Five titles released in 2024, ten titles planned for 2025. Outreach angle: a growing nonprofit publisher expanding from 5 to 10 annual titles is at the exact inflection point where a reliable short-run manufacturing partner becomes essential to keeping their production calendar on track.",
+        pitch: "Kaya Press (Los Angeles, CA -- housed at USC) is a nonprofit Asian and Pacific Islander diaspora literary press expanding to 10 titles per year in 2025 -- up from 5 in 2024. Active growth signal. Direct contact via editor Neelanjana Banerjee confirmed.",
+        drafted_email: `<p>Dear Kaya Press Team,</p>
+<p>Cushing-Malloy is a family-owned book manufacturing company in Ann Arbor, Michigan with over 75 years of experience producing quality short-run literary books for independent and nonprofit publishers.</p>
+<p>Kaya Press is expanding from 5 titles in 2024 to 10 titles planned for 2025 -- a meaningful growth moment that often coincides with the need for a reliable manufacturing partner. With your catalog of cutting-edge Asian and Pacific Islander diasporic literature distributed nationally, Cushing-Malloy's short-run capabilities are well-matched to your production standards and audience.</p>
+<p>I would love to discuss your current and upcoming production needs. Our full capabilities are at <a href="https://www.cushing-malloy.com">Cushing-Malloy.com</a>.</p><div style="font-family:Arial,sans-serif;margin-top:20px;padding-top:16px;border-top:2px solid #e5e5e5;">
+  <table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td style="padding-right:20px;vertical-align:top;">
+        <strong style="font-size:14px;color:#1a1a1a;">Joe DiMauro</strong><br>
+        <span style="font-size:12px;color:#008080;font-weight:bold;">CUSTOMER SERVICE REPRESENTATIVE</span><br>
+        <span style="font-size:12px;color:#555;">Cushing-Malloy, Inc.</span>
+      </td>
+      <td style="border-left:2px solid #ccc;padding-left:20px;vertical-align:top;font-size:12px;color:#555;">
+        <span>734-663-8554</span><br>
+        <span>jdimauro@cushing-malloy.com</span><br>
+        <a href="https://www.cushing-malloy.com" style="color:#008080;">www.cushing-malloy.com</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:8px;font-size:11px;color:#888;">Ann Arbor's Short Run Book Capital of America</td>
+    </tr>
+  </table>
+</div>`
+      },
+
+      {
+        id: 16, score: 6, priorityClass: "medium",
+        category: "Small Press (6-20 titles/yr)", catClass: "cat-small",
+        name: "Leapfrog Press",
+        source: "CLMP Independent Publisher Directory",
+        email: "prize@leapfrogpress.com",
+        phone: "",
+        website: "https://leapfrogpress.com",
+        notes: "Leapfrog Press is a Fredonia, New York-based independent publisher producing approximately 10 titles per year in fiction, young adult fiction, and nonfiction -- running the annual Leapfrog Global Fiction Prize which guarantees global publication in the English-speaking world. Their prize-driven model generates consistent annual titles with wide editorial scope. Outreach angle: an annual fiction prize publisher with consistent 10-title annual output and global ambitions needs a short-run manufacturer who can deliver quality across diverse genres and formats.",
+        pitch: "Leapfrog Press (Fredonia, NY) produces approximately 10 titles per year including prize-winning fiction, YA, and nonfiction -- annual Leapfrog Global Fiction Prize drives consistent publishing output. Direct prize/submissions email confirmed.",
+        drafted_email: `<p>Dear Leapfrog Press Team,</p>
+<p>Cushing-Malloy is a family-owned book manufacturing company in Ann Arbor, Michigan with over 75 years of experience producing quality short-run books for independent literary publishers.</p>
+<p>Leapfrog Press produces approximately 10 titles per year through your press and the annual Leapfrog Global Fiction Prize -- literary fiction, YA, and nonfiction with global distribution. That consistent multi-title annual output is the kind of ongoing manufacturing relationship Cushing-Malloy's short-run operation is built for.</p>
+<p>I would welcome the chance to learn more about your production needs. Our full capabilities are at <a href="https://www.cushing-malloy.com">Cushing-Malloy.com</a>.</p><div style="font-family:Arial,sans-serif;margin-top:20px;padding-top:16px;border-top:2px solid #e5e5e5;">
+  <table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td style="padding-right:20px;vertical-align:top;">
+        <strong style="font-size:14px;color:#1a1a1a;">Joe DiMauro</strong><br>
+        <span style="font-size:12px;color:#008080;font-weight:bold;">CUSTOMER SERVICE REPRESENTATIVE</span><br>
+        <span style="font-size:12px;color:#555;">Cushing-Malloy, Inc.</span>
+      </td>
+      <td style="border-left:2px solid #ccc;padding-left:20px;vertical-align:top;font-size:12px;color:#555;">
+        <span>734-663-8554</span><br>
+        <span>jdimauro@cushing-malloy.com</span><br>
+        <a href="https://www.cushing-malloy.com" style="color:#008080;">www.cushing-malloy.com</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:8px;font-size:11px;color:#888;">Ann Arbor's Short Run Book Capital of America</td>
+    </tr>
+  </table>
+</div>`
+      },
+
+      {
+        id: 17, score: 6, priorityClass: "medium",
+        category: "Small Press (6-20 titles/yr)", catClass: "cat-small",
+        name: "Livingston Press",
+        source: "Poets & Writers Small Presses Database",
+        email: "jwt@uwa.edu",
+        phone: "",
+        website: "https://livingstonpress.org",
+        notes: "Livingston Press at the University of West Alabama is a 50-year-old independent literary publisher producing 8-10 titles per year in fiction, nonfiction, and poetry -- with 250+ titles in print and a reputation for championing writers who do not fit the mainstream commercial mold. The press is directed by Joe Taylor (jwt@uwa.edu) who has run it for decades. Outreach angle: a university-affiliated press with 50 years of history and 8-10 annual titles needs a manufacturing partner who can deliver consistent quality at print runs scaled for academic and literary audiences.",
+        pitch: "Livingston Press (University of West Alabama) is a 50-year-old independent literary press producing 8-10 titles per year with 250+ titles in print. Direct contact is press director Joe Taylor. Consistent long-term publishing volume.",
+        drafted_email: `<p>Dear Joe,</p>
+<p>Cushing-Malloy is a family-owned book manufacturing company in Ann Arbor, Michigan with over 75 years of experience producing quality short-run books for independent literary publishers.</p>
+<p>Livingston Press has been producing exceptional literary fiction, nonfiction, and poetry at the University of West Alabama for 50 years -- with 250+ titles in print and 8-10 new titles added each year. That kind of sustained, multi-decade publishing output represents exactly the kind of manufacturing relationship our operation is built to support.</p>
+<p>I would love to connect about your current production setup. Our full capabilities are at <a href="https://www.cushing-malloy.com">Cushing-Malloy.com</a>.</p><div style="font-family:Arial,sans-serif;margin-top:20px;padding-top:16px;border-top:2px solid #e5e5e5;">
+  <table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td style="padding-right:20px;vertical-align:top;">
+        <strong style="font-size:14px;color:#1a1a1a;">Joe DiMauro</strong><br>
+        <span style="font-size:12px;color:#008080;font-weight:bold;">CUSTOMER SERVICE REPRESENTATIVE</span><br>
+        <span style="font-size:12px;color:#555;">Cushing-Malloy, Inc.</span>
+      </td>
+      <td style="border-left:2px solid #ccc;padding-left:20px;vertical-align:top;font-size:12px;color:#555;">
+        <span>734-663-8554</span><br>
+        <span>jdimauro@cushing-malloy.com</span><br>
+        <a href="https://www.cushing-malloy.com" style="color:#008080;">www.cushing-malloy.com</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:8px;font-size:11px;color:#888;">Ann Arbor's Short Run Book Capital of America</td>
+    </tr>
+  </table>
+</div>`
+      },
+
+      {
+        id: 18, score: 6, priorityClass: "medium",
+        category: "Children's Book Publisher", catClass: "cat-childrens",
+        name: "Blue Dot Kids Press",
+        source: "Reedsy Independent Publisher Directory",
+        email: "hello@bluedotkidspress.com",
+        phone: "",
+        website: "https://bluedotkidspress.com",
+        notes: "Blue Dot Kids Press is a San Francisco-based boutique children's book publisher producing approximately 10 titles per year centered on global awareness, emotional development, and inclusion -- with a curated list of illustrated picture books distributed nationally. Their mission-driven approach results in consistently high production quality standards. Outreach angle: a boutique children's press producing 10 annual illustrated titles has specific and recurring short-run print needs; Cushing-Malloy's full-color picture book manufacturing capabilities are a direct match for Blue Dot's format.",
+        pitch: "Blue Dot Kids Press (San Francisco, CA) is a boutique children's publisher producing 10 titles per year in illustrated picture books focused on global awareness and emotional development. National distribution, mission-driven editorial, consistent annual output. Direct email confirmed.",
+        drafted_email: `<p>Dear Blue Dot Kids Press Team,</p>
+<p>Cushing-Malloy is a family-owned book manufacturing company in Ann Arbor, Michigan with over 75 years of experience producing quality short-run books for independent publishers, including illustrated children's titles.</p>
+<p>Blue Dot's curated annual list of 10 picture books centered on global awareness and emotional development reflects exactly the kind of mission-driven production standards that benefit from a dedicated manufacturing relationship. Full-color illustrated picture books require a manufacturer who cares about color fidelity and trim quality -- that is where Cushing-Malloy's offset printing capabilities stand out.</p>
+<p>I would love to discuss your current production needs. Our full capabilities are at <a href="https://www.cushing-malloy.com">Cushing-Malloy.com</a>.</p><div style="font-family:Arial,sans-serif;margin-top:20px;padding-top:16px;border-top:2px solid #e5e5e5;">
+  <table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td style="padding-right:20px;vertical-align:top;">
+        <strong style="font-size:14px;color:#1a1a1a;">Joe DiMauro</strong><br>
+        <span style="font-size:12px;color:#008080;font-weight:bold;">CUSTOMER SERVICE REPRESENTATIVE</span><br>
+        <span style="font-size:12px;color:#555;">Cushing-Malloy, Inc.</span>
+      </td>
+      <td style="border-left:2px solid #ccc;padding-left:20px;vertical-align:top;font-size:12px;color:#555;">
+        <span>734-663-8554</span><br>
+        <span>jdimauro@cushing-malloy.com</span><br>
+        <a href="https://www.cushing-malloy.com" style="color:#008080;">www.cushing-malloy.com</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:8px;font-size:11px;color:#888;">Ann Arbor's Short Run Book Capital of America</td>
+    </tr>
+  </table>
+</div>`
+      },
+
+      {
+        id: 19, score: 6, priorityClass: "medium",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Alternating Current Press",
+        source: "Poets & Writers Small Presses Database",
+        email: "info@altcurrentpress.com",
+        phone: "(307) 900-2529",
+        website: "https://altcurrentpress.com",
+        notes: "Alternating Current Press is a woman-owned independent literary press originally founded in rural Michigan and now based in Boulder, Colorado -- publishing full-length poetry, fiction, nonfiction, chapbooks, multi-author anthologies, and online journals with 200+ titles in its backlist. The press has deep Midwest roots and publishes consistently across multiple formats. Outreach angle: a press with Michigan origins and 200+ titles in backlist has long-term manufacturing relationships that matter -- Cushing-Malloy's short-run capabilities and Midwest heritage make a natural re-connection.",
+        pitch: "Alternating Current Press (Boulder, CO -- originally founded in rural Michigan) is a woman-owned literary press with 200+ titles in backlist publishing poetry, fiction, nonfiction, and anthologies. Michigan roots, active press, direct email and text number confirmed.",
+        drafted_email: `<p>Dear Alternating Current Press Team,</p>
+<p>Cushing-Malloy is a family-owned book manufacturing company in Ann Arbor, Michigan with over 75 years of experience producing quality short-run books for independent literary publishers.</p>
+<p>Alternating Current Press was originally founded in rural Michigan -- a detail that connects you directly to the Midwest publishing community Cushing-Malloy has served for generations. With 200+ titles in your backlist spanning poetry, fiction, nonfiction, chapbooks, and anthologies, your press has the depth and variety of manufacturing needs that make an ongoing relationship with a short-run specialist worthwhile.</p>
+<p>I would love to discuss your current and upcoming production needs. Our full capabilities are at <a href="https://www.cushing-malloy.com">Cushing-Malloy.com</a>.</p><div style="font-family:Arial,sans-serif;margin-top:20px;padding-top:16px;border-top:2px solid #e5e5e5;">
+  <table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td style="padding-right:20px;vertical-align:top;">
+        <strong style="font-size:14px;color:#1a1a1a;">Joe DiMauro</strong><br>
+        <span style="font-size:12px;color:#008080;font-weight:bold;">CUSTOMER SERVICE REPRESENTATIVE</span><br>
+        <span style="font-size:12px;color:#555;">Cushing-Malloy, Inc.</span>
+      </td>
+      <td style="border-left:2px solid #ccc;padding-left:20px;vertical-align:top;font-size:12px;color:#555;">
+        <span>734-663-8554</span><br>
+        <span>jdimauro@cushing-malloy.com</span><br>
+        <a href="https://www.cushing-malloy.com" style="color:#008080;">www.cushing-malloy.com</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:8px;font-size:11px;color:#888;">Ann Arbor's Short Run Book Capital of America</td>
+    </tr>
+  </table>
+</div>`
+      },
+
+      {
+        id: 20, score: 6, priorityClass: "medium",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Omnidawn Publishing",
+        source: "CLMP Independent Publisher Directory",
+        email: "submissions@omnidawn.com",
+        phone: "(510) 439-6285",
+        website: "https://omnidawn.com",
+        notes: "Omnidawn Publishing is an Oakland, California-based nonprofit literary press founded in 2001 and distributed by the University of Chicago Press -- publishing poetry, innovative fiction, and cross-genre literary work with 100+ titles in catalog and an annual poetry prize. Their distribution partnership with UChicago Press signals institutional credibility and national reach. Outreach angle: a nonprofit literary press distributed by one of the country's largest university press operations has the institutional infrastructure to support a long-term manufacturing relationship; Cushing-Malloy's short-run quality and turnaround capabilities align with Omnidawn's production standards.",
+        pitch: "Omnidawn Publishing (Oakland, CA) is a nonprofit literary press founded in 2001 distributed by University of Chicago Press -- poetry, fiction, cross-genre, 100+ titles in catalog. UChicago distribution signals institutional reach and production standards. Direct submissions email and main phone confirmed.",
+        drafted_email: `<p>Dear Omnidawn Publishing Team,</p>
+<p>Cushing-Malloy is a family-owned book manufacturing company in Ann Arbor, Michigan with over 75 years of experience producing quality short-run books for independent literary publishers.</p>
+<p>Omnidawn has built a remarkable catalog of over 100 poetry, innovative fiction, and cross-genre titles since 2001 -- distributed by the University of Chicago Press, which signals the kind of production quality standards that benefit from a dedicated manufacturing partner. Short-run work with university-level distribution expectations requires a printer who can meet both the quality bar and the timeline.</p>
+<p>I would welcome the chance to discuss your current production needs. Our full capabilities are at <a href="https://www.cushing-malloy.com">Cushing-Malloy.com</a>.</p><div style="font-family:Arial,sans-serif;margin-top:20px;padding-top:16px;border-top:2px solid #e5e5e5;">
+  <table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td style="padding-right:20px;vertical-align:top;">
+        <strong style="font-size:14px;color:#1a1a1a;">Joe DiMauro</strong><br>
+        <span style="font-size:12px;color:#008080;font-weight:bold;">CUSTOMER SERVICE REPRESENTATIVE</span><br>
+        <span style="font-size:12px;color:#555;">Cushing-Malloy, Inc.</span>
+      </td>
+      <td style="border-left:2px solid #ccc;padding-left:20px;vertical-align:top;font-size:12px;color:#555;">
+        <span>734-663-8554</span><br>
+        <span>jdimauro@cushing-malloy.com</span><br>
+        <a href="https://www.cushing-malloy.com" style="color:#008080;">www.cushing-malloy.com</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:8px;font-size:11px;color:#888;">Ann Arbor's Short Run Book Capital of America</td>
+    </tr>
+  </table>
+</div>`
+      },
+
+    ]
+  },
   "2026-05-04": {
     label: "May 4, 2026",
     leads: [
@@ -2567,7 +3253,7 @@ function getVisibleRuns() {
 }
 
 // ─── STATE ───────────────────────────────────────────────────────────────────
-let currentRun = "2026-05-04";
+let currentRun = "2026-05-11";
 let sortCol = "score";
 let sortAsc = false;
 let filterPriority = "all";
