@@ -1,6 +1,6 @@
 {
-  "run_date": "2026-05-18",
-  "label": "May 18, 2026",
+  "run_date": "2026-05-27",
+  "label": "May 27, 2026",
   "total": 20,
   "high": 5,
   "medium": 15,
@@ -8,31 +8,31 @@
   "leads": [
     {
       "id": 1,
-      "name": "Copper Canyon Press",
+      "name": "University of Pittsburgh Press",
       "score": 8,
       "priorityClass": "high",
       "category": "Poetry & Literary Press",
       "catClass": "cat-poetry",
-      "source": "CLMP Member Directory",
-      "email": "poetry@coppercanyonpress.org",
-      "phone": "(360) 385-4925",
-      "website": "https://coppercanyonpress.org",
-      "notes": "Nonprofit poetry press founded 1972. Port Townsend, WA. 15-20 titles/yr. Distributed by Consortium/Ingram. One of the most respected poetry publishers in the US. CLMP member.",
-      "pitch": "Nonprofit poetry press since 1972 -- 15 to 20 titles per year, distributed by Consortium, and consistently ranked among the most respected poetry publishers in the country."
+      "source": "AUPresses Member Directory",
+      "email": "info@upress.pitt.edu",
+      "phone": "(412) 383-2456",
+      "website": "https://upittpress.org",
+      "notes": "AUPresses member. Pittsburgh, PA -- 3.5 hours from Ann Arbor. 15-20 titles/yr. Pitt Poetry Series (highly regarded, 50+ years). Humanities, Latinx studies, Slavic studies. Institutional budget.",
+      "pitch": "AUPresses institutional publisher in Pittsburgh -- 3.5 hours from Ann Arbor -- with 15 to 20 titles per year including the celebrated Pitt Poetry Series, one of the most respected poetry publishing programs in the country."
     },
     {
       "id": 2,
-      "name": "BOA Editions",
+      "name": "Purdue University Press",
       "score": 8,
       "priorityClass": "high",
-      "category": "Poetry & Literary Press",
-      "catClass": "cat-poetry",
-      "source": "CLMP Member Directory",
-      "email": "contact@boaeditions.org",
-      "phone": "(585) 546-3410",
-      "website": "https://boaeditions.org",
-      "notes": "Nonprofit poetry press founded 1976. Rochester, NY. 12-15 titles/yr. National Book Award and Pulitzer Prize winners in catalog. Distributed by Consortium. CLMP member.",
-      "pitch": "Nonprofit poetry press since 1976 in Rochester, NY -- 12 to 15 titles per year with National Book Award and Pulitzer Prize winners in the catalog, distributed by Consortium."
+      "category": "Nonfiction Specialty Press",
+      "catClass": "cat-nonfiction",
+      "source": "AUPresses Member Directory",
+      "email": "pupress@purdue.edu",
+      "phone": "(765) 494-2038",
+      "website": "https://www.thepress.purdue.edu",
+      "notes": "AUPresses member. West Lafayette, IN -- 2 hours from Ann Arbor. 15-20 titles/yr. Technology studies, humanities, Purdue Studies in Romance Literatures, business/leadership. Strong institutional backing.",
+      "pitch": "AUPresses institutional publisher in West Lafayette, Indiana -- just 2 hours from Ann Arbor -- producing 15 to 20 titles per year across technology studies, humanities, and Purdue Studies in Romance Literatures."
     },
     {
       "id": 3,
@@ -190,17 +190,17 @@
     },
     {
       "id": 14,
-      "name": "Arte Publico Press",
+      "name": "Deep Vellum Publishing",
       "score": 7,
       "priorityClass": "medium",
-      "category": "Nonfiction Specialty Press",
-      "catClass": "cat-nonfiction",
-      "source": "AUPresses Member Directory",
-      "email": "artepublico@uh.edu",
-      "phone": "(713) 743-2841",
-      "website": "https://artepublicpress.com",
-      "notes": "University of Houston-housed press. Founded 1979. ~20-25 titles/yr. Largest US publisher of Hispanic literature. AUPresses member. Recovers Historical Memory project. Strong institutional backing.",
-      "pitch": "University of Houston-housed press since 1979 -- the largest publisher of US Hispanic literature, with 20 to 25 titles per year and AUPresses membership providing institutional budget stability."
+      "category": "Small Press",
+      "catClass": "cat-small",
+      "source": "CLMP Member Directory",
+      "email": "info@deepvellum.org",
+      "phone": "",
+      "website": "https://deepvellum.org",
+      "notes": "Dallas, TX-based literary press founded 2013. ~15-20 titles/yr. Specializes in world literature in translation, literary fiction, and poetry. CLMP member. Distributed by Consortium. Growing national profile.",
+      "pitch": "Dallas-based literary press founded 2013 -- 15 to 20 titles per year specializing in world literature in translation, literary fiction, and poetry, distributed by Consortium with a rapidly growing national profile."
     },
     {
       "id": 15,
