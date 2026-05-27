@@ -14,10 +14,10 @@
       "category": "Poetry & Literary Press",
       "catClass": "cat-poetry",
       "source": "AUPresses Member Directory",
-      "email": "info@upress.pitt.edu",
+      "email": "asherman@upress.pitt.edu",
       "phone": "(412) 383-2456",
       "website": "https://upittpress.org",
-      "notes": "AUPresses member. Pittsburgh, PA -- 3.5 hours from Ann Arbor. 15-20 titles/yr. Pitt Poetry Series (highly regarded, 50+ years). Humanities, Latinx studies, Slavic studies. Institutional budget.",
+      "notes": "AUPresses member. Pittsburgh, PA -- 3.5 hours from Ann Arbor. 15-20 titles/yr. Pitt Poetry Series (50+ years). Humanities, Latinx studies, Slavic studies. Institutional budget. Direct contact: Amy Sherman, Acquisitions Editor (verified on staff page).",
       "pitch": "AUPresses institutional publisher in Pittsburgh -- 3.5 hours from Ann Arbor -- with 15 to 20 titles per year including the celebrated Pitt Poetry Series, one of the most respected poetry publishing programs in the country."
     },
     {
@@ -28,10 +28,10 @@
       "category": "Nonfiction Specialty Press",
       "catClass": "cat-nonfiction",
       "source": "AUPresses Member Directory",
-      "email": "pupress@purdue.edu",
+      "email": "agapsch@purdue.edu",
       "phone": "(765) 494-2038",
       "website": "https://www.thepress.purdue.edu",
-      "notes": "AUPresses member. West Lafayette, IN -- 2 hours from Ann Arbor. 15-20 titles/yr. Technology studies, humanities, Purdue Studies in Romance Literatures, business/leadership. Strong institutional backing.",
+      "notes": "AUPresses member. West Lafayette, IN -- 2 hours from Ann Arbor. 15-20 titles/yr. Technology studies, humanities, Purdue Studies in Romance Literatures. Direct contact: Andrea Gapsch, Acquisitions Editor (verified on staff page). Director Justin Race at racej@purdue.edu.",
       "pitch": "AUPresses institutional publisher in West Lafayette, Indiana -- just 2 hours from Ann Arbor -- producing 15 to 20 titles per year across technology studies, humanities, and Purdue Studies in Romance Literatures."
     },
     {
@@ -42,10 +42,10 @@
       "category": "Poetry & Literary Press",
       "catClass": "cat-poetry",
       "source": "Poets & Writers Directory",
-      "email": "four_way_books@fourwaybooks.com",
+      "email": "editors@fourwaybooks.com",
       "phone": "(212) 334-5430",
       "website": "https://fourwaybooks.com",
-      "notes": "Nonprofit literary press, NYC. Founded 1991. ~10 titles/yr of poetry and literary fiction. Active competition program (Intro Prize, Levis Prize). CLMP member. Strong critical reputation.",
+      "notes": "Nonprofit literary press, NYC. Founded 1991. ~10 titles/yr of poetry and literary fiction. Active competition program (Intro Prize, Levis Prize). Publisher Martha Rhodes. Verified editors@fourwaybooks.com on contact page (previous four_way_books@fourwaybooks.com bounced).",
       "pitch": "Nonprofit literary press in New York since 1991 -- ~10 titles per year of poetry and literary fiction, with an active competition program that creates a predictable annual production cycle."
     },
     {
@@ -56,10 +56,10 @@
       "category": "Nonfiction Specialty Press",
       "catClass": "cat-nonfiction",
       "source": "AUPresses Member Directory",
-      "email": "uapress@uakron.edu",
+      "email": "mjon@uakron.edu",
       "phone": "(330) 972-5342",
       "website": "https://uakron.edu/uapress",
-      "notes": "AUPresses member. Akron, OH -- 60 miles from Ann Arbor. ~12-15 titles/yr: poetry series (Akron Poetry Prize), Ohio/Midwest history, technology studies. Strong Midwest institutional presence.",
+      "notes": "AUPresses member. Akron, OH -- 60 miles from Ann Arbor. ~12-15 titles/yr. Akron Poetry Prize, Ohio/Midwest history, technology studies. Direct contact: Dr. Jon Miller, Director (verified). Sr. Editorial Manager Amy Freels at afreels@uakron.edu.",
       "pitch": "AUPresses institutional publisher based in Akron, Ohio -- 60 miles from Ann Arbor -- with 12 to 15 titles per year including the Akron Poetry Prize series, Ohio and Midwest history, and technology studies."
     },
     {
@@ -70,11 +70,11 @@
       "category": "Nonfiction Specialty Press",
       "catClass": "cat-nonfiction",
       "source": "AUPresses Member Directory",
-      "email": "niupress@niu.edu",
-      "phone": "(815) 753-1826",
-      "website": "https://niupress.niu.edu",
-      "notes": "AUPresses member. DeKalb, IL -- approx. 4 hours from Ann Arbor. ~15-20 titles/yr: political science, history, Southeast Asia studies, Midwest regional. Institutional budget stability.",
-      "pitch": "AUPresses institutional publisher in DeKalb, Illinois -- about 4 hours from Ann Arbor -- with 15 to 20 titles per year across political science, history, Southeast Asia studies, and Midwest regional topics."
+      "email": "cornellup_acq@cornell.edu",
+      "phone": "(607) 277-2338",
+      "website": "https://www.cornellpress.cornell.edu/imprints/northern-illinois-university-press/",
+      "notes": "Now a Cornell University Press imprint since July 2019. ~15-20 titles/yr across political science, history, Southeast Asia studies. Acquisitions handled by Cornell UP. Old niupress@niu.edu bounced. Contact: cornellup_acq@cornell.edu and reference NIU Press imprint.",
+      "pitch": "Northern Illinois University Press imprint of Cornell University Press -- 15 to 20 titles per year across political science, history, and Southeast Asia studies, with Cornell's institutional backing and distribution infrastructure."
     },
     {
       "id": 6,
@@ -84,25 +84,25 @@
       "category": "Small Press",
       "catClass": "cat-small",
       "source": "CLMP Member Directory",
-      "email": "info@coffeehousepress.org",
+      "email": "linda@coffeehousepress.org",
       "phone": "(612) 338-0125",
       "website": "https://coffeehousepress.org",
-      "notes": "Nonprofit literary press founded 1984. Minneapolis, MN. ~15-20 titles/yr. Poetry, fiction, essay. National Book Award, NBCC, and PEN Award winners. Distributed by Consortium. CLMP.",
+      "notes": "Nonprofit literary press founded 1984. Minneapolis, MN. ~15-20 titles/yr. NBA, NBCC, and PEN Award winners. Distributed by Consortium. Direct contact: Linda Ewing, Executive Director (verified on staff page).",
       "pitch": "Nonprofit literary press since 1984 in Minneapolis -- 15 to 20 titles per year of poetry, fiction, and essays, with National Book Award and PEN Award winners throughout the catalog."
     },
     {
       "id": 7,
-      "name": "Cleveland State University Poetry Center",
+      "name": "Autumn House Press",
       "score": 7,
       "priorityClass": "medium",
       "category": "Poetry & Literary Press",
       "catClass": "cat-poetry",
-      "source": "AUPresses Member Directory",
-      "email": "poetrycenter@csuohio.edu",
-      "phone": "(216) 687-3986",
-      "website": "https://csuohio.edu/poetrycenter",
-      "notes": "University poetry press, Cleveland, OH -- 2.5 hours from Ann Arbor. ~6-8 titles/yr. CSU Poetry Center Prize. Established 1971. Strong regional and national profile.",
-      "pitch": "University poetry press at CSU in Cleveland, Ohio -- 2.5 hours from Ann Arbor -- publishing 6 to 8 titles per year since 1971, including the annual CSU Poetry Center Prize."
+      "source": "Poets & Writers Directory",
+      "email": "info@autumnhousepress.org",
+      "phone": "(412) 381-4261",
+      "website": "https://autumnhousepress.org",
+      "notes": "Independent nonprofit literary press in Pittsburgh, PA. Founded 1998. 6-8 titles/yr of poetry, fiction, and nonfiction. Three annual prize competitions (Poetry, Fiction, Nonfiction). About 4 hours from Ann Arbor. Publisher: Mike Good. NEA-funded. Active and acquiring as of 2026. Replaces CSU Poetry Center which is closing June 2026.",
+      "pitch": "Independent nonprofit literary press in Pittsburgh, PA since 1998 -- 6 to 8 titles per year of poetry, fiction, and nonfiction, with three active prize competitions about 4 hours from Ann Arbor."
     },
     {
       "id": 8,
@@ -115,22 +115,22 @@
       "email": "nrp@mnstate.edu",
       "phone": "(218) 477-2574",
       "website": "https://newriverspress.com",
-      "notes": "Literary press at Minnesota State University Moorhead. Founded 1968. ~8-10 titles/yr. Poetry and fiction. American Fiction Prize. 55+ year track record. CLMP member.",
+      "notes": "Literary press at Minnesota State University Moorhead. Founded 1968. ~8-10 titles/yr. Poetry and fiction. American Fiction Prize. 55+ year track record. CLMP member. Senior Editor Kevin Carollo. Email nrp@mnstate.edu confirmed current.",
       "pitch": "Literary press at Minnesota State Moorhead, founded 1968 -- one of the oldest continuously operating literary presses in the country at 55+ years, publishing 8 to 10 titles per year of poetry and fiction."
     },
     {
       "id": 9,
-      "name": "Ahsahta Press",
+      "name": "Tupelo Press",
       "score": 7,
       "priorityClass": "medium",
       "category": "Poetry & Literary Press",
       "catClass": "cat-poetry",
       "source": "Poets & Writers Directory",
-      "email": "ahsahta@boisestate.edu",
-      "phone": "",
-      "website": "https://ahsahtapress.org",
-      "notes": "Boise State University poetry press. Boise, ID. Founded 1974. ~6-8 titles/yr. Focus on innovative and experimental poetry. Sawtooth Poetry Prize. 50-year track record.",
-      "pitch": "Boise State University poetry press since 1974 -- 6 to 8 titles per year of innovative and experimental poetry, with the Sawtooth Poetry Prize drawing national submissions and creating a steady annual publication program."
+      "email": "info@tupelopress.org",
+      "phone": "(413) 664-9611",
+      "website": "https://tupelopress.org",
+      "notes": "Nonprofit literary press in North Adams, MA. Founded 2000. ~10-12 titles/yr of poetry, fiction, and nonfiction. Publisher Jeffrey Levine. Multiple active prize competitions (Donald Hall Prize in Poetry, Dorset Prize, Snowbound Series). NEA-funded. 25-year track record. Replaces Ahsahta Press which closed permanently in 2019.",
+      "pitch": "Nonprofit literary press in North Adams, MA since 2000 -- 10 to 12 titles per year of poetry, fiction, and nonfiction, with multiple prize programs and NEA funding sustained over a 25-year track record."
     },
     {
       "id": 10,
@@ -140,10 +140,10 @@
       "category": "Poetry & Literary Press",
       "catClass": "cat-poetry",
       "source": "CLMP Member Directory",
-      "email": "info@uglyducklingpresse.org",
+      "email": "office@uglyducklingpresse.org",
       "phone": "",
       "website": "https://uglyducklingpresse.org",
-      "notes": "Nonprofit artists' book and poetry press, Brooklyn, NY. Founded 2001. ~8-12 titles/yr. Handmade and offset editions. Translations, poetry, experimental prose. CLMP. Critical reputation.",
+      "notes": "Nonprofit artists' book and poetry press, Brooklyn, NY. Founded 2001. ~8-12 titles/yr. Translations, poetry, experimental prose. CLMP. Collective model (no single acquisitions editor). Email corrected from info@ to office@uglyducklingpresse.org (verified on contact page).",
       "pitch": "Nonprofit artists' book and poetry press in Brooklyn since 2001 -- 8 to 12 titles per year of poetry, translations, and experimental prose, with a distinctive mix of handmade and offset editions."
     },
     {
@@ -154,10 +154,10 @@
       "category": "Small Press",
       "catClass": "cat-small",
       "source": "Poets & Writers Directory",
-      "email": "info@etruscanpress.org",
+      "email": "amanda@etruscanpress.org",
       "phone": "",
       "website": "https://etruscanpress.org",
-      "notes": "Independent literary press, Wilkes-Barre, PA. Founded 2001. ~8-10 titles/yr. Poetry, fiction, and literary nonfiction. National distribution. P&W listed. Strong award recognition.",
+      "notes": "Independent literary press affiliated with Wilkes University, Wilkes-Barre, PA. Founded 2001. ~8-10 titles/yr. Poetry, fiction, literary nonfiction. National distribution. Direct contact: Amanda Rabaduex, Managing Editor (verified on editors page). Previous info@ bounced.",
       "pitch": "Independent literary press in Wilkes-Barre, PA since 2001 -- 8 to 10 titles per year of poetry, fiction, and literary nonfiction with strong award recognition and national distribution."
     },
     {
@@ -171,22 +171,22 @@
       "email": "acre.books@uc.edu",
       "phone": "",
       "website": "https://acrebks.com",
-      "notes": "Literary press at University of Cincinnati. Cincinnati, OH -- ~3 hours from Ann Arbor. Founded 2016. ~6-8 titles/yr. Literary fiction and poetry. Strong national profile for a newer press.",
+      "notes": "Literary press at University of Cincinnati. Cincinnati, OH -- ~3 hours from Ann Arbor. Founded 2016. ~6-8 titles/yr. Literary fiction and poetry. Distributed by University of Chicago Press. Publisher Nicola Mason. Email acre.books@uc.edu confirmed correct on website.",
       "pitch": "University of Cincinnati-housed literary press since 2016 -- 6 to 8 titles per year of literary fiction and poetry from Cincinnati, Ohio, about 3 hours from Ann Arbor."
     },
     {
       "id": 13,
-      "name": "Tilbury House Publishers",
+      "name": "Hub City Press",
       "score": 7,
       "priorityClass": "medium",
-      "category": "Children's Book Publisher",
-      "catClass": "cat-childrens",
-      "source": "Reedsy Publisher Directory",
-      "email": "tilbury@tilburyhouse.com",
-      "phone": "(800) 582-1899",
-      "website": "https://tilburyhouse.com",
-      "notes": "Independent children's and nature/nonfiction publisher, Thomaston, ME. Founded 1990. ~10 titles/yr. Science, nature, social issues for young readers. Strong school and library market.",
-      "pitch": "Independent children's and nature publisher in Maine since 1990 -- approximately 10 titles per year focused on science, nature, and social issues for young readers, with strong school and library distribution."
+      "category": "Small Press",
+      "catClass": "cat-small",
+      "source": "CLMP Member Directory",
+      "email": "info@hubcitypress.org",
+      "phone": "(864) 577-9349",
+      "website": "https://www.hubcitypress.org",
+      "notes": "Independent nonprofit literary press and bookshop in Spartanburg, SC. Founded 1995. 8-10 titles/yr of literary fiction and nonfiction. Executive Director Betsy Teter. Community-rooted with attached Hub City Bookshop. NEA-funded. Active and acquiring as of 2026. Replaces Tilbury House which was acquired by Penguin Random House (via Cherry Lake) in late 2025.",
+      "pitch": "Independent nonprofit literary press and bookshop in Spartanburg, SC since 1995 -- 8 to 10 titles per year of literary fiction and nonfiction, with a community bookshop that puts every book directly in front of local readers."
     },
     {
       "id": 14,
@@ -196,11 +196,11 @@
       "category": "Small Press",
       "catClass": "cat-small",
       "source": "CLMP Member Directory",
-      "email": "info@deepvellum.org",
+      "email": "will@deepvellum.org",
       "phone": "",
       "website": "https://deepvellum.org",
-      "notes": "Dallas, TX-based literary press founded 2013. ~15-20 titles/yr. Specializes in world literature in translation, literary fiction, and poetry. CLMP member. Distributed by Consortium. Growing national profile.",
-      "pitch": "Dallas-based literary press founded 2013 -- 15 to 20 titles per year specializing in world literature in translation, literary fiction, and poetry, distributed by Consortium with a rapidly growing national profile."
+      "notes": "Dallas, TX-based literary press founded 2013. ~15-20 titles/yr specializing in world literature in translation. Distributed by Consortium. Acquired Open Letter Books and Dalkey Archive in 2025 -- now one of largest independent translation publishers in US. Direct contact: Will Evans, Publisher & CEO (format confirmed as first@deepvellum.org).",
+      "pitch": "Dallas-based literary press founded 2013 -- 15 to 20 titles per year specializing in world literature in translation, distributed by Consortium, and recently expanded by acquiring Open Letter Books and Dalkey Archive."
     },
     {
       "id": 15,
@@ -210,11 +210,11 @@
       "category": "Poetry & Literary Press",
       "catClass": "cat-poetry",
       "source": "CLMP Member Directory",
-      "email": "info@fenceportal.org",
+      "email": "fence.fencebooks@gmail.com",
       "phone": "",
       "website": "https://fenceportal.org",
-      "notes": "Nonprofit poetry and fiction press, Albany, NY. Founded 2001. ~5-8 titles/yr. Associated with Fence magazine. Experimental and challenging work. CLMP. National Intro Prize.",
-      "pitch": "Nonprofit poetry and fiction press in Albany, NY since 2001 -- 5 to 8 titles per year of experimental and challenging literary work, associated with Fence magazine and operating the National Intro Prize."
+      "notes": "Nonprofit poetry and fiction press, Albany/NYC. Founded 2001. ~5-8 titles/yr. Associated with Fence magazine. Experimental and challenging work. Editorial Director Emily Wallis Hughes. Correct contact fence.fencebooks@gmail.com (previous info@fenceportal.org unverified).",
+      "pitch": "Nonprofit poetry and fiction press since 2001 -- 5 to 8 titles per year of experimental and challenging literary work, associated with Fence magazine and operating the National Intro Prize."
     },
     {
       "id": 16,
@@ -224,10 +224,10 @@
       "category": "Poetry & Literary Press",
       "catClass": "cat-poetry",
       "source": "Poets & Writers Directory",
-      "email": "pleiades@ucmo.edu",
+      "email": "molberg@ucmo.edu",
       "phone": "",
-      "website": "https://pleiades.ucmo.edu",
-      "notes": "University of Central Missouri literary press and journal. Warrensburg, MO. ~4-6 titles/yr (book arm). Long-running literary journal alongside book program. P&W listed.",
+      "website": "https://pleiadespress.org",
+      "notes": "University of Central Missouri literary press and journal. Warrensburg, MO. ~4-6 titles/yr. Long-running literary journal alongside book program. Direct contact: Jenny Molberg, Editor (UCM English faculty -- verified). Also uses pleiadespoetryeditor@gmail.com.",
       "pitch": "University of Central Missouri-based literary press and journal -- 4 to 6 book titles per year of poetry and fiction, alongside a long-running literary journal that gives the press national visibility."
     },
     {
@@ -241,7 +241,7 @@
       "email": "editor@wordworksbooks.org",
       "phone": "",
       "website": "https://wordworksbooks.org",
-      "notes": "Nonprofit poetry publisher, Washington DC. Founded 1974. ~4-6 titles/yr. Washington Prize, Tenth Gate Prize. 50-year track record. P&W listed.",
+      "notes": "Nonprofit poetry publisher, Washington DC. Founded 1974. ~4-6 titles/yr. Washington Prize, Tenth Gate Prize. 50-year track record. Co-Editors Karren Alenier and Nancy White. Email editor@wordworksbooks.org confirmed current. Series-specific contacts also available (Andrea Carter Brown, Kasey Jueds, etc.).",
       "pitch": "Nonprofit poetry publisher in Washington DC since 1974 -- 4 to 6 titles per year including the Washington Prize and Tenth Gate Prize, with a 50-year track record of supporting American poetry."
     },
     {
@@ -252,10 +252,10 @@
       "category": "Poetry & Literary Press",
       "catClass": "cat-poetry",
       "source": "Poets & Writers Directory",
-      "email": "editors@sundresspublications.com",
+      "email": "erin@sundresspublications.com",
       "phone": "",
       "website": "https://sundresspublications.com",
-      "notes": "Nonprofit literary press, Knoxville, TN. ~6-10 titles/yr. Poetry and short fiction. Chapbooks and full collections. Best of the Net Anthology. P&W listed. Growing national profile.",
+      "notes": "Volunteer-run 501(c)(3) nonprofit literary press, Knoxville, TN. ~6-10 titles/yr. Poetry and short fiction. Best of the Net Anthology. Direct contact: Erin Elizabeth Smith, Executive Director (verified on staff page).",
       "pitch": "Nonprofit literary press in Knoxville, TN -- 6 to 10 titles per year of poetry and short fiction including chapbooks and full collections, with a growing national profile and the Best of the Net Anthology."
     },
     {
@@ -266,10 +266,10 @@
       "category": "Small Press",
       "catClass": "cat-small",
       "source": "Poets & Writers Directory",
-      "email": "mooncitypress@missouristate.edu",
+      "email": "MCzyzniejewski@MissouriState.edu",
       "phone": "",
       "website": "https://mooncitypress.com",
-      "notes": "Missouri State University literary press. Springfield, MO. ~4-6 titles/yr. Poetry and fiction. Moon City Poetry Award. University-housed with institutional support. P&W listed.",
+      "notes": "Missouri State University literary press. Springfield, MO. ~4-6 titles/yr. Poetry and fiction. Moon City Poetry Award active 2026. Direct contact: Michael Czyzniejewski, Editor-in-Chief (MSU English Associate Professor -- verified).",
       "pitch": "Missouri State University literary press in Springfield, MO -- 4 to 6 titles per year of poetry and fiction, with the Moon City Poetry Award creating a reliable annual production cycle."
     },
     {
@@ -280,10 +280,10 @@
       "category": "Poetry & Literary Press",
       "catClass": "cat-poetry",
       "source": "CLMP Member Directory",
-      "email": "conduit@conduitbooks.org",
+      "email": "conduit@conduit.org",
       "phone": "",
-      "website": "https://conduitbooks.org",
-      "notes": "Minneapolis-based small literary press. ~3-5 titles/yr. Poetry and experimental work. Associated with Conduit magazine. CLMP member. Highly curated, distinctive physical design.",
+      "website": "https://conduit.org",
+      "notes": "Minneapolis-based small literary press. ~3-5 titles/yr. Poetry and experimental work. Associated with Conduit magazine. Editor-in-Chief William Waltz. Domain changed from conduitbooks.org to conduit.org -- email updated accordingly. Active prize competitions (Minds on Fire, Marystina Santiestevan).",
       "pitch": "Minneapolis-based literary press -- 3 to 5 titles per year of poetry and experimental work, associated with Conduit magazine and known for distinctive physical design and highly curated selections."
     }
   ]
