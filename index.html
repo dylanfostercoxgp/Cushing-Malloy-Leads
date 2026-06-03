@@ -5171,7 +5171,7 @@ function openModal(id) {
   const draftEl = document.getElementById("modalDraftedEmail");
   const draftBody = document.getElementById("modalDraftedEmailBody");
   if (l.drafted_email) {
-    draftBody.textContent = l.drafted_email;
+    draftBody.innerHTML = l.drafted_email;
     draftEl.style.display = "block";
   } else {
     draftEl.style.display = "none";
