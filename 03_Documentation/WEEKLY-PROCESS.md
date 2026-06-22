@@ -11,6 +11,24 @@
 
 ---
 
+## ⚡ NEXT RUN SPECIAL DIRECTIVE — June 29, 2026
+
+**Include 8–12 leads from the educational sector in this run.** Educational leads should be sourced alongside the normal mix and count toward the 20–25 total. After this run, remove this section.
+
+**What qualifies as educational sector for Cushing-Malloy:**
+- K-12 curriculum publishers and supplemental learning material producers
+- Homeschool curriculum developers and publishers
+- Teacher-authors self-publishing classroom guides, workbooks, or instructional books
+- Educational nonprofits and associations publishing training or program materials
+- Professional development publishers (workshops, certification prep, teacher training)
+- University extension or continuing education departments publishing print materials
+- EdTech founders or content creators turning course content into physical books
+- Children's educational book publishers (activity books, early readers, learning series)
+
+**Scoring note:** Apply the standard 1-10 scoring formula. Educational publishers producing more than 25 titles per year are still disqualified (same hard cap). Prioritize leads with clear short-to-medium run print needs (250-5,000 copies) and verified direct contact.
+
+---
+
 ## OVERVIEW
 
 This process runs every **Monday at 3:00 AM** (or on-demand). It performs three jobs:
