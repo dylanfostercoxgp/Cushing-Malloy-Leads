@@ -358,6 +358,8 @@ Examples:
 
 **Body template (personalize every [BRACKET] — never send a generic version):**
 
+> **LOCKED TEMPLATE — do not alter the Cushing-Malloy description paragraph or the first two bullet points. These are fixed language approved by the client. Only the opening sentences, the third bullet, and the closing are personalized per lead.**
+
 ```
 Hi [First Name],
 
@@ -365,25 +367,33 @@ Hi [First Name],
 Kickstarter, Instagram post, Substack, or announcement. Show you've done your
 homework. Never make this generic.]
 
-I'm reaching out from Cushing-Malloy Books in Ann Arbor, Michigan — we've been
-manufacturing books since 1948, and we specialize in exactly the kind of run you're
-looking at: [250/500/1,000/2,000/5,000] copies with [offset/digital] printing for
-[their genre/format].
+I'm reaching out from Cushing-Malloy Books in Ann Arbor, Michigan. We've been
+manufacturing books since 1948. [Geographic proximity note if applicable — e.g.,
+"Detroit to Ann Arbor is 45 minutes" for Michigan/Detroit-area leads; omit if
+the lead is not in the region.] We specialize in offset and digital printing for
+[press type / creator type] at your volume: [e.g., "multiple titles per month,
+300 to 5,000 copies per title" for active presses / "250 to 2,000 copies" for
+individual authors], with the production quality your [scholarly catalog /
+debut collection / cookbook / etc.] demands.
 
-Here's what makes us different for [authors like you / presses like yours]:
+Here's what makes us different:
 
-- One person manages your project start to finish — same contact for quoting,
+- One person manages your project start to finish: same contact for quoting,
   production, proofing, and delivery. Nothing falls through the cracks.
 - 20 working days from approved files to finished books, delivered to your door.
-- [Insert one more specific differentiator relevant to this lead — e.g.,
-  "We walk first-time authors through every step — paper selection, file prep,
-  trim size, even why there are blank pages at the back." OR "We teach you the
-  print run math so you make the right financial decision on quantity."]
+- [Third bullet tailored to this specific lead — e.g., for a press with a large
+  active catalog: "For a press producing [X]+ titles annually, one dedicated
+  manufacturing contact who knows your paper preferences, trim specifications,
+  and binding standards across your full catalog means every title receives the
+  same quality promise -- whether a flagship series title or a first-time
+  monograph." For a first-time author: "We walk you through every step --
+  paper selection, file prep, trim size, and run quantity -- so you make
+  confident decisions without guesswork."]
 
-If you're not sure where to start, that's exactly why we're here. We'd love to
-give you a no-pressure quote and talk through your options.
-
-Visit our website at <a href="https://cushing-malloy.com">Cushing-Malloy.com</a>. We look forward to hearing from you soon.
+If you would like to discuss manufacturing for upcoming [press name] titles or
+your next [fiscal year / season / project], we would love to connect. Visit us
+at <a href="https://cushing-malloy.com">Cushing-Malloy.com</a> and let us know
+what you are working on.
 
 Warm regards,
 
@@ -417,14 +427,16 @@ Warm regards,
 **Personalization checklist before creating each draft:**
 - [ ] Email is addressed to a named individual (not info@, contact@, submissions@, etc.) -- if only a generic address was available, it is flagged in the Notes field
 - [ ] Subject line references their specific project
-- [ ] Opening line shows you read their actual content/announcement
-- [ ] Print run size estimate is realistic for their situation
-- [ ] At least one differentiator is tailored to their specific need
-- [ ] Tone matches their vibe (casual for creators, professional for publishers)
+- [ ] Opening 1-2 sentences show you read their actual content/announcement -- never generic
+- [ ] Cushing-Malloy paragraph uses the LOCKED language exactly: "I'm reaching out from Cushing-Malloy Books in Ann Arbor, Michigan. We've been manufacturing books since 1948..." -- do not rewrite this
+- [ ] First two bullets are word-for-word as written in the template -- do not alter them
+- [ ] Third bullet is tailored to this specific lead's situation
+- [ ] Print run size estimate in the Cushing-Malloy paragraph is realistic for this lead
+- [ ] Geographic proximity note included only if the lead is in Michigan or a nearby state
 - [ ] Closing hyperlinks Cushing-Malloy.com: `<a href="https://cushing-malloy.com">Cushing-Malloy.com</a>`
-- [ ] Closing does NOT say "Would a quick call this week work?" — that phrase is permanently banned
-- [ ] No em dashes (—) used anywhere in the email body — use commas, colons, or rewrite the sentence instead
-- [ ] CC field is empty on outreach drafts (no CC — To: lead only)
+- [ ] Closing ends with "let us know what you are working on" -- not "Would a quick call this week work?" (permanently banned) and not "I'd be glad to send a sample kit"
+- [ ] No em dashes (--) used anywhere -- the template uses double hyphens (--), not em dashes (—)
+- [ ] CC field is empty on outreach drafts (no CC -- To: lead only)
 
 ---
 
