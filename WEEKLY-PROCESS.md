@@ -89,6 +89,9 @@ Using the full spec in `cushing-malloy-lead-gen-prompt.md`, research and identif
 - If fewer than 5 strong supplemental leads exist, do not force them — quality always beats quota.
 
 ### Lead Categories to source (vary across runs, no forced ratio):
+
+> **PERMANENT RULE -- CATEGORY DIVERSITY:** Every run MUST span at least 3 distinct categories. Do NOT fill an entire run with a single category (e.g., all Poetry & Literary Press). A good run mixes individual authors/creators with small publishers across different genres and types. Suggested composition per run: 4-6 small publishers across 2-3 subcategories, 6-8 individual authors/creators across 2-3 subcategories, and the remainder from whatever categories surface the strongest leads. If you find yourself adding a 5th lead of the same category, stop and pivot to a different category. June 8, 2026 run was flagged as a violation -- all 20 leads were Poetry & Literary Press only.
+
 **Individual Authors & Content Creators:**
 - Solo Author – Print-Ready
 - Solo Author – Launch Mode
@@ -101,14 +104,15 @@ Using the full spec in `cushing-malloy-lead-gen-prompt.md`, research and identif
 **Small Publishers:**
 - Micro Press (≤5 titles/yr)
 - Small Press (6–20 titles/yr)
-- Nonfiction Specialty Press — eligible only if 25 or fewer titles/yr confirmed
-- Poetry & Literary Press — eligible only if 25 or fewer titles/yr confirmed
-- Children's Book Publisher — eligible only if 25 or fewer titles/yr confirmed
-- Hybrid Publisher / Author Services — eligible only if 25 or fewer titles/yr confirmed
-
-> **Publisher maximum:** Do not target any publisher producing more than 25 titles per year. Verify annual output before including any publisher lead.
+- Nonfiction Specialty Press
+- Poetry & Literary Press
+- Children's Book Publisher
+- Hybrid Publisher / Author Services
 
 ### Discovery Channels (use at least 4–5 per run, vary each week):
+
+> **PERMANENT RULE:** Education and university sources (channel 16 below) must be included in EVERY run without exception. Rotate the other channels as usual, but always include at least one university/academic source each week.
+
 1. Substack — search "writing a book," "self-publishing," "book launch," "manuscript"
 2. Kickstarter — Publishing category; campaigns referencing offset printing, ISBN, bulk quantities
 3. Instagram/TikTok — "book coming soon," health/food/lifestyle creators with book announcements
@@ -124,6 +128,7 @@ Using the full spec in `cushing-malloy-lead-gen-prompt.md`, research and identif
 13. Bookshop.org — Indie publisher storefronts
 14. State arts councils — Grant recipients in MI, OH, IL, WI, IN
 15. Eventbrite / local bookstore events — Author readings and signings
+16. **[ALWAYS REQUIRED] Education / University Sources** — University press directories (AAUP member list), academic publishing programs, faculty with forthcoming books, university writing program graduates, campus literary journals and their editors, teaching press networks (e.g., writing programs at Big Ten or Midwest universities that produce small-run titles)
 
 ### Data to collect for EVERY lead:
 
@@ -132,7 +137,7 @@ Using the full spec in `cushing-malloy-lead-gen-prompt.md`, research and identif
 | **Source** | Where discovered (e.g., "Substack," "Kickstarter Book Campaign," "Instagram Health Creator") |
 | **Name/Company** | Full name (author) or press name (publisher) |
 | **Website** | Primary URL — website, Substack, Amazon Author Page, social profile |
-| **Email** | **Direct individual email required.** Generic addresses (info@, contact@, submissions@, hello@, editor@, etc.) are a last resort only. Always search first for a named person: acquisitions editor, managing editor, director, or press manager. Check the press website staff/team page, LinkedIn, CLMP directory, Twitter/X bios, interview bylines, and acknowledgments pages of recent titles. Only use a generic address if no individual contact can be found after exhaustive search -- and flag it in the Notes field. |
+| **Email** | Verified email; if not found after exhaustive search: "No Verified Email Found" |
 | **Phone** | Include if found at 80%+ confidence; leave blank (not a placeholder) if not found |
 | **Category** | One category from the list above |
 | **Priority Score** | 1–10 using scoring formula below |
@@ -153,8 +158,6 @@ Using the full spec in `cushing-malloy-lead-gen-prompt.md`, research and identif
 **RULE: Core batch must score 6 or above. Up to 5 supplemental leads scoring below 5 are permitted per run if they represent genuinely promising prospects. Leads scoring below 5 must include a justification note.**
 
 **EXISTING CLIENT CHECK (mandatory before finalizing any lead):** Cross-reference every lead against the "EXISTING CLIENTS" list above. If the company name matches — even partially — remove that lead from the run. Do not draft, do not score, do not include in the report.
-
-**MAXIMUM TITLE VOLUME (hard disqualifier):** Any publisher producing more than 25 titles per year is automatically disqualified and must not be included as a lead, regardless of score, contact quality, or any other factor. Do not include them, do not draft outreach, do not score them. Target publishers producing 25 or fewer titles per year only. Individual authors and content creators are exempt from this rule.
 
 **Priority tiers:** 8–10 = High | 5–7 = Medium | 1–4 = Low (supplemental only, max 5 per run)
 
@@ -273,60 +276,62 @@ git push origin main
 
 ---
 
-## STEP 6 — CREATE SMARTERMAIL OUTREACH DRAFTS
+## STEP 6 — CREATE OUTREACH DRAFTS (Open-Xchange Webmail)
 
-For every lead with a **verified email address**, save a personalized draft to the SmarterMail Drafts folder using the **SmarterMail native REST API**. **Save as DRAFT only. Do NOT send.**
+For every lead with a **verified email address**, save a personalized draft to the Open-Xchange (Network Solutions) Drafts folder using the **OX App Suite HTTP API**. **Save as DRAFT only. Do NOT send.**
 
-**Email account:** `printyourbook@cushing-malloy.com` — drafts appear at OX webmail: `https://webmail-oxcs.networksolutionsemail.com`
+**Email account:** `printyourbook@cushing-malloy.com` — drafts appear at `https://webmail-oxcs.networksolutionsemail.com`
 
-> **IMPORTANT:** Use the OX App Suite import API below — NOT SmarterMail, NOT Python IMAP. The `action=import` endpoint with a multipart/form-data RFC822 message creates fully editable, sendable drafts in the OX webmail UI. The SmarterMail API at mail.cushing-malloy.com is NOT used for this account.
+> **IMPORTANT:** Use the OX HTTP API below — NOT Python IMAP or the old SmarterMail API. The OX `mail?action=new` endpoint with `folder=default0/Drafts` produces fully editable, sendable drafts. Authentication requires a persistent `requests.Session()` to maintain cookies across calls — do NOT use stateless requests.
 
 ### Python helper (run via Bash tool for each lead):
 
 ```python
-import requests, urllib3, json, re
+import requests, urllib3
 urllib3.disable_warnings()
 
-WEBMAIL_BASE  = "https://webmail-oxcs.networksolutionsemail.com"
-EMAIL_USER    = "printyourbook@cushing-malloy.com"
-EMAIL_PASS    = "PYBCMbooks$1948"
-DRAFTS_FOLDER = "default0/Drafts"
+BASE   = "https://webmail-oxcs.networksolutionsemail.com"
+USER   = "printyourbook@cushing-malloy.com"
+PASS   = "PYBCMbooks$1948"
+FOLDER = "default0/Drafts"
 
+# Must use a persistent session to keep auth cookies alive
 ox = requests.Session()
-session_id = ox.post(
-    f"{WEBMAIL_BASE}/appsuite/api/login?action=login",
-    data={"login": EMAIL_USER, "password": EMAIL_PASS, "name": EMAIL_USER, "client": "open-xchange-appsuite"},
-    verify=False, timeout=15
-).json()["session"]
 
-def import_draft(to_email, to_name, subject, body_html, cc="", bcc=""):
-    cc_header  = f"\nCC: {cc}"  if cc  else ""
-    bcc_header = f"\nBCC: {bcc}" if bcc else ""
-    mime = (
-        f"From: {EMAIL_USER}\n"
-        f"To: {to_name} <{to_email}>{cc_header}{bcc_header}\n"
-        f"Subject: {subject}\n"
-        f"Content-Type: text/html; charset=utf-8\n"
-        f"MIME-Version: 1.0\n\n{body_html}"
-    ).encode("utf-8")
+def ox_login():
     r = ox.post(
-        f"{WEBMAIL_BASE}/appsuite/api/mail?action=import&session={session_id}&folder=default0%2FDrafts",
-        files={"file": ("message.eml", mime, "message/rfc822")},
-        verify=False, timeout=15
+        f"{BASE}/appsuite/api/login?action=login",
+        data={"login": USER, "password": PASS, "name": USER, "client": "open-xchange-appsuite"},
+        timeout=15
     )
-    text = r.text.strip()
-    data = json.loads(text) if text.startswith("{") else json.loads(re.search(r'\((\{.*\})\)', text, re.DOTALL).group(1))
-    return data["data"][0]["id"] if "data" in data and data["data"] else f"ERROR: {data.get('error', text[:100])}"
+    return r.json()["session"]
 
-# Usage:
-# draft_id = import_draft("lead@example.com", "Lead Name", "Subject", "<p>HTML body</p>")
-# report_id = import_draft("ccushing@cushing-malloy.com", "Connie Cushing", "Subject", html,
-#                          cc="tcushing@cushing-malloy.com, jdimauro@cushing-malloy.com",
-#                          bcc="dylan@coxgp.com, rodrick@coxgp.com")
+def save_draft(to_address, subject, html_body, session_id):
+    mail_json = {
+        "from": [["Cushing-Malloy Books", USER]],
+        "to": [[to_address, to_address]],
+        "subject": subject,
+        "body": html_body,
+        "content_type": "text/html"
+    }
+    r = ox.post(
+        f"{BASE}/appsuite/api/mail?action=new&session={session_id}&folder={FOLDER}&flags=32",
+        json=mail_json,
+        timeout=15
+    )
+    data = r.json()
+    if "data" in data and "id" in data["data"]:
+        return data["data"]["id"], True
+    return None, data
+
+# Usage — authenticate once, then create all drafts:
+# session_id = ox_login()
+# save_draft("lead@example.com", "Subject line", "<p>HTML body</p>", session_id)
+# save_draft("lead2@example.com", "Subject 2", "<p>Body 2</p>", session_id)
 #
-# NOTE: Outreach drafts — To: lead only, no CC, no BCC
+# NOTE: Outreach drafts do NOT CC anyone — To: lead only
 # NOTE: Hyperlink Cushing-Malloy.com in closing: <a href="https://cushing-malloy.com">Cushing-Malloy.com</a>
-# NOTE: Git commits use user.name "ideaBoss Lead Agent" and user.email "dylan@coxgp.com"
+# NOTE: Weekly report draft uses same function with bcc="dylan@coxgp.com,rodrick@coxgp.com"
 ```
 
 ### Email template and personalization rules:
@@ -340,8 +345,6 @@ Examples:
 
 **Body template (personalize every [BRACKET] — never send a generic version):**
 
-> **LOCKED TEMPLATE — do not alter the Cushing-Malloy description paragraph or the first two bullet points. These are fixed language approved by the client. Only the opening sentences, the third bullet, and the closing are personalized per lead.**
-
 ```
 Hi [First Name],
 
@@ -349,56 +352,48 @@ Hi [First Name],
 Kickstarter, Instagram post, Substack, or announcement. Show you've done your
 homework. Never make this generic.]
 
-I'm reaching out from Cushing-Malloy Books in Ann Arbor, Michigan. We've been
-manufacturing books since 1948. [Geographic proximity note if applicable — e.g.,
-"Detroit to Ann Arbor is 45 minutes" for Michigan/Detroit-area leads; omit if
-the lead is not in the region.] We specialize in offset and digital printing for
-[press type / creator type] at your volume: [e.g., "multiple titles per month,
-300 to 5,000 copies per title" for active presses / "250 to 2,000 copies" for
-individual authors], with the production quality your [scholarly catalog /
-debut collection / cookbook / etc.] demands.
+I'm reaching out from Cushing-Malloy Books in Ann Arbor, Michigan — we've been
+manufacturing books since 1948, and we specialize in exactly the kind of run you're
+looking at: [250/500/1,000/2,000/5,000] copies with [offset/digital] printing for
+[their genre/format].
 
-Here's what makes us different:
+Here's what makes us different for [authors like you / presses like yours]:
 
-- One person manages your project start to finish: same contact for quoting,
+- One person manages your project start to finish — same contact for quoting,
   production, proofing, and delivery. Nothing falls through the cracks.
 - 20 working days from approved files to finished books, delivered to your door.
-- [Third bullet tailored to this specific lead — e.g., for a press with a large
-  active catalog: "For a press producing [X]+ titles annually, one dedicated
-  manufacturing contact who knows your paper preferences, trim specifications,
-  and binding standards across your full catalog means every title receives the
-  same quality promise -- whether a flagship series title or a first-time
-  monograph." For a first-time author: "We walk you through every step --
-  paper selection, file prep, trim size, and run quantity -- so you make
-  confident decisions without guesswork."]
+- [Insert one more specific differentiator relevant to this lead — e.g.,
+  "We walk first-time authors through every step — paper selection, file prep,
+  trim size, even why there are blank pages at the back." OR "We teach you the
+  print run math so you make the right financial decision on quantity."]
 
-If you would like to discuss manufacturing for upcoming [press name] titles or
-your next [fiscal year / season / project], we would love to connect. Visit us
-at <a href="https://cushing-malloy.com">Cushing-Malloy.com</a> and let us know
-what you are working on.
+If you're not sure where to start, that's exactly why we're here. We'd love to
+give you a no-pressure quote and talk through your options.
+
+Visit our website at <a href="https://cushing-malloy.com">Cushing-Malloy.com</a>. We look forward to hearing from you soon.
 
 Warm regards,
 
-<div style="margin-top:24px;padding-top:16px;border-top:3px solid #3787c4;max-width:480px;font-family:Arial,sans-serif;">
+<div style="margin-top:24px;padding-top:14px;border-top:1px solid #cccccc;max-width:500px;font-family:Arial,sans-serif;">
   <table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,sans-serif;">
     <tr>
-      <td style="vertical-align:top;border-right:3px solid #3787c4;padding-right:14px;">
-        <div style="font-size:15px;font-weight:700;color:#1a1a1a;letter-spacing:-0.2px;white-space:nowrap;">Joe DiMauro</div>
-        <div style="font-size:11px;font-weight:600;color:#3787c4;text-transform:uppercase;letter-spacing:0.8px;margin-top:2px;white-space:nowrap;">Customer Service Representative</div>
+      <td style="vertical-align:top;border-right:1px solid #cccccc;padding-right:16px;">
+        <div style="font-size:15px;font-weight:700;color:#1a1a1a;white-space:nowrap;">Joe DiMauro</div>
+        <div style="font-size:10.5px;font-weight:700;color:#3787c4;text-transform:uppercase;letter-spacing:1px;margin-top:3px;white-space:nowrap;">Customer Service Representative</div>
       </td>
-      <td style="padding-left:14px;vertical-align:top;">
-        <table cellpadding="0" cellspacing="0" border="0" style="font-size:12px;color:#555;line-height:1.7;">
-          <tr><td><a href="mailto:jdimauro@cushing-malloy.com" style="color:#3787c4;text-decoration:none;font-weight:600;">jdimauro@cushing-malloy.com</a></td></tr>
+      <td style="padding-left:16px;vertical-align:top;">
+        <table cellpadding="0" cellspacing="0" border="0" style="font-size:12px;color:#444;line-height:1.8;">
+          <tr><td><a href="mailto:jdimauro@cushing-malloy.com" style="color:#444;text-decoration:none;">jdimauro@cushing-malloy.com</a></td></tr>
           <tr><td style="white-space:nowrap;">P: (734) 663-8554 x110&nbsp;&nbsp;|&nbsp;&nbsp;F: (734) 663-5731</td></tr>
-          <tr><td style="color:#888;font-size:11px;">Cushing-Malloy, Inc.&nbsp;&nbsp;|&nbsp;&nbsp;1350 N. Main, Ann Arbor, MI 48104</td></tr>
+          <tr><td>Cushing-Malloy, Inc.&nbsp;&nbsp;|&nbsp;&nbsp;1350 N. Main, Ann Arbor, MI 48104</td></tr>
         </table>
       </td>
     </tr>
     <tr>
-      <td colspan="2" style="padding-top:8px;">
-        <div style="font-size:10px;color:#aaa;font-style:italic;letter-spacing:0.3px;">
-          <a href="https://cushing-malloy.com" style="color:#3787c4;text-decoration:none;font-weight:700;">cushing-malloy.com</a>
-          &nbsp;&nbsp;&middot;&nbsp;&nbsp;Where Books Are Bound For Greatness&reg;
+      <td colspan="2" style="padding-top:10px;">
+        <div style="font-size:11px;color:#888;">
+          <a href="https://cushing-malloy.com" style="color:#3787c4;text-decoration:none;font-weight:600;">cushing-malloy.com</a>
+          &nbsp;&nbsp;&#8211;&nbsp;&nbsp;Where Books Are Bound For Greatness&reg;
         </div>
       </td>
     </tr>
@@ -407,32 +402,28 @@ Warm regards,
 ```
 
 **Personalization checklist before creating each draft:**
-- [ ] Email is addressed to a named individual (not info@, contact@, submissions@, etc.) -- if only a generic address was available, it is flagged in the Notes field
 - [ ] Subject line references their specific project
-- [ ] Opening 1-2 sentences show you read their actual content/announcement -- never generic
-- [ ] Cushing-Malloy paragraph uses the LOCKED language exactly: "I'm reaching out from Cushing-Malloy Books in Ann Arbor, Michigan. We've been manufacturing books since 1948..." -- do not rewrite this
-- [ ] First two bullets are word-for-word as written in the template -- do not alter them
-- [ ] Third bullet is tailored to this specific lead's situation
-- [ ] Print run size estimate in the Cushing-Malloy paragraph is realistic for this lead
-- [ ] Geographic proximity note included only if the lead is in Michigan or a nearby state
+- [ ] Opening line shows you read their actual content/announcement
+- [ ] Print run size estimate is realistic for their situation
+- [ ] At least one differentiator is tailored to their specific need
+- [ ] Tone matches their vibe (casual for creators, professional for publishers)
 - [ ] Closing hyperlinks Cushing-Malloy.com: `<a href="https://cushing-malloy.com">Cushing-Malloy.com</a>`
-- [ ] Closing ends with "let us know what you are working on" -- not "Would a quick call this week work?" (permanently banned) and not "I'd be glad to send a sample kit"
-- [ ] No em dashes (--) used anywhere -- the template uses double hyphens (--), not em dashes (—)
-- [ ] CC field is empty on outreach drafts (no CC -- To: lead only)
+- [ ] Closing does NOT say "Would a quick call this week work?" — that phrase is permanently banned
+- [ ] No em dashes (—) used anywhere in the email body — use commas, colons, or rewrite the sentence instead
+- [ ] Opening does NOT claim to have been "following" the lead or their company — phrases like "I've been following you for a while" or "I've been a fan of your work" imply false familiarity and are permanently banned. Instead, say specifically how you discovered them (e.g., "I came across [Name] while researching [channel/source]...") or reference a concrete, publicly discoverable fact about their work.
+- [ ] CC field is empty on outreach drafts (no CC — To: lead only)
 
 ---
 
 ## STEP 7 — DRAFT WEEKLY REPORT EMAIL
 
-Save a weekly summary draft using the `import_draft()` Python function from Step 6.
+Save a weekly summary draft to SmarterMail Drafts using the same `save_draft()` Python function from Step 6.
 
 - **To:** ccushing@cushing-malloy.com
-- **CC:** tcushing@cushing-malloy.com, jdimauro@cushing-malloy.com
+- **CC:** tlitty@cushing-malloy.com, jdimauro@cushing-malloy.com
 - **BCC:** dylan@coxgp.com, rodrick@coxgp.com
 
 **Subject:** `Cushing-Malloy Lead Intelligence Prospecting -- Week of [Monday Date]`
-
-> **Do NOT include a full lead table in this email.** Connie does not need every lead listed. The report is a brief executive summary with highlights only. Full detail lives in the dashboard.
 
 **Body (HTML — use exactly this structure, filling all brackets with real content):**
 
@@ -455,33 +446,47 @@ Save a weekly summary draft using the `import_draft()` Python function from Step
 
     <p style="margin-top: 0;">Connie,</p>
 
-    <p>This week's run surfaced <strong>[X] qualified leads</strong> across [2-3 channels used, e.g., "Substack author communities, Kickstarter book campaigns, and health creator networks on Instagram"]. All leads were verified for print relevance, active production signals, and reachable contact information before making the list. Outreach drafts are queued and ready to send.</p>
+    <p>This week's prospecting run surfaced <strong>[X] qualified leads</strong> across [2–3 channels used — e.g., "Substack author communities, Kickstarter book campaigns, and health creator networks on Instagram"]. Every lead was verified for print relevance, active production signals, and reachable contact information before making the list — so what you're seeing represents genuine opportunities worth a conversation.</p>
 
-    <p>A couple worth a closer look: <strong>[Lead 1 Name]</strong> -- [1 sentence on why and how found]. And <strong>[Lead 2 Name]</strong> -- [1 sentence]. Both have verified contact details and clear intent to go to print.</p>
+    <p>A couple worth a closer look: <strong>[Lead 1 Name]</strong> — [1 sentence on why, how found, e.g., "a food blogger with 38K Instagram followers who announced a cookbook project this month, discovered through her public content feed"]. And <strong>[Lead 2 Name]</strong> — [1 sentence, e.g., "a business coach on Substack with a paid subscriber base actively promoting an upcoming book launch, sourced from Substack's creator directory"]. Both have verified contact details and clear intent to go to print.</p>
 
-    <p>This run produced [X high priority] and [X medium priority] leads, with [geographic spread note, e.g., "strong representation across the Midwest, Pacific Northwest, and New England"].</p>
-
-    <!-- DEDUP CONFIRMATION -->
-    <div style="background-color: #f0f5fa; border-left: 4px solid #3787c4; padding: 14px 18px; margin: 22px 0; font-size: 13px; color: #444;">
-      <strong style="display: block; margin-bottom: 6px; color: #2a2a2a;">Deduplication Confirmed</strong>
-      All [X] leads were verified against the Cushing-Malloy active client list and all prior weekly run archives. Zero conflicts found. No existing client was contacted and no lead duplicates a prior run.
-    </div>
+    <!-- LEAD HIGHLIGHTS TABLE -->
+    <table style="width: 100%; border-collapse: collapse; margin: 22px 0; font-size: 13px;">
+      <tr style="background-color: #3787c4; color: #ffffff;">
+        <th style="padding: 9px 12px; text-align: left; font-weight: 600; border-radius: 3px 0 0 0;">Name / Company</th>
+        <th style="padding: 9px 12px; text-align: left; font-weight: 600;">Category</th>
+        <th style="padding: 9px 12px; text-align: left; font-weight: 600; border-radius: 0 3px 0 0;">Why Qualified</th>
+      </tr>
+      <!-- Repeat this row for each lead — alternate row background #f4f8fc and #ffffff -->
+      <tr style="background-color: #f4f8fc;">
+        <td style="padding: 8px 12px; border-bottom: 1px solid #dde6f0;"><strong>[Lead Name]</strong></td>
+        <td style="padding: 8px 12px; border-bottom: 1px solid #dde6f0;">[Category]</td>
+        <td style="padding: 8px 12px; border-bottom: 1px solid #dde6f0;">[1 short qualifying sentence — why this lead matters, what signals indicated print intent]</td>
+      </tr>
+      <tr style="background-color: #ffffff;">
+        <td style="padding: 8px 12px; border-bottom: 1px solid #dde6f0;"><strong>[Lead Name]</strong></td>
+        <td style="padding: 8px 12px; border-bottom: 1px solid #dde6f0;">[Category]</td>
+        <td style="padding: 8px 12px; border-bottom: 1px solid #dde6f0;">[1 short qualifying sentence]</td>
+      </tr>
+      <!-- Add 4-5 TOP leads only (highest priority scores) — NOT all leads -->
+    </table>
 
     <!-- RESEARCH SOURCES -->
     <p style="font-size: 12px; color: #777; border-top: 1px solid #e8eef4; padding-top: 14px; margin-bottom: 22px;">
       <strong style="color: #555;">Research sources this run:</strong>&nbsp;
-      [Source 1] &nbsp;&middot;&nbsp; [Source 2] &nbsp;&middot;&nbsp; [Source 3 if applicable]
+      [Source 1 — e.g., Substack publishing community] &nbsp;&middot;&nbsp; [Source 2 — e.g., Kickstarter book campaigns]
     </p>
 
     <!-- CTA BUTTON -->
-    <div style="text-align: center; margin: 10px 0 4px;">
+    <div style="text-align: center; margin: 10px 0 6px;">
       <a href="https://ideaboss.cushing-malloy.com" style="display: inline-block; background-color: #3787c4; color: #ffffff; padding: 13px 32px; border-radius: 4px; text-decoration: none; font-size: 14px; font-weight: bold; letter-spacing: 0.2px;">
         View Full Dashboard &rarr;
       </a>
     </div>
-    <div style="text-align: center; margin: 8px 0 18px; font-size: 12px; color: #888;">
-      Password: <strong style="color: #444; letter-spacing: 0.5px;">Cushingmalloyleads</strong>
-    </div>
+    <!-- DASHBOARD PASSWORD — always include this line immediately below the button -->
+    <p style="text-align:center;font-size:12px;color:#777;margin:6px 0 0 0;">
+      Password: <strong>Cushingmalloyleads</strong>
+    </p>
 
   </div>
 
@@ -496,11 +501,14 @@ Save a weekly summary draft using the `import_draft()` Python function from Step
 ```
 
 **Instructions for filling the template:**
-- Replace `[X]` with actual lead count; replace high/medium counts and geographic note with real values
-- Replace `[MONDAY DATE]` and `[DATE]` with the run date (e.g., "June 22, 2026")
-- Name 2 specific standout leads in the intro paragraphs with exactly how and where they were found
-- List the actual research channels used this run (2-4 sources)
-- Dashboard password is always `Cushingmalloyleads` -- include it every run below the button
+- Replace `[X]` with actual lead count
+- Replace `[MONDAY DATE]` and `[DATE]` with the run date (e.g., "March 31, 2026")
+- In the two intro paragraphs, name 2 specific leads from this run with exactly how and where they were found
+- Add only the **top 4-5 leads** to the table (highest priority scores) -- do NOT list all leads. Add a short line below the table directing Connie to the dashboard for the full list.
+- No scores or priority labels in the table rows
+- List exactly 2 research sources actually used in this run (education/university must always appear here since it is always used)
+- Replace `[DASHBOARD URL]` with `https://ideaboss.cushing-malloy.com` (live dashboard URL)
+- **PERMANENT RULE:** Always include the dashboard password line immediately below the View Full Dashboard button: `Password: Cushingmalloyleads` -- this is required in every report, no exceptions
 
 ---
 
@@ -512,9 +520,8 @@ Run a final checklist before marking the process complete:
 - [ ] At least 20 leads score 6 or above (core batch)
 - [ ] No more than 5 supplemental leads score below 5 (each with justification note)
 - [ ] Best leads surfaced regardless of category type
-- [ ] At least 4–5 different discovery channels used
+- [ ] At least 4–5 different discovery channels used (education/university channel always included)
 - [ ] Leads span multiple US states/regions
-- [ ] All email addresses are direct individual contacts (not generic info@/contact@ -- if a generic address was unavoidable, it is flagged in the Notes field for that lead)
 - [ ] No duplicates from previous runs
 - [ ] No existing clients included (cross-checked against the 306-company client list in the "EXISTING CLIENTS" section)
 - [ ] Dashboard HTML updated with new run date and leads (prepended, newest first)
@@ -522,8 +529,10 @@ Run a final checklist before marking the process complete:
 - [ ] `01_Dashboard/cushing-malloy-lead-dashboard.html` updated
 - [ ] Root `index.html` updated (copied from `01_Dashboard/` — named `index.html`, not `cushing-malloy-lead-dashboard.html`)
 - [ ] All changes committed and pushed to GitHub (`01_Dashboard/` copy + `index.html` at root)
-- [ ] SmarterMail outreach drafts saved for all leads with verified emails (use REST API draft-put, NOT IMAP)
-- [ ] Weekly report draft saved to SmarterMail Drafts (To: ccushing@cushing-malloy.com / BCC: dylan@coxgp.com, rodrick@coxgp.com)
+- [ ] OX outreach drafts saved for all leads with verified emails (action=import MIME method, NOT action=new)
+- [ ] Weekly report draft saved to OX Drafts (To: ccushing@cushing-malloy.com | CC: tlitty, jdimauro | BCC: dylan@coxgp.com, rodrick@coxgp.com)
+- [ ] Report email includes dashboard password "Cushingmalloyleads" below the View Full Dashboard button
+- [ ] Education/university sources used and listed in report's Research Sources line
 
 ---
 
@@ -595,18 +604,21 @@ Cushing-Malloy/
 
 ## TECHNICAL NOTES FOR CLAUDE CODE
 
-- **Email system:** SmarterMail native REST API (`draft-put` endpoint) — NOT IMAP
-- **API base:** `https://mail.cushing-malloy.com/api/v1/`
-- **Auth endpoint:** `POST /api/v1/auth/authenticate-user` → returns `accessToken` JWT
-- **Draft endpoint:** `POST /api/v1/mail/draft-put/{uuid}` — use fresh `uuid.uuid4()` as path segment
-- **HTML body field:** `messageHTML` (not `htmlBody` — this is the critical field name)
-- **Do NOT use IMAP:** Python `imaplib.append()` creates non-editable drafts in SmarterMail
-- **Outreach sender:** `printyourbook@cushing-malloy.com`
-- **Drafts saved to:** Drafts folder — view at `https://mail.cushing-malloy.com`
+- **Email system:** Open-Xchange (OX) App Suite HTTP API — NOT SmarterMail, NOT IMAP
+- **Webmail URL:** `https://webmail-oxcs.networksolutionsemail.com`
+- **Auth endpoint:** `POST /appsuite/api/login?action=login` with form fields `login`, `password`, `name`, `client` → returns `session` ID
+- **Draft endpoint:** `POST /appsuite/api/mail?action=import&session={session_id}&folder=default0/Drafts&flags=32` -- send as `files={"file": ("draft.eml", msg.as_string(), "message/rfc822")}` using Python `email.mime` to build a proper MIME/RFC-822 message
+- **CRITICAL:** Use `action=import` with a real MIME message, NOT `action=new` -- the `new` action does not parse JSON envelope fields in this OX version and produces empty drafts with no subject, recipient, or body
+- **CRITICAL:** Must use `requests.Session()` (persistent session with cookies) — stateless requests will get "session expired" errors immediately
+- **Outreach sender:** `printyourbook@cushing-malloy.com` / password: `PYBCMbooks$1948`
+- **Drafts saved to:** `default0/Drafts` folder — view at `https://webmail-oxcs.networksolutionsemail.com`
 - **Outreach draft routing:** To: lead's email | CC: (none) | BCC: (none)
-- **Report routing:** To: ccushing@cushing-malloy.com | CC: (none) | BCC: dylan@coxgp.com, rodrick@coxgp.com
+- **Report routing:** To: ccushing@cushing-malloy.com | CC: tlitty@cushing-malloy.com, jdimauro@cushing-malloy.com | BCC: dylan@coxgp.com, rodrick@coxgp.com
 - **Closing hyperlink rule:** Cushing-Malloy.com in the closing sentence must be an HTML hyperlink to https://cushing-malloy.com
 - **Em dash ban:** Do not use em dashes (—) anywhere in outreach email copy. Use commas, colons, or rewrite the sentence instead.
+- **False familiarity ban (PERMANENT):** Never write "I've been following you/your company for a while," "I've been a fan of your work," or any variation implying pre-existing familiarity in outreach emails. This creates a false impression. Acceptable alternatives: "I came across [Name] while researching [channel/source]..." or reference a specific, publicly discoverable fact about their work, recent announcement, or publication.
+- **Education sources rule (PERMANENT):** Education/university discovery channel must be included in every weekly run. Sources include: AAUP university press directories, academic publishing programs, faculty with forthcoming books, university writing program graduates, campus literary journals, teaching press networks. Always list at least one education source in the report's Research Sources line.
+- **Dashboard password rule (PERMANENT):** Every report email must include the dashboard password immediately below the View Full Dashboard button. Password is: `Cushingmalloyleads`. HTML: `<p style="text-align:center;font-size:12px;color:#777;margin:6px 0 0 0;">Password: <strong>Cushingmalloyleads</strong></p>`
 - **Dashboard file location:** `/mnt/Dashboard/cushing-malloy-lead-dashboard.html`
 - **Archive location:** `/mnt/Dashboard/02_Lead_Data/archive/`
 - **Scheduled task:** Monday, 3:00 AM (weekly)
