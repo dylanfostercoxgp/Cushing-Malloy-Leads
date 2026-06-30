@@ -172,6 +172,86 @@ Using the full spec in `cushing-malloy-lead-gen-prompt.md`, research and identif
 
 ---
 
+## STEP 2b — MANDATORY EMAIL VERIFICATION (SMTP CHECK)
+
+> **THIS STEP IS NOT OPTIONAL. Every email address in every run MUST pass SMTP verification before being included. Skipping this step is the root cause of 5-8 bounce-backs per run.**
+
+After collecting all lead candidates, run SMTP RCPT TO verification on every email address using the Python script below. This must run before Step 3 (dashboard update) and before Step 6 (draft creation).
+
+### Verification rules (hard rules, no exceptions):
+
+1. **250 response = PASS.** Address is deliverable. Include the lead.
+2. **550/551/552/553/554 response = HARD FAIL. Remove the lead's email.** If no replacement email can be found, set email field to "No Verified Email Found" and do NOT draft outreach for that lead.
+3. **Timeout / connection refused / Spamhaus PBL block = UNVERIFIED.** The server blocked our probe IP -- this does NOT mean the email is dead. Flag the address as "Unverified -- server blocked probe" in the Notes field. Use only if the address is explicitly published on the lead's own website (not extrapolated). Do NOT use if the address was guessed.
+4. **"Policy reasons" rejection from Zoho/Google/Microsoft = UNVERIFIED.** Same rule as above. Use only if published, not guessed.
+5. **NO MX record = HARD FAIL.** Domain cannot receive email at all. Remove lead's email (or find a working domain for the same contact).
+6. **Generic addresses (info@, contact@, submissions@, hello@, press@) require EXTRA scrutiny:**
+   - If the address appears explicitly on the organization's website: it may be included if it passes SMTP or is unverifiable due to a proxy block.
+   - If the address was EXTRAPOLATED (guessed based on the domain): it is BANNED. Remove it even if SMTP returns 250 (catch-all servers accept everything).
+   - The process documentation says "verified email" -- generic extrapolated addresses are never verified.
+7. **Defunct presses = remove entirely.** If research shows the press is no longer active (no recent publications, website down, domain email dead, no social activity in 12+ months), drop the lead -- do not include even with a note.
+
+### Python SMTP verification script (run via Bash for every run):
+
+```python
+import socket, time, dns.resolver
+
+def get_mx(domain):
+    try:
+        records = dns.resolver.resolve(domain, 'MX')
+        return str(sorted(records, key=lambda r: r.preference)[0].exchange).rstrip('.')
+    except Exception:
+        return None
+
+def smtp_verify(email, timeout=10):
+    domain = email.split('@')[1]
+    mx_host = get_mx(domain)
+    if not mx_host:
+        return -1, 'NO MX RECORD'
+    try:
+        s = socket.create_connection((mx_host, 25), timeout=timeout)
+        def recv(): return s.recv(512).decode('utf-8', 'replace')
+        def send(cmd): s.sendall((cmd + '\r\n').encode()); time.sleep(0.4); return recv()
+        recv()  # banner
+        send('EHLO verify.cushing-malloy.com')
+        send('MAIL FROM:<check@cushing-malloy.com>')
+        resp = send(f'RCPT TO:<{email}>')
+        send('QUIT'); s.close()
+        code = int(resp.strip()[:3]) if resp.strip()[:3].isdigit() else 0
+        return code, resp.strip()[:100]
+    except Exception as e:
+        return 0, str(e)[:80]
+
+# Usage: run for all emails in the current batch
+emails_to_verify = [
+    # ("email@domain.com", "Lead Name / Press"),
+]
+
+print(f"{'Email':<45} {'Code':>5}  Status")
+print("=" * 80)
+for email, name in emails_to_verify:
+    code, msg = smtp_verify(email)
+    if code == 250:    status = "PASS"
+    elif code in (550,551,552,553,554): status = "HARD FAIL -- REMOVE"
+    elif code == -1:   status = "NO MX -- REMOVE"
+    else:              status = f"UNVERIFIED (use only if published on their site)"
+    print(f"{email:<45} {str(code):>5}  [{status}]  {name}")
+    time.sleep(0.15)
+```
+
+**CRITICAL: Do not install dnspython if it's missing -- run `pip install dnspython --break-system-packages` first. This is already installed in the current session environment.**
+
+### What to do with failures:
+
+| Result | Action |
+|---|---|
+| HARD FAIL (550-554) | Search the lead's website and LinkedIn for a different direct email. SMTP-verify the replacement. If none found, set email to "No Verified Email Found" -- no draft. |
+| NO MX | Check if domain has recently changed (e.g., company moved to a new domain). Update email to correct domain and re-verify. If no fix, no draft. |
+| UNVERIFIED (proxy/policy block) | Include ONLY if address is explicitly listed on their official website. Add to Notes: "Email unverified -- server blocked SMTP probe; address sourced from [URL]." |
+| Defunct press | Drop from run entirely. Do not include in dashboard, archive, or drafts. |
+
+---
+
 ## STEP 3 — UPDATE THE DASHBOARD HTML
 
 1. Open `Dashboard/cushing-malloy-lead-dashboard.html`
