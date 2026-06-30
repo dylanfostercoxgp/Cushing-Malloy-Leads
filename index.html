@@ -988,7 +988,7 @@
     <div class="toolbar-left">
       <div class="filter-group">
         <span class="filter-label">Date</span>
-        <select class="date-selector" id="dateSelect"><option value="2026-06-22">June 22, 2026</option><option value="2026-06-15">June 15, 2026</option><option value="2026-06-08">June 8, 2026</option><option value="2026-06-01">June 1, 2026</option><option value="2026-05-27">May 27, 2026</option>
+        <select class="date-selector" id="dateSelect"><option value="2026-06-29">June 29, 2026</option><option value="2026-06-22">June 22, 2026</option><option value="2026-06-15">June 15, 2026</option><option value="2026-06-08">June 8, 2026</option><option value="2026-06-01">June 1, 2026</option><option value="2026-05-27">May 27, 2026</option>
 <option value="2026-05-11">May 11, 2026</option>
 <option value="2026-04-27">April 27, 2026</option>
           <option value="2026-04-20">April 20, 2026</option>
@@ -1155,6 +1155,291 @@
 //     Each run date key must be preserved permanently for historical reference
 //     and Quality Report continuity. New runs go at the top of this object.
 const RUNS = {
+  "2026-06-29": {
+    label: "June 29, 2026",
+    leads: [
+      {
+        id: 1, score: 7, priorityClass: "medium",
+        category: "Small Press (6-20 titles/yr)", catClass: "cat-small",
+        name: "Notgrass History",
+        source: "Homeschool curriculum database",
+        email: "ray@notgrass.com",
+        phone: "1-800-211-8793",
+        website: "https://notgrass.com",
+        contact: "",
+        draftId: "1019",
+        notes: `Family-run homeschool history curriculum publisher since 1999. Ray and Charlene Notgrass produce grade 1-12 history, government, and economics curriculum with student texts, teacher guides, and activity books. Clear short-run manufacturing need for multi-component curriculum sets. Email extrapolated from common name format; verify before sending.`,
+        pitch: `Family-run homeschool history curriculum publisher since 1999.`,
+        drafted_email: ``
+      },
+      {
+        id: 2, score: 7, priorityClass: "medium",
+        category: "Solo Author – Print-Ready", catClass: "cat-solo-ready",
+        name: "Tabletop Academy Press (Denise Gaskins)",
+        source: "Publisher research / Tabletop Academy Press website",
+        email: "tabletopacademypress@gmail.com",
+        phone: "",
+        website: "https://tabletopacademy.net",
+        contact: "Denise Gaskins",
+        draftId: "1020",
+        notes: `Veteran math educator and author publishing playful math activity books through her own press. Math You Can Play series and other titles. Email confirmed via search. Solo author-publisher with established homeschool audience and clear ongoing print need.`,
+        pitch: `Veteran math educator and author publishing playful math activity books through her own press.`,
+        drafted_email: ``
+      },
+      {
+        id: 3, score: 8, priorityClass: "high",
+        category: "Small Press (6-20 titles/yr)", catClass: "cat-small",
+        name: "Well-Trained Mind Press (Susan Wise Bauer)",
+        source: "Homeschool curriculum research / publisher website",
+        email: "susan@peacehillpress.com",
+        phone: "1-877-322-3445",
+        website: "https://welltrainedmind.com",
+        contact: "",
+        draftId: "1021",
+        notes: `Publisher of widely-used classical homeschool curricula including Story of the World, Writing With Ease, and First Language Lessons. Email confirmed via search. Small family press with 5-8 new titles per year, large and actively-used backlist, and a growing classical homeschool market.`,
+        pitch: `Publisher of widely-used classical homeschool curricula including Story of the World, Writing With Ease, and First Language Lessons.`,
+        drafted_email: ``
+      },
+      {
+        id: 4, score: 8, priorityClass: "high",
+        category: "Nonfiction Specialty Press", catClass: "cat-nonfiction",
+        name: "Redleaf Press (Nikki Darling-Kuria)",
+        source: "CLMP directory / nonprofit publisher research",
+        email: "ndarling-kuria@thinksmall.org",
+        phone: "651-641-1511",
+        website: "https://redleafpress.org",
+        contact: "Nikki Darling-Kuria",
+        draftId: "1022",
+        notes: `Leading nonprofit publisher for early childhood professionals, division of Think Small in St. Paul, MN. Midwest proximity is a natural angle. 8-12 titles per year. Director Nikki Darling-Kuria confirmed via ZoomInfo/LinkedIn. Email extrapolated from domain; verify before sending.`,
+        pitch: `Leading nonprofit publisher for early childhood professionals, division of Think Small in St.`,
+        drafted_email: ``
+      },
+      {
+        id: 5, score: 7, priorityClass: "medium",
+        category: "Solo Author – Print-Ready", catClass: "cat-solo-ready",
+        name: "Brave Writer (Julie Bogart)",
+        source: "Homeschool community research",
+        email: "julie@bravewriter.com",
+        phone: "",
+        website: "https://bravewriter.com",
+        contact: "Julie Bogart",
+        draftId: "1023",
+        notes: `26-year-old homeschool writing curriculum program with 17,000+ community members. Julie Bogart publishes physical curriculum handbooks (Dart, Arrow, Boomerang, Help for High School). Email confirmed via search. Cincinnati, OH location puts her under three hours from Ann Arbor -- regional proximity angle.`,
+        pitch: `26-year-old homeschool writing curriculum program with 17,000+ community members.`,
+        drafted_email: ``
+      },
+      {
+        id: 6, score: 6, priorityClass: "medium",
+        category: "Small Press (6-20 titles/yr)", catClass: "cat-small",
+        name: "Gather 'Round Homeschool (Rebecca Spooner)",
+        source: "Homeschool community research",
+        email: "support@gatherroundhomeschool.com",
+        phone: "",
+        website: "https://gatherroundhomeschool.com",
+        contact: "Rebecca Spooner",
+        draftId: "1024",
+        notes: `Fast-growing Christian homeschool unit study curriculum publisher. Rebecca Spooner built from solo operation to team-based publishing with annual catalog expansion. Generic support email is the primary business contact. Multiple new units published per year.`,
+        pitch: `Fast-growing Christian homeschool unit study curriculum publisher.`,
+        drafted_email: ``
+      },
+      {
+        id: 7, score: 6, priorityClass: "medium",
+        category: "Solo Author – Print-Ready", catClass: "cat-solo-ready",
+        name: "Build Your Library (Emily Cook)",
+        source: "Secular homeschool curriculum research",
+        email: "emily@buildyourlibrary.com",
+        phone: "",
+        website: "https://buildyourlibrary.com",
+        contact: "Emily Cook",
+        draftId: "1025",
+        notes: `Literature-based secular homeschool curriculum for K-12. Creator Emily Cook publishes physical curriculum guides for an underserved market segment. Email extrapolated from site; contact form also available at buildyourlibrary.com/contact-us/`,
+        pitch: `Literature-based secular homeschool curriculum for K-12.`,
+        drafted_email: ``
+      },
+      {
+        id: 8, score: 7, priorityClass: "medium",
+        category: "Nonfiction Specialty Press", catClass: "cat-nonfiction",
+        name: "Due Season Press (Angela Watson)",
+        source: "Teacher professional development research",
+        email: "angela@truthforteachers.com",
+        phone: "",
+        website: "https://truthforteachers.com",
+        contact: "Angela Watson",
+        draftId: "1026",
+        notes: `National Board Certified Teacher turned author-publisher who founded Due Season Press. Has published 6 books reaching 8 million educators annually via Truth for Teachers podcast and website. Clear established publishing track record with growing catalog. Email extrapolated from site domain.`,
+        pitch: `National Board Certified Teacher turned author-publisher who founded Due Season Press.`,
+        drafted_email: ``
+      },
+      {
+        id: 9, score: 6, priorityClass: "medium",
+        category: "Children's Book Publisher", catClass: "cat-childrens",
+        name: "Bright Ring Publishing (MaryAnn Kohl)",
+        source: "Children's educational publisher research",
+        email: "info@brightring.com",
+        phone: "",
+        website: "https://brightring.com",
+        contact: "",
+        draftId: "1027",
+        notes: `Publisher of award-winning children's art activity books since 1985. MaryAnn Kohl located near Bellingham, WA. Email confirmed via website. Some titles published through larger houses (Chicago Review Press, Gryphon House) but Bright Ring continues independent publishing for direct sales.`,
+        pitch: `Publisher of award-winning children's art activity books since 1985.`,
+        drafted_email: ``
+      },
+      {
+        id: 10, score: 6, priorityClass: "medium",
+        category: "Nonfiction Specialty Press", catClass: "cat-nonfiction",
+        name: "Learning Sciences International (Michael Toth)",
+        source: "Educational publisher research",
+        email: "info@instructionalempowerment.com",
+        phone: "",
+        website: "https://learningsciences.com",
+        contact: "Michael Toth",
+        draftId: "1028",
+        notes: `Publisher of teacher professional development resources built around the Marzano framework. West Palm Beach, FL. Books go directly into schools and district training programs. Email extrapolated from domain; verify before sending. Founder/CEO Michael Toth confirmed via search. NOTE: learningsciences.com has rebranded to instructionalempowerment.com (Outlook MX confirmed). Email updated.`,
+        pitch: `Publisher of teacher professional development resources built around the Marzano framework.`,
+        drafted_email: ``
+      },
+      {
+        id: 11, score: 7, priorityClass: "medium",
+        category: "Small Press (6-20 titles/yr)", catClass: "cat-small",
+        name: "Sibylline Press (Julia Park Tracey)",
+        source: "Poets & Writers / CLMP directory",
+        email: "julia@sibyllinepress.com",
+        phone: "",
+        website: "https://sibyllinepress.com",
+        contact: "",
+        draftId: "1029",
+        notes: `Independent literary press focused on women authors over 50. Grass Valley, CA. Julia Park Tracey is Acquisitions Editor -- email confirmed via search. 12-15 titles per year. Strong editorial vision and growing catalog in an underserved publishing niche.`,
+        pitch: `Independent literary press focused on women authors over 50.`,
+        drafted_email: ``
+      },
+      {
+        id: 12, score: 7, priorityClass: "medium",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Moon Tide Press (Eric Morago)",
+        source: "Poets & Writers / CLMP directory",
+        email: "eric.morago@gmail.com",
+        phone: "",
+        website: "https://www.moontidepress.com",
+        contact: "Eric Morago",
+        draftId: "1030",
+        notes: `Independent poetry press in Whittier, CA. Eric Morago took over as publisher in 2017 and has continued publishing strong voices in contemporary poetry. Email confirmed via search. 6-10 titles per year at short print runs -- ideal manufacturing profile.`,
+        pitch: `Independent poetry press in Whittier, CA.`,
+        drafted_email: ``
+      },
+      {
+        id: 13, score: 8, priorityClass: "high",
+        category: "Health & Wellness Creator", catClass: "cat-health",
+        name: "Fertility Food Publishing (Lily Nichols)",
+        source: "Health/wellness publisher research",
+        email: "contact@lilynicholsrdn.com",
+        phone: "",
+        website: "https://lilynicholsrdn.com",
+        contact: "Lily Nichols",
+        draftId: "1031",
+        notes: `Registered dietitian Lily Nichols self-publishes her evidence-based prenatal nutrition books (Real Food for Pregnancy, Real Food for Fertility) through Fertility Food Publishing. Strong established readership, multiple reprints likely. Email extrapolated from site; contact form available. High-quality self-publisher with clear ongoing print volume.`,
+        pitch: `Registered dietitian Lily Nichols self-publishes her evidence-based prenatal nutrition books (Real Food for Pregnancy, Real Food for Fertility) through Fertility Food Publishing.`,
+        drafted_email: ``
+      },
+      {
+        id: 14, score: 7, priorityClass: "medium",
+        category: "Small Press (6-20 titles/yr)", catClass: "cat-small",
+        name: "Parallax Press (Rachel Neumann)",
+        source: "Publisher research",
+        email: "publisher@parallax.org",
+        phone: "",
+        website: "https://parallax.org",
+        contact: "Rachel Neumann",
+        draftId: "1032",
+        notes: `Berkeley, CA-based publisher of mindfulness and contemplative literature since 1986. Publisher Rachel Neumann leads an active publishing program. 500-5,000 copies per title, 10-15 titles per year. Strong backlist of Thich Nhat Hanh titles ensures ongoing reprint demand. Email extrapolated from typical press format.`,
+        pitch: `Berkeley, CA-based publisher of mindfulness and contemplative literature since 1986.`,
+        drafted_email: ``
+      },
+      {
+        id: 15, score: 7, priorityClass: "medium",
+        category: "Food & Recipe Creator", catClass: "cat-food",
+        name: "Vegan Richa (Richa Hingle)",
+        source: "Food creator research",
+        email: "richa@veganricha.com",
+        phone: "",
+        website: "https://veganricha.com",
+        contact: "Richa Hingle",
+        draftId: "1033",
+        notes: `Popular food blogger and cookbook author specializing in Indian-inspired vegan cooking. Has published multiple cookbooks. Email extrapolated from site. Strong social following and direct audience relationship suggests self-publishing is a viable option for future titles.`,
+        pitch: `Popular food blogger and cookbook author specializing in Indian-inspired vegan cooking.`,
+        drafted_email: ``
+      },
+      {
+        id: 16, score: 7, priorityClass: "medium",
+        category: "Small Press (6-20 titles/yr)", catClass: "cat-small",
+        name: "Beehive Books (Josh O'Neill)",
+        source: "Specialty literary publisher research",
+        email: "info@beehivebooks.com",
+        phone: "",
+        website: "https://beehivebooks.com",
+        contact: "",
+        draftId: "1034",
+        notes: `Specialty literary publisher producing high-quality deluxe editions. Josh O'Neill as publisher. Email extrapolated from domain. Print quality and physical book production are core to their value proposition -- an ideal match for Cushing-Malloy's quality focus.`,
+        pitch: `Specialty literary publisher producing high-quality deluxe editions.`,
+        drafted_email: ``
+      },
+      {
+        id: 17, score: 6, priorityClass: "medium",
+        category: "Small Press (6-20 titles/yr)", catClass: "cat-small",
+        name: "Owl Canyon Press (Robert Merritt)",
+        source: "Poets & Writers / CLMP directory",
+        email: "submissions@owlcanyonpress.com",
+        phone: "",
+        website: "https://owlcanyonpress.com",
+        contact: "Robert Merritt",
+        draftId: "1035",
+        notes: `Colorado-based independent literary fiction press known for the Hackathon anthology series alongside individual fiction titles. Email is the public submissions address. 4-8 titles per year. Clear short-run manufacturing profile.`,
+        pitch: `Colorado-based independent literary fiction press known for the Hackathon anthology series alongside individual fiction titles.`,
+        drafted_email: ``
+      },
+      {
+        id: 18, score: 6, priorityClass: "medium",
+        category: "Small Press (6-20 titles/yr)", catClass: "cat-small",
+        name: "Heliotrope Books (Naomi Rosenblatt)",
+        source: "Poets & Writers / CLMP directory",
+        email: "heliotropebooks@gmail.com",
+        phone: "",
+        website: "https://heliotropebooks.com",
+        contact: "Naomi Rosenblatt",
+        draftId: "1036",
+        notes: `Independent New York-based literary publisher with a thoughtful catalog of fiction and nonfiction. Naomi Rosenblatt as publisher. Email extrapolated from typical small press format. 4-8 titles per year at short print runs.`,
+        pitch: `Independent New York-based literary publisher with a thoughtful catalog of fiction and nonfiction.`,
+        drafted_email: ``
+      },
+      {
+        id: 19, score: 6, priorityClass: "medium",
+        category: "Lifestyle Creator", catClass: "cat-lifestyle",
+        name: "Kate Northrup",
+        source: "Lifestyle/wellness author research",
+        email: "kate@katenorthrup.com",
+        phone: "",
+        website: "https://katenorthrup.com",
+        contact: "",
+        draftId: "1037",
+        notes: `Author of Money: A Love Story and Do Less, self-publishing advocate with large direct audience built through courses and community. Maine-based. Email extrapolated from site domain. If pursuing a new book project, direct publishing to her community is a natural path -- and a natural manufacturing need.`,
+        pitch: `Author of Money: A Love Story and Do Less, self-publishing advocate with large direct audience built through courses and community.`,
+        drafted_email: ``
+      },
+      {
+        id: 20, score: 6, priorityClass: "medium",
+        category: "Small Press (6-20 titles/yr)", catClass: "cat-small",
+        name: "Lanternfish Press (Amanda Baldeneaux)",
+        source: "Poets & Writers / CLMP directory",
+        email: "info@lanternfishpress.com",
+        phone: "",
+        website: "https://lanternfishpress.com",
+        contact: "Amanda Baldeneaux",
+        draftId: "1038",
+        notes: `Philadelphia-based independent literary press publishing distinctive fiction and memoir. Co-founded by Amanda Baldeneaux and Christine Neulieb. 6-8 titles per year. Email extrapolated from domain. Clear short-run literary manufacturing profile.`,
+        pitch: `Philadelphia-based independent literary press publishing distinctive fiction and memoir.`,
+        drafted_email: ``
+      }
+    ]
+  },
   "2026-06-22": {
     label: "June 22, 2026",
     leads: [
@@ -7441,7 +7726,7 @@ function getVisibleRuns() {
 }
 
 // ─── STATE ───────────────────────────────────────────────────────────────────
-let currentRun = "2026-06-22";
+let currentRun = "2026-06-29";
 let sortCol = "score";
 let sortAsc = false;
 let filterPriority = "all";

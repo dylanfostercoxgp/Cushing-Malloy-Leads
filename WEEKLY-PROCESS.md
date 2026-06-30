@@ -1,5 +1,14 @@
 # Cushing-Malloy Lead Intelligence — Weekly Automation Process
-**Client:** Cushing-Malloy Books | **Managed by:** ideaBoss | **Version:** 2.0 | **Updated:** March 2026
+**Client:** Cushing-Malloy Books | **Managed by:** ideaBoss | **Version:** 2.1 | **Updated:** June 2026
+
+> **MANDATORY DISTRIBUTION LIST -- READ THIS BEFORE EVERY RUN**
+> Every weekly summary report email MUST use exactly this distribution. No exceptions.
+>
+> - **TO:** ccushing@cushing-malloy.com (Connie Cushing)
+> - **CC:** jdimauro@cushing-malloy.com (Joe DiMauro), tlitty@cushing-malloy.com (Tedd Litty), solko@cushing-malloy.com (Steve Olko)
+> - **BCC:** dylan@coxgp.com (Dylan Cox), rodrick@coxgp.com (Rodrick)
+>
+> The summary report is SENT (not just drafted). Outreach drafts remain drafts -- do NOT send those.
 
 > **How to use this file:** Give this document to Claude (via Claude Code or Cowork mode) and say:
 > *"Run the Cushing-Malloy weekly lead generation process."*
@@ -17,7 +26,7 @@ This process runs every **Monday at 3:00 AM** (or on-demand). It performs three 
 
 1. **Lead Discovery** — Research and score **20–25 new leads** across multiple channels
 2. **Outreach Drafts** — Save personalized draft emails to SmarterMail Drafts folder for each verified lead (do NOT auto-send)
-3. **Weekly Report** — Save a summary HTML report as a SmarterMail draft (To: ccushing, BCC: dylan + rodrick) — do NOT send, draft only
+3. **Weekly Report** -- Generate a summary HTML report email and SEND it (To: ccushing@cushing-malloy.com / CC: jdimauro, tlitty, solko / BCC: dylan@coxgp.com, rodrick@coxgp.com). Do NOT send outreach drafts -- those remain as drafts only.
 
 **Total estimated runtime:** 15–25 minutes depending on lead count.
 
@@ -415,13 +424,14 @@ Warm regards,
 
 ---
 
-## STEP 7 — DRAFT WEEKLY REPORT EMAIL
+## STEP 7 -- SEND WEEKLY REPORT EMAIL
 
-Save a weekly summary draft to SmarterMail Drafts using the same `save_draft()` Python function from Step 6.
+Send the weekly summary report using the same OX API session from Step 6. Use the `action=send` endpoint (not `action=import`). This email is SENT immediately -- not saved as a draft.
 
-- **To:** ccushing@cushing-malloy.com
-- **CC:** tlitty@cushing-malloy.com, jdimauro@cushing-malloy.com
-- **BCC:** dylan@coxgp.com, rodrick@coxgp.com
+**MANDATORY DISTRIBUTION (must match exactly every run):**
+- **To:** ccushing@cushing-malloy.com (Connie Cushing)
+- **CC:** jdimauro@cushing-malloy.com (Joe DiMauro), tlitty@cushing-malloy.com (Tedd Litty), solko@cushing-malloy.com (Steve Olko)
+- **BCC:** dylan@coxgp.com (Dylan Cox), rodrick@coxgp.com (Rodrick)
 
 **Subject:** `Cushing-Malloy Lead Intelligence Prospecting -- Week of [Monday Date]`
 
@@ -530,7 +540,7 @@ Run a final checklist before marking the process complete:
 - [ ] Root `index.html` updated (copied from `01_Dashboard/` — named `index.html`, not `cushing-malloy-lead-dashboard.html`)
 - [ ] All changes committed and pushed to GitHub (`01_Dashboard/` copy + `index.html` at root)
 - [ ] OX outreach drafts saved for all leads with verified emails (action=import MIME method, NOT action=new)
-- [ ] Weekly report draft saved to OX Drafts (To: ccushing@cushing-malloy.com | CC: tlitty, jdimauro | BCC: dylan@coxgp.com, rodrick@coxgp.com)
+- [ ] Weekly report SENT via OX (To: ccushing@cushing-malloy.com | CC: jdimauro, tlitty, solko | BCC: dylan@coxgp.com, rodrick@coxgp.com)
 - [ ] Report email includes dashboard password "Cushingmalloyleads" below the View Full Dashboard button
 - [ ] Education/university sources used and listed in report's Research Sources line
 
@@ -609,11 +619,18 @@ Cushing-Malloy/
 - **Auth endpoint:** `POST /appsuite/api/login?action=login` with form fields `login`, `password`, `name`, `client` → returns `session` ID
 - **Draft endpoint:** `POST /appsuite/api/mail?action=import&session={session_id}&folder=default0/Drafts&flags=32` -- send as `files={"file": ("draft.eml", msg.as_string(), "message/rfc822")}` using Python `email.mime` to build a proper MIME/RFC-822 message
 - **CRITICAL:** Use `action=import` with a real MIME message, NOT `action=new` -- the `new` action does not parse JSON envelope fields in this OX version and produces empty drafts with no subject, recipient, or body
-- **CRITICAL:** Must use `requests.Session()` (persistent session with cookies) — stateless requests will get "session expired" errors immediately
+- **CRITICAL:** Must use `requests.Session()` (persistent session with cookies) -- stateless requests will get "session expired" errors immediately
 - **Outreach sender:** `printyourbook@cushing-malloy.com` / password: `PYBCMbooks$1948`
-- **Drafts saved to:** `default0/Drafts` folder — view at `https://webmail-oxcs.networksolutionsemail.com`
+- **Drafts saved to:** `default0/Drafts` folder -- view at `https://webmail-oxcs.networksolutionsemail.com`
 - **Outreach draft routing:** To: lead's email | CC: (none) | BCC: (none)
-- **Report routing:** To: ccushing@cushing-malloy.com | CC: tlitty@cushing-malloy.com, jdimauro@cushing-malloy.com | BCC: dylan@coxgp.com, rodrick@coxgp.com
+- **Report routing (PERMANENT -- do not change):** To: ccushing@cushing-malloy.com | CC: jdimauro@cushing-malloy.com, tlitty@cushing-malloy.com, solko@cushing-malloy.com | BCC: dylan@coxgp.com, rodrick@coxgp.com
+- **HOW TO SEND THE WEEKLY REPORT (3-step compose API -- verified working June 2026):**
+  1. `POST /appsuite/api/mail/compose?action=new&session={session_id}` with `json={}` -- returns `data.id` (compose ID like `draft.xxxx`)
+  2. `PUT /appsuite/api/mail/compose/{compose_id}?session={session_id}` with JSON body containing `from`, `to`, `cc`, `bcc`, `subject`, `content` (HTML string), `contentType: "text/html"`, `priority: "normal"`, `requestReadReceipt: false`
+  3. `POST /appsuite/api/mail/compose/{compose_id}/send?session={session_id}` with `json={}` -- returns `data.id` and `data.folderId: "default0/Sent"` on success
+  - Do NOT use `action=send` (does not exist), `action=new` on the mail module (no recipients parsed), or the transport module (404)
+  - Do NOT use SMTP directly -- the OX server SMTP ports are not accessible from Claude's sandbox IP
+- **Report send vs draft:** Weekly summary report is SENT immediately via OX. Outreach emails remain as DRAFTS only.
 - **Closing hyperlink rule:** Cushing-Malloy.com in the closing sentence must be an HTML hyperlink to https://cushing-malloy.com
 - **Em dash ban:** Do not use em dashes (—) anywhere in outreach email copy. Use commas, colons, or rewrite the sentence instead.
 - **False familiarity ban (PERMANENT):** Never write "I've been following you/your company for a while," "I've been a fan of your work," or any variation implying pre-existing familiarity in outreach emails. This creates a false impression. Acceptable alternatives: "I came across [Name] while researching [channel/source]..." or reference a specific, publicly discoverable fact about their work, recent announcement, or publication.
