@@ -9226,7 +9226,7 @@ function getVisibleRuns() {
   const today = new Date();
   today.setHours(23, 59, 59, 999); // include all of today
   return Object.keys(RUNS)
-    .filter(d => new Date(d) <= today)
+    .filter(d => new Date(d) <= new Date(today.getTime() + 14 * 24 * 60 * 60 * 1000))
     .sort((a, b) => b.localeCompare(a)); // newest first
 }
 
