@@ -541,6 +541,7 @@
       border: 1px solid var(--border);
       border-radius: 8px;
       overflow: hidden;
+      display: block;
     }
     .modal-drafted-email-label {
       font-size: 0.68rem;
@@ -556,6 +557,8 @@
       margin: 0;
       padding: 14px;
       background: #ffffff;
+      max-height: 380px;
+      overflow-y: auto;
     }
 
     /* ─── TOAST ─── */
@@ -1067,7 +1070,7 @@
       <div class="modal-pitch-label">⚡ Pitch Angle</div>
       <p id="modalPitch"></p>
     </div>
-    <div class="modal-drafted-email" id="modalDraftedEmail" style="display:none;">
+    <div class="modal-drafted-email" id="modalDraftedEmail">
       <div class="modal-drafted-email-label">✉ Drafted Email</div>
       <div class="modal-drafted-email-body" id="modalDraftedEmailBody"></div>
     </div>
@@ -8524,15 +8527,11 @@ function openModal(id) {
     </div>
   `;
 
-  // Drafted Email section
-  const draftEl = document.getElementById("modalDraftedEmail");
+  // Drafted Email section -- always visible
   const draftBody = document.getElementById("modalDraftedEmailBody");
-  if (l.drafted_email) {
-    draftBody.innerHTML = l.drafted_email;
-    draftEl.style.display = "block";
-  } else {
-    draftEl.style.display = "none";
-  }
+  draftBody.innerHTML = l.drafted_email
+    ? l.drafted_email
+    : '<p style="color:#999;font-size:0.85rem;margin:0;">No drafted email on file for this lead.</p>';
 
   document.getElementById("modalOverlay").classList.add("open");
 }
