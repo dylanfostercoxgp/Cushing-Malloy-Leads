@@ -1,17 +1,8 @@
-# Environment & secrets
-.env
-*.token
-.github-token
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Python
-__pycache__/
-*.pyc
-*.pyo
-
-# Temp files
-*.tmp
-*.bak
+00_Credentials/
+credentials.json
+github-token*
+suppression-list.json
+verification-log-*
+verification-results-*
+WEEKLY-PROCESS.md
+03_Documentation/

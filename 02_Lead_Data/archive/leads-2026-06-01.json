@@ -27,7 +27,7 @@
     "595",
     "596"
   ],
-  "summary_draft_id": "597",
+  "summary_draft_id": "604",
   "leads": [
     {
       "id": 1,
@@ -174,14 +174,14 @@
       "name": "Wesleyan University Press",
       "contact": "Oliver Egger",
       "title": "Assistant Editor, Poetry",
-      "email": "oliver.egger@weslpress.org",
+      "email": "oegger@wesleyan.edu",
       "location": "Middletown, CT",
       "titlesPerYear": 25,
       "score": 86,
       "tier": "High",
       "website": "https://www.weslpress.org",
       "notes": "University press at Wesleyan University, Middletown, CT. ~25 titles/year across poetry, music, dance, film. Oliver Egger is Assistant Editor focusing on poetry acquisitions. Director Suzanna Tamminen. Cardinal Poetry Prize active (open through Feb 2026). Active poetry list. 2025 Publishers Weekly Higher Learning feature. Borderline on title count but within <25 threshold.",
-      "oxDraftId": "587"
+      "oxDraftId": "599"
     },
     {
       "id": 12,
