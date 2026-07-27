@@ -987,7 +987,7 @@
     <div class="toolbar-left">
       <div class="filter-group">
         <span class="filter-label">Date</span>
-        <select class="date-selector" id="dateSelect"><option value="2026-07-06">July 6, 2026</option><option value="2026-06-29">June 29, 2026</option><option value="2026-06-22">June 22, 2026</option><option value="2026-06-15">June 15, 2026</option><option value="2026-06-08">June 8, 2026</option><option value="2026-06-01">June 1, 2026</option><option value="2026-05-27">May 27, 2026</option>
+        <select class="date-selector" id="dateSelect"><option value="2026-07-27">July 27, 2026</option><option value="2026-07-06">July 6, 2026</option><option value="2026-06-29">June 29, 2026</option><option value="2026-06-22">June 22, 2026</option><option value="2026-06-15">June 15, 2026</option><option value="2026-06-08">June 8, 2026</option><option value="2026-06-01">June 1, 2026</option><option value="2026-05-27">May 27, 2026</option>
 <option value="2026-05-11">May 11, 2026</option>
 <option value="2026-04-27">April 27, 2026</option>
           <option value="2026-04-20">April 20, 2026</option>
@@ -1154,6 +1154,991 @@
 //     Each run date key must be preserved permanently for historical reference
 //     and Quality Report continuity. New runs go at the top of this object.
 const RUNS = {
+  "2026-07-27": {
+    label: "July 27, 2026",
+    leads: [
+      {
+        id: 1, score: 8, priorityClass: "high",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Milk and Cake Press",
+        source: "Press About page",
+        email: "kim@milkandcakepress.com",
+        phone: "",
+        website: "https://milkandcakepress.com",
+        notes: "Family-run, all-volunteer nonprofit micro-press publishing full-length poetry collections and chapbooks, based in Hamilton, Ohio. Its reading period runs early in the year, and its in-house, low-volume production is a close match for short-run manufacturing.",
+        pitch: "Volunteer poetry micro-press in Ohio with in-house, low-volume chapbook and collection output well suited to short runs.",
+        drafted_email: `<div style="font-family:Arial,sans-serif;font-size:14px;color:#222;line-height:1.6;max-width:600px;">
+<p>Dear Kim,</p>
+<p>This note is a simple introduction. Milk and Cake Press is an independent press publishing poetry, and presses your size are exactly the kind of work we take on. We would like to be one of the printers you ask for a quote when your next season is set. That is the whole reason we are writing today.</p>
+<p>I'm reaching out from Cushing-Malloy in Ann Arbor, Michigan. We've been manufacturing books for independent and university presses since 1948.</p>
+<p>Here's what makes us different:</p>
+<ul>
+<li>One person manages your project start to finish: same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.</li>
+<li>20 working days from approved files to finished books, delivered to your door.</li>
+<li>Short-run poetry collections and chapbooks printed in the quantities you actually need, with no minimum that forces you to overprint.</li>
+</ul>
+<p>Not sure where to start? That's exactly why we're here. We'd love to talk through your options and provide a quote for your next book. To get started, just reply to this email or click <a href="https://cushing-malloy.com/request-quote/" style="color:#3787c4;">https://cushing-malloy.com/request-quote/</a> to submit your details.</p>
+<p>Warm regards,</p>
+<div style="margin-top:24px;padding-top:14px;border-top:1px solid #cccccc;max-width:500px;font-family:Arial,sans-serif;">
+  <table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,sans-serif;">
+    <tr>
+      <td style="vertical-align:top;border-right:1px solid #cccccc;padding-right:16px;">
+        <div style="font-size:15px;font-weight:700;color:#1a1a1a;white-space:nowrap;">Steve Olko</div>
+        <div style="font-size:10.5px;font-weight:700;color:#3787c4;text-transform:uppercase;letter-spacing:1px;margin-top:3px;white-space:nowrap;">Director of Sales</div>
+      </td>
+      <td style="padding-left:16px;vertical-align:top;">
+        <table cellpadding="0" cellspacing="0" border="0" style="font-size:12px;color:#444;line-height:1.8;">
+          <tr><td><a href="mailto:solko@cushing-malloy.com" style="color:#444;text-decoration:none;">solko@cushing-malloy.com</a></td></tr>
+          <tr><td style="white-space:nowrap;">P: (810) 296-7133</td></tr>
+          <tr><td>Cushing-Malloy, Inc.&nbsp;&nbsp;|&nbsp;&nbsp;1350 N. Main, Ann Arbor, MI 48104</td></tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:10px;">
+        <div style="font-size:11px;color:#888;">
+          <a href="https://cushing-malloy.com" style="color:#3787c4;text-decoration:none;font-weight:600;">cushing-malloy.com</a>
+          &nbsp;&nbsp;&#8211;&nbsp;&nbsp;Where Books Are Bound For Greatness&reg;
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>`
+      },
+      {
+        id: 2, score: 8, priorityClass: "high",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Nixes Mate Books",
+        source: "Press About page (mailto)",
+        email: "annie@nixesmate.pub",
+        phone: "",
+        website: "https://nixesmate.pub",
+        notes: "Small Boston-area press publishing poetry and fiction books, chapbooks, and broadsides since 2016. Its mix of short-run formats fits a manufacturer that handles small quantities across trim sizes.",
+        pitch: "Boston indie issuing books, chapbooks, and broadsides, a mixed short-run list that suits one dedicated printer.",
+        drafted_email: `<div style="font-family:Arial,sans-serif;font-size:14px;color:#222;line-height:1.6;max-width:600px;">
+<p>Dear Anne,</p>
+<p>We are writing with one thing in mind, your next print run. Nixes Mate Books is an independent press publishing poetry and fiction, and we do not know where you are in your production calendar. If you are planning titles now, we would be glad to quote them; if not, file us away for when you are. Either way, we wanted to introduce ourselves before your busy stretch arrives.</p>
+<p>I'm reaching out from Cushing-Malloy in Ann Arbor, Michigan. We've been manufacturing books for independent and university presses since 1948.</p>
+<p>Here's what makes us different:</p>
+<ul>
+<li>One person manages your project start to finish: same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.</li>
+<li>20 working days from approved files to finished books, delivered to your door.</li>
+<li>Chapbooks, full-length books, and broadsides handled under one roof, so a mixed list stays with a single printer.</li>
+</ul>
+<p>Not sure where to start? That's exactly why we're here. We'd love to talk through your options and provide a quote for your next book. To get started, just reply to this email or click <a href="https://cushing-malloy.com/request-quote/" style="color:#3787c4;">https://cushing-malloy.com/request-quote/</a> to submit your details.</p>
+<p>Warm regards,</p>
+<div style="margin-top:24px;padding-top:14px;border-top:1px solid #cccccc;max-width:500px;font-family:Arial,sans-serif;">
+  <table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,sans-serif;">
+    <tr>
+      <td style="vertical-align:top;border-right:1px solid #cccccc;padding-right:16px;">
+        <div style="font-size:15px;font-weight:700;color:#1a1a1a;white-space:nowrap;">Steve Olko</div>
+        <div style="font-size:10.5px;font-weight:700;color:#3787c4;text-transform:uppercase;letter-spacing:1px;margin-top:3px;white-space:nowrap;">Director of Sales</div>
+      </td>
+      <td style="padding-left:16px;vertical-align:top;">
+        <table cellpadding="0" cellspacing="0" border="0" style="font-size:12px;color:#444;line-height:1.8;">
+          <tr><td><a href="mailto:solko@cushing-malloy.com" style="color:#444;text-decoration:none;">solko@cushing-malloy.com</a></td></tr>
+          <tr><td style="white-space:nowrap;">P: (810) 296-7133</td></tr>
+          <tr><td>Cushing-Malloy, Inc.&nbsp;&nbsp;|&nbsp;&nbsp;1350 N. Main, Ann Arbor, MI 48104</td></tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:10px;">
+        <div style="font-size:11px;color:#888;">
+          <a href="https://cushing-malloy.com" style="color:#3787c4;text-decoration:none;font-weight:600;">cushing-malloy.com</a>
+          &nbsp;&nbsp;&#8211;&nbsp;&nbsp;Where Books Are Bound For Greatness&reg;
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>`
+      },
+      {
+        id: 3, score: 9, priorityClass: "high",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Paul Dry Books",
+        source: "Press About-us page",
+        email: "pdry@pauldrybooks.com",
+        phone: "",
+        website: "https://www.pauldrybooks.com",
+        notes: "Independent Philadelphia literary house publishing fiction, essays, and memoir, and reprinting worthy out-of-print titles, distributed through Consortium. Its backlist-driven model generates recurring small reprint work.",
+        pitch: "Philadelphia literary publisher with a backlist-reprint model that produces steady short reprint runs.",
+        drafted_email: `<div style="font-family:Arial,sans-serif;font-size:14px;color:#222;line-height:1.6;max-width:600px;">
+<p>Dear Paul,</p>
+<p>Most presses find their printer through a referral from another press. We would rather earn that introduction directly. Paul Dry Books is an independent publisher of fiction, essays, and memoir, and short-run literary printing is what we do all day. If our name is worth keeping, we would like to be on your list the next time you need a quote.</p>
+<p>I'm reaching out from Cushing-Malloy in Ann Arbor, Michigan. We've been manufacturing books for independent and university presses since 1948.</p>
+<p>Here's what makes us different:</p>
+<ul>
+<li>One person manages your project start to finish: same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.</li>
+<li>20 working days from approved files to finished books, delivered to your door.</li>
+<li>Backlist reprints in small quantities, so out-of-print titles you bring back stay available without tying up cash in inventory.</li>
+</ul>
+<p>Not sure where to start? That's exactly why we're here. We'd love to talk through your options and provide a quote for your next book. To get started, just reply to this email or click <a href="https://cushing-malloy.com/request-quote/" style="color:#3787c4;">https://cushing-malloy.com/request-quote/</a> to submit your details.</p>
+<p>Warm regards,</p>
+<div style="margin-top:24px;padding-top:14px;border-top:1px solid #cccccc;max-width:500px;font-family:Arial,sans-serif;">
+  <table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,sans-serif;">
+    <tr>
+      <td style="vertical-align:top;border-right:1px solid #cccccc;padding-right:16px;">
+        <div style="font-size:15px;font-weight:700;color:#1a1a1a;white-space:nowrap;">Steve Olko</div>
+        <div style="font-size:10.5px;font-weight:700;color:#3787c4;text-transform:uppercase;letter-spacing:1px;margin-top:3px;white-space:nowrap;">Director of Sales</div>
+      </td>
+      <td style="padding-left:16px;vertical-align:top;">
+        <table cellpadding="0" cellspacing="0" border="0" style="font-size:12px;color:#444;line-height:1.8;">
+          <tr><td><a href="mailto:solko@cushing-malloy.com" style="color:#444;text-decoration:none;">solko@cushing-malloy.com</a></td></tr>
+          <tr><td style="white-space:nowrap;">P: (810) 296-7133</td></tr>
+          <tr><td>Cushing-Malloy, Inc.&nbsp;&nbsp;|&nbsp;&nbsp;1350 N. Main, Ann Arbor, MI 48104</td></tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:10px;">
+        <div style="font-size:11px;color:#888;">
+          <a href="https://cushing-malloy.com" style="color:#3787c4;text-decoration:none;font-weight:600;">cushing-malloy.com</a>
+          &nbsp;&nbsp;&#8211;&nbsp;&nbsp;Where Books Are Bound For Greatness&reg;
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>`
+      },
+      {
+        id: 4, score: 9, priorityClass: "high",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "University of North Texas Press",
+        source: "UNT directory / press staff",
+        email: "ronald.chrisman@unt.edu",
+        phone: "",
+        website: "https://untpress.unt.edu",
+        notes: "Small scholarly and trade university press known for the Vassar Miller Prize in Poetry alongside Western and Texas regional titles. Poetry and regional trade books at modest print runs suit short-run production.",
+        pitch: "University press pairing an annual poetry prize with regional trade titles, both a fit for right-sized runs.",
+        drafted_email: `<div style="font-family:Arial,sans-serif;font-size:14px;color:#222;line-height:1.6;max-width:600px;">
+<p>Dear Ronald,</p>
+<p>This is an introduction, nothing more. The University of North Texas Press is a university press publishing poetry and regional nonfiction, and presses running lists your size are the work we know best. We would like to be one of the printers you quote for an upcoming title. That is the entire ask.</p>
+<p>I'm reaching out from Cushing-Malloy in Ann Arbor, Michigan. We've been manufacturing books for independent and university presses since 1948.</p>
+<p>Here's what makes us different:</p>
+<ul>
+<li>One person manages your project start to finish: same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.</li>
+<li>20 working days from approved files to finished books, delivered to your door.</li>
+<li>Prize volumes and regional titles printed in right-sized runs, whether it is a single award winner or a short regional history.</li>
+</ul>
+<p>Not sure where to start? That's exactly why we're here. We'd love to talk through your options and provide a quote for your next book. To get started, just reply to this email or click <a href="https://cushing-malloy.com/request-quote/" style="color:#3787c4;">https://cushing-malloy.com/request-quote/</a> to submit your details.</p>
+<p>Warm regards,</p>
+<div style="margin-top:24px;padding-top:14px;border-top:1px solid #cccccc;max-width:500px;font-family:Arial,sans-serif;">
+  <table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,sans-serif;">
+    <tr>
+      <td style="vertical-align:top;border-right:1px solid #cccccc;padding-right:16px;">
+        <div style="font-size:15px;font-weight:700;color:#1a1a1a;white-space:nowrap;">Steve Olko</div>
+        <div style="font-size:10.5px;font-weight:700;color:#3787c4;text-transform:uppercase;letter-spacing:1px;margin-top:3px;white-space:nowrap;">Director of Sales</div>
+      </td>
+      <td style="padding-left:16px;vertical-align:top;">
+        <table cellpadding="0" cellspacing="0" border="0" style="font-size:12px;color:#444;line-height:1.8;">
+          <tr><td><a href="mailto:solko@cushing-malloy.com" style="color:#444;text-decoration:none;">solko@cushing-malloy.com</a></td></tr>
+          <tr><td style="white-space:nowrap;">P: (810) 296-7133</td></tr>
+          <tr><td>Cushing-Malloy, Inc.&nbsp;&nbsp;|&nbsp;&nbsp;1350 N. Main, Ann Arbor, MI 48104</td></tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:10px;">
+        <div style="font-size:11px;color:#888;">
+          <a href="https://cushing-malloy.com" style="color:#3787c4;text-decoration:none;font-weight:600;">cushing-malloy.com</a>
+          &nbsp;&nbsp;&#8211;&nbsp;&nbsp;Where Books Are Bound For Greatness&reg;
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>`
+      },
+      {
+        id: 5, score: 8, priorityClass: "high",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "University of Tampa Press",
+        source: "Press masthead",
+        email: "jayaja@ut.edu",
+        phone: "",
+        website: "https://utampapress.org",
+        notes: "University-affiliated literary press publishing poetry and fiction, including the Tampa Review Prize for Poetry, in clothbound and paperback editions. Its very small annual output makes it a natural short-run prospect.",
+        pitch: "University literary press with prize-driven poetry and fiction titles produced in small clothbound and paperback runs.",
+        drafted_email: `<div style="font-family:Arial,sans-serif;font-size:14px;color:#222;line-height:1.6;max-width:600px;">
+<p>Dear Jay,</p>
+<p>We are writing with your next print run in mind. The University of Tampa Press is a university press publishing poetry and fiction, and we do not presume to know your production schedule. If a season is being planned now, we would like the chance to quote it; if not, keep us on file for when it is. We wanted to introduce ourselves ahead of time.</p>
+<p>I'm reaching out from Cushing-Malloy in Ann Arbor, Michigan. We've been manufacturing books for independent and university presses since 1948.</p>
+<p>Here's what makes us different:</p>
+<ul>
+<li>One person manages your project start to finish: same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.</li>
+<li>20 working days from approved files to finished books, delivered to your door.</li>
+<li>Clothbound and paperback editions produced to a consistent standard, run after run.</li>
+</ul>
+<p>Not sure where to start? That's exactly why we're here. We'd love to talk through your options and provide a quote for your next book. To get started, just reply to this email or click <a href="https://cushing-malloy.com/request-quote/" style="color:#3787c4;">https://cushing-malloy.com/request-quote/</a> to submit your details.</p>
+<p>Warm regards,</p>
+<div style="margin-top:24px;padding-top:14px;border-top:1px solid #cccccc;max-width:500px;font-family:Arial,sans-serif;">
+  <table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,sans-serif;">
+    <tr>
+      <td style="vertical-align:top;border-right:1px solid #cccccc;padding-right:16px;">
+        <div style="font-size:15px;font-weight:700;color:#1a1a1a;white-space:nowrap;">Steve Olko</div>
+        <div style="font-size:10.5px;font-weight:700;color:#3787c4;text-transform:uppercase;letter-spacing:1px;margin-top:3px;white-space:nowrap;">Director of Sales</div>
+      </td>
+      <td style="padding-left:16px;vertical-align:top;">
+        <table cellpadding="0" cellspacing="0" border="0" style="font-size:12px;color:#444;line-height:1.8;">
+          <tr><td><a href="mailto:solko@cushing-malloy.com" style="color:#444;text-decoration:none;">solko@cushing-malloy.com</a></td></tr>
+          <tr><td style="white-space:nowrap;">P: (810) 296-7133</td></tr>
+          <tr><td>Cushing-Malloy, Inc.&nbsp;&nbsp;|&nbsp;&nbsp;1350 N. Main, Ann Arbor, MI 48104</td></tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:10px;">
+        <div style="font-size:11px;color:#888;">
+          <a href="https://cushing-malloy.com" style="color:#3787c4;text-decoration:none;font-weight:600;">cushing-malloy.com</a>
+          &nbsp;&nbsp;&#8211;&nbsp;&nbsp;Where Books Are Bound For Greatness&reg;
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>`
+      },
+      {
+        id: 6, score: 9, priorityClass: "high",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Gallaudet University Press",
+        source: "Gallaudet UP contact page",
+        email: "katie.lee@gallaudet.edu",
+        phone: "",
+        website: "https://gupress.gallaudet.edu",
+        notes: "University press specializing in Deaf studies, ASL, and deaf-culture scholarly and trade titles from Washington, DC. Its focused, niche list runs in modest quantities that fit short-run manufacturing.",
+        pitch: "Washington, DC university press with a focused Deaf-studies list printed in modest, short-run quantities.",
+        drafted_email: `<div style="font-family:Arial,sans-serif;font-size:14px;color:#222;line-height:1.6;max-width:600px;">
+<p>Dear Katie,</p>
+<p>Presses usually find a printer because another press pointed them to one. We would rather make that introduction ourselves. Gallaudet University Press is a university press with a focused subject list, and short-run printing is the center of what we do. If we earn a place on your list, we would like to quote your next book.</p>
+<p>I'm reaching out from Cushing-Malloy in Ann Arbor, Michigan. We've been manufacturing books for independent and university presses since 1948.</p>
+<p>Here's what makes us different:</p>
+<ul>
+<li>One person manages your project start to finish: same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.</li>
+<li>20 working days from approved files to finished books, delivered to your door.</li>
+<li>Focused subject lists printed in modest quantities, so a specialized title does not require a large print commitment.</li>
+</ul>
+<p>Not sure where to start? That's exactly why we're here. We'd love to talk through your options and provide a quote for your next book. To get started, just reply to this email or click <a href="https://cushing-malloy.com/request-quote/" style="color:#3787c4;">https://cushing-malloy.com/request-quote/</a> to submit your details.</p>
+<p>Warm regards,</p>
+<div style="margin-top:24px;padding-top:14px;border-top:1px solid #cccccc;max-width:500px;font-family:Arial,sans-serif;">
+  <table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,sans-serif;">
+    <tr>
+      <td style="vertical-align:top;border-right:1px solid #cccccc;padding-right:16px;">
+        <div style="font-size:15px;font-weight:700;color:#1a1a1a;white-space:nowrap;">Steve Olko</div>
+        <div style="font-size:10.5px;font-weight:700;color:#3787c4;text-transform:uppercase;letter-spacing:1px;margin-top:3px;white-space:nowrap;">Director of Sales</div>
+      </td>
+      <td style="padding-left:16px;vertical-align:top;">
+        <table cellpadding="0" cellspacing="0" border="0" style="font-size:12px;color:#444;line-height:1.8;">
+          <tr><td><a href="mailto:solko@cushing-malloy.com" style="color:#444;text-decoration:none;">solko@cushing-malloy.com</a></td></tr>
+          <tr><td style="white-space:nowrap;">P: (810) 296-7133</td></tr>
+          <tr><td>Cushing-Malloy, Inc.&nbsp;&nbsp;|&nbsp;&nbsp;1350 N. Main, Ann Arbor, MI 48104</td></tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:10px;">
+        <div style="font-size:11px;color:#888;">
+          <a href="https://cushing-malloy.com" style="color:#3787c4;text-decoration:none;font-weight:600;">cushing-malloy.com</a>
+          &nbsp;&nbsp;&#8211;&nbsp;&nbsp;Where Books Are Bound For Greatness&reg;
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>`
+      },
+      {
+        id: 7, score: 9, priorityClass: "high",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Bucknell University Press",
+        source: "Bucknell UP staff page",
+        email: "seg016@bucknell.edu",
+        phone: "",
+        website: "https://www.bucknell.edu/azdirectory/bucknell-university-press",
+        notes: "Small scholarly press in Lewisburg, Pennsylvania focused on eighteenth-century, Iberian, and literary studies, with editorial decisions made in-house. Short monograph runs for defined readerships suit short-run production.",
+        pitch: "In-house-run scholarly press whose short monograph runs are a natural fit for economical short-run printing.",
+        drafted_email: `<div style="font-family:Arial,sans-serif;font-size:14px;color:#222;line-height:1.6;max-width:600px;">
+<p>Dear Suzanne,</p>
+<p>We hear the same thing across the trade: as larger printers raise their minimums, presses running smaller quantities have fewer places to turn. Bucknell University Press is a university press publishing scholarly titles, and short runs are the center of our work rather than the exception. We would like to introduce ourselves as one more option for an upcoming book. That is the entire purpose of this note.</p>
+<p>I'm reaching out from Cushing-Malloy in Ann Arbor, Michigan. We've been manufacturing books for independent and university presses since 1948.</p>
+<p>Here's what makes us different:</p>
+<ul>
+<li>One person manages your project start to finish: same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.</li>
+<li>20 working days from approved files to finished books, delivered to your door.</li>
+<li>Short scholarly runs printed economically, so a monograph with a defined readership pencils out.</li>
+</ul>
+<p>Not sure where to start? That's exactly why we're here. We'd love to talk through your options and provide a quote for your next book. To get started, just reply to this email or click <a href="https://cushing-malloy.com/request-quote/" style="color:#3787c4;">https://cushing-malloy.com/request-quote/</a> to submit your details.</p>
+<p>Warm regards,</p>
+<div style="margin-top:24px;padding-top:14px;border-top:1px solid #cccccc;max-width:500px;font-family:Arial,sans-serif;">
+  <table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,sans-serif;">
+    <tr>
+      <td style="vertical-align:top;border-right:1px solid #cccccc;padding-right:16px;">
+        <div style="font-size:15px;font-weight:700;color:#1a1a1a;white-space:nowrap;">Steve Olko</div>
+        <div style="font-size:10.5px;font-weight:700;color:#3787c4;text-transform:uppercase;letter-spacing:1px;margin-top:3px;white-space:nowrap;">Director of Sales</div>
+      </td>
+      <td style="padding-left:16px;vertical-align:top;">
+        <table cellpadding="0" cellspacing="0" border="0" style="font-size:12px;color:#444;line-height:1.8;">
+          <tr><td><a href="mailto:solko@cushing-malloy.com" style="color:#444;text-decoration:none;">solko@cushing-malloy.com</a></td></tr>
+          <tr><td style="white-space:nowrap;">P: (810) 296-7133</td></tr>
+          <tr><td>Cushing-Malloy, Inc.&nbsp;&nbsp;|&nbsp;&nbsp;1350 N. Main, Ann Arbor, MI 48104</td></tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:10px;">
+        <div style="font-size:11px;color:#888;">
+          <a href="https://cushing-malloy.com" style="color:#3787c4;text-decoration:none;font-weight:600;">cushing-malloy.com</a>
+          &nbsp;&nbsp;&#8211;&nbsp;&nbsp;Where Books Are Bound For Greatness&reg;
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>`
+      },
+      {
+        id: 8, score: 8, priorityClass: "high",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Ornithopter Press",
+        source: "Press contact page / LinkedIn",
+        email: "mark@ornithopterpress.com",
+        phone: "",
+        website: "https://www.ornithopterpress.com",
+        notes: "Independent poetry press publishing individual and hybrid collections since 2014, distributed by Ingram from the Washington, DC area. Its low annual output of perfect-bound paperbacks fits short-run printing.",
+        pitch: "Independent poetry press with a low-volume, perfect-bound paperback list ideal for short digital or offset runs.",
+        drafted_email: `<div style="font-family:Arial,sans-serif;font-size:14px;color:#222;line-height:1.6;max-width:600px;">
+<p>Dear Mark,</p>
+<p>This note is a straightforward introduction. Ornithopter Press is an independent poetry press, and presses your size are exactly who we serve. We would like to be one of the printers you ask for a quote when your next collection is ready. That is the whole reason we are writing.</p>
+<p>I'm reaching out from Cushing-Malloy in Ann Arbor, Michigan. We've been manufacturing books for independent and university presses since 1948.</p>
+<p>Here's what makes us different:</p>
+<ul>
+<li>One person manages your project start to finish: same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.</li>
+<li>20 working days from approved files to finished books, delivered to your door.</li>
+<li>Perfect-bound poetry collections in low quantities, printed cleanly whether the run is fifty copies or five hundred.</li>
+</ul>
+<p>Not sure where to start? That's exactly why we're here. We'd love to talk through your options and provide a quote for your next book. To get started, just reply to this email or click <a href="https://cushing-malloy.com/request-quote/" style="color:#3787c4;">https://cushing-malloy.com/request-quote/</a> to submit your details.</p>
+<p>Warm regards,</p>
+<div style="margin-top:24px;padding-top:14px;border-top:1px solid #cccccc;max-width:500px;font-family:Arial,sans-serif;">
+  <table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,sans-serif;">
+    <tr>
+      <td style="vertical-align:top;border-right:1px solid #cccccc;padding-right:16px;">
+        <div style="font-size:15px;font-weight:700;color:#1a1a1a;white-space:nowrap;">Steve Olko</div>
+        <div style="font-size:10.5px;font-weight:700;color:#3787c4;text-transform:uppercase;letter-spacing:1px;margin-top:3px;white-space:nowrap;">Director of Sales</div>
+      </td>
+      <td style="padding-left:16px;vertical-align:top;">
+        <table cellpadding="0" cellspacing="0" border="0" style="font-size:12px;color:#444;line-height:1.8;">
+          <tr><td><a href="mailto:solko@cushing-malloy.com" style="color:#444;text-decoration:none;">solko@cushing-malloy.com</a></td></tr>
+          <tr><td style="white-space:nowrap;">P: (810) 296-7133</td></tr>
+          <tr><td>Cushing-Malloy, Inc.&nbsp;&nbsp;|&nbsp;&nbsp;1350 N. Main, Ann Arbor, MI 48104</td></tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:10px;">
+        <div style="font-size:11px;color:#888;">
+          <a href="https://cushing-malloy.com" style="color:#3787c4;text-decoration:none;font-weight:600;">cushing-malloy.com</a>
+          &nbsp;&nbsp;&#8211;&nbsp;&nbsp;Where Books Are Bound For Greatness&reg;
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>`
+      },
+      {
+        id: 9, score: 9, priorityClass: "high",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Futurepoem",
+        source: "Press contact page",
+        email: "dan@futurepoem.com",
+        phone: "",
+        website: "https://www.futurepoem.com",
+        notes: "New York not-for-profit publishing innovative poetry, prose, and hybrid literature since 2002. Its small, design-forward annual list of trade paperbacks is a strong short-run fit.",
+        pitch: "NYC nonprofit poetry and hybrid press with a tiny, design-forward annual list suited to careful short runs.",
+        drafted_email: `<div style="font-family:Arial,sans-serif;font-size:14px;color:#222;line-height:1.6;max-width:600px;">
+<p>Dear Dan,</p>
+<p>We are writing with one thing in mind, your next print run. Futurepoem is an independent, not-for-profit press publishing poetry and hybrid writing, and we do not know where you are in your production calendar. If you are planning a title now, we would like to quote it; if not, file us away for when you are. We wanted to introduce ourselves before the season gets busy.</p>
+<p>I'm reaching out from Cushing-Malloy in Ann Arbor, Michigan. We've been manufacturing books for independent and university presses since 1948.</p>
+<p>Here's what makes us different:</p>
+<ul>
+<li>One person manages your project start to finish: same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.</li>
+<li>20 working days from approved files to finished books, delivered to your door.</li>
+<li>Hybrid and experimental layouts produced with care, so an unusual trim or interior prints the way you designed it.</li>
+</ul>
+<p>Not sure where to start? That's exactly why we're here. We'd love to talk through your options and provide a quote for your next book. To get started, just reply to this email or click <a href="https://cushing-malloy.com/request-quote/" style="color:#3787c4;">https://cushing-malloy.com/request-quote/</a> to submit your details.</p>
+<p>Warm regards,</p>
+<div style="margin-top:24px;padding-top:14px;border-top:1px solid #cccccc;max-width:500px;font-family:Arial,sans-serif;">
+  <table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,sans-serif;">
+    <tr>
+      <td style="vertical-align:top;border-right:1px solid #cccccc;padding-right:16px;">
+        <div style="font-size:15px;font-weight:700;color:#1a1a1a;white-space:nowrap;">Steve Olko</div>
+        <div style="font-size:10.5px;font-weight:700;color:#3787c4;text-transform:uppercase;letter-spacing:1px;margin-top:3px;white-space:nowrap;">Director of Sales</div>
+      </td>
+      <td style="padding-left:16px;vertical-align:top;">
+        <table cellpadding="0" cellspacing="0" border="0" style="font-size:12px;color:#444;line-height:1.8;">
+          <tr><td><a href="mailto:solko@cushing-malloy.com" style="color:#444;text-decoration:none;">solko@cushing-malloy.com</a></td></tr>
+          <tr><td style="white-space:nowrap;">P: (810) 296-7133</td></tr>
+          <tr><td>Cushing-Malloy, Inc.&nbsp;&nbsp;|&nbsp;&nbsp;1350 N. Main, Ann Arbor, MI 48104</td></tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:10px;">
+        <div style="font-size:11px;color:#888;">
+          <a href="https://cushing-malloy.com" style="color:#3787c4;text-decoration:none;font-weight:600;">cushing-malloy.com</a>
+          &nbsp;&nbsp;&#8211;&nbsp;&nbsp;Where Books Are Bound For Greatness&reg;
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>`
+      },
+      {
+        id: 10, score: 9, priorityClass: "high",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Trinity University Press",
+        source: "Trinity UP staff page",
+        email: "tpayton@trinity.edu",
+        phone: "",
+        website: "https://tupress.org",
+        notes: "Independent university press in San Antonio publishing literary nonfiction, nature and place writing, and regional titles, founded 1958. Its short annual list of trade titles is a good short-run candidate.",
+        pitch: "San Antonio university press with a short literary-nonfiction and place-writing list suited to short runs.",
+        drafted_email: `<div style="font-family:Arial,sans-serif;font-size:14px;color:#222;line-height:1.6;max-width:600px;">
+<p>Dear Tom,</p>
+<p>Most presses find their printer through a referral from another press. We would rather earn that introduction directly. Trinity University Press is a university press publishing literary nonfiction, and short-run work is what we do all day. If our name is worth keeping, we would like to be on your list the next time you need a quote.</p>
+<p>I'm reaching out from Cushing-Malloy in Ann Arbor, Michigan. We've been manufacturing books for independent and university presses since 1948.</p>
+<p>Here's what makes us different:</p>
+<ul>
+<li>One person manages your project start to finish: same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.</li>
+<li>20 working days from approved files to finished books, delivered to your door.</li>
+<li>Illustrated and text titles both handled in-house, so a nature book and a straight prose book can share one printer.</li>
+</ul>
+<p>Not sure where to start? That's exactly why we're here. We'd love to talk through your options and provide a quote for your next book. To get started, just reply to this email or click <a href="https://cushing-malloy.com/request-quote/" style="color:#3787c4;">https://cushing-malloy.com/request-quote/</a> to submit your details.</p>
+<p>Warm regards,</p>
+<div style="margin-top:24px;padding-top:14px;border-top:1px solid #cccccc;max-width:500px;font-family:Arial,sans-serif;">
+  <table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,sans-serif;">
+    <tr>
+      <td style="vertical-align:top;border-right:1px solid #cccccc;padding-right:16px;">
+        <div style="font-size:15px;font-weight:700;color:#1a1a1a;white-space:nowrap;">Steve Olko</div>
+        <div style="font-size:10.5px;font-weight:700;color:#3787c4;text-transform:uppercase;letter-spacing:1px;margin-top:3px;white-space:nowrap;">Director of Sales</div>
+      </td>
+      <td style="padding-left:16px;vertical-align:top;">
+        <table cellpadding="0" cellspacing="0" border="0" style="font-size:12px;color:#444;line-height:1.8;">
+          <tr><td><a href="mailto:solko@cushing-malloy.com" style="color:#444;text-decoration:none;">solko@cushing-malloy.com</a></td></tr>
+          <tr><td style="white-space:nowrap;">P: (810) 296-7133</td></tr>
+          <tr><td>Cushing-Malloy, Inc.&nbsp;&nbsp;|&nbsp;&nbsp;1350 N. Main, Ann Arbor, MI 48104</td></tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:10px;">
+        <div style="font-size:11px;color:#888;">
+          <a href="https://cushing-malloy.com" style="color:#3787c4;text-decoration:none;font-weight:600;">cushing-malloy.com</a>
+          &nbsp;&nbsp;&#8211;&nbsp;&nbsp;Where Books Are Bound For Greatness&reg;
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>`
+      },
+      {
+        id: 11, score: 7, priorityClass: "medium",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Deerbrook Editions",
+        source: "Press blog / masthead",
+        email: "jeff@deerbrookeditions.com",
+        phone: "",
+        website: "https://www.deerbrookeditions.com",
+        notes: "Independent Maine literary press publishing well-designed poetry and fiction paperbacks since 2002, run single-handedly by its founder. Its design-forward, low-volume list fits short-run printing.",
+        pitch: "Founder-run Maine press with design-forward, low-volume poetry and fiction paperbacks suited to short runs.",
+        drafted_email: `<div style="font-family:Arial,sans-serif;font-size:14px;color:#222;line-height:1.6;max-width:600px;">
+<p>Dear Jeffrey,</p>
+<p>This is an introduction, nothing more. Deerbrook Editions is an independent literary press publishing poetry and fiction, and presses your size are the work we take on most. We would like to be one of the printers you quote when your next book is ready. That is the entire ask.</p>
+<p>I'm reaching out from Cushing-Malloy in Ann Arbor, Michigan. We've been manufacturing books for independent and university presses since 1948.</p>
+<p>Here's what makes us different:</p>
+<ul>
+<li>One person manages your project start to finish: same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.</li>
+<li>20 working days from approved files to finished books, delivered to your door.</li>
+<li>Design-forward paperbacks printed to match the look you set, with proofs you approve before we run.</li>
+</ul>
+<p>Not sure where to start? That's exactly why we're here. We'd love to talk through your options and provide a quote for your next book. To get started, just reply to this email or click <a href="https://cushing-malloy.com/request-quote/" style="color:#3787c4;">https://cushing-malloy.com/request-quote/</a> to submit your details.</p>
+<p>Warm regards,</p>
+<div style="margin-top:24px;padding-top:14px;border-top:1px solid #cccccc;max-width:500px;font-family:Arial,sans-serif;">
+  <table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,sans-serif;">
+    <tr>
+      <td style="vertical-align:top;border-right:1px solid #cccccc;padding-right:16px;">
+        <div style="font-size:15px;font-weight:700;color:#1a1a1a;white-space:nowrap;">Steve Olko</div>
+        <div style="font-size:10.5px;font-weight:700;color:#3787c4;text-transform:uppercase;letter-spacing:1px;margin-top:3px;white-space:nowrap;">Director of Sales</div>
+      </td>
+      <td style="padding-left:16px;vertical-align:top;">
+        <table cellpadding="0" cellspacing="0" border="0" style="font-size:12px;color:#444;line-height:1.8;">
+          <tr><td><a href="mailto:solko@cushing-malloy.com" style="color:#444;text-decoration:none;">solko@cushing-malloy.com</a></td></tr>
+          <tr><td style="white-space:nowrap;">P: (810) 296-7133</td></tr>
+          <tr><td>Cushing-Malloy, Inc.&nbsp;&nbsp;|&nbsp;&nbsp;1350 N. Main, Ann Arbor, MI 48104</td></tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:10px;">
+        <div style="font-size:11px;color:#888;">
+          <a href="https://cushing-malloy.com" style="color:#3787c4;text-decoration:none;font-weight:600;">cushing-malloy.com</a>
+          &nbsp;&nbsp;&#8211;&nbsp;&nbsp;Where Books Are Bound For Greatness&reg;
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>`
+      },
+      {
+        id: 12, score: 8, priorityClass: "high",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Roof Books",
+        source: "Segue Foundation / press about",
+        email: "james@roofbooks.com",
+        phone: "",
+        website: "https://www.roofbooks.com",
+        notes: "Long-running New York poetry imprint of the nonprofit Segue Foundation, publishing experimental poetry and poetics since 1976. Its consistent small annual program suits short-run offset and digital printing.",
+        pitch: "Established NYC experimental-poetry imprint with a consistent small annual list built for short runs.",
+        drafted_email: `<div style="font-family:Arial,sans-serif;font-size:14px;color:#222;line-height:1.6;max-width:600px;">
+<p>Dear James,</p>
+<p>We are writing with your next print run in mind. Roof Books is an independent poetry press, and we do not know where you sit in your production calendar. If a title is being planned now, we would be glad to quote it; if not, keep us on file for when you are. Either way, we wanted to introduce ourselves early.</p>
+<p>I'm reaching out from Cushing-Malloy in Ann Arbor, Michigan. We've been manufacturing books for independent and university presses since 1948.</p>
+<p>Here's what makes us different:</p>
+<ul>
+<li>One person manages your project start to finish: same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.</li>
+<li>20 working days from approved files to finished books, delivered to your door.</li>
+<li>Short poetry and poetics runs printed on a predictable schedule, so each title moves without bottlenecks.</li>
+</ul>
+<p>Not sure where to start? That's exactly why we're here. We'd love to talk through your options and provide a quote for your next book. To get started, just reply to this email or click <a href="https://cushing-malloy.com/request-quote/" style="color:#3787c4;">https://cushing-malloy.com/request-quote/</a> to submit your details.</p>
+<p>Warm regards,</p>
+<div style="margin-top:24px;padding-top:14px;border-top:1px solid #cccccc;max-width:500px;font-family:Arial,sans-serif;">
+  <table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,sans-serif;">
+    <tr>
+      <td style="vertical-align:top;border-right:1px solid #cccccc;padding-right:16px;">
+        <div style="font-size:15px;font-weight:700;color:#1a1a1a;white-space:nowrap;">Steve Olko</div>
+        <div style="font-size:10.5px;font-weight:700;color:#3787c4;text-transform:uppercase;letter-spacing:1px;margin-top:3px;white-space:nowrap;">Director of Sales</div>
+      </td>
+      <td style="padding-left:16px;vertical-align:top;">
+        <table cellpadding="0" cellspacing="0" border="0" style="font-size:12px;color:#444;line-height:1.8;">
+          <tr><td><a href="mailto:solko@cushing-malloy.com" style="color:#444;text-decoration:none;">solko@cushing-malloy.com</a></td></tr>
+          <tr><td style="white-space:nowrap;">P: (810) 296-7133</td></tr>
+          <tr><td>Cushing-Malloy, Inc.&nbsp;&nbsp;|&nbsp;&nbsp;1350 N. Main, Ann Arbor, MI 48104</td></tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:10px;">
+        <div style="font-size:11px;color:#888;">
+          <a href="https://cushing-malloy.com" style="color:#3787c4;text-decoration:none;font-weight:600;">cushing-malloy.com</a>
+          &nbsp;&nbsp;&#8211;&nbsp;&nbsp;Where Books Are Bound For Greatness&reg;
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>`
+      },
+      {
+        id: 13, score: 9, priorityClass: "high",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "New Vessel Press",
+        source: "Press masthead",
+        email: "michael@newvesselpress.com",
+        phone: "",
+        website: "https://newvesselpress.com",
+        notes: "Independent New York house specializing in fiction and narrative nonfiction in translation, with recent titles recognized by national awards. Its short annual list of high-production paperbacks is a natural short-run candidate.",
+        pitch: "NYC translation press with a short, award-recognized paperback list well suited to uniform short runs.",
+        drafted_email: `<div style="font-family:Arial,sans-serif;font-size:14px;color:#222;line-height:1.6;max-width:600px;">
+<p>Dear Michael,</p>
+<p>Presses usually find a printer because another press pointed them to one. We would rather make that introduction ourselves. New Vessel Press is an independent press publishing fiction and narrative nonfiction in translation, and short-run literary printing is the center of what we do. If we earn a place on your list, we would like to quote your next book.</p>
+<p>I'm reaching out from Cushing-Malloy in Ann Arbor, Michigan. We've been manufacturing books for independent and university presses since 1948.</p>
+<p>Here's what makes us different:</p>
+<ul>
+<li>One person manages your project start to finish: same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.</li>
+<li>20 working days from approved files to finished books, delivered to your door.</li>
+<li>Translated paperbacks printed to a uniform series look, so your list stays visually consistent title to title.</li>
+</ul>
+<p>Not sure where to start? That's exactly why we're here. We'd love to talk through your options and provide a quote for your next book. To get started, just reply to this email or click <a href="https://cushing-malloy.com/request-quote/" style="color:#3787c4;">https://cushing-malloy.com/request-quote/</a> to submit your details.</p>
+<p>Warm regards,</p>
+<div style="margin-top:24px;padding-top:14px;border-top:1px solid #cccccc;max-width:500px;font-family:Arial,sans-serif;">
+  <table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,sans-serif;">
+    <tr>
+      <td style="vertical-align:top;border-right:1px solid #cccccc;padding-right:16px;">
+        <div style="font-size:15px;font-weight:700;color:#1a1a1a;white-space:nowrap;">Steve Olko</div>
+        <div style="font-size:10.5px;font-weight:700;color:#3787c4;text-transform:uppercase;letter-spacing:1px;margin-top:3px;white-space:nowrap;">Director of Sales</div>
+      </td>
+      <td style="padding-left:16px;vertical-align:top;">
+        <table cellpadding="0" cellspacing="0" border="0" style="font-size:12px;color:#444;line-height:1.8;">
+          <tr><td><a href="mailto:solko@cushing-malloy.com" style="color:#444;text-decoration:none;">solko@cushing-malloy.com</a></td></tr>
+          <tr><td style="white-space:nowrap;">P: (810) 296-7133</td></tr>
+          <tr><td>Cushing-Malloy, Inc.&nbsp;&nbsp;|&nbsp;&nbsp;1350 N. Main, Ann Arbor, MI 48104</td></tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:10px;">
+        <div style="font-size:11px;color:#888;">
+          <a href="https://cushing-malloy.com" style="color:#3787c4;text-decoration:none;font-weight:600;">cushing-malloy.com</a>
+          &nbsp;&nbsp;&#8211;&nbsp;&nbsp;Where Books Are Bound For Greatness&reg;
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>`
+      },
+      {
+        id: 14, score: 8, priorityClass: "high",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Wakefield Press",
+        source: "Press masthead",
+        email: "marc@wakefieldpress.com",
+        phone: "",
+        website: "https://wakefieldpress.com",
+        notes: "Independent Cambridge, Massachusetts publisher devoted to literary translations issued in small, uniformly designed paperback series. Its consistent series look and small runs fit short-run manufacturing.",
+        pitch: "Translation publisher issuing uniformly designed paperback series in small runs, a clean short-run fit.",
+        drafted_email: `<div style="font-family:Arial,sans-serif;font-size:14px;color:#222;line-height:1.6;max-width:600px;">
+<p>Dear Marc,</p>
+<p>This note is a simple introduction. Wakefield Press is an independent publisher of literary translations, and presses your size are exactly the kind of work we take on. We would like to be one of the printers you ask for a quote when your next season is set. That is the whole reason we are writing today.</p>
+<p>I'm reaching out from Cushing-Malloy in Ann Arbor, Michigan. We've been manufacturing books for independent and university presses since 1948.</p>
+<p>Here's what makes us different:</p>
+<ul>
+<li>One person manages your project start to finish: same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.</li>
+<li>20 working days from approved files to finished books, delivered to your door.</li>
+<li>Uniformly designed paperback series printed to spec, so each new handbook or oddity matches the ones before it.</li>
+</ul>
+<p>Not sure where to start? That's exactly why we're here. We'd love to talk through your options and provide a quote for your next book. To get started, just reply to this email or click <a href="https://cushing-malloy.com/request-quote/" style="color:#3787c4;">https://cushing-malloy.com/request-quote/</a> to submit your details.</p>
+<p>Warm regards,</p>
+<div style="margin-top:24px;padding-top:14px;border-top:1px solid #cccccc;max-width:500px;font-family:Arial,sans-serif;">
+  <table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,sans-serif;">
+    <tr>
+      <td style="vertical-align:top;border-right:1px solid #cccccc;padding-right:16px;">
+        <div style="font-size:15px;font-weight:700;color:#1a1a1a;white-space:nowrap;">Steve Olko</div>
+        <div style="font-size:10.5px;font-weight:700;color:#3787c4;text-transform:uppercase;letter-spacing:1px;margin-top:3px;white-space:nowrap;">Director of Sales</div>
+      </td>
+      <td style="padding-left:16px;vertical-align:top;">
+        <table cellpadding="0" cellspacing="0" border="0" style="font-size:12px;color:#444;line-height:1.8;">
+          <tr><td><a href="mailto:solko@cushing-malloy.com" style="color:#444;text-decoration:none;">solko@cushing-malloy.com</a></td></tr>
+          <tr><td style="white-space:nowrap;">P: (810) 296-7133</td></tr>
+          <tr><td>Cushing-Malloy, Inc.&nbsp;&nbsp;|&nbsp;&nbsp;1350 N. Main, Ann Arbor, MI 48104</td></tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:10px;">
+        <div style="font-size:11px;color:#888;">
+          <a href="https://cushing-malloy.com" style="color:#3787c4;text-decoration:none;font-weight:600;">cushing-malloy.com</a>
+          &nbsp;&nbsp;&#8211;&nbsp;&nbsp;Where Books Are Bound For Greatness&reg;
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>`
+      },
+      {
+        id: 15, score: 8, priorityClass: "high",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Contra Mundum Press",
+        source: "Press about page",
+        email: "rainer@contramundum.net",
+        phone: "",
+        website: "https://www.contramundumpress.com",
+        notes: "New York independent press publishing modernist literature in translation across poetry, prose, and drama, distributed through Ingram and Asterism. It outsources manufacturing of low-volume literary titles.",
+        pitch: "NYC translation press with a varied low-volume list that outsources production, a strong short-run prospect.",
+        drafted_email: `<div style="font-family:Arial,sans-serif;font-size:14px;color:#222;line-height:1.6;max-width:600px;">
+<p>Dear Rainer,</p>
+<p>We are writing with one thing in mind, your next print run. Contra Mundum Press is an independent press publishing literature in translation, and we do not know where you are in your production calendar. If you are planning a title now, we would like to quote it; if not, file us away for when you are. We wanted to introduce ourselves before your busy stretch.</p>
+<p>I'm reaching out from Cushing-Malloy in Ann Arbor, Michigan. We've been manufacturing books for independent and university presses since 1948.</p>
+<p>Here's what makes us different:</p>
+<ul>
+<li>One person manages your project start to finish: same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.</li>
+<li>20 working days from approved files to finished books, delivered to your door.</li>
+<li>Poetry, prose, and drama printed to the same standard, so a varied translation list stays with one printer.</li>
+</ul>
+<p>Not sure where to start? That's exactly why we're here. We'd love to talk through your options and provide a quote for your next book. To get started, just reply to this email or click <a href="https://cushing-malloy.com/request-quote/" style="color:#3787c4;">https://cushing-malloy.com/request-quote/</a> to submit your details.</p>
+<p>Warm regards,</p>
+<div style="margin-top:24px;padding-top:14px;border-top:1px solid #cccccc;max-width:500px;font-family:Arial,sans-serif;">
+  <table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,sans-serif;">
+    <tr>
+      <td style="vertical-align:top;border-right:1px solid #cccccc;padding-right:16px;">
+        <div style="font-size:15px;font-weight:700;color:#1a1a1a;white-space:nowrap;">Steve Olko</div>
+        <div style="font-size:10.5px;font-weight:700;color:#3787c4;text-transform:uppercase;letter-spacing:1px;margin-top:3px;white-space:nowrap;">Director of Sales</div>
+      </td>
+      <td style="padding-left:16px;vertical-align:top;">
+        <table cellpadding="0" cellspacing="0" border="0" style="font-size:12px;color:#444;line-height:1.8;">
+          <tr><td><a href="mailto:solko@cushing-malloy.com" style="color:#444;text-decoration:none;">solko@cushing-malloy.com</a></td></tr>
+          <tr><td style="white-space:nowrap;">P: (810) 296-7133</td></tr>
+          <tr><td>Cushing-Malloy, Inc.&nbsp;&nbsp;|&nbsp;&nbsp;1350 N. Main, Ann Arbor, MI 48104</td></tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:10px;">
+        <div style="font-size:11px;color:#888;">
+          <a href="https://cushing-malloy.com" style="color:#3787c4;text-decoration:none;font-weight:600;">cushing-malloy.com</a>
+          &nbsp;&nbsp;&#8211;&nbsp;&nbsp;Where Books Are Bound For Greatness&reg;
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>`
+      },
+      {
+        id: 16, score: 8, priorityClass: "medium",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Delphinium Books",
+        source: "Press masthead",
+        email: "jolshan@delphiniumbooks.com",
+        phone: "",
+        website: "https://www.delphiniumbooks.com",
+        notes: "Independent literary press publishing original fiction and nonfiction, distributed by Publishers Group West, with award-winning titles on its list. Its small annual output fits short-run production and quick reprints.",
+        pitch: "Independent literary publisher with a small, award-winning list suited to short first runs and fast reprints.",
+        drafted_email: `<div style="font-family:Arial,sans-serif;font-size:14px;color:#222;line-height:1.6;max-width:600px;">
+<p>Dear Joseph,</p>
+<p>Most presses find their printer through a referral from another press. We would rather earn that introduction directly. Delphinium Books is an independent literary publisher, and short-run printing is what we do all day. If our name is worth keeping, we would like to be on your list the next time you need a quote.</p>
+<p>I'm reaching out from Cushing-Malloy in Ann Arbor, Michigan. We've been manufacturing books for independent and university presses since 1948.</p>
+<p>Here's what makes us different:</p>
+<ul>
+<li>One person manages your project start to finish: same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.</li>
+<li>20 working days from approved files to finished books, delivered to your door.</li>
+<li>First runs and reprints handled together, so a title that finds its audience can go back to press quickly.</li>
+</ul>
+<p>Not sure where to start? That's exactly why we're here. We'd love to talk through your options and provide a quote for your next book. To get started, just reply to this email or click <a href="https://cushing-malloy.com/request-quote/" style="color:#3787c4;">https://cushing-malloy.com/request-quote/</a> to submit your details.</p>
+<p>Warm regards,</p>
+<div style="margin-top:24px;padding-top:14px;border-top:1px solid #cccccc;max-width:500px;font-family:Arial,sans-serif;">
+  <table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,sans-serif;">
+    <tr>
+      <td style="vertical-align:top;border-right:1px solid #cccccc;padding-right:16px;">
+        <div style="font-size:15px;font-weight:700;color:#1a1a1a;white-space:nowrap;">Steve Olko</div>
+        <div style="font-size:10.5px;font-weight:700;color:#3787c4;text-transform:uppercase;letter-spacing:1px;margin-top:3px;white-space:nowrap;">Director of Sales</div>
+      </td>
+      <td style="padding-left:16px;vertical-align:top;">
+        <table cellpadding="0" cellspacing="0" border="0" style="font-size:12px;color:#444;line-height:1.8;">
+          <tr><td><a href="mailto:solko@cushing-malloy.com" style="color:#444;text-decoration:none;">solko@cushing-malloy.com</a></td></tr>
+          <tr><td style="white-space:nowrap;">P: (810) 296-7133</td></tr>
+          <tr><td>Cushing-Malloy, Inc.&nbsp;&nbsp;|&nbsp;&nbsp;1350 N. Main, Ann Arbor, MI 48104</td></tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:10px;">
+        <div style="font-size:11px;color:#888;">
+          <a href="https://cushing-malloy.com" style="color:#3787c4;text-decoration:none;font-weight:600;">cushing-malloy.com</a>
+          &nbsp;&nbsp;&#8211;&nbsp;&nbsp;Where Books Are Bound For Greatness&reg;
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>`
+      },
+      {
+        id: 17, score: 8, priorityClass: "high",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "7.13 Books",
+        source: "Press about page",
+        email: "leland@713books.com",
+        phone: "",
+        website: "https://713books.com",
+        notes: "Author-run Brooklyn indie publishing adult literary fiction and debut authors. Its low title count and debut focus fit small first runs with quick reprints.",
+        pitch: "Brooklyn literary-fiction indie focused on debuts, a fit for demand-sized first runs and fast reprints.",
+        drafted_email: `<div style="font-family:Arial,sans-serif;font-size:14px;color:#222;line-height:1.6;max-width:600px;">
+<p>Dear Leland,</p>
+<p>We hear the same thing across the trade: as larger printers raise their minimums, presses running smaller quantities have fewer places to turn. 7.13 Books is an independent press publishing literary fiction, and short runs are the center of our work rather than the exception. We would like to introduce ourselves as one more option for your next book. That is the entire purpose of this note.</p>
+<p>I'm reaching out from Cushing-Malloy in Ann Arbor, Michigan. We've been manufacturing books for independent and university presses since 1948.</p>
+<p>Here's what makes us different:</p>
+<ul>
+<li>One person manages your project start to finish: same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.</li>
+<li>20 working days from approved files to finished books, delivered to your door.</li>
+<li>Debut novels and collections printed in first runs sized to demand, with quick reprints when a book takes off.</li>
+</ul>
+<p>Not sure where to start? That's exactly why we're here. We'd love to talk through your options and provide a quote for your next book. To get started, just reply to this email or click <a href="https://cushing-malloy.com/request-quote/" style="color:#3787c4;">https://cushing-malloy.com/request-quote/</a> to submit your details.</p>
+<p>Warm regards,</p>
+<div style="margin-top:24px;padding-top:14px;border-top:1px solid #cccccc;max-width:500px;font-family:Arial,sans-serif;">
+  <table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,sans-serif;">
+    <tr>
+      <td style="vertical-align:top;border-right:1px solid #cccccc;padding-right:16px;">
+        <div style="font-size:15px;font-weight:700;color:#1a1a1a;white-space:nowrap;">Steve Olko</div>
+        <div style="font-size:10.5px;font-weight:700;color:#3787c4;text-transform:uppercase;letter-spacing:1px;margin-top:3px;white-space:nowrap;">Director of Sales</div>
+      </td>
+      <td style="padding-left:16px;vertical-align:top;">
+        <table cellpadding="0" cellspacing="0" border="0" style="font-size:12px;color:#444;line-height:1.8;">
+          <tr><td><a href="mailto:solko@cushing-malloy.com" style="color:#444;text-decoration:none;">solko@cushing-malloy.com</a></td></tr>
+          <tr><td style="white-space:nowrap;">P: (810) 296-7133</td></tr>
+          <tr><td>Cushing-Malloy, Inc.&nbsp;&nbsp;|&nbsp;&nbsp;1350 N. Main, Ann Arbor, MI 48104</td></tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:10px;">
+        <div style="font-size:11px;color:#888;">
+          <a href="https://cushing-malloy.com" style="color:#3787c4;text-decoration:none;font-weight:600;">cushing-malloy.com</a>
+          &nbsp;&nbsp;&#8211;&nbsp;&nbsp;Where Books Are Bound For Greatness&reg;
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>`
+      },
+      {
+        id: 18, score: 9, priorityClass: "high",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Write Bloody Publishing",
+        source: "Press About-us page",
+        email: "derrick@writebloody.com",
+        phone: "",
+        website: "https://writebloody.com",
+        notes: "Independent Los Angeles poetry press publishing performance and page poets, active for two decades. Its event- and tour-driven sales call for flexible print quantities and quick reprints.",
+        pitch: "Established LA poetry press whose tour-driven sales suit flexible short runs and fast reprints.",
+        drafted_email: `<div style="font-family:Arial,sans-serif;font-size:14px;color:#222;line-height:1.6;max-width:600px;">
+<p>Dear Derrick,</p>
+<p>This is an introduction, nothing more. Write Bloody Publishing is an independent poetry press, and presses your size are the work we know best. We would like to be one of the printers you quote when your next title is ready. That is the entire ask.</p>
+<p>I'm reaching out from Cushing-Malloy in Ann Arbor, Michigan. We've been manufacturing books for independent and university presses since 1948.</p>
+<p>Here's what makes us different:</p>
+<ul>
+<li>One person manages your project start to finish: same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.</li>
+<li>20 working days from approved files to finished books, delivered to your door.</li>
+<li>Poetry titles printed in quantities that match tour and event sales, with fast reprints between runs.</li>
+</ul>
+<p>Not sure where to start? That's exactly why we're here. We'd love to talk through your options and provide a quote for your next book. To get started, just reply to this email or click <a href="https://cushing-malloy.com/request-quote/" style="color:#3787c4;">https://cushing-malloy.com/request-quote/</a> to submit your details.</p>
+<p>Warm regards,</p>
+<div style="margin-top:24px;padding-top:14px;border-top:1px solid #cccccc;max-width:500px;font-family:Arial,sans-serif;">
+  <table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,sans-serif;">
+    <tr>
+      <td style="vertical-align:top;border-right:1px solid #cccccc;padding-right:16px;">
+        <div style="font-size:15px;font-weight:700;color:#1a1a1a;white-space:nowrap;">Steve Olko</div>
+        <div style="font-size:10.5px;font-weight:700;color:#3787c4;text-transform:uppercase;letter-spacing:1px;margin-top:3px;white-space:nowrap;">Director of Sales</div>
+      </td>
+      <td style="padding-left:16px;vertical-align:top;">
+        <table cellpadding="0" cellspacing="0" border="0" style="font-size:12px;color:#444;line-height:1.8;">
+          <tr><td><a href="mailto:solko@cushing-malloy.com" style="color:#444;text-decoration:none;">solko@cushing-malloy.com</a></td></tr>
+          <tr><td style="white-space:nowrap;">P: (810) 296-7133</td></tr>
+          <tr><td>Cushing-Malloy, Inc.&nbsp;&nbsp;|&nbsp;&nbsp;1350 N. Main, Ann Arbor, MI 48104</td></tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:10px;">
+        <div style="font-size:11px;color:#888;">
+          <a href="https://cushing-malloy.com" style="color:#3787c4;text-decoration:none;font-weight:600;">cushing-malloy.com</a>
+          &nbsp;&nbsp;&#8211;&nbsp;&nbsp;Where Books Are Bound For Greatness&reg;
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>`
+      },
+      {
+        id: 19, score: 7, priorityClass: "medium",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Game Over Books",
+        source: "Press staff/catalog page",
+        email: "josh@gameoverbooks.com",
+        phone: "",
+        website: "https://www.gameoverbooks.com",
+        notes: "Boston-based independent poetry press founded in 2017 publishing diverse, emerging voices. Its single-author collections in small runs are a good short-run fit.",
+        pitch: "Boston poetry indie publishing emerging voices in small single-author runs, a clean short-run fit.",
+        drafted_email: `<div style="font-family:Arial,sans-serif;font-size:14px;color:#222;line-height:1.6;max-width:600px;">
+<p>Dear Josh,</p>
+<p>We are writing with your next print run in mind. Game Over Books is an independent poetry press, and we do not presume to know your production schedule. If a collection is being planned now, we would like the chance to quote it; if not, keep us on file for when it is. We wanted to introduce ourselves ahead of time.</p>
+<p>I'm reaching out from Cushing-Malloy in Ann Arbor, Michigan. We've been manufacturing books for independent and university presses since 1948.</p>
+<p>Here's what makes us different:</p>
+<ul>
+<li>One person manages your project start to finish: same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.</li>
+<li>20 working days from approved files to finished books, delivered to your door.</li>
+<li>Single-author collections printed in small runs, so a debut list does not require warehouse-sized quantities.</li>
+</ul>
+<p>Not sure where to start? That's exactly why we're here. We'd love to talk through your options and provide a quote for your next book. To get started, just reply to this email or click <a href="https://cushing-malloy.com/request-quote/" style="color:#3787c4;">https://cushing-malloy.com/request-quote/</a> to submit your details.</p>
+<p>Warm regards,</p>
+<div style="margin-top:24px;padding-top:14px;border-top:1px solid #cccccc;max-width:500px;font-family:Arial,sans-serif;">
+  <table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,sans-serif;">
+    <tr>
+      <td style="vertical-align:top;border-right:1px solid #cccccc;padding-right:16px;">
+        <div style="font-size:15px;font-weight:700;color:#1a1a1a;white-space:nowrap;">Steve Olko</div>
+        <div style="font-size:10.5px;font-weight:700;color:#3787c4;text-transform:uppercase;letter-spacing:1px;margin-top:3px;white-space:nowrap;">Director of Sales</div>
+      </td>
+      <td style="padding-left:16px;vertical-align:top;">
+        <table cellpadding="0" cellspacing="0" border="0" style="font-size:12px;color:#444;line-height:1.8;">
+          <tr><td><a href="mailto:solko@cushing-malloy.com" style="color:#444;text-decoration:none;">solko@cushing-malloy.com</a></td></tr>
+          <tr><td style="white-space:nowrap;">P: (810) 296-7133</td></tr>
+          <tr><td>Cushing-Malloy, Inc.&nbsp;&nbsp;|&nbsp;&nbsp;1350 N. Main, Ann Arbor, MI 48104</td></tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:10px;">
+        <div style="font-size:11px;color:#888;">
+          <a href="https://cushing-malloy.com" style="color:#3787c4;text-decoration:none;font-weight:600;">cushing-malloy.com</a>
+          &nbsp;&nbsp;&#8211;&nbsp;&nbsp;Where Books Are Bound For Greatness&reg;
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>`
+      },
+      {
+        id: 20, score: 7, priorityClass: "medium",
+        category: "Poetry & Literary Press", catClass: "cat-poetry",
+        name: "Publishing Genius",
+        source: "Press catalog / contact",
+        email: "adam@publishinggenius.com",
+        phone: "",
+        website: "https://www.publishinggenius.com",
+        notes: "Independent press run by its founder publishing novels, short stories, poetry, and hybrid work since 2006, now based in upstate New York. Its small perfect-bound runs fit short-run printing.",
+        pitch: "Founder-run indie with small perfect-bound fiction and poetry runs suited to short-run manufacturing.",
+        drafted_email: `<div style="font-family:Arial,sans-serif;font-size:14px;color:#222;line-height:1.6;max-width:600px;">
+<p>Dear Adam,</p>
+<p>Presses usually find a printer because another press pointed them to one. We would rather make that introduction ourselves. Publishing Genius is an independent press publishing fiction and poetry, and short-run literary printing is the center of what we do. If we earn a place on your list, we would like to quote your next book.</p>
+<p>I'm reaching out from Cushing-Malloy in Ann Arbor, Michigan. We've been manufacturing books for independent and university presses since 1948.</p>
+<p>Here's what makes us different:</p>
+<ul>
+<li>One person manages your project start to finish: same contact for quoting, production, proofing, and delivery. Nothing falls through the cracks.</li>
+<li>20 working days from approved files to finished books, delivered to your door.</li>
+<li>Short perfect-bound runs for fiction and hybrid work, printed in the quantities a small list actually sells.</li>
+</ul>
+<p>Not sure where to start? That's exactly why we're here. We'd love to talk through your options and provide a quote for your next book. To get started, just reply to this email or click <a href="https://cushing-malloy.com/request-quote/" style="color:#3787c4;">https://cushing-malloy.com/request-quote/</a> to submit your details.</p>
+<p>Warm regards,</p>
+<div style="margin-top:24px;padding-top:14px;border-top:1px solid #cccccc;max-width:500px;font-family:Arial,sans-serif;">
+  <table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,sans-serif;">
+    <tr>
+      <td style="vertical-align:top;border-right:1px solid #cccccc;padding-right:16px;">
+        <div style="font-size:15px;font-weight:700;color:#1a1a1a;white-space:nowrap;">Steve Olko</div>
+        <div style="font-size:10.5px;font-weight:700;color:#3787c4;text-transform:uppercase;letter-spacing:1px;margin-top:3px;white-space:nowrap;">Director of Sales</div>
+      </td>
+      <td style="padding-left:16px;vertical-align:top;">
+        <table cellpadding="0" cellspacing="0" border="0" style="font-size:12px;color:#444;line-height:1.8;">
+          <tr><td><a href="mailto:solko@cushing-malloy.com" style="color:#444;text-decoration:none;">solko@cushing-malloy.com</a></td></tr>
+          <tr><td style="white-space:nowrap;">P: (810) 296-7133</td></tr>
+          <tr><td>Cushing-Malloy, Inc.&nbsp;&nbsp;|&nbsp;&nbsp;1350 N. Main, Ann Arbor, MI 48104</td></tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding-top:10px;">
+        <div style="font-size:11px;color:#888;">
+          <a href="https://cushing-malloy.com" style="color:#3787c4;text-decoration:none;font-weight:600;">cushing-malloy.com</a>
+          &nbsp;&nbsp;&#8211;&nbsp;&nbsp;Where Books Are Bound For Greatness&reg;
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>`
+      },
+    ]
+  },
   "2026-07-20": {
     label: "July 20, 2026",
     leads: [
@@ -11776,7 +12761,7 @@ function getVisibleRuns() {
 }
 
 // ─── STATE ───────────────────────────────────────────────────────────────────
-let currentRun = "2026-07-20";
+let currentRun = "2026-07-27";
 let sortCol = "score";
 let sortAsc = false;
 let filterPriority = "all";
